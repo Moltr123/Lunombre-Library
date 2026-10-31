@@ -1,0 +1,78 @@
+{
+  "book": "月影书库的第零页",
+  "last_site_update": "2026-10-31",
+  "volumes": [
+    {
+      "number": 1,
+      "status": "published",
+      "title": "第一卷",
+      "path": "volume-01.html"
+    },
+    {
+      "number": 2,
+      "status": "unreleased",
+      "title": "第二卷",
+      "path": null
+    },
+    {
+      "number": 3,
+      "status": "unreleased",
+      "title": "第三卷",
+      "path": null
+    },
+    {
+      "number": 4,
+      "status": "unreleased",
+      "title": "第四卷",
+      "path": null
+    },
+    {
+      "number": 5,
+      "status": "unreleased",
+      "title": "第五卷",
+      "path": null
+    },
+    {
+      "number": 6,
+      "status": "unreleased",
+      "title": "第六卷",
+      "path": null
+    },
+    {
+      "number": 7,
+      "status": "unreleased",
+      "title": "第七卷",
+      "path": null
+    },
+    {
+      "number": 8,
+      "status": "unreleased",
+      "title": "第八卷",
+      "path": null
+    },
+    {
+      "number": 9,
+      "status": "unreleased",
+      "title": "第九卷",
+      "path": null
+    },
+    {
+      "number": 10,
+      "status": "unreleased",
+      "title": "第十卷",
+      "path": null
+    },
+    {
+      "number": 11,
+      "status": "unreleased",
+      "title": "第十一卷",
+      "path": null
+    },
+    {
+      "number": 12,
+      "status": "unreleased",
+      "title": "第十二卷",
+      "path": null
+    }
+  ]
+}

@@ -1,2 +1,37 @@
-# Lunombre-Library
-Official digital library for The Zero Page of Lunombre (《月影书库的第零页》), a fantasy novel following Lumielle de Lunombre through a world of forgotten histories, moonlight, and untold stories.
+# 《月影书库的第零页》网站
+
+这是可以直接部署的静态小说网站，不需要安装依赖、构建工具或服务器程序。
+
+## 已收录
+- 第一卷：序章 + 二十四章（较新的修订完整版，原文保留）。
+- 后续各卷：预留书架位置，未完成时不公开章节和剧情。
+- 阅读器：目录、上一章/下一章、日夜模式、字号调整、浏览器本地阅读进度。
+
+## 网站上线：简单方法（Netlify Drop）
+1. 解压 ZIP，得到 `lunombre-library-site` 文件夹。
+2. 用浏览器打开 https://app.netlify.com/drop
+3. 将解压后的整个文件夹拖入上传区域。
+4. 部署成功后，获得一个以 `netlify.app` 结尾的网址。登录并保存项目以方便后续管理。
+5. 后续更新：在原网站的 Deploys/Production deploys 页面重新上传更新后的完整文件夹，以保留同一个站点网址。
+
+## 长期持续维护：推荐 GitHub Pages
+1. 创建 GitHub 仓库，把这个文件夹里的文件上传到仓库根目录。
+2. 进入 Settings > Pages，选择 Deploy from a branch，设置 main /(root) 并保存。
+3. 访问 GitHub 显示的正式网站链接。
+4. 以后只需新增 `volume-02.html` 等和修改 `index.html` 上的卷目状态，推送到仓库后网站就会更新。
+
+## 文件结构
+- `index.html`：书架首页。
+- `volume-01.html`：第一卷完整正文。
+- `volumes.json`：卷目状态的简易元数据，供未来维护参考（首页当前由内嵌卡片静态渲染）。
+- `favicon.svg`：图标。
+- `404.html`：找不到页面时的提示。
+- `.nojekyll`：防止 GitHub Pages 默认 Jekyll 处理。
+- `README.md`：本说明。
+
+## 后续更新约定
+- 已发布书卷尽量保持文件名不变，方便旧链接长期使用。
+- 写好一卷后，在网站根目录新增 `volume-XX.html`。
+- 更新首页同一卷的书架卡片，使其指向新文件；将 `volumes.json` 的状态改为 `published`。
+- 改完本地文件后，仍需将文件部署到网站托管服务，网页才会在线更新。未经授权，聊天中的小说写作不会自动同步到公开网站。
+- 这个网站是静态内容，浏览记录只保存在浏览器本地，不会上传到后台服务器。
