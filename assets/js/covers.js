@@ -90,15 +90,77 @@
       attachMoon(card);
     });
   };
-  const applyHero = path => {
-    const book = document.querySelector('.hero-art .book');
-    if (!book || !path) return;
-    preload(path, img => {
-      img.className = 'official-cover-image';
-      img.alt = '当前主推书卷的正式封面';
-      book.append(img);
-      book.classList.add('has-official-cover');
-    });
+  // The featured-book carousel is independent of reading progress and device.
+  const setupFeaturedCarousel = (volumes) => {
+    const book = document.getElementById('featured-book');
+    const prev = document.getElementById('featured-prev');
+    const next = document.getElementById('featured-next');
+    const caption = document.getElementById('featured-status');
+    const link = document.getElementById('featured-read');
+    const label = document.getElementById('featured-read-label');
+    if (!book || !prev || !next || !caption || !link || !label) return;
+
+    const items = volumes
+      .filter(v => v && v.status === 'published' && Number.isInteger(Number(v.number))
+        && /^volume-\d{2}\.html$/.test(v.path || '')
+        && (permittedPath(v.hero_image) || permittedPath(v.cover_image)))
+      .sort((a,b) => Number(a.number)-Number(b.number));
+    if (!items.length) return;
+    const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const coverFor = v => permittedPath(v.hero_image) || permittedPath(v.cover_image);
+    let index = items.length - 1;
+    let busy = false;
+    let image = book.querySelector('.official-cover-image');
+    if (!image) {
+      image = document.createElement('img');
+      image.className = 'official-cover-image';
+      book.append(image);
+    }
+    book.classList.add('has-official-cover','featured-book');
+
+    const paint = () => {
+      const item = items[index];
+      image.src = coverFor(item);
+      image.alt = item.title + '正式封面';
+      link.href = item.path;
+      label.textContent = '阅读' + item.title;
+      link.setAttribute('aria-label','阅读'+item.title);
+      caption.textContent = String(item.number).padStart(2,'0') + ' / '
+        + String(items.length).padStart(2,'0') + ' · ' + item.title;
+    };
+    const move = step => {
+      if (busy || items.length < 2) return;
+      index = (index + step + items.length) % items.length;
+      if (reducedMotion) { paint(); return; }
+      busy = true;
+      prev.disabled = true;
+      next.disabled = true;
+      book.classList.remove('hero-flip-in');
+      book.classList.add('hero-flip-out');
+      window.setTimeout(() => {
+        paint();
+        book.classList.remove('hero-flip-out');
+        book.classList.add('hero-flip-in');
+        window.setTimeout(() => {
+          book.classList.remove('hero-flip-in');
+          prev.disabled = false;
+          next.disabled = false;
+          busy = false;
+        }, 430);
+      }, 260);
+    };
+
+    // Default to the latest published volume every visit.
+    paint();
+    if (items.length > 1) {
+      prev.hidden = false;
+      next.hidden = false;
+      prev.addEventListener('click', () => move(-1));
+      next.addEventListener('click', () => move(1));
+    } else {
+      prev.hidden = true;
+      next.hidden = true;
+    }
   };
   const applyReader = path => {
     const cover = document.querySelector('header.cover');
@@ -126,10 +188,7 @@
         if (item.status !== 'published' && item.cover_revealed !== true) return;
         applyCover(card, permittedPath(item.cover_image));
       });
-      const featured = byNumber.get(Number(data.featured_volume || 1));
-      if (featured && featured.status === 'published') {
-        applyHero(permittedPath(featured.hero_image) || permittedPath(featured.cover_image));
-      }
+      setupFeaturedCarousel(data.volumes);
       const match = location.pathname.match(/volume-(\d{2})\.html$/);
       if (match) {
         const item = byNumber.get(Number(match[1]));

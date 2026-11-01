@@ -60,8 +60,8 @@ a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--gol
 @media(max-width:370px){.topnav{gap:9px}.brand{letter-spacing:.12em}.volumes{grid-template-columns:1fr 1fr}.volume-card{padding:12px}.vol-name{font-size:18px}.vol-detail{font-size:10px}.vol-index{letter-spacing:0;font-size:9px}.hero .latin{font-size:10px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
 </style>
-<link rel="stylesheet" href="assets/css/covers.css?v=20261101-bookplate70-v2">
-<script src="assets/js/covers.js" defer></script>
+<link rel="stylesheet" href="assets/css/covers.css?v=20261101-featured-v1">
+<script src="assets/js/covers.js?v=20261101-featured-v1" defer></script>
 </head>
 <body>
 <div class="container">
@@ -77,15 +77,21 @@ a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--gol
     <div class="latin">THE ZERO PAGE OF LUNOMBRE</div>
     <p class="desc">有些故事，并不是从第一页开始。<br>余烬历二九九九年，秋。<br>月影城堡的灯光下，书页仍在等待翻开。</p>
     <div class="hero-actions">
-      <a class="primary" href="volume-01.html">阅读第一卷 <span aria-hidden="true">↗</span></a>
+      <a class="primary" id="featured-read" href="volume-02.html"><span id="featured-read-label">阅读第二卷《济》</span><span aria-hidden="true">↗</span></a>
       <a class="secondary" href="#library">前往藏书目录</a>
     </div>
     <a class="resume" id="resume-reading" href="volume-01.html">☾ 继续上次阅读</a>
   </div>
-  <div class="hero-art" aria-hidden="true">
-    <div class="halo"></div>
-    <div class="stars"><span>✦</span><span>✧</span><span>✦</span><span>✦</span></div>
-    <div class="book"><div class="book-in"><div class="book-moon"></div><div class="book-title">月影书库<br>的第零页</div><div class="book-sub">LUNOMBRE</div><div class="book-bottom">VOL. I</div></div></div>
+  <div class="hero-art" role="group" aria-label="已公开书卷的封面展示台">
+    <div class="halo" aria-hidden="true"></div>
+    <div class="stars" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>✦</span></div>
+    <button type="button" class="hero-arrow hero-arrow-prev" id="featured-prev" aria-label="上一卷" title="上一卷" hidden><span aria-hidden="true">‹</span></button>
+    <div class="book has-official-cover featured-book" id="featured-book">
+      <div class="book-in"><div class="book-moon"></div><div class="book-title">月影书库<br>的第零页</div><div class="book-sub">LUNOMBRE</div><div class="book-bottom">VOL. II</div></div>
+      <img class="official-cover-image" src="assets/covers/vol-02.webp" alt="第二卷《济》正式封面" decoding="async" fetchpriority="high">
+    </div>
+    <button type="button" class="hero-arrow hero-arrow-next" id="featured-next" aria-label="下一卷" title="下一卷" hidden><span aria-hidden="true">›</span></button>
+    <div class="hero-book-caption" id="featured-status" aria-live="polite">02 / 02 · 第二卷《济》</div>
   </div>
 </section>
 <div class="scroll-note">SCROLL TO EXPLORE</div>

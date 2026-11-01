@@ -123,5 +123,6 @@
       "special_covers": []
     }
   ],
-  "featured_volume": 1
+  "featured_volume": 2,
+  "featured_mode": "latest-published"
 }
