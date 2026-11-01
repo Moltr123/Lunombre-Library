@@ -7,9 +7,9 @@
       "status": "published",
       "title": "第一卷《名》",
       "path": "volume-01.html",
-      "cover_image": null,
+      "cover_image": "assets/covers/vol-01.webp",
       "hero_image": null,
-      "cover_revealed": false,
+      "cover_revealed": true,
       "special_covers": []
     },
     {
