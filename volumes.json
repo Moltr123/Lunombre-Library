@@ -14,9 +14,9 @@
     },
     {
       "number": 2,
-      "status": "unreleased",
-      "title": "第二卷",
-      "path": null,
+      "status": "published",
+      "title": "第二卷《济》",
+      "path": "volume-02.html",
       "cover_image": null,
       "hero_image": null,
       "cover_revealed": false,
