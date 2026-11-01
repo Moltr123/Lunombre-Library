@@ -17,9 +17,9 @@
       "status": "published",
       "title": "第二卷《济》",
       "path": "volume-02.html",
-      "cover_image": null,
+      "cover_image": "assets/covers/vol-02.webp",
       "hero_image": null,
-      "cover_revealed": false,
+      "cover_revealed": true,
       "special_covers": []
     },
     {
