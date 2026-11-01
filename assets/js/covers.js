@@ -12,6 +12,73 @@
     img.onerror = () => {}; // Missing artwork? Leave the elegant original layout.
     img.src = path;
   };
+
+  // The whole moon-cycle is ornamental: it never locks chapters or stores data.
+  const moonIcons = [];
+  const moonNamespace = 'http://www.w3.org/2000/svg';
+  const moonElement = (name, attributes={}) => {
+    const e = document.createElementNS(moonNamespace, name);
+    Object.entries(attributes).forEach(([key,val]) => e.setAttribute(key,String(val)));
+    return e;
+  };
+  const attachMoon = card => {
+    if (card.querySelector('.moon-phase-ornament')) return;
+    const ornament = document.createElement('span');
+    ornament.className = 'moon-phase-ornament';
+    ornament.setAttribute('aria-hidden','true');
+    const svg = moonElement('svg',{viewBox:'0 0 100 100',focusable:'false'});
+    const dark = moonElement('circle',{cx:50,cy:50,r:39,fill:'#2b2837',stroke:'#85765f','stroke-width':1.1});
+    const lit = moonElement('path',{fill:'#f0dfbd'});
+    const rim = moonElement('circle',{cx:50,cy:50,r:39,fill:'none',stroke:'#d5ba88','stroke-opacity':'.55','stroke-width':'.8'});
+    svg.append(dark,lit,rim);
+    const caption = document.createElement('span');
+    caption.className = 'moon-cycle-caption';
+    caption.textContent = '☾ 月相';
+    ornament.append(svg,caption);
+    card.append(ornament);
+    moonIcons.push(lit);
+    drawMoonPhase(lit,.14);
+    startMoonCycle();
+  };
+  function drawMoonPhase(path, phase) {
+    const radius=39, steps=44, wave=Math.cos(phase*2*Math.PI);
+    const waxing=phase < .5;
+    const points=[];
+    const xAt=(i,part)=>{
+      const y=-1+2*i/steps;
+      const half=Math.sqrt(Math.max(0,1-y*y))*radius;
+      const edge=part==='right'?half:-half;
+      const terminator=half*wave;
+      return [50+(part==='term'?terminator:edge),50+y*radius];
+    };
+    if(waxing) {
+      for(let i=0;i<=steps;i++)points.push(xAt(i,'right'));
+      for(let i=steps;i>=0;i--)points.push(xAt(i,'term'));
+    } else {
+      for(let i=0;i<=steps;i++)points.push(xAt(i,'term'));
+      for(let i=steps;i>=0;i--)points.push(xAt(i,'left'));
+    }
+    path.setAttribute('d',points.map(([x,y],i)=>(i?'L':'M')+x.toFixed(2)+' '+y.toFixed(2)).join(' ')+' Z');
+  }
+  let moonLoopStarted=false;
+  function startMoonCycle() {
+    if(moonLoopStarted)return;
+    moonLoopStarted=true;
+    if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    const start=performance.now();
+    let last=-Infinity;
+    function tick(now){
+      if(now-last>=45) {
+        // Starts as a waxing crescent, grows to full, wanes back to new.
+        const phase=((now-start)/20000+.14)%1;
+        for(const icon of moonIcons)drawMoonPhase(icon,phase);
+        last=now;
+      }
+      window.requestAnimationFrame(tick);
+    }
+    window.requestAnimationFrame(tick);
+  }
+
   const applyCover = (card, path) => {
     if (!card || !path) return;
     preload(path, img => {
@@ -20,6 +87,7 @@
       img.loading = 'lazy';
       card.prepend(img);
       card.classList.add('with-cover');
+      attachMoon(card);
     });
   };
   const applyHero = path => {

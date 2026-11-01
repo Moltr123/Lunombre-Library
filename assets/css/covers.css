@@ -16,3 +16,134 @@ body.night .reader-art img{border-color:#746b80}
 .cover.with-official-art .seal{display:none}
 @media(max-width:700px){.reader-art{width:min(195px,65vw)}}
 @media print{.reader-art{width:145px;break-inside:avoid}.reader-art img{box-shadow:none}}
+
+
+/* Moonlit miniature-book layout: artwork is a complete 2:3 print, not a
+   cropped full-bleed background. The right column is reserved for moonlight. */
+.volume-card.with-cover{
+  min-height:348px;
+  padding:17px 17px 16px;
+  background:radial-gradient(ellipse at 82% 25%,#29273b 0%,#191b2c 38%,#11131f 90%);
+  border-color:rgba(221,202,173,.5);
+  box-shadow:inset 0 0 0 1px rgba(17,18,31,.2);
+}
+.volume-card.with-cover .volume-cover-image{
+  inset:auto;
+  top:14px;
+  left:13px;
+  height:calc(100% - 133px);
+  width:auto;
+  max-width:calc(100% - 88px);
+  aspect-ratio:2/3;
+  object-fit:contain;
+  object-position:top left;
+  z-index:1;
+  border:1px solid rgba(226,206,171,.48);
+  box-shadow:0 10px 23px rgba(0,0,0,.38);
+  background:#171827;
+}
+.volume-card.with-cover:before{
+  z-index:2;
+  background:linear-gradient(180deg,rgba(12,13,25,0) 0%,rgba(12,13,25,0) 59%,#141625 66%,#10121e 100%);
+  pointer-events:none;
+}
+.volume-card.with-cover:after{
+  content:"";
+  position:absolute;
+  right:82px;
+  top:19px;
+  bottom:130px;
+  width:1px;
+  background:linear-gradient(180deg,transparent,rgba(213,193,156,.26) 36%,rgba(213,193,156,.16) 72%,transparent);
+  z-index:2;
+  pointer-events:none;
+}
+.volume-card.with-cover > span{position:relative;z-index:3;text-shadow:none}
+.volume-card.with-cover .vol-index{
+  position:absolute;
+  top:18px;
+  right:10px;
+  width:63px;
+  display:block;
+  text-align:center;
+  letter-spacing:.12em;
+  font-size:9px;
+  line-height:1.9;
+  color:#d9c9b1;
+}
+.volume-card.with-cover .vol-index .tiny-rule{display:block;width:24px;margin:5px auto 1px;background:rgba(218,194,165,.4)}
+.volume-card.with-cover .vol-symbol{display:none}
+.volume-card.with-cover .vol-name{
+  margin-top:auto;
+  font-size:21px;
+  line-height:1.35;
+  color:#f2e6db;
+}
+.volume-card.with-cover .vol-detail{
+  font-size:11px;
+  margin-top:7px;
+  line-height:1.5;
+  color:#b5afbc;
+}
+.volume-card.with-cover .vol-action{
+  margin-top:12px;
+  padding-top:12px;
+  color:#e9cfaa;
+  border-top:1px solid rgba(218,198,172,.25);
+}
+.moon-phase-ornament{
+  position:absolute;
+  top:78px;
+  right:17px;
+  width:52px;
+  height:86px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:9px;
+  z-index:3;
+  pointer-events:none;
+}
+.moon-phase-ornament svg{
+  display:block;
+  width:52px;
+  height:52px;
+  overflow:visible;
+  filter:drop-shadow(0 0 9px rgba(232,204,151,.2));
+}
+.moon-phase-ornament .moon-cycle-caption{
+  font:8px/1.6 Georgia,serif;
+  color:#b7a98e;
+  letter-spacing:.13em;
+  white-space:nowrap;
+  opacity:.85;
+}
+@media(max-width:960px){
+  .volume-card.with-cover .volume-cover-image{max-width:calc(100% - 81px)}
+  .volume-card.with-cover:after{right:75px}
+  .moon-phase-ornament{right:12px}
+}
+@media(max-width:700px){
+  .volume-card.with-cover{min-height:290px;padding:12px}
+  .volume-card.with-cover .volume-cover-image{
+    top:11px;left:10px;height:calc(100% - 133px);
+    max-width:calc(100% - 64px)
+  }
+  .volume-card.with-cover:after{right:49px;top:12px;bottom:124px}
+  .volume-card.with-cover .vol-index{top:12px;right:3px;width:45px;font-size:7px;letter-spacing:.06em}
+  .volume-card.with-cover .vol-index .tiny-rule{width:19px;margin:4px auto}
+  .volume-card.with-cover .vol-name{font-size:16px;line-height:1.42}
+  .volume-card.with-cover .vol-detail{font-size:10px;line-height:1.35;margin-top:4px}
+  .volume-card.with-cover .vol-action{font-size:10px;margin-top:9px;padding-top:9px}
+  .moon-phase-ornament{top:75px;right:8px;width:38px;height:62px;gap:5px}
+  .moon-phase-ornament svg{height:37px;width:37px}
+  .moon-phase-ornament .moon-cycle-caption{font-size:6px;letter-spacing:0}
+}
+@media(max-width:370px){
+  .volume-card.with-cover{min-height:275px;padding:9px}
+  .volume-card.with-cover .volume-cover-image{left:7px;top:9px;max-width:calc(100% - 59px)}
+  .volume-card.with-cover .vol-index{right:1px}
+  .volume-card.with-cover .vol-name{font-size:15px}
+  .moon-phase-ornament{right:5px}
+}
+@media(prefers-reduced-motion:reduce){.moon-phase-ornament{transition:none}}
