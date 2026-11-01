@@ -48,7 +48,7 @@
       const y=-1+2*i/steps;
       const half=Math.sqrt(Math.max(0,1-y*y))*radius;
       const edge=part==='right'?half:-half;
-      const terminator=half*wave;
+      const terminator=half*(waxing?wave:-wave);
       return [50+(part==='term'?terminator:edge),50+y*radius];
     };
     if(waxing) {
