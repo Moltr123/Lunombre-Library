@@ -6,73 +6,122 @@
       "number": 1,
       "status": "published",
       "title": "第一卷《名》",
-      "path": "volume-01.html"
+      "path": "volume-01.html",
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 2,
       "status": "unreleased",
       "title": "第二卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 3,
       "status": "unreleased",
       "title": "第三卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 4,
       "status": "unreleased",
       "title": "第四卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 5,
       "status": "unreleased",
       "title": "第五卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 6,
       "status": "unreleased",
       "title": "第六卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 7,
       "status": "unreleased",
       "title": "第七卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 8,
       "status": "unreleased",
       "title": "第八卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 9,
       "status": "unreleased",
       "title": "第九卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 10,
       "status": "unreleased",
       "title": "第十卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 11,
       "status": "unreleased",
       "title": "第十一卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     },
     {
       "number": 12,
       "status": "unreleased",
       "title": "第十二卷",
-      "path": null
+      "path": null,
+      "cover_image": null,
+      "hero_image": null,
+      "cover_revealed": false,
+      "special_covers": []
     }
-  ]
+  ],
+  "featured_volume": 1
 }

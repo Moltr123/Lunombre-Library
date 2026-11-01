@@ -35,3 +35,11 @@
 - 更新首页同一卷的书架卡片，使其指向新文件；将 `volumes.json` 的状态改为 `published`。
 - 改完本地文件后，仍需将文件部署到网站托管服务，网页才会在线更新。未经授权，聊天中的小说写作不会自动同步到公开网站。
 - 这个网站是静态内容，浏览记录只保存在浏览器本地，不会上传到后台服务器。
+
+## 正式封面支持（2026-11-01）
+
+- `assets/js/covers.js`：读取 `volumes.json`，仅在已有正式封面时显示相应图片；不存在时保留原有月影设计。
+- `assets/css/covers.css`：首页主视觉、书架封面卡片和阅读页卷首封面的样式。
+- `assets/covers/README.md`：文件命名、推荐尺寸和后续上传说明。
+- `volumes.json`：每卷可配置 `cover_image`、`hero_image`、`cover_revealed`、`special_covers`；主推卷为 `featured_volume`。
+- 正文完全不改，阅读进度等旧功能保留；未公开的封面默认不显示。
