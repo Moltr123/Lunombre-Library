@@ -20,6 +20,13 @@ main>.cover+h1,main>.cover+h1+h2{display:none}
 main h2[id]{margin-top:2.2em}
 }
 @media(max-width:390px){.top .left a{font-size:11px}.top .tools button,#continue{font-size:10px;padding:5px 4px}.top .tools{gap:3px}}
+/* Desktop reading cleanup: keep sidebar and original reader controls */
+@media(min-width:841px){
+main>.cover+h1,main>.cover+h1+h2{display:none}
+.cover{margin-bottom:26px;padding-bottom:28px}
+.cover h1{margin:.55em 0}
+.cover h2{margin:1.2em 0 .7em}
+}
 </style></head><body data-volume="名"><div id="progress"></div><header class="top"><div class="left"><a href="index.html" title="返回书架">☾ 月影书库</a> · 第一卷《名》</div><div class="tools"><button type="button" id="toc-toggle" aria-controls="chapter-toc" aria-expanded="false">☰ 目录</button><button data-act="down" aria-label="减小字体">A−</button><button data-act="up" aria-label="增大字体">A＋</button><button data-act="theme">夜间/日间</button><a id="continue" href="#top">续读</a></div></header><div id="toc-backdrop" aria-hidden="true"></div><div class="shell"><nav class="sidebar" id="chapter-toc" aria-label="章节目录"><button type="button" id="toc-close" aria-label="关闭目录">✕</button><strong>第一卷《名》 · 目录</strong><a href="#sect-001">序章　一箱送错地方的东西</a>
 <a href="#sect-002">第一章　族长醒来以前</a>
 <a href="#sect-003">第二章　留在纸上的声音</a>
