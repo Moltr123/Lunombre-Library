@@ -103,7 +103,7 @@
     const items = volumes
       .filter(v => v && v.status === 'published' && Number.isInteger(Number(v.number))
         && /^volume-\d{2}\.html$/.test(v.path || '')
-        && (permittedPath(v.hero_image) || permittedPath(v.cover_image)))
+        )
       .sort((a,b) => Number(a.number)-Number(b.number));
     if (!items.length) return;
     const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -120,8 +120,21 @@
 
     const paint = () => {
       const item = items[index];
-      image.src = coverFor(item);
-      image.alt = item.title + '正式封面';
+      const coverPath = coverFor(item);
+      if (coverPath) {
+        image.src = coverPath;
+        image.alt = item.title + '正式封面';
+        image.style.display = 'block';
+        book.classList.add('has-official-cover');
+      } else {
+        image.removeAttribute('src');
+        image.alt = '';
+        image.style.display = 'none';
+        book.classList.remove('has-official-cover');
+      }
+      const edition = book.querySelector('.book-bottom');
+      const roman = ['I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII'];
+      if (edition) edition.textContent = 'VOL. ' + (roman[Number(item.number)-1] || item.number);
       link.href = item.path;
       label.textContent = '阅读' + item.title;
       link.setAttribute('aria-label','阅读'+item.title);
