@@ -1,6 +1,6 @@
 {
   "book": "月影书库的第零页",
-  "last_site_update": "2026-11-01",
+  "last_site_update": "2026-11-03",
   "volumes": [
     {
       "number": 1,
@@ -24,9 +24,9 @@
     },
     {
       "number": 3,
-      "status": "unreleased",
-      "title": "第三卷",
-      "path": null,
+      "status": "published",
+      "title": "第三卷《承》",
+      "path": "volume-03.html",
       "cover_image": null,
       "hero_image": null,
       "cover_revealed": false,
@@ -123,6 +123,6 @@
       "special_covers": []
     }
   ],
-  "featured_volume": 2,
+  "featured_volume": 3,
   "featured_mode": "latest-published"
 }
