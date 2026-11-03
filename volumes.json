@@ -27,9 +27,9 @@
       "status": "published",
       "title": "第三卷《承》",
       "path": "volume-03.html",
-      "cover_image": null,
+      "cover_image": "assets/covers/vol-03.webp",
       "hero_image": null,
-      "cover_revealed": false,
+      "cover_revealed": true,
       "special_covers": []
     },
     {
