@@ -199,7 +199,7 @@
       // Volume 00 precedes Volume 01, so index + 1 would shift every cover.
       document.querySelectorAll('.volume-card').forEach(card => {
         const href = card.getAttribute('href') || '';
-        const cardMatch = href.match(/^volume-(\\d{2})\\.html$/);
+        const cardMatch = href.match(/^volume-(\d{2})\.html$/);
         if (!cardMatch) return;
         const item = byNumber.get(Number(cardMatch[1]));
         if (!item) return;
