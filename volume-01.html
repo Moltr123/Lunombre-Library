@@ -1,83 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>月影书库的第零页 · 第一卷《名》</title><style>
-:root{color-scheme:light;--bg:#f7f4ee;--ink:#292b31;--accent:#6c597a;--sub:#6a6870;--card:#fffdf8;--line:#ded9d3;--font:19px}body.dark{color-scheme:dark;--bg:#151820;--ink:#e8e1df;--accent:#c3a7d2;--sub:#a9a2a7;--card:#1b202a;--line:#383944}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:var(--font)/1.96 Georgia,'Noto Serif CJK SC','Source Han Serif SC','Songti SC',serif}button,a{font-family:system-ui,sans-serif}a{color:var(--accent)}.top{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 20px;font:13px system-ui}.top .left a{text-decoration:none;color:var(--ink);font-weight:600;white-space:nowrap}.top .tools{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.top button{background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:7px;cursor:pointer;padding:6px 9px}#progress{position:fixed;left:0;top:0;height:3px;background:var(--accent);z-index:12;width:0}.shell{display:grid;grid-template-columns:240px minmax(0,780px);gap:40px;max-width:1110px;margin:0 auto;padding:35px 25px 100px}.sidebar{position:sticky;top:70px;height:calc(100vh - 90px);overflow:auto;border-right:1px solid var(--line);padding-right:18px;font:12px/1.65 system-ui}.sidebar a{display:block;text-decoration:none;margin:6px 0;color:var(--sub)}.sidebar a:hover{color:var(--accent)}.sidebar strong{display:block;margin:10px 0 14px;font-size:13px;color:var(--ink)}main{min-width:0;padding:4px 0 100px}main h1,main h2,main h3,main h4{font-family:Georgia,'Noto Serif CJK SC','Source Han Serif SC',serif;font-weight:500;line-height:1.45;letter-spacing:.05em}main h1{font-size:1.8em;text-align:center;margin:2em 0 .6em;color:var(--accent)}main h2{font-size:1.3em;margin:3.7em 0 1.3em;padding-bottom:.6em;border-bottom:1px solid var(--line);scroll-margin-top:80px}main h3{font-size:1.12em;margin:2.8em 0 1.2em;scroll-margin-top:80px}main p{margin:0 0 1.2em;text-align:justify;overflow-wrap:anywhere}main blockquote{border-left:3px solid var(--accent);margin:1.5em 0;padding:0 1em;color:var(--sub)}main blockquote p{margin:0}main hr{border:0;border-top:1px solid var(--line);margin:3em 0}main em{color:var(--sub)}main li{margin:.6em 0}main strong{font-weight:650}.tag{font:12px system-ui;color:var(--sub);text-align:center}.cover{border-bottom:1px solid var(--line);margin:0 auto 60px;padding:6px 0 50px;text-align:center}.cover h1{margin:.8em 0}.cover p{color:var(--sub);font-size:.8em}#continue{border:1px solid var(--line);color:var(--ink);padding:6px 10px;border-radius:7px;text-decoration:none;font:13px system-ui;margin:10px auto;display:inline-block}a[data-target]{scroll-margin-top:80px}@media(max-width:840px){.shell{display:block;padding:24px 18px}.sidebar{display:none;position:fixed;top:0;left:0;bottom:0;width:min(86vw,340px);height:100dvh;z-index:30;overflow-y:auto;background:var(--card);border-right:1px solid var(--line);padding:64px 22px 30px;box-shadow:8px 0 28px #0004}.sidebar.mobile-open{display:block}body.menu-open{overflow:hidden}main h2{margin-top:3em}.top{padding:8px 10px}.top .left{font-size:12px}.top .tools button{padding:5px 7px}body{line-height:1.86}}@media print{.top,#progress,.sidebar{display:none}.shell{display:block;max-width:none}.cover{break-after:page}main h2{break-before:page}body{background:white;color:black}}@media(min-width:841px){#toc-toggle,#toc-close,#toc-backdrop{display:none!important}}#toc-toggle,#toc-close{background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:6px 9px;cursor:pointer}#toc-toggle{display:none}#toc-close{position:absolute;right:14px;top:12px}#toc-backdrop{display:none;position:fixed;inset:0;background:#0009;z-index:25}@media(max-width:840px){#toc-toggle{display:inline-flex;align-items:center;justify-content:center}.top{flex-wrap:wrap}.top .left{white-space:normal}.top .tools{margin-left:auto}.top .tools{justify-content:flex-end}#toc-backdrop.mobile-open{display:block}}@media(max-width:420px){.top .left{max-width:100%;font-size:11px}.top .tools{gap:4px}.top .tools button{padding:5px 6px}}/* Compact mobile reader layout: preserve desktop and chapter content */
-@media(max-width:840px){
-.top{display:flex;flex-wrap:nowrap;align-items:center;gap:8px;padding:7px 10px;min-height:52px}
-.top .left{flex:0 1 auto;min-width:0;font-size:0;white-space:nowrap;overflow:hidden}
-.top .left a{font-size:12px;letter-spacing:0}
-.top .tools{flex:1 0 auto;min-width:0;margin-left:auto;display:flex;flex-wrap:nowrap;gap:4px;justify-content:flex-end}
-.top .tools button,#continue{font-size:11px;padding:5px 6px;white-space:nowrap;margin:0}
-#toc-toggle{font-size:11px}
-.shell{padding:16px 18px 60px}
-main{padding-bottom:50px}
-.cover{margin:0 auto 24px;padding:12px 0 20px}
-.cover>div:first-child{font-size:2em!important;line-height:1.2}
-.cover h1{font-size:1.45em;margin:.35em 0}
-.cover h2{font-size:1.12em;margin:.5em 0 .7em;padding-bottom:.4em}
-.cover p{margin:.6em 0}
-.cover>a{display:inline-block;margin:.5em 0}
-main>.cover+h1,main>.cover+h1+h2{display:none}
-main h2[id]{margin-top:2.2em}
-}
-@media(max-width:390px){.top .left a{font-size:11px}.top .tools button,#continue{font-size:10px;padding:5px 4px}.top .tools{gap:3px}}
-/* Desktop reading cleanup: keep sidebar and original reader controls */
-@media(min-width:841px){
-main>.cover+h1,main>.cover+h1+h2{display:none}
-.cover{margin-bottom:26px;padding-bottom:28px}
-.cover h1{margin:.55em 0}
-.cover h2{margin:1.2em 0 .7em}
-}
-/* Book-style desktop contents: a real contents page, not a fixed rail */
-@media(min-width:841px){
-.shell{display:flex;flex-direction:column;max-width:860px;gap:0;padding:35px 25px 100px}
-.sidebar{position:static;height:auto;overflow:visible;border-right:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:34px 40px;margin:0 0 48px;font:14px/1.8 Georgia,'Noto Serif CJK SC','Songti SC',serif}
-.sidebar strong{text-align:center;font:normal 1.6em/1.6 Georgia,'Noto Serif CJK SC','Songti SC',serif;margin:0 0 26px}
-.sidebar a{display:flex;justify-content:space-between;gap:18px;margin:0;padding:9px 4px;border-bottom:1px dotted var(--line);font:inherit;color:var(--ink)}
-.sidebar a:last-child{border-bottom:0}
-.sidebar a:hover{color:var(--accent)}
-.sidebar a::after{content:attr(data-page);color:var(--sub);font-family:Georgia,serif;white-space:nowrap}
-main{width:100%;max-width:780px;margin:0 auto}
-}
-@media(min-width:841px){.cover{max-width:780px}.sidebar{max-width:780px;width:100%;margin:30px auto 60px;text-align:left}.sidebar strong{display:block;text-align:center}.sidebar a{display:block}.shell{display:block;max-width:860px}.sidebar #toc-close{display:none}}
-/* One divider between title page and contents */
-@media(min-width:841px){.cover{border-bottom:0!important;margin-bottom:0!important;padding-bottom:0!important}.sidebar{border-top:1px solid var(--line)!important;border-bottom:0!important;margin-top:20px!important;padding-top:28px!important}}
-@media(max-width:840px){.cover{border-bottom:0!important}.sidebar{border-top:0!important}}
-/* Official book cover between title page and contents */
-.book-cover-plate{width:min(270px,65vw);margin:24px auto 30px;text-align:center;line-height:0}
-.book-cover-plate img{display:block;width:100%;height:auto;aspect-ratio:2/3;object-fit:contain;border:1px solid var(--line);box-shadow:0 12px 30px #0002}
-.book-cover-pending{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;aspect-ratio:2/3;line-height:1.5;border:1px solid var(--line);color:var(--sub);background:var(--card);font-size:17px}
-.book-cover-pending small{font-size:12px}
-@media(min-width:841px){.cover{border-bottom:1px solid var(--line)!important;margin-bottom:0!important;padding-bottom:18px!important}.sidebar{border-top:1px solid var(--line)!important;margin-top:0!important}}
-@media(max-width:840px){.book-cover-plate{width:min(180px,55vw);margin:14px auto 20px}.book-cover-pending{font-size:14px}}
-</style></head><body data-volume="名"><div id="progress"></div><header class="top"><div class="left"><a href="index.html" title="返回书架">☾ 月影书库</a> · 第一卷《名》</div><div class="tools"><button type="button" id="toc-toggle" aria-controls="chapter-toc" aria-expanded="false">☰ 目录</button><button data-act="down" aria-label="减小字体">A−</button><button data-act="up" aria-label="增大字体">A＋</button><button data-act="theme">夜间/日间</button><a id="continue" href="#top">续读</a></div></header><div id="toc-backdrop" aria-hidden="true"></div><div class="shell"><main><div class="cover" id="top"><div style="font-size:3em;color:var(--accent)">☾</div><h1>月影书库的第零页</h1><h2>第一卷《名》</h2></div><figure class="book-cover-plate"><img src="assets/covers/vol-01.webp" alt="第一卷正式封面" loading="lazy" decoding="async"></figure><nav class="sidebar" id="chapter-toc" aria-label="章节目录"><button type="button" id="toc-close" aria-label="关闭目录">✕</button><strong>第一卷《名》 · 目录</strong><a href="#sect-001">序章　一箱送错地方的东西</a>
-<a href="#sect-002">第一章　族长醒来以前</a>
-<a href="#sect-003">第二章　留在纸上的声音</a>
-<a href="#sect-004">第三章　第零页</a>
-<a href="#sect-005">第四章　他没有买下那本书</a>
-<a href="#sect-006">第五章　缄灯巷的晚饭</a>
-<a href="#sect-007">第六章　送信的人</a>
-<a href="#sect-008">第七章　提前送到的回信</a>
-<a href="#sect-009">第八章　旧字表上的煤灰</a>
-<a href="#sect-010">第九章　没有说完的话</a>
-<a href="#sect-011">第十章　第三盏灯</a>
-<a href="#sect-012">第十一章　两面之间</a>
-<a href="#sect-013">第十二章　寄往北方的副本</a>
-<a href="#sect-014">第十三章　修书匠的最后一页</a>
-<a href="#sect-015">第十四章　灯亮以前的检查</a>
-<a href="#sect-016">第十五章　试读</a>
-<a href="#sect-017">第十六章　一封不谈研究的信</a>
-<a href="#sect-018">第十七章　两处窗户</a>
-<a href="#sect-019">第十八章　自己的那一侧</a>
-<a href="#sect-020">第十九章　留下来的回声</a>
-<a href="#sect-021">第二十章　第零页的余下部分</a>
-<a href="#sect-022">第二十一章　重新结案</a>
-<a href="#sect-023">第二十二章　维恩修书铺</a>
-<a href="#sect-024">第二十三章　写在署名前面</a>
-<a href="#sect-025">第二十四章　明日仍有来客</a>
-<a href="#sect-026">卷后番外 · 月影小姐的蛋糕品食记录（一）　请在蛋糕盒上写名字</a></nav>
-<p><a id="sect-001"></a></p>
-<h2 id="sect-001">序章　一箱送错地方的东西</h2>
-<p>师父让我去月影古堡送货的时候，我先看了一眼自己的鞋。</p>
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="light dark" name="color-scheme"/><title>月影书库的第零页｜第一卷</title><style>
+:root{color-scheme:light;--paper:#f7f3ea;--ink:#302e32;--soft:#766f73;--line:#d9d0c3;--accent:#655874;--panel:#eee8dd;--font:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","SimSun",serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}button{font:inherit;cursor:pointer;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:5px;padding:6px 10px}button:hover,a:hover{color:var(--accent)}.toolbar{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px max(20px,calc((100vw - 940px)/2));background:var(--paper);border-bottom:1px solid var(--line);font:14px/1.4 system-ui,sans-serif}.toolbar-name{font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}.tools{display:flex;align-items:center;gap:7px;flex-shrink:0}.tools>a{padding:6px 5px}.progress{position:absolute;bottom:-1px;left:0;height:2px;background:var(--accent);width:0;transition:width .15s}.cover{max-width:900px;min-height:74vh;margin:auto;padding:95px 32px 80px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.seal{width:74px;height:74px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font-size:38px;color:var(--accent);margin:0 0 35px}.eyebrow{font:12px/1.7 system-ui,sans-serif;letter-spacing:.34em;color:var(--soft)}h1{font-size:clamp(32px,5.5vw,55px);font-weight:500;line-height:1.6;letter-spacing:.1em;margin:18px 0 21px}.subtitle{color:var(--soft);font-size:16px;letter-spacing:.18em;margin:0}.cover-rule{width:46px;border-top:1px solid var(--accent);margin:34px 0}.meta{font:13px/1.8 system-ui,sans-serif;color:var(--soft);letter-spacing:.04em}.start{display:inline-block;border-bottom:1px solid var(--accent);margin-top:34px;padding:4px 2px;font-size:16px}.resume{display:none;margin-top:16px;font:13px system-ui,sans-serif;color:var(--soft)}.contents{max-width:820px;margin:0 auto;padding:45px 30px 65px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.contents h2{font-weight:400;font-size:27px;letter-spacing:.25em;margin:0 0 28px}.contents ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:35px}.contents li{border-bottom:1px solid var(--line)}.contents a{display:flex;gap:15px;align-items:baseline;padding:13px 0;font-size:16px;line-height:1.7}.toc-no{color:var(--soft);font:11px system-ui,sans-serif;min-width:20px;font-variant-numeric:tabular-nums}.chapter{max-width:760px;margin:auto;padding:80px 32px 0;scroll-margin-top:10px}.chapter-head{margin:0 0 48px}.chapter-no{font:12px/1.6 system-ui,sans-serif;letter-spacing:.22em;color:var(--soft);margin-bottom:13px}.chapter h2{font-size:clamp(27px,4vw,36px);font-weight:500;line-height:1.6;letter-spacing:.05em;margin:0}.prose{font-size:var(--font);line-height:2.04;letter-spacing:.035em;overflow-wrap:anywhere}.prose p{margin:0 0 1.05em}.prose strong{font-weight:600}.prose em{font-style:normal}.prose blockquote{margin:28px 0 34px;padding:18px 24px;border-left:2px solid var(--accent);background:var(--panel);font-size:.94em}.prose blockquote p:last-child{margin-bottom:0}.scene{margin:48px auto;width:34px;border:0;border-top:1px solid var(--line)}.original-scene{width:auto;border:0;text-align:center;color:var(--soft);font-size:15px;letter-spacing:.3em}.chapter-nav{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:50px;padding:18px 0;display:flex;justify-content:space-between;font:13px/1.5 system-ui,sans-serif;color:var(--soft);gap:12px}.colophon{max-width:760px;margin:70px auto 0;padding:40px 32px 100px;text-align:center;color:var(--soft);font:13px/1.9 system-ui,sans-serif}.colophon .fin{font-family:inherit;font-size:24px;color:var(--ink);letter-spacing:.25em;margin-bottom:16px}body.night{color-scheme:dark;--paper:#1f2025;--ink:#dedbd5;--soft:#aaa5b1;--line:#41404a;--accent:#b5a6cf;--panel:#292a31}@media(max-width:600px){.toolbar{padding:10px 14px;gap:8px}.toolbar-name{font-size:12px;max-width:42vw}.tools{gap:5px}.tools button{padding:5px 7px;font-size:12px}.tools>a{font-size:12px}.cover{min-height:70vh;padding:68px 22px}.cover h1{letter-spacing:.06em}.contents{margin:0 22px;padding:35px 0}.contents ol{grid-template-columns:1fr}.contents a{padding:11px 0}.chapter{padding:60px 23px 0}.chapter-head{margin-bottom:35px}.prose{font-size:calc(var(--font) - 1px);line-height:1.98;letter-spacing:.025em}.prose blockquote{padding:15px 18px}.chapter-nav{margin-top:35px}.colophon{padding-bottom:60px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.progress{transition:none}}@media print{.toolbar,.chapter-nav,.start,.resume{display:none!important}:root,body.night{--paper:#fff;--ink:#000;--soft:#555;--line:#aaa;--accent:#555;--panel:#f8f8f8}body{background:white}.cover{min-height:85vh;break-after:page}.contents{border:0;break-after:page}.contents ol{grid-template-columns:1fr 1fr}.contents a{font-size:11pt;padding:5px 0}.chapter{max-width:none;padding:0;break-before:page}.chapter-head{margin:0 0 22pt}.chapter h2{font-size:22pt}.prose{font-size:11.5pt;line-height:1.85}.prose p{orphans:3;widows:3;margin-bottom:9pt}.prose blockquote{break-inside:avoid}.colophon{break-before:page}.scene{margin:25pt auto}@page{size:A5;margin:19mm 16mm}}
+</style></head><body>
+<div class="toolbar"><span class="toolbar-name" id="current-title">月影书库的第零页</span><div class="tools"><a href="#contents">目录</a><button aria-label="减小字号" id="smaller">A−</button><button aria-label="增大字号" id="larger">A＋</button><button aria-label="切换日间与夜间" id="theme">夜间</button></div><div aria-hidden="true" class="progress"></div></div>
+<header class="cover" id="cover"><div aria-hidden="true" class="seal">☾</div><div class="eyebrow">第一卷 · 三次修订完成版</div><h1>月影书库的第零页</h1><p class="subtitle">露米艾尔·德·月影</p><div class="cover-rule"></div><div class="meta">余烬历二九九九年 · 序章＋二十四章＋卷后蛋糕品食记录 · 设定兼容修订完成</div><a class="start" href="#ch-00">开始阅读 →</a><a class="resume" href="#contents" id="resume">继续阅读</a></header>
+<nav aria-label="全卷目录" class="contents" id="contents"><h2>目录</h2><ol><li><a href="#ch-00"><span class="toc-no">序</span><span>一箱送错地方的东西</span></a></li><li><a href="#ch-01"><span class="toc-no">01</span><span>族长醒来以前</span></a></li><li><a href="#ch-02"><span class="toc-no">02</span><span>留在纸上的声音</span></a></li><li><a href="#ch-03"><span class="toc-no">03</span><span>第零页</span></a></li><li><a href="#ch-04"><span class="toc-no">04</span><span>他没有买下那本书</span></a></li><li><a href="#ch-05"><span class="toc-no">05</span><span>缄灯巷的晚饭</span></a></li><li><a href="#ch-06"><span class="toc-no">06</span><span>送信的人</span></a></li><li><a href="#ch-07"><span class="toc-no">07</span><span>提前送到的回信</span></a></li><li><a href="#ch-08"><span class="toc-no">08</span><span>旧字表上的煤灰</span></a></li><li><a href="#ch-09"><span class="toc-no">09</span><span>没有说完的话</span></a></li><li><a href="#ch-10"><span class="toc-no">10</span><span>第三盏灯</span></a></li><li><a href="#ch-11"><span class="toc-no">11</span><span>两面之间</span></a></li><li><a href="#ch-12"><span class="toc-no">12</span><span>寄往北方的副本</span></a></li><li><a href="#ch-13"><span class="toc-no">13</span><span>修书匠的最后一页</span></a></li><li><a href="#ch-14"><span class="toc-no">14</span><span>灯亮以前的检查</span></a></li><li><a href="#ch-15"><span class="toc-no">15</span><span>试读</span></a></li><li><a href="#ch-16"><span class="toc-no">16</span><span>一封不谈研究的信</span></a></li><li><a href="#ch-17"><span class="toc-no">17</span><span>两处窗户</span></a></li><li><a href="#ch-18"><span class="toc-no">18</span><span>自己的那一侧</span></a></li><li><a href="#ch-19"><span class="toc-no">19</span><span>留下来的回声</span></a></li><li><a href="#ch-20"><span class="toc-no">20</span><span>第零页的余下部分</span></a></li><li><a href="#ch-21"><span class="toc-no">21</span><span>重新结案</span></a></li><li><a href="#ch-22"><span class="toc-no">22</span><span>维恩修书铺</span></a></li><li><a href="#ch-23"><span class="toc-no">23</span><span>写在署名前面</span></a></li><li><a href="#ch-24"><span class="toc-no">24</span><span>明日仍有来客</span></a></li><li><a href="#ch-cake"><span class="toc-no">番外</span><span>请在蛋糕盒上写名字</span></a></li></ol></nav>
+<main><section class="chapter" data-title="序章｜一箱送错地方的东西" id="ch-00"><header class="chapter-head"><div class="chapter-no">序章</div><h2>一箱送错地方的东西</h2></header><div class="prose"><p>师父让我去月影古堡送货的时候，我先看了一眼自己的鞋。</p>
 <p>左边鞋头昨天才开了线。我用修帆的粗线缝过，针脚歪得厉害，站直时还不明显，一蹲下就像咧着嘴。</p>
 <p>「送完货就回来，」师父说，「不是让你去参加晚宴。」</p>
 <p>我把脚往工作台底下收了收。</p>
@@ -87,22 +17,22 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他拿刨子敲了敲木箱。</p>
 <p>「先把东西放稳。」</p>
 <p>后来我才知道，这是他那天说得最有用的一句话。</p>
-<hr/>
-<p>那是秋月十二日，湖港还没换上冬季的船班。</p>
+<hr aria-label="分场" class="scene"/>
+<p>那是九月过后的秋月十二日，湖港还没换上冬季的船班。</p>
 <p>城里正在准备留灯夜。秋收后的第一个月圆夜，人们会在门边点一盏小灯，旁边写一个想记住的名字。师父前两天替糕点铺修了一架挂灯的木架，老板娘特地让他把木牌的边角磨平。她说，写在上面的名字不一定属于还活着的人。</p>
 <p>我以前问过，灯能不能让走远的人回来。师父说不能。那我又问，为什么还要点。他把木屑从袖口拍掉，说你以后就知道了。</p>
-<p>我在维斯佩拉住了十九年，第一次走过银镜湖上的南桥。</p>
+<p>我在维斯佩拉住了十九年，第一次跟着货车登上横渡银镜湖的客货船。</p>
 <p>以前从湖港抬头，总能看见对岸那座城堡。晴天时，黑色石墙像是从湖里长出来的，尖塔的影子拖得很远；起雾的时候，底下的岩岸看不见，只剩几扇窗悬在白茫茫的水上。</p>
 <p>城里人说起那里，通常就说月影家。</p>
 <p>给街坊签减租文书的是月影，冬天给教养院送煤的也是月影。不过卖鱼的婶婶说，港口的税要问市政厅，不能什么都怪到湖对岸。我没弄懂过这些，只知道这趟货必须送进城堡，不能像平常那样卸在码头。</p>
 <p>出发时，西站的货车正好进城。栏杆放下，蒸汽从车轮下面喷出来，两个搬运工隔着白雾争论今晚的球赛。我抱着交付单站在车旁，等了好一会儿，才看见最后一节货厢过去。</p>
-<p>我家在车站南面的租屋里，楼下的洗衣房一到傍晚就往外冒热气。这里却只有湖风。两边的路明明不到半天车程，气味已经完全不同。</p>
-<p>车夫在桥头收住马，让我拿交付单去登记。</p>
+<p>我家在车站南面的租屋里，楼下的洗衣房一到傍晚就往外冒热气。这里却只有湖风。船从南岸开出时天还早，等北岸的山影压到船舷，已经过了午后。车轮一路没离开过甲板，气味却早已完全不同。</p>
+<p>车夫在北岸的城堡外门前收住马，让我拿交付单去登记。</p>
 <p>守卫没有检查我的鞋。</p>
 <p>他问了木匠铺的名字，又指着纸上空着的一行。</p>
 <p>「送货人？」</p>
 <p>「尤恩。」</p>
-<p>「名字写这儿。回去还走原路，西边修排水，车过不去。」</p>
+<p>「自己写在这里。回程先去渡口确认船班，西边正在修排水，不通车。」</p>
 <p>我认真写好名字，接过一块木牌。守卫把门让开，顺手替马抹掉了挂在鬃上的一根草。</p>
 <p>和我想象得不太一样。</p>
 <p>门后没有穿黑甲的骑士站满两边，先看见的是一辆装着卷心菜的车。有人正在卸筐，一只花猫卧在空麻袋上，对我们连眼皮都没抬。</p>
@@ -123,8 +53,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>是工坊替学院做的手摇示范件，用来讲齿轮与链斗。它提不了湖港蒸汽泵那么多水，轮子却露在外面，学生能看清每一步怎么动。</p>
 <p>我看得很清楚。</p>
 <p>也看清了自己究竟把什么东西送错了地方。</p>
-<hr/>
-<p>车夫还有一趟活，要去湖港接人。他留下车行的名字，答应过一会儿再来，临走前拍了拍我的肩。</p>
+<hr aria-label="分场" class="scene"/>
+<p>车夫还要去北岸渡口接一批货。他留下车行的名字，答应办完再回来；若错过末班船，便只能等明早。临走前，他拍了拍我的肩。</p>
 <p>「先核对，别急。」</p>
 <p>我当然想不急。</p>
 <p>可是提水机最外面的支脚歪了，一小截木销卡在垫布里。我认得那根木销，最后装箱时是我敲进去的。</p>
@@ -136,7 +66,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「装好支脚以后呢？」</p>
 <p>我没出声。</p>
 <p>她抬头看了我一眼，没有继续追问。</p>
-<p>「先垫住外头！别转，轴没卡稳会滑。」</p>
+<p>「先把外侧垫住。别转，轴可能会滑。」</p>
 <p>我赶紧去扶。</p>
 <p>这时，一个戴单片眼镜的老人从回廊另一头过来。深色外衣整整齐齐，手里拿着几页纸。女仆站起身，叫了他一声埃德蒙先生。</p>
 <p>「学院那边回话了？」他问。</p>
@@ -154,7 +84,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「那这一根——」</p>
 <p>「先查完。」</p>
 <p>她语气不重。我却比被师父骂的时候还不敢乱动。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>银发小姐来的时候，我正蹲在地上找一枚掉落的垫圈。</p>
 <p>先看见的是一双浅灰色软鞋，停在散开的垫布旁，没有往里面踩。随后，一只纤细的手伸下来，捡起了掉在裙边的小铜圈。</p>
 <p>「是这个吗？」</p>
@@ -190,13 +120,13 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>我耳朵一下热起来。</p>
 <p>「是我装的。」</p>
 <p>两个人都看向我。</p>
-<p>「轴和轮子是师父查的，最后的支脚是我装的。我怕误了车，就没再转那一遍。」</p>
+<p>「师父检查过轴和轮子，最后的支脚是我装的。我怕赶不上车，没有再转一遍。」</p>
 <p>银发小姐没说话。诺艾拉把断销放到干净布上，又仔细检查了铜轴。</p>
 <p>我等着她们问下一句。</p>
 <p>过了一会儿，诺艾拉说：</p>
 <p>「轴没有弯。换销子，再查有没有磨伤。」</p>
 <p>我这才把一直憋着的气吐出来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>临时用的木料是我削的。</p>
 <p>诺艾拉量好尺寸，让我留出一点余量。我不敢再赶，用小刀一点点修到她认为合适，装进去以后，还主动请她重新检查。</p>
 <p>银发小姐一直替我们托着轴。</p>
@@ -207,14 +137,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>我慢慢摇动曲柄，轮齿依次咬合，细链把空吊桶提了起来。转到最高处时，支脚没有再晃。</p>
 <p>我又转了一圈。</p>
 <p>这回才真的放心。</p>
-<p>埃德蒙先生从外院回来，身后跟着学院的采购员。对方带来两张交付牌，其中一张写着温室苗架，字迹和我箱子上的一模一样。</p>
+<p>埃德蒙先生从外院回来，带来学院采购员经有线报机确认的两份交付记录。其中一份写着温室苗架，字迹与我箱子上的标签所载内容一致。</p>
 <p>工坊出车时，把两张牌挂反了。</p>
 <p>不是我走错路。</p>
 <p>我还没来得及高兴，埃德蒙先生已经看见布上的断销。</p>
 <p>「支脚也确认了？」</p>
 <p>诺艾拉说明经过。我在旁边补了装箱时遗漏的检查，他逐项写下来，问我是否准确。</p>
 <p>银发小姐忽然说：</p>
-<p>「分成两项记吧。货牌挂反是一件事，支脚没装好是另一件。」</p>
+<p>「分开记。货牌挂反，与支脚没装好，不是同一件事。」</p>
 <p>「是，小姐。」</p>
 <p>老人将纸移到她面前。</p>
 <p>「数量核对过了。这一项请您以家族族长的身份签名，从家族给学院的资助里支出，验收再由学院另签。」</p>
@@ -225,14 +155,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>我不认得所有漂亮的连笔，却认得月影。</p>
 <p>她放下笔时，发现我正看着她。</p>
 <p>「怎么了？」</p>
-<p>「您……真是领主大人？」</p>
+<p>「您是……领主大人？」</p>
 <p>「嗯。」</p>
 <p>我立刻松开曲柄，准备站起来行礼。</p>
 <p>提水机轻轻晃了一下。</p>
 <p>「先扶好。」她说。</p>
 <p>我又蹲了回去。</p>
 <p>身旁有人很轻地吸了一口气，像是忍住了笑。我没有勇气看是谁。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>事情办妥以后，我仍要留下来等车夫回来，把提水机送去学院，再拿到最后一份验收。</p>
 <p>诺艾拉问我吃过午饭没有。</p>
 <p>我说吃过。</p>
@@ -267,9 +197,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「所以热的请现在吃。」</p>
 <p>领主低头，继续吃土豆。</p>
 <p>我第一次觉得，站在城堡里面的人，也不一定事事都能自己说了算。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>等车的那段时间，我又知道了一点事情。</p>
-<p>学院采购员看过诺艾拉画的修复图，请她去参加本月工艺晚课的入学测试。她说自己要先看排班，将启事折好放进口袋；领主听见以后，只说想去便提前安排替班，不用等城堡里最后一扇窗也修完。</p>
+<p>诺艾拉的修复图经有线报机说明后，学院采购员在回电里请她参加本月工艺晚课的入学测试。她说自己要先看排班，将启事折好放进口袋；领主听见以后，只说想去便提前安排替班，不用等城堡里最后一扇窗也修完。</p>
 <p>埃德蒙先生带来家信，告诉领主，她父亲仍在西边陪母亲疗养旧伤，哥哥则刚离开领地北部商路的一处驿站。</p>
 <p>她先问母亲有没有好些，听说可以每天到花园走一小段，便把信仔细收进书里。随后才问哥哥是否买到了答应带回来的旅行记。</p>
 <p>「少爷说，若您想要，他会去找。」</p>
@@ -277,10 +207,10 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我会写在回函里。」</p>
 <p>听到这里，我终于明白，月影家并不是只剩这位领主。她父亲还在，哥哥也在外办事，如今这里的文件却由她签。</p>
 <p>我从前跟着别人称呼的“城堡里那一家”，渐渐有了几张能记得的脸。</p>
-<p>学院采购员随后叫我核对签收。说起领主，他告诉我，她二十四岁，接过族长的位置才两年。</p>
+<p>埃德蒙先生随后叫我核对签收。说起领主，他告诉我，她二十四岁，接过族长的位置才两年。</p>
 <p>我原先以为血族都活了很久，至少也该比我们工坊那把传了三代的刨子年长。原来她也不过比我大五岁。</p>
 <p>我把这句话留在心里，没有拿去当面问。</p>
-<p>临走前，又有一位棕红卷发的年轻女子从桥那边过来。她怀里抱着纸，走得很快，先在门口问诺艾拉，露米醒了没有。</p>
+<p>临走前，又有一位棕红卷发的年轻女子从外院那边过来。她怀里抱着纸，走得很快，先在门口问诺艾拉，露米醒了没有。</p>
 <p>领主就在不远处，手里的叉子停了一下。</p>
 <p>「已经醒很久了。」</p>
 <p>女子看见她，笑着走过来。</p>
@@ -290,9 +220,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>领主望着她抱的那一叠纸，没有立刻答应。</p>
 <p>我正替车夫重新盖布，听见诺艾拉叫那位客人艾莉娅小姐，又问要不要添一杯茶。她连忙点头，把纸放到领主旁边，顺手拿走了一小块土豆。</p>
 <p>领主把盘子往自己这边拉近一点，终于翻开了她的抄纸。</p>
-<hr/>
-<p>回程经过南桥，我忍不住回头看了一眼。</p>
-<p>从桥上已经看不见外院了，只能看见高墙与尖塔。湖面起了风，墙脚的倒影碎成一片，和我每天从码头望见的样子差不多。</p>
+<hr aria-label="分场" class="scene"/>
+<p>车夫回来时，北岸渡口已经收了当日最后一班客货船。城堡让我们在外院客房借宿一晚，提水机由库房暂时保管，等次日上船再送去学院。第二天清晨，车轮驶上渡船的跳板，我忍不住回头看了一眼。</p>
+<p>从船上已经看不见外院了，只能看见北岸高处的石墙与尖塔。湖面起了风，远处的城堡渐渐缩进山影，和我每天从南岸码头望见的样子差不多。</p>
 <p>我摸了摸胸前的交付单。</p>
 <p>木销是我没装好，这一项没有因为领主对我和气就被划掉。师父回去肯定要让我重新练，还要替工坊补上一份维修说明。</p>
 <p>但是货没摔，铜轴没坏，送错箱子也查清了。</p>
@@ -303,7 +233,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「领主也吃土豆。」</p>
 <p>「不然呢？」</p>
 <p>我答不上来，自己也笑了。</p>
-<p>车到了学院，我把箱子交出去，拿齐签收，最后才回工坊。师父正在削一条长木料，看见我便放下刨子。</p>
+<p>船到南岸后，车夫把货送到学院。我把箱子交出去，拿齐签收，最后才回工坊。师父正在削一条长木料，看见我便放下刨子。</p>
 <p>「怎么这么久？」</p>
 <p>我把经过从头讲了一遍，没有略过木销。</p>
 <p>他听完，先把那张检验记录收好，又让我拿明天要用的支脚过来。</p>
@@ -312,10 +242,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>师父点头。</p>
 <p>我蹲下时，左边鞋头又张开了一点。</p>
 <p>那条歪歪扭扭的粗线还是得重缝。不过，城堡里确实没有人笑它。</p>
-<p>我把支脚放稳，重新拿起了小锤。</p>
-<p><a id="sect-002"></a></p>
-<span id="ch-01"></span><h2 id="sect-002">第一章　族长醒来以前</h2>
-<p>余烬历二九九九年，秋月十五日。</p>
+<p>我把支脚放稳，重新拿起了小锤。</p></div><nav aria-label="章节导航" class="chapter-nav"><span></span><a href="#contents">目录</a><a href="#ch-01">下一章 →</a></nav></section><section class="chapter" data-title="第一章｜族长醒来以前" id="ch-01"><header class="chapter-head"><div class="chapter-no">第一章</div><h2>族长醒来以前</h2></header><div class="prose"><p>余烬历二九九九年，九月过后的秋月十五日。</p>
 <p>露米艾尔·德·月影醒来时，城堡已经替她运转了大半天。</p>
 <p>地下锅炉补过两次煤，厨房换过一轮炉火，湖港送来的鲜鱼经过了验收，南翼一扇用了六十三年的铜铰链终于被诺艾拉拆了下来。埃德蒙处理了两份采购申请，退回一份措辞过分含糊的巡检报告，并在下午三点整，敲响了东翼起居室的门。</p>
 <p>无人回答。</p>
@@ -360,7 +287,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她将附件目录翻到光下。城主办公室的转呈章在页脚，原卷编号却空着。</p>
 <p>埃德蒙也看见了那处空白。</p>
 <p>「文书处以为原件留在市政厅。」</p>
-<p>「只是『以为』？请城主办公室查清楚。原件在哪儿、为什么会送来这样的卷宗，都要有答复。」</p>
+<p>「以为不够。请城主办公室核对，为什么这样的卷宗会送来。」</p>
 <p>埃德蒙没有回答，只将那份文件从已经签好的两份下面抽了出来。</p>
 <p>露米又读了一遍，指尖停在「租户已获通知」上。</p>
 <p>「请他们补齐。这是送到领主这里的复核案，先发保全通知，暂停有争议部分的处置。不要把整座湖港都停了。」</p>
@@ -372,14 +299,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>脚步在门前刹住，随后是诺艾拉的声音。</p>
 <p>「艾莉娅小姐到了。」</p>
 <p>紧接着，另一道声音从她身后传来。</p>
-<p>「我真的没有跑。」</p>
+<p>「我没有跑。」</p>
 <p>「您刚才差点撞到送花的人。」</p>
-<p>「我道过歉啦。」</p>
+<p>「我已经道歉了。」</p>
 <p>露米看向门口。</p>
 <p>「让她进来吧。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>艾莉娅带进来一股凉凉的秋天气息。</p>
-<p>她上午刚在月影学院替一门古文辨识课代过讲。学生交来的抄本还夹在包外侧，其中一张把半个词写反，她乘车时才改好，指侧沾了一道未洗净的墨。</p>
+<p>她前一日还在月影学院替一门古文辨识课代过讲，随后乘船回到北岸。学生交来的抄本还夹在包外侧，其中一张把半个词写反，她从渡口乘车回城堡时才改好，指侧沾了一道未洗净的墨。</p>
 <p>她的棕红卷发被风吹乱了，斗篷下摆溅着泥点，怀里却紧紧护着一个油布包。进门后，她先看见露米手里的茶，又看见椅子上的毛毯。</p>
 <p>「我来早了？」</p>
 <p>「没有。」</p>
@@ -394,7 +321,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>深褐色封皮干裂，四角磨损得厉害，书脊上的线却明显比其他部分新。有人替它重新装订过，手艺不算好，线脚收得太紧，挤得几张内页微微鼓起。</p>
 <p>「我在湖港的旧物拍卖里买到的。」</p>
 <p>艾莉娅说完，立刻补充：</p>
-<p>「先说好，是我自己的钱！研究经费一分没动，学院的借书账也没算进去。」</p>
+<p>「钱是我自己的。没有动研究经费，也没有算进学院的借书账。」</p>
 <p>「我还没有问。」</p>
 <p>「你刚才的表情像是要问。」</p>
 <p>露米垂眼看了看书。</p>
@@ -408,7 +335,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>上面的字迹细长而拥挤，有些字母末端伸出钩状笔画，有些又被后人用较浅的墨水改写。露米认出其中一种曾在北方使用过的记账文字。</p>
 <p>另一些，她没有见过。</p>
 <p>「不是一种语言。」露米说。</p>
-<p>「至少三种……等等，也可能是同一种语言不同时候的写法。我翻了协会的旧字表，越对越觉得不对。」</p>
+<p>「至少三种。也可能是同一种语言在不同时期的写法。我对照了协会的旧字表，越查越不对。」</p>
 <p>艾莉娅从包里取出一叠抄写纸。</p>
 <p>每张纸上都是密密麻麻的笔记。有些推断被划掉，又在旁边重新写过。</p>
 <p>露米把软椅上的毛毯推开了一点。</p>
@@ -426,7 +353,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她停了一下。</p>
 <p>窗外有鸟掠过，影子从地毯上一闪而逝。</p>
 <p>「第七十三次寒季。今天，仍未见日出。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米没有立即说话。</p>
 <p>只有这么一句，能解释它的可能性太多了。</p>
 <p>极北的漫长冬夜，封闭的地下城，某种特殊秘境。甚至可能只是她们把一个词读错了。</p>
@@ -495,7 +422,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>越过银镜湖，再向南，就是维斯佩拉。</p>
 <p>她能感觉到，对方原本正在移动。</p>
 <p>现在停下了。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>城内，湖港旧街。</p>
 <p>一个正在收拾行李的人抬起头。</p>
 <p>狭小房间里没有点灯，窗外是渐暗的天色。床边放着半满的旅行袋，桌上压着一张次日清晨的船票。</p>
@@ -513,7 +440,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「还有，把这本书的拍卖记录找来。」</p>
 <p>桌上的红茶仍然冒着热气。</p>
 <p>这一次，谁也没有再碰它。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>薇蕾娜抵达东翼时，露米正在换衣服。</p>
 <p>她站在窗前，银白长发尚未束起，黑色裙袖上的扣子只系了一半。诺艾拉正在替她整理领口，嘴里咬着一根细发针，神情很不赞同。</p>
 <p>「至少先让我把头发梳好。」</p>
@@ -548,7 +475,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「但他可能已经知道您在这里。」</p>
 <p>「所以城堡可以加强防备。」</p>
 <p>薇蕾娜沉默了一会儿。</p>
-<p>「明白。加便衣巡逻。街不封，居民家门不碰。」</p>
+<p>「明白。增加便衣巡逻，不封街，不入户搜查。」</p>
 <p>露米点头。</p>
 <p>诺艾拉趁机将最后一枚袖扣扣好。</p>
 <p>「现在可以坐下了。」</p>
@@ -557,7 +484,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>城堡医师洛瑟很快到了。他先请她说明现在的日期与位置，再检查瞳孔、脉搏和那只没有伤口的手。</p>
 <p>「暂时没有发现明显的身体损伤。」他说，「这不代表那件东西已经离开。若出现不属于自己的感觉，不要反复尝试重现，先叫人。」</p>
 <p>他留下了值守安排。艾莉娅把刚才的时间补进记录，终于不再只盯着露米的手指。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>艾莉娅低着头，直到诺艾拉开始整理露米的长发，才终于开口。</p>
 <p>「我应该先做更完整的检查。」</p>
 <p>「你做过哪些？」</p>
@@ -589,7 +516,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她停顿了一下。</p>
 <p>「但他说得很急。」</p>
 <p>艾莉娅把这一点也写了下来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>旧书被搬到了西翼的一间小阅览室。</p>
 <p>这间屋子平时用来检查新送来的藏书。门窗设有基础隔离术式，桌面铺着浅色毡布，墙边放着软刷、薄刀和各种形状的纸镇。</p>
 <p>埃德蒙亲自把书摆好。</p>
@@ -620,7 +547,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>两张纸被并排放在毡布上。</p>
 <p>一张旧得发黄，一张墨迹干净。</p>
 <p>都写着同一个地方。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>天色暗下来时，雨又开始下了。</p>
 <p>调查处送来的第一份消息并不复杂。</p>
 <p>带它来的人穿着一件旧棕外衣，深色短发别在耳后。她先向露米出示身份文书，再把随身的皮袋放到桌角。</p>
@@ -656,7 +583,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「产权与交接手续尚未核清。」</p>
 <p>埃德蒙点头。</p>
 <p>没有提及旧书，也没有提及那条已经消失的蓝色薄片。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>晚餐被送进阅览室时，露米才发现自己还没吃东西。</p>
 <p>诺艾拉把餐盘放在她面前，顺便收走了已经凉透的茶。</p>
 <p>艾莉娅咬着面包，还在看笔记。</p>
@@ -684,9 +611,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米没有再往下猜。</p>
 <p>她看着窗外，仔细分辨那种越来越近的感觉。</p>
 <p>过了片刻，埃德蒙拉响门边的细铃。</p>
-<p>「通知南桥守卫，留意访客。」</p>
+<p>「通知南岸渡口值守人员，留意是否有人要搭船北来。夜间停航，不许为了赶路冒险开船。」</p>
 <p>他没有说敌人。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>调查处在市政厅后面，窗下就是清扫工人存放推车的小院。</p>
 <p>塔维回来时，门口的泥垫已经湿透。他摘下帽子，把灰角根部沾着的一点雨水擦掉，先将问到的住址交给书记，再站到炉边烘手。</p>
 <p>「她不在家？」蕾奥妮问。</p>
@@ -741,8 +668,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他没有追上去拦人，只请对方继续留在能看见门的地方，自己沿街找了一段。</p>
 <p>桥头的灯在雨里连成一串。</p>
 <p>那姑娘可能仍然不相信，一张写着「可以来问」的便条，会真的给她一个不同的回答。</p>
-<hr/>
-<p>伊娜·维恩走到南桥时，鞋里已经进了水。</p>
+<hr aria-label="分场" class="scene"/>
+<p>伊娜·维恩走到南岸渡口时，鞋里已经进了水。</p>
 <p>她没有带行李。</p>
 <p>那只原本收拾了一半的旅行袋，被她留在了床底。船票仍压在桌上，背面朝上。</p>
 <p>她一路走得很慢。</p>
@@ -758,7 +685,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>某个人。</p>
 <p>母亲死后，再也没有人告诉过她，这种时候应该怎么办。</p>
 <p>桥头的守卫拦住了她。</p>
-<p>「城堡夜间不接待无预约访客。你有什么事？」</p>
+<p>「末班船已经走了。你有什么急事？可以先登记，明早再联系北岸。」</p>
 <p>伊娜张开嘴。</p>
 <p>她原本准备了很多话。</p>
 <p>仓库不是无人认领。她去过仓储署。她没有收到通知。父亲留下的东西，她只想拿回来一件。</p>
@@ -772,8 +699,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「一本没有名字的旧书。」</p>
 <p>她抬头看向湖上的城堡。</p>
 <p>「里面的东西……已经被人拿走了，对吗？」</p>
-<hr/>
-<p>消息送到西翼时，露米正在重新系披肩。</p>
+<hr aria-label="分场" class="scene"/>
+<p>渡口值守人员把她的话记下，经电报传往北岸。消息送到城堡西翼时，露米正在重新系披肩。伊娜当晚仍留在南岸，等候次日船班。</p>
 <p>埃德蒙读完守卫的口信，看向她。</p>
 <p>「她说，她不是来抢的。」</p>
 <p>露米的手指停在扣环上。</p>
@@ -792,10 +719,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「已经叫人去拿了。」</p>
 <p>「还有热的东西。」</p>
 <p>女仆端起刚撤下的茶盘。</p>
-<p>「这次，您也要喝完，小姐。」</p>
-<p><a id="sect-003"></a></p>
-<span id="ch-02"></span><h2 id="sect-003">第二章　留在纸上的声音</h2>
-<p>伊娜被带进西翼时，先看见了那本书。</p>
+<p>「这次，您也要喝完，小姐。」</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-00">← 上一章</a><a href="#contents">目录</a><a href="#ch-02">下一章 →</a></nav></section><section class="chapter" data-title="第二章｜留在纸上的声音" id="ch-02"><header class="chapter-head"><div class="chapter-no">第二章</div><h2>留在纸上的声音</h2></header><div class="prose"><p>伊娜搭上次日的渡船，午后抵达北岸。等她被带进城堡西翼时，先看见了那本书。</p>
 <p>它放在长桌中央，下面铺着浅色毡布。旁边整齐摆着几张抄纸、一根细针，还有她认得的半枚旧仓验收印。</p>
 <p>她的脚步停了。</p>
 <p>披肩边缘还在滴水，水珠顺着指尖落在地毯上。</p>
@@ -819,7 +743,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米看向桌上的书。</p>
 <p>「我们还不能确定那是什么。」</p>
 <p>她说完，伸手把那根细针移远了一点。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜换上干衣服回来时，桌边多了一碗热汤。</p>
 <p>汤里有洋葱和一点碎麦，盛在普通的白瓷碗里，边缘有一道洗不掉的细划痕。伊娜认得这种碗；小时候父亲的修书桌旁也放过一只。</p>
 <p>她坐在离门最近的位置，双手捧着碗，指节仍然僵硬。</p>
@@ -865,7 +789,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「还能拿出来吗？」</p>
 <p>露米沉默片刻。</p>
 <p>「我不知道。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜低下头。</p>
 <p>诺艾拉把快冷掉的汤换到炉边，又替她添了半杯温水。</p>
 <p>她道过谢，却没有喝。</p>
@@ -905,7 +829,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「所以你想拿回这本书。」</p>
 <p>「我只想再听一次。」</p>
 <p>她说完，立刻抬起头。</p>
-<p>「我知道母亲已经不在了。我只是想再听她一次，不是要把她叫回来。我没有做那些……」</p>
+<p>「我知道人死了就没有了。我没有要把她叫回来，也没有做那些……」</p>
 <p>后面的话没能说完。</p>
 <p>露米轻轻摇头。</p>
 <p>「我没有这样认为。」</p>
@@ -927,14 +851,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她慢慢看向露米。</p>
 <p>露米点了点头。</p>
 <p>「书里可能原本就不止一片。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>直到这时，埃德蒙才将那份结案书放到桌边。</p>
 <p>蕾奥妮已经返回城堡，等在相邻的小室。伊娜愿意回答有关仓库的问题以后，她才进门坐下。她没有问伊娜梦见过谁，也没有要求她再次伸出手。</p>
 <p>「维恩小姐，我需要向您核实另一件事。」蕾奥妮把纸转过去，让她能看清。</p>
 <p>伊娜看到仓储署的印章，肩膀明显僵了一下。</p>
 <p>「我去过。」</p>
 <p>她说得很快。</p>
-<p>「父亲下葬后，我就去过了。租金我交了，也求他们再给我几天收拾。他们说地契要重新核，我就等。等着等着，仓库却封了。」</p>
+<p>「父亲下葬之后，我就去过。我说需要时间整理，租金也交了。后来他们说地契要重新核验，我等通知，再后来仓库就封了。」</p>
 <p>「有人告诉你货物将被拍卖吗？」</p>
 <p>「没有。」</p>
 <p>「你是否同意过放弃仓内物品？」</p>
@@ -942,7 +866,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「这里写着，你已经收到通知，争议也已调解完毕。」</p>
 <p>伊娜盯着那页纸。</p>
 <p>她看了很久，像是上面的文字比古代魔族语还难理解。</p>
-<p>「我昨天还跑了一趟市政厅。」</p>
+<p>「我昨天还去了市政厅。」</p>
 <p>「他们怎么说？」露米问。</p>
 <p>「说已经结案了。」</p>
 <p>窗外的雨声忽然显得很清楚。</p>
@@ -960,7 +884,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>艾莉娅已经从自己的笔记里抽出了拍卖收据。</p>
 <p>「这本可以。」</p>
 <p>她将收据折好，放到书上。</p>
-<p>「我会让人把交接查清楚。你不用为同一本书再付一次钱。」</p>
+<p>「我会配合查清交接，不用你再付一次钱。」</p>
 <p>伊娜伸出的手停在半空。</p>
 <p>「可是里面——」</p>
 <p>「里面那件东西，需要另外处理。」露米说。</p>
@@ -968,7 +892,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「它是在我检查时消失的。我会查明发生了什么，也会把查到的结果告诉你。今晚可以先将书留在这里检查，但需要你同意。」</p>
 <p>伊娜看了看她。</p>
 <p>终于，她轻轻点头。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>艾莉娅开始检查剩余的装订。</p>
 <p>这一次，没人接触书脊内部。</p>
 <p>薇蕾娜让人送来一块透明隔板，将书与几个人隔开。艾莉娅用细长工具逐层翻起衬纸，埃德蒙在旁边记录每一个位置。</p>
@@ -993,15 +917,30 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>第一行写着：</p>
 <p><strong>留给伊娜。</strong></p>
 <p>下面的字更小。</p>
+<blockquote><p>如果有人替你把这页拆出来，先别相信他说书里是什么。
+
+我也不知道。
+
+你母亲的声音是真的。我听见过，但有一句话，她后来又说了一遍。
+
+连停顿都没有变。
+
+我等了很久，她没有回答我。</p></blockquote>
 <p>伊娜的手停在桌沿。</p>
 <p>没人催她往下看。</p>
 <p>炉火烧得很轻，诺艾拉走过去，将她身后的椅子扶稳。</p>
 <p>纸的下半部分，笔迹明显比前面潦草。</p>
+<blockquote><p>有个来买书的人，说他能让我再见到她。
+
+我差一点就答应了。
+
+后来他说，必须把你也带上。</p></blockquote>
 <p>露米抬起眼睛。</p>
 <p>书架旁，薇蕾娜已经站直了。</p>
 <p>伊娜仍在读。</p>
 <p>最后一行写在纸张最底下，墨水颜色很深，像是被人描过一次。</p>
-<hr/>
+<blockquote><p>他若再来，不要告诉他，你听见过。</p></blockquote>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜把信读了三遍。</p>
 <p>读到最后，她的目光又回到第一行。</p>
 <p>留给伊娜。</p>
@@ -1021,7 +960,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「先放这里吧。我怕弄湿。」</p>
 <p>她的衣服已经换过，手也早就擦干了。</p>
 <p>露米没有提醒。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>艾莉娅把椅子拉近了一些。</p>
 <p>「那个买家最后一次出现，是什么时候？」</p>
 <p>「去年入冬前。也可能更早。」</p>
@@ -1056,7 +995,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我知道。」</p>
 <p>露米抬头望着她。</p>
 <p>「我们先看凭据。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>半个钟头后，送来的不是原件。</p>
 <p>是一份重新抄写的摘要。</p>
 <p>埃德蒙把纸从信封里抽出来，平放在桌面，随后取下单片眼镜，仔细擦了一遍。</p>
@@ -1086,7 +1025,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>在市政厅的时候，她每次讲到「我没有收到」，对方就会指着同一行字，告诉她已经收到。</p>
 <p>现在，那行字被放在桌上。</p>
 <p>有人问它凭什么成立。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>夜深之后，诺艾拉领伊娜去了客房。</p>
 <p>房间安排在西翼靠内的走廊，窗户朝向庭院。炉火已经烧暖，桌上放着温水和一小盘面包。</p>
 <p>伊娜在门口停了停。</p>
@@ -1098,7 +1037,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她没有用「不用担心」把话带过去，只将门钥匙放到桌上。</p>
 <p>「您可以从里面锁门。若有事，拉床边的铃。」</p>
 <p>伊娜摸了摸那把钥匙。</p>
-<p>「我现在……能回去拿点东西吗？」</p>
+<p>「我可以现在回去拿东西吗？」</p>
 <p>「您想拿什么？」</p>
 <p>「父亲的账本……如果还在家里。」</p>
 <p>诺艾拉想了一下。</p>
@@ -1112,7 +1051,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「还不知道。」</p>
 <p>薇蕾娜看了一眼那扇已经关上的门。</p>
 <p>「所以今晚先让她睡着。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>阅览室里只剩三个人时，艾莉娅终于揉了揉眼睛。</p>
 <p>埃德蒙把新的热茶放到桌上。</p>
 <p>露米没有喝。</p>
@@ -1152,8 +1091,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「这两项原本就没有安排，小姐。」</p>
 <p>她低下头，端起茶杯。</p>
 <p>艾莉娅没忍住，轻轻笑了一声。</p>
-<hr/>
-<p>第二天上午，维斯佩拉的雨停了。</p>
+<hr aria-label="分场" class="scene"/>
+<p>第二天清晨，北岸的雨停了。露米与艾莉娅乘第一班客货渡轮南下，午后才抵达维斯佩拉。</p>
 <p>街面还湿着，车轮压过石缝，带起细碎水声。马车在湖岸绕过卸货码头，等一辆载满空奶罐的货车掉头以后，才穿进旧街。电车轨道只铺到西边的新街，这一带的转角太窄，仍然挤着马车和手推车。露米坐在车厢靠内的位置，窗帘遮住了直射进来的光。</p>
 <p>诺艾拉替她选了一件深灰披肩，领口没有族长饰章。</p>
 <p>艾莉娅坐在对面，第三次确认自己的收据。</p>
@@ -1169,7 +1108,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>车厢外，薇蕾娜轻轻敲了敲窗框。</p>
 <p>她换了便于行走的外衣，佩剑藏在斗篷下面。</p>
 <p>「拍卖行到了。调查员已经在里面。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>拍卖行的主人认出了艾莉娅，赶紧从里间迎出来。</p>
 <p>柜台旁坐着一个灰角向后弯的魔族青年，面前的茶没有动，正在把一张搬运单压平。蕾奥妮起身向露米点头。</p>
 <p>「这是塔维，负责查货物的路线。我们先核对交付，再分别询问。」</p>
@@ -1224,10 +1163,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她和艾莉娅对视了一眼。</p>
 <p>昨天上午。</p>
 <p>那时，艾莉娅还没有带书去城堡。</p>
-<p>而她，也还没有碰到那条蓝色薄片。</p>
-<p><a id="sect-004"></a></p>
-<span id="ch-03"></span><h2 id="sect-004">第三章　第零页</h2>
-<p>米蕾特赶到拍卖行时，信封仍放在柜台上。</p>
+<p>而她，也还没有碰到那条蓝色薄片。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-01">← 上一章</a><a href="#contents">目录</a><a href="#ch-03">下一章 →</a></nav></section><section class="chapter" data-title="第三章｜第零页" id="ch-03"><header class="chapter-head"><div class="chapter-no">第三章</div><h2>第零页</h2></header><div class="prose"><p>米蕾特赶到拍卖行时，信封仍放在柜台上。</p>
 <p>她是个身材结实的矮人女人，随身箱里整齐放着纸尺、放大镜和几片平薄的玻璃。她先在记录上写下谁碰过信封、何时收到，再让店主确认封口是否与收下时相同。</p>
 <p>薇蕾娜负责检查术式与机关；米蕾特等她点头，才将信封移到柜台中央。</p>
 <p>米蕾特没有碰封蜡，只俯身检查了一遍边缘。</p>
@@ -1243,6 +1179,21 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>也没有任何东西掉出来。</p>
 <p>艾莉娅用镊子展开它。</p>
 <p>字迹规整，墨色均匀。</p>
+<blockquote><p>致购得此书的人：
+
+若您只是收藏书籍，请保管好它。有人愿意出高于成交价三倍的价钱购回。
+
+若您已经听见声音，请不要试图再听一次。
+
+您手中的正文，记录了一些人如何活下去。
+
+但记录为何开始，写在第零页。
+
+那一页不在书里。
+
+若愿意谈谈，请于本月十七日午后，到旧水钟庭院。
+
+带书，或不带书，都可以。</p></blockquote>
 <p>下面没有名字。</p>
 <p>只有一小段被墨水涂掉的痕迹。</p>
 <p>艾莉娅读完，首先看向墙上的日历。</p>
@@ -1279,7 +1230,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米又看了一遍信。</p>
 <p>她没有发现能够证明写信人知道未来的东西。</p>
 <p>只有一个等得很耐心的人。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>离开拍卖行后，艾莉娅将信装进了新的纸袋。</p>
 <p>「你要赴约？」</p>
 <p>露米拉好遮阳伞。</p>
@@ -1298,14 +1249,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>经过杂货铺时，她看见门外堆着煤，价牌上的数字被改过两次。</p>
 <p>艾莉娅跟着她停下来。</p>
 <p>「怎么了？」</p>
-<p>「这里的煤，怎么比我们采购单上的还贵？」露米轻声说。</p>
+<p>「这里的煤价，比采购单上高。」露米轻声说。</p>
 <p>走在前面的塔维回过头。</p>
 <p>「这是送上楼的零售价。您家的单子按车买，还得看筛过几次。」</p>
 <p>露米又看了一眼，果然在价牌下方找到一行很小的字。</p>
 <p>「那么，有人只买半袋呢？」</p>
-<p>「那更贵。买不起一整车，也只能半袋半袋地买。」</p>
+<p>「更贵一些。钱不够买一车的人，只能这样买。」</p>
 <p>露米点头，把两种价格都记在小本上。她这次没有立即对一份自己尚未看懂的价牌作决定。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜在自己家门口等她们。</p>
 <p>诺艾拉陪在旁边，手里拿着一个空布袋。门已经打开，屋内却没有点灯。</p>
 <p>房间比露米想象的更小。</p>
@@ -1343,6 +1294,15 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「不是父亲写的。」</p>
 <p>那张纸很薄，像从其他地方裁下来作修补用。折痕已经被压平，边角留着胶渍。</p>
 <p>上面只有几行字。</p>
+<blockquote><p>您理解错了我的意思。
+
+我并未承诺让您的妻子复生。
+
+我需要确认的是，她的记忆为何会被您的女儿听见。
+
+若她已经接触其中一片，请务必停止继续尝试。
+
+两片不应留在同一处。</p></blockquote>
 <p>艾莉娅抬眼。</p>
 <p>屋里安静下来。</p>
 <p>伊娜盯着那张纸。</p>
@@ -1359,7 +1319,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「你父亲有没有保存寄信的收据？」</p>
 <p>伊娜望向柜子。</p>
 <p>「可能在那里。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>柜子最下面是一只木盒。</p>
 <p>里面没有钱。</p>
 <p>几份旧租约，一条修补过的围巾，伊娜小时候用过的发带，还有一叠被细绳扎好的邮驿凭据。</p>
@@ -1390,10 +1350,10 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「外观很像。但没有检验方法能让我现在就确定。那篇文章还被人批评过，把不同来源的东西归在了一起。」</p>
 <p>露米看向桌上的邮驿凭据。</p>
 <p>这个名字没有让那只手上的感觉消失，却终于给她们一个可以继续追查的出处。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>邮驿凭据上还有一串数字。</p>
 <p>艾莉娅原本以为是账册编号，塔维却用指尖压住其中两张，指出它们的末尾相同。</p>
-<p>「收件回条。寄件人多付了钱，想知道那边到底收没收到。」</p>
+<p>「收件回条。寄件人付了额外的钱，要知道对方有没有拿到。」</p>
 <p>伊娜低头看了一眼。</p>
 <p>「父亲有一阵子，每隔几天就去邮局。」</p>
 <p>她说自己曾经问过，他只说等客户回信。现在知道是哪些信，那些午后才忽然有了另一个意思。</p>
@@ -1411,8 +1371,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她请对方把生效日期和旧号对照一起附上。它暂时不能解释所有遗失的信，却能让下一次查地址少跑一趟。</p>
 <p>走出邮局，塔维又看见那个删电报的男人。他坐到台阶上，把一封长信摊在膝上，开始重新抄写。</p>
 <p>塔维没有停下来问。他把调卷回执放进防雨袋，沿着仍然潮湿的街道走向货栈。</p>
-<hr/>
-<p>同一天，露米她们回到城堡时，已经过了平常的午餐时间。</p>
+<hr aria-label="分场" class="scene"/>
+<p>那天傍晚，露米她们留在南岸暂住。翌日还要在旧水钟庭院见赫曼，不必为了一夜往返再横渡银镜湖。</p>
 <p>埃德蒙已经收到调查处送来的调卷副本。</p>
 <p>西翼桌上，整齐摆着从仓储署原卷核录的档案，原件仍在调查处封存。</p>
 <p>通知凭据是真的。</p>
@@ -1438,7 +1398,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>除非两件事由不同的人做。</p>
 <p>或者，对方需要书被别人打开。</p>
 <p>这些可能性在露米脑中缓慢排列，没有哪一种能够完全成立。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>餐盘送到时，露米才发现自己一直没有脱下外出的披肩。</p>
 <p>她在起居室重新坐好，裙边还沾着一点路上的水。诺艾拉替她取下深灰披肩，露出里面浅蓝色的外出裙。领口没有繁复花边，只绕着一条细白滚边，袖子收得利落，手伸出去拿东西时不会拖过桌面。</p>
 <p>她出门前没有觉得有什么特别，此刻外衣解开，银发落在蓝色布料上，整个人倒像终于从那些灰白卷宗里走出来一点。</p>
@@ -1455,7 +1415,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「你今天到时间了？」</p>
 <p>露米点头，拧开瓶盖，倒进一只不大的杯子。液体颜色很深，混着一点她不喜欢的药草味。她喝得很快，随后拿起温水。</p>
 <p>「为什么不加到果汁里？」艾莉娅问。</p>
-<p>「那整杯果汁就都不好喝了。」</p>
+<p>「那会把整杯果汁都弄得不好喝。」</p>
 <p>埃德蒙收起空瓶，检查刻度与记录。</p>
 <p>「洛瑟医师说，最近若睡得少，或者使用魔力较多，要告诉他。不能照旧的间隔一直拖。」</p>
 <p>「我没有拖。」</p>
@@ -1470,7 +1430,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>埃德蒙很自然地把这句话记给了厨房。</p>
 <p>露米等他出去，才继续解释。普通食物能让她饱，能恢复体力，也有喜欢与不喜欢的味道；血族需要补充的另一部分，无法单靠多吃一块肉解决。她目前的间隔大约十日，受伤或消耗大时另算，不能拿来要求所有血族照做。</p>
 <p>「一直不补会怎么样？」</p>
-<p>「先是累，伤口好得慢。有的人还会头疼。」露米想起自己一次睡过服用时间，被洛瑟问了半天，「继续拖才会更麻烦。又不是少喝一天，就会突然跑出去咬人。」</p>
+<p>「先是累，伤口好得慢。有的人还会头疼。」露米想起自己一次睡过服用时间，被洛瑟问了半天，「继续拖才会更麻烦。不是少喝一天，就会突然去咬路人。」</p>
 <p>艾莉娅笑了一声，又认真问起来源。</p>
 <p>「药房有自愿供给的登记。先检查，再约定次数，临时不愿意也能撤回。还有别的配方，不过洛瑟说我现在这份合适。」</p>
 <p>「也有人用处理过的兽血制剂就能维持日常。」露米补了一句，「只是每个人适用的配方不一样。洛瑟替我看过，我不能拿自己的情况替别人开方。」</p>
@@ -1480,7 +1440,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>午餐结束前，诺艾拉拿来另一张便条：伊娜已经用过午餐，准备睡一会儿。露米在回函旁边签好名字，把笔放回去，终于有空替自己选下一杯茶。</p>
 <p>她选了清一点的。</p>
 <p>刚才药草的苦味，仍有一点留在嘴里。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>她忽然想起纸条上的那句话。</p>
 <p>两片不应留在同一处。</p>
 <p>昨晚，她与伊娜已经在同一个房间待了很久。</p>
@@ -1514,7 +1474,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「让烟出去。」</p>
 <p>那声音来自伊娜的房间。</p>
 <p>「孩子们还在下面。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米走进客房时，伊娜仍躺在床上。</p>
 <p>她的呼吸很急，右手攥着被角，额前沁出细密的汗。窗户开着一条缝，午后的风吹动纱帘，庭院里有人正在修剪灌木。</p>
 <p>没有烟。</p>
@@ -1536,7 +1496,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>伊娜仍在说话，但急促的呼吸慢了下来。</p>
 <p>露米回头看了一眼。</p>
 <p>「我先出去。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>她退到走廊转角。</p>
 <p>埃德蒙已经派人去请城堡医师，又让侍从清空了相邻的两间客房。</p>
 <p>露米抬起自己的右手。</p>
@@ -1553,7 +1513,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「让艾莉娅记录变化。我留在这里，不再靠近。」</p>
 <p>埃德蒙点头，没有说她早该想到。</p>
 <p>这一点反而让她更难受。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>医师来到时，伊娜已经不再说话。</p>
 <p>她没有醒，呼吸却恢复了平稳。</p>
 <p>年长的血族医师坐在床边，依次检查眼睑、脉搏和瞳孔反应，又让艾莉娅说明刚才发生的经过。</p>
@@ -1567,7 +1527,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「现在看不出来。」</p>
 <p>医师把毯子往下拉了一些，让伊娜的手松开。</p>
 <p>「我们先确认她能不能自己醒。你们听见什么，就记什么，不要替她补全。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>洛瑟没有立刻给伊娜使用平日的安神配方。</p>
 <p>他把药房值守的人叫到门外，交代暂时只备温水，等她清醒以后，再问有没有头痛与恶心。送药的年轻女子点头，把托盘上的一只小瓶移回箱中。</p>
 <p>露米站在走廊另一端，看见瓶身上的银白花纹。</p>
@@ -1597,7 +1557,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米坐到墙边的椅子上。洛瑟没要求她立刻休息，却把另一杯水留在她旁边。</p>
 <p>她喝了一口。</p>
 <p>水是普通的水，略微偏温。它没有替她解决任何问题，但她握着杯子的手终于不再那么凉了。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米在走廊里坐了很久。</p>
 <p>杯里的水喝完了，她仍握着杯子，直到侍从过来添水，才慢慢松开手。</p>
 <p>午后的钟声从庭院另一头传来，隔着窗户与石墙，听起来很远。平时到了这个时间，她大概已经靠在书房的软椅上，嫌钟敲得太响。</p>
@@ -1646,7 +1606,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>陌生的风声仿佛又贴近了一点。</p>
 <p>「不要急着改。」她说。</p>
 <p>「我知道。我把两种都留着。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜坚持要见露米。</p>
 <p>医师最后同意她们隔着打开的房门交谈。</p>
 <p>伊娜裹着毯子，坐在床头。脸色仍然很差，手里端着诺艾拉递给她的温水。</p>
@@ -1683,7 +1643,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「您会告诉我他说了什么吗？」</p>
 <p>「会。」</p>
 <p>这次，露米没有迟疑。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>到了傍晚，伊娜被安置到城堡南翼的一间独立客房。</p>
 <p>那里与西翼隔着庭院和两道回廊，医师就在附近休息。诺艾拉重新检查了窗扣，又特地告诉她，想开窗时可以自己开。</p>
 <p>露米则留在东翼。</p>
@@ -1728,7 +1688,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她拿起勺子，慢慢喝了一口。</p>
 <p>很淡。</p>
 <p>她想不起今天有没有告诉诺艾拉，自己想吃什么。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>第二日午后，旧水钟庭院里坐着三个人。</p>
 <p>一位老人喂鸽子。</p>
 <p>一名妇人带着孩子，正在长椅上整理散开的鞋带。</p>
@@ -1763,10 +1723,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>男人的手指在帽檐上收紧了。</p>
 <p>「认识的人，有时还能让你知道自己是谁。」</p>
 <p>他抬起头。</p>
-<p>「陌生人的记忆里，没有任何东西会提醒你回来。」</p>
-<p><a id="sect-005"></a></p>
-<span id="ch-04"></span><h2 id="sect-005">第四章　他没有买下那本书</h2>
-<p>旧水钟的石槽里积着雨。旁边供居民取水的小泉仍在滴落，水顺着修补过的细沟，缓缓流进浅池。</p>
+<p>「陌生人的记忆里，没有任何东西会提醒你回来。」</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-02">← 上一章</a><a href="#contents">目录</a><a href="#ch-04">下一章 →</a></nav></section><section class="chapter" data-title="第四章｜他没有买下那本书" id="ch-04"><header class="chapter-head"><div class="chapter-no">第四章</div><h2>他没有买下那本书</h2></header><div class="prose"><p>旧水钟的石槽里积着雨。旁边供居民取水的小泉仍在滴落，水顺着修补过的细沟，缓缓流进浅池。</p>
 <p>旧水钟早已不再报时，池沿却还留着十二道刻痕。几只鸽子站在其中一道上，争抢一个老人撒下的面包屑。</p>
 <p>水池边还有两盏留灯夜用过的小灯，灯芯已经浸湿。一个清扫街道的老人将它们收进篮子，又把旁边写着名字的纸牌放到干处，免得一起扔掉。谁也没停下来谈论奇迹。</p>
 <p>露米看着赫曼。</p>
@@ -1823,8 +1780,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「是。」</p>
 <p>这个回答来得很轻。</p>
 <p>赫曼看向自己手里的帽子。</p>
-<p>「我当时太急了。他写信说，女儿听见了亡妻的声音。我便以为，她或许还分得清那些声音从哪里来。若再拖下去……我没把要求写明白。」</p>
-<p>「可他读了信，恐怕只会觉得：您拿他最想再见的人，逼他把女儿交出来。」艾莉娅接道。</p>
+<p>「我当时太急了。他给我写信，说女儿听见了妻子的声音。我以为那意味着她还能区分记忆来源。我想在情况恶化以前见她，但我写信的方式……」</p>
+<p>「让一个父亲觉得，有人正在用他的亡妻换他的女儿。」艾莉娅接道。</p>
 <p>赫曼闭了闭眼。</p>
 <p>「是。」</p>
 <p>露米等他重新抬头。</p>
@@ -1873,7 +1830,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>赫曼终于坐了下来。</p>
 <p>他坐在长椅最远的一端，帽子平放在膝上。</p>
 <p>「因为那时，我在别的地方。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>赫曼从内袋取出一张折了几次的纸。</p>
 <p>动作做到一半，他看了露米一眼。</p>
 <p>露米点头。</p>
@@ -1938,12 +1895,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「没有。」</p>
 <p>「那封信写得像您看过。」</p>
 <p>赫曼低头。</p>
-<p>「我担心若写得太明白，买主根本不会赴约。」</p>
+<p>「我担心买主不肯来。」</p>
 <p>露米将薄册轻轻合上。</p>
-<p>「赫曼先生，我从早上听到现在，已经很难分清哪句是您亲眼见过的，哪句是猜的，又有哪句是为了让我照您的意思去做。」</p>
+<p>「赫曼先生，我今天已经花了很多力气，区分您的发现、猜测，以及您为了让别人听话而故意省略的部分。」</p>
 <p>他的脸慢慢白了。</p>
-<p>「接下来的话，请您一件一件说清楚。」</p>
-<hr/>
+<p>「后面请分清楚再说。」</p>
+<hr aria-label="分场" class="scene"/>
 <p>关于如何停止那些梦，赫曼没有带来露米想要的答案。</p>
 <p>他知道的办法只有分开、休息，以及避免主动回忆已经出现的片段。</p>
 <p>「不要反复问她梦见了什么？」</p>
@@ -1997,8 +1954,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>那本书没有作者，没有标题。</p>
 <p>但一本记录册，也未必是从记录开始的。</p>
 <p>「看看我们当成装饰线的地方，」她说，「是不是还有人写过名字。」</p>
-<hr/>
-<p>露米回到城堡时，给她预备的茶刚被撤下。</p>
+<hr aria-label="分场" class="scene"/>
+<p>隔日午后，露米搭船回到北岸，再进城堡时，给她预备的茶刚被撤下。</p>
 <p>她站在万卷馆门口，看了一眼托盘上已经不冒热气的茶壶。</p>
 <p>诺艾拉恰好端着新茶进来。</p>
 <p>「您出门前吩咐过，回来就要喝。」</p>
@@ -2011,12 +1968,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米睁开眼。</p>
 <p>「等这件事结束，我要把城堡规定改一下。」</p>
 <p>「改什么？」</p>
-<p>「往后有危险的书，一律不许在我午睡后送来。」</p>
+<p>「有危险的书，不准在午睡以后送来。」</p>
 <p>艾莉娅思索片刻。</p>
 <p>「那午睡以前？」</p>
 <p>露米将毯子拉高。</p>
 <p>「不准影响午睡。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>赫曼在调查处作完记录后，接受了城堡提供的南侧外院客房。往来书信由蕾奥妮核对，埃德蒙只负责安排住处与餐食。他带来的研究笔记先送去医师那里，原书则仍留在万卷馆。</p>
 <p>这一次，露米没有碰它。</p>
 <p>书被固定在软布垫上，艾莉娅用两片薄木压住页角，将灯移低。</p>
@@ -2075,7 +2032,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>艾莉娅继续找。</p>
 <p>翻过两页，那个名字再度出现，旁边只有一条短短的记述。</p>
 <p>「帮助搬水。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>她们没有继续往下读很久。</p>
 <p>医师送来的便条上写着：伊娜清醒，已进食，没有再次出现梦话，希望知道会面的结果。</p>
 <p>露米看完，起身走向南翼。</p>
@@ -2132,7 +2089,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她的声音忽然停住。</p>
 <p>诺艾拉也停了笔。</p>
 <p>「那个……」伊娜慢慢坐直，「拍卖的时候，会把它当作普通木板吗？」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>第六仓的剩余货物已被暂停处置。</p>
 <p>天黑以前，调查处送回了两块压书板，随箱附有移交清单。米蕾特与诺艾拉一起检查铜扣，确认里面没有明显的机关，再征得伊娜同意拆开。</p>
 <p>一块明显翘曲。</p>
@@ -2201,10 +2158,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>艾莉娅已经摊开地图，沿着旧城狭窄的街道找到了缄灯巷。</p>
 <p>她的指尖停在第十四号的位置。</p>
 <p>那处建筑画着一个小小的方院。</p>
-<p>院子后面，还标着一道通往地下的阶梯。</p>
-<p><a id="sect-006"></a></p>
-<span id="ch-05"></span><h2 id="sect-006">第五章　缄灯巷的晚饭</h2>
-<p>马车里有烤面包的香气。</p>
+<p>院子后面，还标着一道通往地下的阶梯。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-03">← 上一章</a><a href="#contents">目录</a><a href="#ch-05">下一章 →</a></nav></section><section class="chapter" data-title="第五章｜缄灯巷的晚饭" id="ch-05"><header class="chapter-head"><div class="chapter-no">第五章</div><h2>缄灯巷的晚饭</h2></header><div class="prose"><p>马车里有烤面包的香气。</p>
 <p>露米托着一只用厚布裹住的浅盒，里面的馅饼被切成了四块。厨房显然接到了过于匆忙的吩咐，没能找到适合放在车上的餐具，最后送来了四把长短不同的银叉。</p>
 <p>艾莉娅选了最短的那一把。</p>
 <p>「我以为要有毒药检测之类的东西。」</p>
@@ -2226,7 +2180,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她仍不知道那位原主的名字。那个人只存在于一张父亲写给女儿的便笺上，可能已经死去，也可能搬离这里数十年。地图上的楼梯只是一根细线，不能因为伊娜梦见过楼梯，就把它当成证据。</p>
 <p>露米将那张地址抄件重新折好。</p>
 <p>「先找负责人。」她说，「不要把孩子叫起来。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>缄灯巷比马车宽不了多少。</p>
 <p>一侧的排水沟上盖着木板，几处木板新换过，颜色浅得很显眼。第十四号的门楣上挂着一块铁牌，牌上没有神明，也没有家族纹章，只有一盏用简单线条刻成的灯。</p>
 <p>门内传来碗筷碰撞的声音。</p>
@@ -2235,7 +2189,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她的手在围裙上擦了两下。</p>
 <p>「塔维说几位还想看看房屋？」</p>
 <p>露米微微一怔。</p>
-<p>「煤先到了三袋，剩下两袋还在路上呢。」女人说，「送货单在里头。孩子们刚吃饭，您几位——」</p>
+<p>「我们收到了三袋，另外两袋还在路上。」女人说，「送货单在里头。孩子们刚吃饭，您几位——」</p>
 <p>「修缮的事可以稍后说。」露米取下兜帽，「我是露米艾尔。想请教这里从前的一位住客。」</p>
 <p>女人嘴边的话停住了。</p>
 <p>她的目光在露米脸上停了片刻，随即向后退开，像忽然想起应该行礼，却又被门槛绊了一下。</p>
@@ -2264,15 +2218,15 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「这里现在住多少人？」她问。</p>
 <p>「十八个孩子，三个大人。另有一个厨娘白天过来。」</p>
 <p>「刚才那盆水，是一直在漏？」</p>
-<p>「刮东风才漏。木匠说那两根横条得换。等修缮钱到了，我就叫他来。」</p>
+<p>「风从东面来才漏。木匠看过，说要换两根横条。修缮钱下来了，我们就能请他来。」</p>
 <p>露米从袖中取出小本子。</p>
 <p>苔莎赶紧摆手：「不急，至少没有滴到床上。」</p>
 <p>笔尖停了一下。</p>
 <p>露米看见墙边立着一床卷起的草垫，旁边还挂着两只儿童袜子。</p>
 <p>她没有再问那床草垫为什么移到了这里，只写下了日期与地址。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>听见「米洛·维恩」，苔莎摇了摇头。</p>
-<p>「我来这里才七年。再早的事得翻旧账。修书匠么……我们这儿的课本，向来都是自己缝。」</p>
+<p>「我只来七年。之前的账册可能有，但修书匠……孩子的课本都是自己缝的。」</p>
 <p>露米把原书封面的描图推过去。</p>
 <p>「这本呢？」</p>
 <p>苔莎看了很久，手指离纸面很远。</p>
@@ -2300,12 +2254,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米看了苔莎一眼。</p>
 <p>女负责人摇头，脸上的茫然并非装出来的。</p>
 <p>「她的东西还有吗？」露米问。</p>
-<p>「还有几只箱子。」罗安说，「都不值钱，压在西楼地窖里。前任院长说先别扔，就一直搁着。」</p>
+<p>「有几个箱子。」罗安说，「不是贵重东西。都压在西楼地窖里，前一任院长没让扔。」</p>
 <p>「我们能看看吗？」</p>
 <p>他没有立刻答应，而是先看向苔莎。</p>
 <p>苔莎点头。</p>
 <p>「别碰东墙那架子。腿烂了，我一直没找到时间换。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>通往地下的楼梯只有九级。</p>
 <p>罗安举着灯走在前面，推门时肩膀用了一点力。门后堆着白菜与空瓶，墙边挂着晒干的草药，一股凉而潮湿的气味迎面而来。</p>
 <p>露米站在最下面一级，等眼睛适应光线。</p>
@@ -2317,7 +2271,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>罗安挪开两个筐，从最里面拖出一只木箱。</p>
 <p>箱盖上写着几个魔族文字。他辨认了一下，念成通用语：「往来与寄存。」</p>
 <p>「您识字？」艾莉娅问。</p>
-<p>「婆婆教过我几个字。再老的那些，我就认不得了。」</p>
+<p>「婆婆教过一些。旧的不会。」</p>
 <p>他打开箱子。</p>
 <p>里面是租约、信件、收据，还有用绳子捆起来的练字纸。露米看见最上面一张写满了同一个名字，笔画歪歪扭扭。</p>
 <p>罗安。</p>
@@ -2340,7 +2294,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他慢慢将那张旧练字纸重新翻过来。</p>
 <p>歪斜的名字下面，果然留着一整行空白。</p>
 <p>「她说，不知道就留着。等知道的人回来。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>罗安不愿意把整箱东西交出去。</p>
 <p>他拒绝得很迟疑。说出「可不可以先留在这里」以后，又立刻解释，有些是已经搬走的住客托管的证件，有些写着生病的事，虽然年代久了，主人也未必愿意让别人看。</p>
 <p>薇蕾娜把手从箱盖上收回来。</p>
@@ -2380,7 +2334,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「原来不用一个一个拿。」</p>
 <p>「太多就不行。」露米松了松指尖，「重的也别交给我。刚才那一层，我差点漏看后面还有一只。」</p>
 <p>罗安低头看见架后的小药瓶，伸手将它取了出来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>木框里的东西并不能照出脸。</p>
 <p>它的表面呈暗褐色，打磨过的金属被刻成许多很浅的格子。外围一圈细纹看上去像装饰，仔细辨认，却能看到每隔一段便出现相同的字形。</p>
 <p>艾莉娅的呼吸轻了一点。</p>
@@ -2412,7 +2366,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「先照她写的做。」露米说，「等知道更多，再决定。」</p>
 <p>他们重新覆好厚布，将木框四周的杂物清空。薇蕾娜留下一名守卫，不守门外，坐在能看见入口的主楼厨房。封闭的只是地窖，不是整座教养院。</p>
 <p>罗安拿着钥匙，亲手锁上门。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>回程时，露米在车里睡着了。</p>
 <p>她原本只是想闭眼休息，头却在车厢轻轻晃动时抵上了窗边软垫。艾莉娅翻开笔记，想问一个字，见她没有动，又将问题写到页脚。</p>
 <p>过了一会儿，披肩从露米肩上滑下来。</p>
@@ -2426,7 +2380,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「但也不能因此永远不来。」</p>
 <p>薇蕾娜没有反驳。</p>
 <p>车轮驶上长桥，声音变得规律起来。她低头看了一眼睡着的族长，随后用两根手指扶住窗边一处突出的小铜扣，免得马车摇晃时碰到露米的额头。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>那条从压书板中取出的薄纸，第二天才被完整展开。</p>
 <p>诺艾拉先检查了布垫和薄板，确定纸张不会被自己的重量扯断。艾莉娅把房间温度略微升高，用很软的刷子清理已经失去黏性的旧胶。</p>
 <p>露米没有催。</p>
@@ -2435,7 +2389,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「可以分两次送吗？」</p>
 <p>书记翻了翻用料表。</p>
 <p>「可以。但小车另雇，要追加一笔运费。」</p>
-<p>「追加的车钱，请城主府先按维修准备金核算。若还有缺口，家族可以再补；原本该由公款付的，别一笔算进捐赠里。」</p>
+<p>「请城主在现有维修准备金里核算。家族捐赠可以补缺，但先把公共预算该承担的部分算清。」</p>
 <p>他把增加的两项写下来，请她在建议栏签字，而不是拿着一句话就离开。</p>
 <p>书记拿着纸走了。</p>
 <p>艾莉娅在窗边抬起头。</p>
@@ -2453,10 +2407,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>那时，有没有人问过他想留下什么？</p>
 <p>她取来一张新纸，给赫曼写了第一个问题。</p>
 <p>这一次，她没有让侍从将原件一并送去。</p>
-<p>古老的薄纸仍留在灯下。残缺的上半部分，像一段被人从中间截断的提醒，安静地等待着能够读懂它的人。</p>
-<p><a id="sect-007"></a></p>
-<span id="ch-06"></span><h2 id="sect-007">第六章　送信的人</h2>
-<p>塔维在旧街的鞋铺里找到了房东。</p>
+<p>古老的薄纸仍留在灯下。残缺的上半部分，像一段被人从中间截断的提醒，安静地等待着能够读懂它的人。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-04">← 上一章</a><a href="#contents">目录</a><a href="#ch-06">下一章 →</a></nav></section><section class="chapter" data-title="第六章｜送信的人" id="ch-06"><header class="chapter-head"><div class="chapter-no">第六章</div><h2>送信的人</h2></header><div class="prose"><p>塔维在旧街的鞋铺里找到了房东。</p>
 <p>老人把左脚架在矮凳上，鞋匠正替他换一根断掉的皮带。他看见调查员，先去摸口袋里的钥匙，随后才想起自己没有被要求开门。</p>
 <p>「我们问一封信。」塔维说。</p>
 <p>「哪封？」</p>
@@ -2479,7 +2430,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>调查员没有因为找回一封，就把另一封也算作已经解决。</p>
 <p>下楼时，塔维经过伊娜紧闭的房门。他想起几天前留的便条，从门缝里抽出已被雨打湿的一角，重新抄了一份更清楚的，写明案件编号、值班时间，以及她可以委托别人代取回执。</p>
 <p>这次，他没有只写「有事可来」。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>赫曼在外院住了一夜。</p>
 <p>他自愿留下协助研究，但不能接触原书，也不能自行去伊娜的住处。夜间出入要向门房登记，是城堡对访客的统一要求；若他不愿继续住，可以在城里另找旅舍。</p>
 <p>蕾奥妮则与他约定了第二次补充问话的时间。</p>
@@ -2496,7 +2447,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他把自己的笔记翻开，找到一张纸页很薄的旧记录。</p>
 <p>上面先写日期，再写参与者姓名。开头几次，每一个名字后面都有确认记号，后来同一位置被两道简略的笔画代替。</p>
 <p>「为什么改了？」艾莉娅问。</p>
-<p>「起初每回都写。后来大家觉得太费工夫，老师又总答得上来，就改成嘴上问、嘴上答了。」</p>
+<p>「我们认为重复填写占时间。老师每次都回答得出，后面改成口头问。」</p>
 <p>「口头的结果呢？」</p>
 <p>赫曼翻了几页。</p>
 <p>有一处写着「疲倦」。再后面是「恢复」。没有记录当时问了什么，也没有记录谁听见回答。</p>
@@ -2509,7 +2460,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我们讨论过。我同意，奥伦负责见证与中止装置。」</p>
 <p>第一次以后，老师仍能正常授课，甚至比过去更有精神。他能够描述从未见过的建筑内部，连楼梯中段一块松动的石头都记得。</p>
 <p>艾莉娅问，那是不是古代记忆。</p>
-<p>「当时……我们都当作是了。」</p>
+<p>「我们当时认为是。」</p>
 <p>「后来核实了吗？」</p>
 <p>赫曼摇头。</p>
 <p>那座城可能早就毁了，也可能只是他把几份读过的文献拼在了一起。他们没有独立证据，只因细节生动，就觉得它不像凭空产生。</p>
@@ -2527,7 +2478,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「那时，我也觉得也许是自己没有理解。他比我们知道得多。」</p>
 <p>艾莉娅把笔停了一会儿。</p>
 <p>厨房有人进来取走冷粥，询问是否换热的。赫曼本想摇头，最后却说可以。等门重新关上，他们才继续。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>达伦·克雷的名字，是在当天下午进入正式案卷的。</p>
 <p>仓储署经办员认出了他，但蕾奥妮没有只拿一份口供就去逮人。塔维先核对货栈租约和搬运工班的记录，找到了由达伦签发的运货单，日期与拍卖行登记吻合。</p>
 <p>米蕾特又在补交凭证上发现一处压痕。上面那张纸曾经叠在带红边的便笺下面，留下了一部分书写痕迹，能辨认出仓号，却不足以还原全部内容。</p>
@@ -2548,7 +2499,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「会的。」</p>
 <p>她坐回去，把「左肩压着湿布」和「自己知道应该挪灯」分别写成两行。</p>
 <p>写到第三行，她才发现记忆里的手指仍然缺了一块触感。她没有替那一处补上伤口，只留了空白。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>达伦的写字间在货栈二楼。</p>
 <p>楼下正抬一捆桅杆绳，喊号声隔着地板传上来。他请蕾奥妮坐下，伸手去拿酒壶，对方却先请他出示替维恩家处置物品的授权。</p>
 <p>他拿出了几张欠据。</p>
@@ -2558,7 +2509,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「他女儿没有能力办。这些货放着还要付租。」</p>
 <p>「那您可以向负责遗产清算的部门申请。」</p>
 <p>「申请要多久？」</p>
-<p>「手续再慢，您也不能替她签字，说她不要了。」</p>
+<p>「不能因为慢，就由您决定她放弃了什么。」</p>
 <p>他往椅背上靠了一点。</p>
 <p>「东西已经拍了。领主买走的那一本也要退？」</p>
 <p>塔维抬头。</p>
@@ -2583,7 +2534,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>里面放着一封已经拆过的信。</p>
 <p>信末的名字，露米这一天早些时候刚刚听过。</p>
 <p>奥伦·韦斯。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜是在午后发现，自己能离开客房的。</p>
 <p>她已经在门内站了一会儿。走廊尽头有扇窗，阳光落在石地上，窗下摆着一盆叶子细长的草。没有卫兵挡住去路，只有一名女仆抱着换洗的床单从楼梯上来。</p>
 <p>「我可以去那里吗？」伊娜指着窗。</p>
@@ -2596,7 +2547,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她把这些一件件确认过，才发现诺艾拉已经站在身后。</p>
 <p>「医师在找你。」</p>
 <p>伊娜立刻转身。</p>
-<p>「我只是出来透透气……」</p>
+<p>「我只是——」</p>
 <p>「他想问午餐合不合胃口。」</p>
 <p>诺艾拉把一只软垫放到窗边长凳上。</p>
 <p>「走累了就坐一会儿。不是哪里都不能去，今天先别穿过北面的庭院就好。」</p>
@@ -2606,7 +2557,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我会一直住在这里吗？」</p>
 <p>诺艾拉没有立刻给她一个好听的回答。</p>
 <p>她也坐下，把随身带的小布包摊开。里面是一只铜制窗扣，几枚新锉过的铆钉，还有半截用来作垫片的薄皮。</p>
-<p>「得看你想住哪里，也得问医师哪里安全。现在谁都不该替你定死。」</p>
+<p>「我想，这要等你自己愿意住在哪里，也要等医师知道怎样比较安全。」</p>
 <p>「如果一直不知道？」</p>
 <p>「那就先解决今天。」</p>
 <p>伊娜看着窗扣。</p>
@@ -2627,7 +2578,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>伊娜低头笑了一下。</p>
 <p>那是一个很短的笑，甚至没有发出声音。</p>
 <p>诺艾拉看见了，没有特意停下来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>菜谱比伊娜想象的沉。</p>
 <p>她把它放在窗边的小桌上，先看前后封皮，再从散开的地方数线孔。书页间夹着面粉，某一页还粘着一点干掉的糖。</p>
 <p>旁边有两种不同的字迹，一种写着糖要少半勺，另一种在下方补道：不是糖，是火太大。伊娜看着那两行争执似的话，第一次觉得这本破书曾陪人过过很长的日子。</p>
@@ -2668,7 +2619,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「如果我以后还是会想呢？」</p>
 <p>「可以来告诉我。也可以告诉你信任的人。不必每一次都独自想完。」</p>
 <p>他留下了一张写得比平时慢的字条，标明自己休息的房间，然后提着药箱离开。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米在东翼听到了这一天的简报。</p>
 <p>伊娜醒后没有新的声音，午餐吃了大半，外出走动时看见烟囱，短暂紧张，但能够自行确认环境。</p>
 <p>最下面有诺艾拉另加的一行。</p>
@@ -2706,7 +2657,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米把毯子拉到膝上，声音已经有些低了。</p>
 <p>「别等所有窗户都修完。」</p>
 <p>诺艾拉站在门边，看着她闭上眼睛，过了一会儿，才轻轻答应。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>傍晚，修好的菜谱回到了厨房。</p>
 <p>厨娘仔细翻了一遍，发现能平放在桌上，连连点头。她本来只答应一块馅饼，最后另外包了两块蜂蜜面包，让诺艾拉带上去。</p>
 <p>伊娜没有立即吃。</p>
@@ -2715,11 +2666,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>只有一点普通的疼。</p>
 <p>她含住指尖，等血止住，又继续缝下去。</p>
 <p>窗外的灯一盏盏亮起来。南翼有很多她不认识的人经过，脚步轻重不一，有人哼着歌，有人在楼下笑。</p>
-<p>伊娜把围巾折好，放到膝边。</p>
-<p>她拿起一块蜂蜜面包，慢慢吃完了。</p>
-<p><a id="sect-008"></a></p>
-<span id="ch-07"></span><h2 id="sect-008">第七章　提前送到的回信</h2>
-<p>三天后，塞维里安的回信到了。</p>
+<p>她把那条围巾铺在膝上，忽然觉得，这些声音并不需要被永远留下，才能算真的听见过。</p>
+<p>这个念头很小。</p>
+<p>她没有急着让它变成足够坚强的道理，只拿起一块蜂蜜面包，慢慢吃完了。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-05">← 上一章</a><a href="#contents">目录</a><a href="#ch-07">下一章 →</a></nav></section><section class="chapter" data-title="第七章｜提前送到的回信" id="ch-07"><header class="chapter-head"><div class="chapter-no">第七章</div><h2>提前送到的回信</h2></header><div class="prose"><p>三天后，塞维里安的回信到了。</p>
 <p>电报先到，接着是铁路邮班转来的亲笔。哥哥已回到领地北部，距离西站还有两段铁路和一处需要换车的山口；他提前结束了原定的最后一次拜会，等同行的医师备齐行李再一起出发。</p>
 <p>电报只有抵达日期与请备客房几个字。详细的话，他仍写在纸上。</p>
 <p>信很短。</p>
@@ -2748,7 +2697,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这一顿早餐比前几天长。没有人送来令人立刻站起来的消息，面包吃完的时候，茶还没有完全凉。露米发现自己竟然能分辨出今天换了一种莓果酱，酸味在舌尖停得更久。</p>
 <p>她顺口问了一句，厨房能不能做草莓蛋糕。诺艾拉说本地的鲜草莓早已过季，若要做，得等湖港下一批从南边送来的货，还不保证能一路保存完好。露米想了想，说那就先不急。</p>
 <p>她想起伊娜修好的菜谱，叫人把另外一小罐包起来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>次日下午，塞维里安到达时，露米正在西翼检查一份寄存协议。</p>
 <p>脚步先从走廊另一端传来，随后是一名侍从略显慌张的声音。露米抬头，门已经开了。</p>
 <p>哥哥站在门口，披风上有细小的雨痕，银灰色长发在颈后束着。他扫了一眼桌上的透明隔板，又看向她的右手。</p>
@@ -2758,11 +2707,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「有没有睡？」</p>
 <p>「有。」</p>
 <p>「多久？」</p>
-<p>「你们能不能商量好，只问我一次？」</p>
+<p>「这个问题，你们可以统一问一次。」</p>
 <p>塞维里安停在她面前，像是还有许多问题，却一时无法决定先问哪一个。</p>
 <p>然后，他俯身抱住了她。</p>
 <p>露米僵了半息，手指仍捏着笔。哥哥的披风带着外面的冷气，肩头有一点潮，她听见他呼出一口气，才慢慢把笔放下。</p>
-<p>「我信里写的是『没有重伤』。」</p>
+<p>「我写了不是重伤。」</p>
 <p>「你也写了还不知道是什么。」</p>
 <p>「现在知道了一点。」</p>
 <p>「我看见了。你补寄了七页。」</p>
@@ -2799,7 +2748,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「什么？」</p>
 <p>「要我承诺不把最后一块糖给别人，还要签字。」</p>
 <p>露米把纸抽回来。</p>
-<p>「可你那回确实给父亲了。」</p>
+<p>「那次你确实给父亲了。」</p>
 <p>「因为父亲说，他只是替你尝一下。」</p>
 <p>「所以以后他也要签。」</p>
 <p>塞维里安将笔还给她，伸手理平一片被墨瓶压住的纸。</p>
@@ -2810,7 +2759,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「先坐火车，山口换车，最后一段才换了马。」他把袖口往下拉了拉，「我能临时维持的门，距离没那么远。另一端没确认安全，也不能带医师过去。」</p>
 <p>露米点头，将一旁的温茶推给他。</p>
 <p>他没再说一路换了多少匹马。她也没有再问，只把桌上最靠近他的那叠文件挪开，让他先有个能好好喝茶的位置。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>同行的医师名叫莉迪亚·赛尔，来自白塔明镜外学庭的疗养所。她当时正在领地北侧的边城巡诊，收到塞维里安转来的病况摘要后，改了返程路线，与他的车队同行。</p>
 <p>她没有穿塔内法师常见的长袍，而是一件便于走动的浅色外衣。头发绾得很紧，袖口有洗不掉的药渍。看完伊娜的记录，她先问了一个与遗存无关的问题。</p>
 <p>「她能自己决定什么时候停止谈话吗？」</p>
@@ -2837,7 +2786,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我会请埃德蒙把家族待审的账目分出来。」</p>
 <p>他点头，继续翻页。</p>
 <p>两个人安静地坐了一会儿。露米听见哥哥将一页纸压平的声音，忽然没有那么急着把所有文件立即读完了。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>莉迪亚带回来的第一份意见，没有任何能让人安心宣布治愈的话。</p>
 <p>她认为伊娜目前仍能区分自身经历与外来记忆，发作后也能恢复，情况与马提亚斯当年的后期不同。但单次相隔多远、休息多久才安全，还需要按各自的反应调整，不能只凭一封旧信定死。</p>
 <p>「您见过马提亚斯？」露米问。</p>
@@ -2862,7 +2811,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米读完，将信折回原样。</p>
 <p>她原本预备问一个古老遗存的问题。</p>
 <p>现在，她先问莉迪亚，能不能代她回一封信。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>第六仓的门是在清晨打开的。</p>
 <p>塔维先看了门框上的保全标记，又让搬运领班确认支撑位置。屋顶有一处尚未修好，油布底下积着雨水，不能因为今天来清点，就把所有箱子堆到同一块地方。</p>
 <p>伊娜到得很早。</p>
@@ -2875,7 +2824,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>上面写的是她的名字。</p>
 <p>「今天认不完，也不用勉强。没有确定归属的，继续保留。」</p>
 <p>伊娜握着那张纸，慢慢点了头。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>她最先认出的是一只缺了把手的小抽屉。</p>
 <p>里面放着顶针、纽扣和半截灰线。父亲常把找不到地方的小东西塞进去，等要用的时候，再责怪抽屉为什么永远这么乱。</p>
 <p>伊娜蹲下，把一枚木纽扣捡起来。</p>
@@ -2890,8 +2839,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>已经卖出的分批追回核对，尚未交付的还在仓库。有几只箱子为了腾地方，被重新拆装，旧封皮垫在家具下面，散页夹进了别人的书。</p>
 <p>清点越往下进行，伊娜越难按照自己准备的清单寻找。</p>
 <p>米蕾特给她一杯水。</p>
-<p>「眼前看见什么，就先记什么。忘了的部分，不是你弄丢的。」</p>
-<hr/>
+<p>「先按看见的记。想不起来，不是你弄丢了。」</p>
+<hr aria-label="分场" class="scene"/>
 <p>达伦在隔壁的空房间接受指认询问。</p>
 <p>他被要求说明每一批货由谁搬出、在哪里停放，以及谁决定了拆分。他起初仍想把责任推给赶时间的工人，塔维便取出工班账，逐项让他核对。</p>
 <p>「这张搬运单是谁写的？」</p>
@@ -2923,7 +2872,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「他一直想见她。」</p>
 <p>蕾奥妮把笔放下。</p>
 <p>达伦看着桌面，终于不再解释自己只是在替别人省麻烦。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>中午，诺艾拉从一只小柜上拆下一块蓝布。</p>
 <p>布料裹着玻璃门，绑得很紧。她剪开外面的麻绳，再把布往下松，发现里面有一只袖子。</p>
 <p>伊娜站在旁边，忽然伸手接住。</p>
@@ -2942,12 +2891,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>伊娜点头，把裙子慢慢折好。袖子先收进去，再从腰侧对折，这一次她记得很清楚，是母亲教过的。</p>
 <p>没有声音从哪里传来。</p>
 <p>她抱着那件衣服，坐到晒不到太阳的墙边，吃了半块诺艾拉带来的咸面包。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>下午，露米收到第一批清点记录。</p>
 <p>她正与城主核对维修安排。奥斯温把预估表带到城堡，清楚列出公共预算负责的部分与教养院需要另外筹措的部分，既没有让月影家替整座城垫钱，也没有把所有延误都解释成钱不够。</p>
 <p>「是同一批木料被挪了两次。」他说，「桥那边追加得急，我们先改了车次，却没人通知院里。名单上的拨款没有消失，实际的修理却一直没发生。」</p>
 <p>「那以后谁通知？」</p>
-<p>「工程让承办书记逐项跟。若要延期，把原因和下回开工的日子写清楚，也给院舍送一份。」</p>
+<p>「具体工程由承办书记负责，延期必须写原因和下一次日期。院舍也拿一份。」</p>
 <p>露米点头，给这份安排签了领主核准。</p>
 <p>她核准的是领地层面的协作安排；城里的维修拨款和工程验收仍由奥斯温按市政程序办理。两份签字并不意味着同一笔钱可以从两本账上领两次。</p>
 <p>随后她拆开调查处的记录。第一页是物品数量，第二页是已确认的伪造经过，第三页却列着几本尚未修好的书。</p>
@@ -2964,7 +2913,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「达伦说没有。原信也没有这样要求。我们还要查后续通信。」</p>
 <p>「那么，先别把两个人的责任合在一起。」</p>
 <p>城主点头。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>傍晚，伊娜从仓库带回三个布袋。</p>
 <p>父亲的工作台太大，暂时寄存在已经清点完的区域。塔维给它挂了单独的牌，告诉她下一次可以直接凭编号来找，不会再被当成废木搬走。</p>
 <p>达伦指认的委托原信也送到了城堡。</p>
@@ -2980,7 +2929,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「那本旧书放在那里时，对他来说，大概最先也只是一本要修好的书。」</p>
 <p>露米没有立刻回答。</p>
 <p>过了一会儿，她将盛面包的小碟推近了一点。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>那天夜里，露米梦见一条蓝缎带。</p>
 <p>缎带绑在木马的脖子上。她坐得很高，两只脚够不到下面弯曲的木架，手里却一定要拿着一把纸伞。父亲站在旁边，说骑士通常不这样出门。</p>
 <p>她不知道骑士通常怎样出门。</p>
@@ -3003,7 +2952,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这一次没有烟，也没有不认识的名字。她甚至仍想笑，记得父亲被纸伞碰到时那张故意皱起来的脸。</p>
 <p>可她醒来以后，需要先想一想，自己现在究竟多大。</p>
 <p>露米拉响了铃。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>洛瑟来时，她已经把毯子披好了。</p>
 <p>「哪里不舒服？」</p>
 <p>「没有。我梦见小时候。」</p>
@@ -3032,7 +2981,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她写木马，蓝缎带，纸伞。</p>
 <p>写到父亲说「族长」时，笔尖停了很久。那个词如今每天都有人叫，听上去与梦里全然不同。</p>
 <p>她没有把那一夜写成预兆。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>次日，塞维里安替她找到了木马。</p>
 <p>它在北侧旧育儿室的柜旁，一条木腿补过，座面被擦得很干净。露米站到它面前，才发现它其实很矮。</p>
 <p>她的膝盖已经过了马背。</p>
@@ -3056,10 +3005,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>走出房间时，哥哥问要不要把它搬到东翼。</p>
 <p>露米摇头。</p>
 <p>「在那里会挡路。」</p>
-<p>她伸手掩好门。那匹小马仍留在窗边，一部分照着光，一部分在阴影里。她可以喜欢它，也可以暂时不再走进去。</p>
-<p><a id="sect-009"></a></p>
-<span id="ch-08"></span><h2 id="sect-009">第八章　旧字表上的煤灰</h2>
-<p>艾莉娅带着三份不同的译文，去了银镜湖东南岸的月影学院。</p>
+<p>她伸手掩好门。那匹小马仍留在窗边，一部分照着光，一部分在阴影里。她可以喜欢它，也可以暂时不再走进去。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-06">← 上一章</a><a href="#contents">目录</a><a href="#ch-08">下一章 →</a></nav></section><section class="chapter" data-title="第八章｜旧字表上的煤灰" id="ch-08"><header class="chapter-head"><div class="chapter-no">第八章</div><h2>旧字表上的煤灰</h2></header><div class="prose"><p>艾莉娅带着三份不同的译文，去了银镜湖东南岸的月影学院。</p>
 <p>露米没有同行。她要与蕾奥妮核对最新的问讯记录，之后还有煤炭采购的复核。出门前，她把一张盖好印的小纸递给艾莉娅，准许她查阅月影家族寄存在学院的几部旧字典。具体能否外借，仍由图书管理员决定。</p>
 <p>「不是所有的。」露米补了一句。</p>
 <p>艾莉娅刚亮起来的眼睛微微一顿。</p>
@@ -3079,19 +3025,19 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我来还书。」</p>
 <p>「真是一件适合记进年鉴的事。」</p>
 <p>艾莉娅把辞典放下，又将露米的授权纸推过去。</p>
-<p>来时她与诺艾拉同乘一辆车，女仆去了工艺楼。两人约好中午在阅览楼外碰面，下午各自还有事，回城堡不必互相等到关门。</p>
+<p>来时她与诺艾拉乘同一班渡船到南岸，再同乘一辆车进学院，女仆去了工艺楼。两人约好中午在阅览楼外碰面，下午各自还有事；今晚先在学院附近留宿，回北岸城堡也不必互相等到关门。</p>
 <p>布伦低头看了一眼。</p>
-<p>「你怎么连月影小姐都拉进来了？」</p>
+<p>「你把月影小姐也卷进去了？」</p>
 <p>她没有像平时那样立即回嘴。</p>
 <p>管理员抬眼，终于看清她眼下的疲惫。</p>
 <p>「出了什么事？」</p>
 <p>「有一册书，我可能看得太快了。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>她没有把薄片的细节讲给整个学院听。</p>
 <p>布伦知道她在处理一部来源不明的魔族旧记录，也知道她需要辨认三个词。看完抄文，他先把「寒季」圈起来，再让人从炉工文献架上取来一册灰黑色的书。</p>
 <p>艾莉娅有些意外。</p>
 <p>「不是历法？」</p>
-<p>「你一见到数字就去翻历法。可你想过没有，炉工也会记次数？」</p>
+<p>「你认为它是时间，就去查历法。可时间也会被写在别的地方。」</p>
 <p>他将书翻到一张残损的表格。</p>
 <p>上面记录着某座矿炉停止供热以后，各层岩壁降到可以触碰的温度需要多少次换班。魔族与矮人共同使用的旧术语旁，出现了一个与原书十分接近的符号。</p>
 <p>艾莉娅把两张纸放在一起。</p>
@@ -3121,7 +3067,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「没有。」</p>
 <p>她把名字抄到另一张干净的纸上。</p>
 <p>「我要带回去给一个人看。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>同一天上午，诺艾拉离开学院门口以后，先走错了一条回廊。</p>
 <p>她与艾莉娅一起来，事情却不同。艾莉娅去文史阅览楼找布伦，诺艾拉要取回已经提交的报名回执，再参加约好的基础图样测试。她换下了城堡制服，穿一件灰褐色短外衣，工具袋贴着腰侧，不会走一步就碰一下腿。</p>
 <p>在门口时，艾莉娅问过要不要带她去。</p>
@@ -3150,7 +3096,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我们工坊有一台搅拌器，总是边上稀、中间黏。他们说换大一点的桨就好了。」</p>
 <p>「用的是什么料？」</p>
 <p>菲妮说出配方的基料，没有说受保护的细节。诺艾拉听完，拿出一小片废纸，画了锅底与桨叶的位置。</p>
-<p>「先看桨和桶壁留了多大间隙，也可能是受热不匀。光听你说，我不敢定。」</p>
+<p>「要看间隙。也可能是加热不均，我现在不能只凭你说的确定。」</p>
 <p>「那以后你能来看吗？」</p>
 <p>「可以先画尺寸给我。等我把这里学明白。」</p>
 <p>上课铃响了。诺艾拉收好纸，没有为了显得能干就答应当天去修。</p>
@@ -3165,7 +3111,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这句话以前也有人听过。那个人当时说，她总不能一辈子蹲着修窗扣；等两人的日子宽裕一点，就让她换一份不用弄脏手的工作。</p>
 <p>她那时没有解释清楚，窗扣修好以后轻轻合上的一声，为什么能让她高兴很久。</p>
 <p>如今她把笔移回题纸，继续画那根需要留下的轴。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>中午，艾莉娅在阅览楼门口等到了她。</p>
 <p>两人的文件袋都比来时鼓。艾莉娅想问考得怎样，诺艾拉先摇头，说还没有结果，然后指向门外的面包摊。</p>
 <p>「先买饭。回去以后又会忘。」</p>
@@ -3188,8 +3134,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「如果你还想把所有责任放到自己身上，请先记得她是自己伸的手。不要替她把那一部分也拿走。」</p>
 <p>艾莉娅低头看着剩下的面包，过了很久，才继续吃。</p>
 <p>诺艾拉没有盯着她，把纸包折好，放回袋里。</p>
-<p>午休结束，诺艾拉乘车回城堡，艾莉娅抱着自己的文件袋回阅览楼。她们没有约好下次什么时候一起来，只说若有好消息，就留到晚餐时讲。</p>
-<hr/>
+<p>午休结束，诺艾拉乘车回学院附近的住处整理考核材料，艾莉娅抱着自己的文件袋回阅览楼。她们没有约好下次什么时候一起来，只说若有好消息，就留到晚餐时讲。</p>
+<hr aria-label="分场" class="scene"/>
 <p>下午查到的并不是宏大的历史。</p>
 <p>萨芙·艾伦曾在学院登记过一套旧语抄本，借用期限一个冬季，实际只用了四十三天。她没有发表文章，没有申请协会称号，也没有给自己的名字加上任何头衔。</p>
 <p>登记处保存了她当年的借阅用途。</p>
@@ -3211,8 +3157,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>离开档案楼时，街灯刚刚点起。</p>
 <p>一阵风把她夹在最上面的抄纸掀开。她伸手按住，看见名字旁边那一小块尚未译出的空白。</p>
 <p>她没有为了让今天的发现看起来完整，就给它填上一句漂亮的话。</p>
-<hr/>
-<p>露米在晚餐前见到了那张纸。</p>
+<hr aria-label="分场" class="scene"/>
+<p>次日午后，艾莉娅乘渡船回到北岸。她先去见露米，将那张写着名字的纸递给她。</p>
 <p>「埃缇。」她轻轻念了一遍。</p>
 <p>「暂定读音。」艾莉娅说，「原字我也留着。」</p>
 <p>「嗯。」</p>
@@ -3231,9 +3177,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她捏住杯耳，指节微微发白。</p>
 <p>「但我不想为了这件事，让伊娜再梦一次。可如果有一个问题，只有她梦见的东西才能回答，我不知道自己会不会忍不住问。」</p>
 <p>露米想了一会儿。</p>
-<p>「那就先别一个人决定。尤其是快找到答案的时候。」</p>
+<p>「那就不要让问题只由你一个人决定。」</p>
 <p>「你来决定？」</p>
-<p>「我也未必忍得住。」</p>
+<p>「我也可能忍不住。」</p>
 <p>艾莉娅抬头。</p>
 <p>露米将那张「若答不一，停」的抄文放在两人之间。</p>
 <p>「先写清楚。什么情况下停，谁有权叫停。到时候，不要因为差一点就有答案而临时改掉。」</p>
@@ -3245,29 +3191,26 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「今天能翻页吗？」</p>
 <p>「要看你还问不问。」</p>
 <p>她立刻闭嘴。</p>
-<p>过了好一会儿，屋里终于响起了翻过一页的声音。</p>
-<p><a id="sect-010"></a></p>
-<span id="ch-09"></span><h2 id="sect-010">第九章　没有说完的话</h2>
-<p>伊娜同意见赫曼，是在蓝裙子晾干以后。</p>
+<p>艾莉娅整理完那份古文抄本时，又从文件袋里抽出一封维奥拉寄来的短札。信里没有现成的译文，只有两处被圈出的旧方言词尾，以及一句不大客气的提醒：同一个字形未必指向同一个人，先查年代，再谈归属。露米看完，把原先准备写进结论的名字轻轻划掉。她记得维奥拉在学院里争论词源时也是这种语气；多年过去，对方仍不肯为了让朋友省事而省略证据。</p><p>晚些时候，赛琳从湖港寄来的便笺也送到了。她抱怨新一季的货单把两处同名码头混在一起，害她在雨里白走了半条街，末尾却照旧问露米有没有按时吃饭。露米回信时先写了「有」，想了想，又补上「今天是热的」。她没有请赛琳放下手头工作赶来；她们已经不必靠同住一间寝室，才能知道彼此还在好好生活。</p><p>过了好一会儿，屋里终于响起了翻过一页的声音。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-07">← 上一章</a><a href="#contents">目录</a><a href="#ch-09">下一章 →</a></nav></section><section class="chapter" data-title="第九章｜没有说完的话" id="ch-09"><header class="chapter-head"><div class="chapter-no">第九章</div><h2>没有说完的话</h2></header><div class="prose"><p>伊娜同意见赫曼，是在蓝裙子晾干以后。</p>
 <p>诺艾拉替她把油污洗淡了一些，另两道痕迹仍留着。衣服挂在南翼的窗边，一阵风经过，袖口便轻轻碰到墙。伊娜看了许久，忽然说：「我想问完。」</p>
 <p>她没有指定要谁陪。最后是洛瑟坐在靠窗的位置，诺艾拉在一旁缝那条尚未补好的围巾。露米离得远，通过事后记录了解会面，不在门外等着让伊娜觉得每一句话都必须讲得足够重要。</p>
 <p>赫曼进来时，没有带研究笔记。</p>
 <p>他在门口停住，直到伊娜指了指椅子，才坐下。</p>
 <p>两人相对很久。</p>
 <p>伊娜手里握着父亲留下的信。她已经能把那几行字背下来，却仍然低头又看了一遍。</p>
-<p>「您……一共见过我父亲几回？」</p>
+<p>「您见过我父亲几次？」</p>
 <p>赫曼报了数。</p>
-<p>「最后那回，他还能自己站着吗？」</p>
+<p>「最后一次，他还站得起来吗？」</p>
 <p>「能。他站在桌后，没有让我进里间。」</p>
 <p>「他生气了吗？」</p>
 <p>「生气了。」</p>
 <p>「您为什么还去？」</p>
 <p>赫曼把手放在膝上。</p>
-<p>「我担心你已经接触了遗存，也怕你父亲还在试。我那时只想着亲眼确认。」</p>
+<p>「我担心你已经接触了遗存，也担心他继续尝试。我想确认。」</p>
 <p>「所以您说，他可能再看见母亲。」</p>
 <p>赫曼垂下目光。</p>
 <p>「是。我说了不该说的话。」</p>
-<p>「您就是想让他听了那话，给您开门，是吗？」</p>
+<p>「您觉得他听完那句话，会比较愿意让您进去。」</p>
 <p>「是。」</p>
 <p>伊娜慢慢抚平信纸。</p>
 <p>她没有发怒到把信扔过去，也没有忽然原谅。洛瑟看着她的呼吸，确定她仍能继续，便没有插话。</p>
@@ -3276,7 +3219,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我不能替他回答。」</p>
 <p>「我知道。」</p>
 <p>伊娜抬头看他。</p>
-<p>「可您知道自己做了什么。这回，您总能自己说清吧。」</p>
+<p>「但您知道自己在做什么。您能替自己回答。」</p>
 <p>赫曼沉默了很久。</p>
 <p>屋外有工人在换窗台，木槌隔一会儿响一下。诺艾拉把线从针孔里抽出来，重新穿了一次，仍然没有抬头。</p>
 <p>「我想救我的老师。」赫曼终于说。</p>
@@ -3288,7 +3231,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>伊娜把信折好，放回膝上。</p>
 <p>她准备过很多关于母亲的问题。是不是还有别的声音，是不是只要不再受惊，就能偶尔听到熟悉的一句。那些问题曾让她在夜里翻身时也不肯把手从伤疤上移开。</p>
 <p>现在，她一个也没有问。</p>
-<p>「往后您若查到什么，先写给医师吧。」她说，「我想不想看，得由我自己定。」</p>
+<p>「以后如果您查出什么，请先写给医师。」她说，「我要不要看，我自己决定。」</p>
 <p>「我会的。」</p>
 <p>「不要再用我的名字约任何人。」</p>
 <p>「那封信不是我写的。」</p>
@@ -3297,7 +3240,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>会面结束时，他没有请求她宽恕，也没有伸手去碰那封信。他站起身，向她低下头，随后在诺艾拉开门以前一直等着。</p>
 <p>伊娜看着他离开，才松开握紧的手。</p>
 <p>掌心里有四道很浅的指甲印。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米晚上收到记录时，只读了伊娜同意转述的部分。</p>
 <p>她将纸收好，没有追问那些留在房间里的话。</p>
 <p>与此同时，几日前发往白塔明镜外学庭的查询也有了回音。电报先确认了莉迪亚的身份；正式信件与可供核对的旧协议副本，沿北方铁路邮路辗转数日，在这天一并送到。</p>
@@ -3324,7 +3267,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>医师的回答让他略微抬眼。</p>
 <p>莉迪亚迎着他的视线。</p>
 <p>「我来这里是看病人。别的部分，该查就查。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>第二天，教养院的屋顶开始修缮。</p>
 <p>露米没有再去地窖。她和学院维修顾问约在方院，确认家族捐助的临时安置费用，再与苔莎谈物件保管。木匠将新木条搬上梯子，孩子们被赶到另一边，在地上画格子跳。罗安站在梯子下面递工具，衣领沾着锯屑。</p>
 <p>「你们说要带走婆婆的东西？」他问。</p>
@@ -3332,8 +3275,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米把新拟的清单交给他，物件数量、现状、保管地点都写在里面。</p>
 <p>罗安看得很慢。看到「非院产」的地方，他抬起头。</p>
 <p>「那属于谁？」</p>
-<p>「先查萨芙留下的遗嘱，再找家属。查清之前，谁都不能替她卖掉，也不能替她送人。」</p>
-<p>「她女儿早些年就走了。去了哪儿，我真不知道。」</p>
+<p>「要查萨芙的遗嘱与家属。没有查明以前，不能替她卖，也不能替她送。」</p>
+<p>「她的女儿很早就走了。我不知道去哪儿了。」</p>
 <p>「你记得名字吗？」</p>
 <p>罗安点头，把名字写在纸背面。他的通用文仍不够漂亮，写错一处就划掉重来，却没有因为露米等着而随便写完。</p>
 <p>一旁的米娅忽然跑过来，将一块小木片塞进露米手里。</p>
@@ -3352,7 +3295,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>只是她们离开时，西楼漏雨的地方终于被揭开了。</p>
 <p>露米抬头看了一眼。</p>
 <p>那片被油布遮了许久的屋顶下面，腐坏的木料比账册上写的更多。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>塔维第一次看见那条消息，是在印刷铺的门口。</p>
 <p>报童将一叠刚裁好的纸分成两摞，黑墨还没完全干。版面右下角，一则不到十行的短讯写着月影家正在接待与古代遗物有关的病人，末尾接了一句「或与新式安神药剂有关」。</p>
 <p>没有说药已经制成。</p>
@@ -3362,7 +3305,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「有哪一句不实？」</p>
 <p>「最后一句的依据是什么？」</p>
 <p>「来稿。」</p>
-<p>「投稿的人亲眼见过那种药吗？还是只听了传言？」</p>
+<p>「署名的人亲眼见过药，还是听别人说？」</p>
 <p>编辑没有立即回答。他取出一张折过的便条，读了片刻，脸色不太好。</p>
 <p>稿上原本写的是：一名药商听客人提起。排版时压掉几个字，就只剩药商提起。</p>
 <p>塔维在记录里写下这层变化，没有要求对方交出所有消息来源，也没有命令停印。</p>
@@ -3372,7 +3315,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>走出印刷铺以前，他回头看了一眼。编辑已经把那张便条交给排字工，要求下一版补清消息未经核实。</p>
 <p>已经售出的纸却不能自己改字。</p>
 <p>塔维将买来的那份折好，送往城主办公室。港口船员常去的两家药铺，也被他列在随后需要送说明的地址里。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>蕾吉娜·沃斯来城堡之前，先寄了一份问题清单。</p>
 <p>露米把它看完，才知道议员要问的不仅是第六仓。领主保全了物件，研究人员却在城堡里查阅；维恩小姐住在这里，相关药剂又来自月影家工坊。三件事分别有理由，摆在一起，却容易让人以为所有资料都由月影家说了算。</p>
 <p>「她怀疑我们？」艾莉娅问。</p>
@@ -3407,7 +3350,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「上次试穿时，您说很合适。」</p>
 <p>「我没有坐那么久。」</p>
 <p>老管家没有再说什么，只把这件事记下。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>玛蕾娜当天傍晚亲自来送剩余的说明。</p>
 <p>她穿着灰白外衣，袖边没有装饰，领口却别了一枚很旧的细银针。她看完议会问题清单，既没生气，也没有说那名药商只是嫉妒。</p>
 <p>「有些项目外面的药房确实做不起。学院若收检验费，需要有公开的价目。」</p>
@@ -3432,14 +3375,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>说完，她从自己口袋里取出一颗小糖，放进嘴里。</p>
 <p>露米望着她。</p>
 <p>「下午试药。」药剂主管平静地解释，「很苦。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>秋日晚宴的请帖，在旧书送进城堡以前就发出去了。</p>
 <p>露米发现这件事，是因为埃德蒙将客人名单放到了原料报告上面。</p>
 <p>「不能只回信吗？」</p>
 <p>「已经回过了。您在月初确认了日期。」</p>
 <p>她低头看见自己的签名。</p>
 <p>没有伪造的可能。最后一笔拖得太长，旁边还有她当时试着画的一个小茶杯。</p>
-<p>名单上二十六位客人，大多是来谈冬季药材与运输安排的。几位住在城里的代表当天往返，两位来自外地的客人已经在旅舍住下，其中一位还改了火车票。</p>
+<p>名单上二十六位客人，大多是来谈冬季药材与运输安排的。几位住在北岸附近的代表当天往返；来自南岸城区的客人则预先安排了北岸住宿或次日船班。两位外地客人已经在旅舍住下，其中一位还改了火车票。</p>
 <p>露米把纸翻回来。</p>
 <p>「西翼不开放。宴会只用前厅和小餐厅。南翼的人不用因为有客人就搬房间。」</p>
 <p>「已经这样安排。」</p>
@@ -3458,7 +3401,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「您可以先听完再决定。」</p>
 <p>老管家将座次表移到她手边。</p>
 <p>「不过，今晚吃什么，需要现在决定。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>诺艾拉替她扣好最后一枚袖扣，退后半步。</p>
 <p>「转过来。」</p>
 <p>露米照做了。黑色裙摆迟了一瞬，才随着她的动作轻轻拢回脚边。</p>
@@ -3497,7 +3440,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「那由你挑。」</p>
 <p>他们沿回廊走向楼梯。走到拐角时，露米松开哥哥的手臂，自己扶住栏杆。楼下已经有谈话声，乐师在调弦，温暖灯光从敞开的门里落出来。</p>
 <p>她低头确认了一次裙摆，才走下去。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>前厅没有被布置成另一座城堡。</p>
 <p>原来摆在墙边的高背椅仍在那里，花瓶里换了几枝秋叶，靠窗多放两盏灯。门边的煤气灯罩刚擦过，较暗的角落则用了可调亮度的刻印灯。埃德蒙让人遮住朝座位直射的光，没有把整个房间照得像验货室。</p>
 <p>露米站到入口旁，先迎接一对来过几次的药材商人。</p>
@@ -3536,7 +3479,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「你听见的越来越多了。」</p>
 <p>「城堡走廊太长，说话会响。」</p>
 <p>下一位客人到了。艾莉娅很快退开，没有继续问。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>餐桌上最先引起争论的，是汤。</p>
 <p>一位船商称赞它比去年浓，旁边的药剂师却说冬季第一批根菜本来就甜，不该再加那么多奶油。两人各自吃完了一盘，仍然没有达成一致。</p>
 <p>露米觉得今天的很好。</p>
@@ -3565,12 +3508,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>有人抱怨新的货运费，有人谈起学院学生的作品。露米听见一位工坊主说，城堡的苗架送到时竟变成了提水机，忍不住看向埃德蒙。</p>
 <p>老管家神色如常。</p>
 <p>「后来送到了正确的地方。验收也补齐了。」</p>
-<p>「知道。那小伙子回去，把每根销子都画上了记号。」</p>
+<p>「我知道。那小伙子回去以后，给每根销子都画了记号。」</p>
 <p>露米想起那个总是低头看鞋的学徒。</p>
 <p>「现在还这样吗？」</p>
-<p>「师父嫌他画得满眼都是。不过该查的，后来倒没漏过。」</p>
+<p>「师父嫌他画得太多。不过该检查的，倒没有再漏。」</p>
 <p>桌边有人笑了。露米也弯了弯嘴角，把盘里最后一小块烤肉吃完。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>饭后，前厅腾出一片小小的空地。</p>
 <p>没有正式舞会那么多舞次，乐师只准备了几支大家熟悉的曲子。露米与哥哥走完开场，第二支便被一位上了年纪的客人请去。</p>
 <p>对方跳得很慢，遇到转身还会先提醒她。</p>
@@ -3591,15 +3534,15 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米没有立即接信。</p>
 <p>乐声从旁边传来。她忽然觉得那些平日容易说出口的问句，需要挑一个最准确的。</p>
 <p>「这是你的意思，还是家族的意思？」</p>
-<p>「这是家里的提议。我自己也愿意来见您，所以接下了这趟差事。」</p>
+<p>「家族的提议，我同意来转达。」</p>
 <p>「为什么？」</p>
 <p>莱昂内尔看了她片刻。</p>
-<p>「我读过您对银镜湖供药协议的回函，也听家里说过两家的旧交。我愿意先认识您。至于旁的……我们今天才第一次见面，现在就许诺什么，未免失礼。」</p>
+<p>「我看过您关于银镜湖供药协议的回函，也听说过两家长辈的往来。我愿意认识您。但我们今天才第一次见面，如果现在就说更多，会不诚实。」</p>
 <p>这让露米稍微放松了一点。</p>
 <p>她接过信，没有拆。</p>
 <p>「那我今天也只能回答，已经收到了。」</p>
 <p>「当然。」</p>
-<p>「至于药房的协议，还是请按原来的程序谈。」</p>
+<p>「药房的协议，照原来的程序谈。」</p>
 <p>「不会以您的私人答复为条件。」</p>
 <p>露米点头，将信放在小桌上。</p>
 <p>莱昂内尔停顿了一下。</p>
@@ -3609,7 +3552,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「十一点。」</p>
 <p>他看向她。</p>
 <p>露米端起水杯，指尖有些发热，却仍把话说完。</p>
-<p>「九点半我大约还醒不透。况且供货与检验该由不同的人谈，不好为了省时间混在一起。」</p>
+<p>「九点半，我不一定能听进去。供货与检验也需要不同的人到场，不能只为了缩短时间合在一起。」</p>
 <p>莱昂内尔安静一瞬，随后从口袋里取出小本。</p>
 <p>「是我没有先问。十一点，先谈供货。检验安排另约。」</p>
 <p>他写下时间，没有用一句玩笑把她的拒绝带过去。</p>
@@ -3617,7 +3560,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>又一支曲子开始时，他才问她是否愿意跳舞。</p>
 <p>她望向前厅，想了片刻。</p>
 <p>「这一支可以。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>乐师的第三个乐句，比露米记得的慢了一点。</p>
 <p>她转身时差点提前落脚，随即调整回来。莱昂内尔没有将她提着转，也没有领她做超出空间的动作，只在靠近另一对舞伴时换了方向。</p>
 <p>裙脚的银线在灯下亮了又暗。露米看见艾莉娅站在桌边，正把小点心分成两半，与学院来的女教师说话；蕾吉娜终于把城主放走，转而找玛蕾娜确认公开检验的讨论日期。</p>
@@ -3626,7 +3569,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「这里比我想象的小。」莱昂内尔说。</p>
 <p>「城堡？」</p>
 <p>「晚宴。我原先以为会有更多人。」</p>
-<p>「人太多，我就记不住了。」</p>
+<p>「多了就记不住。」</p>
 <p>「名字？」</p>
 <p>「谁不吃什么，谁的火车明天开，还有谁其实已经说完了，只是找不到机会走。」</p>
 <p>莱昂内尔笑了一下。</p>
@@ -3657,12 +3600,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>哥哥没有继续讲那个人。她也没有追问名字，只把盘中一块小饼推到他面前。</p>
 <p>他吃了。</p>
 <p>小餐厅门边备着几只给客人带走的点心盒。有客人请侍者在盒盖内侧写上女儿的名字，也有人什么都不写。纸盒一样大小，送往的地方却各不相同。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>最后几位客人离开时，露米站在门内送行。</p>
 <p>湖风已经冷了。莱昂内尔接过外衣，再次确认十一点，不曾在其他人面前提那封私人来函。那位问药的船商把地址留给玛蕾娜，临走前还特地过来道歉，说自己不该只听传闻。</p>
 <p>「先去问医师。」露米说，「别再替他买没有说明的药。」</p>
 <p>对方点头，走下台阶。</p>
-<p>车灯沿着南桥慢慢远去。露米一直看见最后一辆转过桥头，才退回门后。</p>
+<p>车灯沿着北岸的城堡外道慢慢远去。露米一直看见最后一辆转过林荫路口，才退回门后。</p>
 <p>前厅里有人拆花枝，有人搬回椅子。乐师把乐谱装进皮套，没有多奏一曲。诺艾拉从侧门进来，肩上搭着露米的披肩。</p>
 <p>「累了？」</p>
 <p>「脚还好。」</p>
@@ -3681,12 +3624,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>毛毯已经放回来了。</p>
 <p>桌上有白月的信，也有艾莉娅稍早送来的抄页。她先把两件东西分开放好，将写着「后日十一点」的小卡压在信封上，然后把手缩进毯子里。</p>
 <p>楼下最后几声收拾餐具的轻响渐渐远了。</p>
-<p>这一回，直到茶喝完，也没有人再问她一个问题。</p>
-<p><a id="sect-011"></a></p>
-<span id="ch-10"></span><h2 id="sect-011">第十章　第三盏灯</h2>
-<p>晚宴后的第二天傍晚，露米正在挑选一条丝带。</p>
+<p>这一回，直到茶喝完，也没有人再问她一个问题。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-08">← 上一章</a><a href="#contents">目录</a><a href="#ch-10">下一章 →</a></nav></section><section class="chapter" data-title="第十章｜第三盏灯" id="ch-10"><header class="chapter-head"><div class="chapter-no">第十章</div><h2>第三盏灯</h2></header><div class="prose"><p>晚宴后的第二天傍晚，露米正在挑选一条丝带。</p>
 <p>不是给自己。</p>
-<p>诺艾拉从学院回来，带回了晚课正式录取回执与工匠行会的后续考核安排。她把凭证收进工具箱时，艾莉娅看见了，便提议给她准备一件小礼物。露米想了半天，没有选首饰，因为女仆修东西时总会把容易刮坏的饰品摘下来。</p>
+<p>诺艾拉此前已从学院回到北岸，带回了晚课正式录取回执与工匠行会的后续考核安排。她把凭证收进工具箱时，艾莉娅看见了，便提议给她准备一件小礼物。露米想了半天，没有选首饰，因为女仆修东西时总会把容易刮坏的饰品摘下来。</p>
 <p>最后，她决定送一只新的工具袋。</p>
 <p>袋子已经选好，深色软皮，里面能分隔放细锉和薄刀。丝带只是为了包起来，免得看上去像城堡突然分派给她的新工作。</p>
 <p>「蓝色。」艾莉娅说。</p>
@@ -3706,7 +3646,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>那感觉并不比伊娜更明亮，也没有告诉她危险与否。</p>
 <p>片刻后，对方停止移动。</p>
 <p>露米从窗前退开。</p>
-<p>「请薇蕾娜过来。还有，问问医师，伊娜那边有没有什么异样。」</p>
+<p>「请薇蕾娜来。再去问医师，伊娜有没有察觉。」</p>
 <p>艾莉娅刚起身，露米忽然扶住桌沿。</p>
 <p>桌子没有变。</p>
 <p>掌下却传来潮湿石面的粗糙触感。</p>
@@ -3733,7 +3673,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我知道是刚刚系的。」</p>
 <p>露米低头看了一眼那个结。</p>
 <p>「梦里的人没有。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜也感觉到了第三个人。</p>
 <p>她没有听见话，却忽然觉得有人在很远的地方敲门，敲得很急。洛瑟赶到时，她已经将围巾握在手里，正按照之前约定的方法，向诺艾拉说自己晚餐吃过什么。</p>
 <p>不是每一句都答得出来。</p>
@@ -3749,7 +3689,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>艾莉娅看了看她手腕。</p>
 <p>「你不是已经选好了？」</p>
 <p>露米低头，半晌才说：「那就换一条。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>城门登记在一个钟头以后送到。</p>
 <p>奥伦·韦斯，外地学者，独自入城，带两只行李箱，一只长形木匣。没有随从，马匹交给南门旅舍照料。</p>
 <p>他没有使用假名。</p>
@@ -3775,7 +3715,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「但比什么都没有好。我们先知道它能做什么，再决定下一步。」</p>
 <p>她点头。</p>
 <p>这一次，不必由她来提醒别人不要假装全知。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>蕾奥妮与薇蕾娜在旅舍的公共餐厅见到奥伦。调查员先核对身份、请他说明达伦的委托；骑士长则在她们谈完后，交付露米关于持有者接触的回信。</p>
 <p>他比赫曼瘦，脸色苍白得像很久没有好好晒过太阳，左手戴着一只旧皮手套。桌上摆着一碗已经凉透的麦粥，旁边放了三张纸，每张写着同一个日期。</p>
 <p>他看见骑士长，先把纸翻过去。</p>
@@ -3786,16 +3726,16 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「是我。」</p>
 <p>薇蕾娜没有坐。</p>
 <p>「您做了什么？」</p>
-<p>「我只送出了一次很轻的呼应，想看看彼此的感应是否准确。」</p>
+<p>「一次很轻的呼应。我想确认感应是否准确。」</p>
 <p>「有人因此不适。」</p>
 <p>「我已经停了。」</p>
-<p>「她的意思很清楚：请您别再试。」</p>
+<p>「她要求您不要再次尝试。」</p>
 <p>奥伦抬起眼。</p>
 <p>他没有争辩，只把那三张纸收在一起。骑士长看见其中一张背面也写着日期，但月份与今天不同。</p>
 <p>「她明天愿意见我？」</p>
 <p>「前提是您接受会面条件。独自前来，不携带器具。她不会带维恩小姐到场，也不会进行接触试验。」</p>
 <p>奥伦的手停了一下。</p>
-<p>「她以为坐下来谈几句，就能把这事解决？」</p>
+<p>「她以为只靠说话就能解决？」</p>
 <p>「先说话。」薇蕾娜回答。</p>
 <p>窗外，城门方向的最后一趟货车驶过，铁箍车轮震得桌上的勺子轻响。</p>
 <p>奥伦低头看了很久那碗粥。</p>
@@ -3805,7 +3745,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>那一口吞得很艰难。</p>
 <p>他看向桌面，在一张新纸上写下日期，又在日期下面补了一句：</p>
 <p><strong>今天没有下雪。</strong></p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>会面安排在城南一座空置的小税亭。</p>
 <p>那里离居民区有一段距离，门窗能全部打开，桌椅容易搬走，也没有藏书或必须保护的古物。薇蕾娜前一天夜里检查了屋顶与后门，早晨又让人将通往河岸的路清出来。</p>
 <p>露米到达时，奥伦已经在屋外等着。</p>
@@ -3830,10 +3770,10 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「但您这次是在向活着的持有者发起联系。」</p>
 <p>「所以我要分清楚。」</p>
 <p>露米望着他放在膝上的双手。</p>
-<p>「您可以弄清楚自己的事。但不能不问一声，就让别人跟着承受。」</p>
+<p>「您需要分清楚的事情，不应由别人在不知情时替您承受。」</p>
 <p>奥伦没有立刻答话。</p>
 <p>窗外有一只鸟落在栏杆上，歪头看了看屋内，随后飞走。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>他承认委托过达伦。</p>
 <p>也承认不希望赫曼先拿到物件。</p>
 <p>「洛维会把一切送回学庭。」</p>
@@ -3878,7 +3818,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「是。」</p>
 <p>他停顿很久。</p>
 <p>「也是为了证明，我们还没有把所有事情都做错。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>谈到梦珀，奥伦没有直接使用这个名字。</p>
 <p>「它是后来的人取的称呼。」他说，「蓝色，会让人做梦，所以看见相近的东西，就往这个名字里放。老师认为这些现象可能与更古老的力量有关，但那是他的解释，不是我已经证明的事实。」</p>
 <p>「您做过的是哪些？」露米问。</p>
@@ -3887,7 +3827,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我入城后先去看过录具。后来试着让它送出最近的一小段经历，便在旅舍等。我不知道您看见了哪一段。」</p>
 <p>露米听见这句，才将干桌沿上曾出现的石面触感与他的说法放在一起。她没有向他提供细节，让艾莉娅另纸记录他记得的路线，之后再比对。</p>
 <p>「没有器具，仅凭感应能做到吗？」</p>
-<p>「我没法每回都做出来。它不像一扇窗，想推开就推开。」</p>
+<p>「我做不到稳定重现。它不是随时能打开的窗口。」</p>
 <p>奥伦没有把自己称作掌握这件遗物的人。</p>
 <p>「它像一条没有门的走廊。你偶尔能看见旁边的房间，却不知道哪一间属于自己。你们还在入口，所以能退。老师已经走得太远。」</p>
 <p>露米没有把这个比喻写成事实。</p>
@@ -3898,7 +3838,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米没有提高声音。</p>
 <p>「我正因为不想走到那一步，才要问。」</p>
 <p>她将杯子放下。</p>
-<p>「记不清就说记不清呀。疲惫也能写进记录，不必硬撑着给我答案。」</p>
+<p>「您可以疲惫，也可以不记得。说不知道就够了。」</p>
 <p>奥伦转开脸。</p>
 <p>侧门外，莉迪亚往前走了一步，没有进来。她看见他的呼吸渐快，便朝艾莉娅做了一个暂停的手势。</p>
 <p>会面停了十分钟。</p>
@@ -3925,14 +3865,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>很久以后，他抬起自己的左手。手套脱下，露出掌心几道浅浅的伤痕。伤痕周围没有蓝光，也没有任何能证明异常的东西。</p>
 <p>「我昨天不记得住哪一家旅舍了。」</p>
 <p>露米看着那只手。</p>
-<p>「地址明明就在口袋里。我伸手摸了半天，却忘了要找什么。卖栗子的老人见我站着不动，还问我是不是掉了钱。」</p>
+<p>「我明明把地址写在口袋里，却忘记自己为什么要摸口袋。站在街上，一个卖栗子的老人问我是不是丢了钱。」</p>
 <p>他的声音忽然有些哑。</p>
 <p>「我不能再等几个月。」</p>
 <p>露米安静了一会儿。</p>
-<p>「资料今天就可以开始核对。」</p>
+<p>「我们今天就开始核对。」</p>
 <p>奥伦抬头。</p>
 <p>「但我不会因此答应您今天就接通。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>离开税亭以前，奥伦在一份临时约定上签了名。</p>
 <p>不再主动呼应其他持有者，不擅自连接录具，允许检查旧引水站的保管情况。他可以保留自己的研究笔记，也可以撤回参与，前提是不带走不属于他的物件。</p>
 <p>签名时，他的笔在最后一个字母上停了很久。</p>
@@ -3948,10 +3888,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她低头，发现那条临时系上的丝带已经被自己拉得很紧。解开时，手腕留下一道浅红的印。</p>
 <p>露米把带子折好，放进袖袋。</p>
 <p>她不能要求一个快要失去自己的人表现得从容。</p>
-<p>但她也不能把伊娜的明天，交给那个人的迫切。</p>
-<p><a id="sect-012"></a></p>
-<span id="ch-11"></span><h2 id="sect-012">第十一章　两面之间</h2>
-<p>旧引水站在城南缓坡下。</p>
+<p>但她也不能把伊娜的明天，交给那个人的迫切。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-09">← 上一章</a><a href="#contents">目录</a><a href="#ch-11">下一章 →</a></nav></section><section class="chapter" data-title="第十一章｜两面之间" id="ch-11"><header class="chapter-head"><div class="chapter-no">第十一章</div><h2>两面之间</h2></header><div class="prose"><p>旧引水站在城南缓坡下。</p>
 <p>早年的水轮已经拆走，后来增装的蒸汽泵也搬到了新站，留下半截石槽、拆去锅炉的砖座和两座相连的仓房。新渠改道以后，这里被租给运货商存放空桶，后来商人搬走，只剩一个看门人住在靠路的小屋里。</p>
 <p>奥伦在外地写信租下其中一座仓房，货物送到不过六天。</p>
 <p>他抵达维斯佩拉以前，器具就随货车送到了。看门人留下的收条能对上日期，货运方也能找到，不是一处凭空冒出来的秘密据点。</p>
@@ -3969,9 +3906,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「里面加了一个反齿。」</p>
 <p>奥伦低头看她。</p>
 <p>诺艾拉没有抬头，拿细尺比过齿距，又在纸上画了一条线。</p>
-<p>「照正常装法，反齿不会放这儿。拆的时候它会倒咬住铜片，硬扳准坏。」</p>
-<p>「这样能少些振动。」</p>
-<p>「那就垫楔块，犯不着加反齿。」</p>
+<p>「正常装配不会从这里做反齿。要拆的时候，会把铜片咬死。」</p>
+<p>「为了减少振动。」</p>
+<p>「那么可以用楔块。」</p>
 <p>屋里安静下来。</p>
 <p>薇蕾娜走近了一点。</p>
 <p>奥伦终于说：「我不希望读取到一半松脱。」</p>
@@ -3980,13 +3917,13 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他看向铜板，没有回答。</p>
 <p>诺艾拉把反齿的位置圈出来，没有擅自拆掉。学院派来的工艺助教照着她的图又画了一遍，用两种颜色区分旧结构与后来改过的部分。</p>
 <p>那些线不能告诉他们奥伦心里想过什么，却至少能让「很轻的一次呼应」有了一个可以检查的边界。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米没有来到仓房。</p>
 <p>她在城堡等收到结构图，再与教养院的拓印对照。</p>
 <p>白月原定的会面由玛蕾娜主持，涉及族长答复的部分另列问题。露米写了简短的致歉信，没有把当事人的病况当作解释。莱昂内尔回信只确认收到，并将尚需她决定的事项压成半页，送到埃德蒙那里。两件录具并非镜子一样左右相反，而是刻着互补的路线。某些符号从一面开始，在另一面才接成完整的句式。</p>
 <p>「不是一定要面对面。」艾莉娅说。</p>
 <p>「那么那句‘两面不相向’是什么意思？」</p>
-<p>「也许是说，两面这么摆最容易接通；也可能是旧主人把更复杂的规矩缩成了一句话。暂时别只认一种解释。」</p>
+<p>「可能是最容易导致接通的摆放方式。也可能是旧主人给后来保管的人写的简化规矩。」</p>
 <p>她没有立即选择其中一种解释，先将图分成大小相同的格子，标记每一条刻线通向哪里。</p>
 <p>这项工作很慢。</p>
 <p>露米负责把那些不规则的图形转成一致的方向。不是用魔法强行让墨线移动，而是沿着薄纸的边缘，替艾莉娅一层层固定抄图。几张纸叠在一起，旧刻线、补刻线与断裂的地方终于能清楚分开。</p>
@@ -3999,7 +3936,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「也许只恢复了一部分。」</p>
 <p>露米取来旧协议，再看一遍「不得拆开封存」的字样。</p>
 <p>现在，她们知道那不是多余的一句。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>罗安第二天将萨芙留下的另一只匣子带到了城堡。</p>
 <p>里面有一个铜钥匙环、两副老花镜、一枚已经磨损的通行牌，还有一叠用旧布包起来的家书。最下面压着一张折得很整齐的遗物清单，指明书册与录具应由女儿瑟芙琳接管；若女儿未归，则暂由住客共同保管，不许变卖。</p>
 <p>清单没有解释遗存的用途。</p>
@@ -4020,20 +3957,20 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米看着他，没有替陌生人编一个不得已的理由。</p>
 <p>「那要等知道的人来说。」</p>
 <p>罗安低头看自己手里的钥匙环，过了一会儿，缓缓点头。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>奥伦接受了停止使用铜面录具的临时安排。</p>
 <p>他没有被监禁，却不能独自进入仓房。日常用药与休息由莉迪亚安排，个人笔记仍由他保管，研究材料则抄一份给艾莉娅。</p>
 <p>有一张图，他迟迟没有交。</p>
 <p>不是因为守卫没有检查，而是因为他把它归在「尚未验证的设想」里，声称与现存器具无关。</p>
 <p>艾莉娅没有强抢，只在材料目录中写下：未提供，无法核验。</p>
 <p>「这会影响我们作判断。」她告诉他。</p>
-<p>「那时还没验证完。」</p>
-<p>「正因为没验证完，您更该把缺口写出来呀。」</p>
+<p>「它不成熟。」</p>
+<p>「那就更应该说明哪些部分不成熟。」</p>
 <p>奥伦站在院子里，风吹起他外衣的下摆。露米看不见这一幕，只有艾莉娅与他相对。</p>
-<p>「温特小姐，」他说，「温特小姐，假如救人的办法就在手边，只差一道准许，您真能站着什么也不做？」</p>
+<p>「温特小姐，」他说，「如果您发现一件能够救人的事，在别人允许以前，您真的会什么也不做？」</p>
 <p>艾莉娅握着文件袋的手缓缓收紧。</p>
 <p>她想起那本旧书，想起自己最初迫不及待地冲进露米房间的样子。</p>
-<p>「我试过没弄清楚就往前冲。」</p>
+<p>「我已经做过没弄清就往前走的事。」</p>
 <p>奥伦看着她。</p>
 <p>「结果呢？」</p>
 <p>「现在有人睡不好。」</p>
@@ -4048,7 +3985,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>奥伦没有回答。</p>
 <p>院墙外有人推车卖栗子，铁锅里的小石子沙沙作响。香气飘进来，混着木炭的热味。他站在那股气味里，像忽然不记得自己为什么来到这里。</p>
 <p>艾莉娅将图收好，没有再等他说出一个她已经知道的答案。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜把「埃缇」写在一张废纸上。</p>
 <p>艾莉娅给她的抄件没有带任何术式，只是两个暂定的读音，以及旁边保留的原字。她看了一会儿，把纸放到桌角，没有试着回想梦里的脸。</p>
 <p>「我以前以为，知道名字就会好一些。」她说。</p>
@@ -4064,7 +4001,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p><strong>不要因为住在这里，就把自己的工钱也免掉。</strong></p>
 <p>伊娜看完，把钱收进父亲留下的钱袋。</p>
 <p>她第一次有了一个与继续留在城堡不同的打算。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>莉迪亚提出的练习很普通。</p>
 <p>没有阵法，没有蓝光，也不要求伊娜讲出任何古老记忆。桌上放五件她熟悉的东西，让她说明哪些属于自己、从哪里来、哪一件是别人临时借给她的。</p>
 <p>围巾、顶针、茶杯、菜谱、修书针。</p>
@@ -4087,7 +4024,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>伊娜抬起头，忽然明白了。</p>
 <p>她摇头。</p>
 <p>莉迪亚没有再往下解释，只请她把围巾收好。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>同样的练习，露米做得也不全顺利。</p>
 <p>她面前的五件东西，有三件从别人的生活里传到了她手中。</p>
 <p>一枚母亲送的旧发针，一本父亲收藏多年、在她十岁时送给她的诗集，一只哥哥声称从未打碎过的瓷杯。露米记得它们，却不记得确切日期。她试着回想，越想越觉得杯子底座似乎换过。</p>
@@ -4107,14 +4044,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这一次，她知道了为什么那句「所记之名属于自己」不能只被理解成一个漂亮的标题。</p>
 <p>不属于自己的东西，认出来以后，可以放回去。</p>
 <p>没有必要把它毁掉。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>赫曼与奥伦的第一次重逢，没有安排在露米面前。</p>
 <p>莉迪亚选了一个宽敞的走廊，让两人隔着一张空桌坐下，自己坐在侧面。赫曼不是持有者，不会产生同样的呼应，但他们之间还有别的事情需要防备。</p>
 <p>「你把录具带走了。」赫曼说。</p>
 <p>「你把老师留下了。」奥伦回答。</p>
 <p>一句话以后，走廊便安静得能听见远处扫地的声音。</p>
 <p>莉迪亚抬起手。</p>
-<p>「今天先把封存前发生过什么说清楚。两位有怨言，我不会拦；只是请别替对方说他心里想了什么。」</p>
+<p>「今天只核对封存前的经过。你们可以生气，但不要替对方决定动机。」</p>
 <p>赫曼从袋里取出自己的原始笔记。奥伦也拿出一册，封皮已经破了，页角卷起。两人从同一个日期开始，一条条比对。</p>
 <p>他们都记得老师第一次错叫名字。</p>
 <p>赫曼写的是「疲倦，休息后恢复」。</p>
@@ -4122,7 +4059,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>那是同一个下午。</p>
 <p>赫曼看着对方的记录，许久没有翻页。</p>
 <p>「你当时没有告诉我，他之后还说了别的。」</p>
-<p>「那时你只问我：还能不能往下做。」</p>
+<p>「你当时只问能不能继续。」</p>
 <p>「因为老师要我准备下一组。」</p>
 <p>「他也要我把断线补上。」</p>
 <p>莉迪亚没有替他们判谁更无辜。她在自己的纸上，将这一天标成未经充分核对而继续的起点。</p>
@@ -4133,7 +4070,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>奥伦没有否认。</p>
 <p>会面结束前，他们终于拼出了缺失的三个日夜。那期间马提亚斯曾两次拒绝休息，一次在醒来后认不出自己的床。奥伦没有强迫他继续，却也没有按最初的规程停止器具。他相信自己留在旁边，就能在真正危险的时候把老师拉回来。</p>
 <p>后来，他不知道哪一刻才算真正危险。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米在晚上看到了汇总。</p>
 <p>「他的想法仍是把老师接回去。」艾莉娅说。</p>
 <p>「接回哪里？」</p>
@@ -4151,31 +4088,28 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米把信放在桌上。</p>
 <p>她坐了一会儿，慢慢把那只被换过底座的杯子拿到面前。</p>
 <p>杯底确实有一道极细的接缝。</p>
-<p>它仍然能好好盛住茶。</p>
-<p><a id="sect-013"></a></p>
-<span id="ch-12"></span><h2 id="sect-013">第十二章　寄往北方的副本</h2>
-<p>寄往北方的信，八天后有了回音。</p>
+<p>它仍然能好好盛住茶。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-10">← 上一章</a><a href="#contents">目录</a><a href="#ch-12">下一章 →</a></nav></section><section class="chapter" data-title="第十二章｜寄往北方的副本" id="ch-12"><header class="chapter-head"><div class="chapter-no">第十二章</div><h2>寄往北方的副本</h2></header><div class="prose"><p>寄往北方的信，八天后有了回音。</p>
 <p>先找到人的，是询址电报。替边境商队做翻译的人认出了瑟芙琳的名字，将消息转到她随队停留的驿馆。她此行已经南下到铁路沿线，回报地址以后，装有家信的邮袋便改送那里。</p>
 <p>她的回函和副本搭下一班南行列车，到了西站，再由城堡的取信人带回。信封上有两次转递的戳，最后一枚还压住了前一枚的半个日期。</p>
 <p>纸上的字很小。</p>
 <p>她已经离开原来的边境城镇，正在替一支准备南下的商队工作，短期内无法亲至。信中先问萨芙留下的住处是否仍有人居住，随后说明，自己十多年前曾寄来三次信，都被退回；后来接到母亲死讯，回过维斯佩拉，却发现旧院负责人已换人，很多物件被说成不知去向。</p>
 <p>她与那个人争执过。</p>
 <p>没有争出结果。</p>
-<p>「原来她回来找过……」罗安读到这里，声音低了下去。</p>
+<p>「所以不是没有回来。」罗安读到这里，声音低了下去。</p>
 <p>他站在城堡的会客室里，手里仍握着那枚旧钥匙环。苔莎陪着他来，读信时没有插话，直到他停下，才轻轻把水杯推近。</p>
 <p>露米没有说「现在明白了」。</p>
 <p>她把后面的纸递过去。</p>
 <p>瑟芙琳写道，母亲给她抄过一份册首的规矩，因为害怕自己死后，没有人知道如何保管。她一直留着，收到月影家的信后，就将副本随回函寄出。原件可以之后送来，但须确认城堡愿意承担保管责任，不会把它变成任何人的私产。</p>
 <p>露米当着罗安与苔莎的面，写下愿意接受的保管条件。</p>
 <p>没有把「族长」两个字当成不需要承诺的理由。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>副本不是那本古书的全部第零页。</p>
 <p>它是萨芙用现代魔族语写给女儿的说明，里面保留了若干旧字，并按她自己的理解作注。纸张远比原册年轻，有的地方甚至用了缩写，像母亲确信女儿一看便懂。</p>
 <p>艾莉娅用了半天，把它与薄纸残条、铜面刻文并排核对。</p>
 <p>几处一直无法确定的句子，终于有了相互支持的证据。</p>
 <p>录具原本用于收存与校验记述。</p>
 <p>承载者并不必把所有记忆都认作自己的经历；相反，每一次记录都应标明是谁见过、是谁转述、谁在场确认。两面器具各有用途，一面承接，一面核对。没有相应的索引便强行连通，会让读者自己补全来源不明的部分。</p>
-<p>「我们先前一直以为，它是把门打开的钥匙。」艾莉娅说。</p>
+<p>「我们一直把它当作打开的钥匙。」艾莉娅说。</p>
 <p>露米看着那些重复出现的名字。</p>
 <p>「它也在告诉后来的人，哪些地方不该继续读。」</p>
 <p>萨芙的注里还有一句：</p>
@@ -4189,21 +4123,21 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「这次我打算白天查。」</p>
 <p>「记住这句话。」</p>
 <p>「你也是。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>萨芙在注末讲了自己的家族。</p>
 <p>她并非最初的记录者。旧册传到她手里时，已经只剩一部分。她的祖辈曾是逃离破碎魔界的人，后人在七龙参与的漫长战争中不断迁居，旧姓与村名几次改换。一些记录被带走，一些为了不让追兵找到避难者而毁掉。</p>
 <p>她不知道所有事情。</p>
 <p>她只知道家里曾经反复讲过一个约定：不把没有回来的人写成从未存在。</p>
 <p>罗安看到这里，伸手按住纸角。</p>
-<p>「婆婆从来不跟我们说打仗的事。」</p>
+<p>「她从来不讲战争。」</p>
 <p>苔莎看着他。</p>
 <p>「可能她也只知道这些。」</p>
-<p>「可我小时候问过，她总说：往后再讲。」</p>
+<p>「可我小时候问，她总说以后。」</p>
 <p>露米没有接话。</p>
 <p>她想起父亲。阿德里安诞生时，世界已经从毁灭中恢复了数百年。即使活得足够久，也不会自动拥有出生以前的历史。人们习惯把长寿者想成一扇随时能打开的门，门后应当储存着所有问题的答案。</p>
 <p>萨芙留下的却是一叠错字、几封退回的信，以及没有来得及取回的书。</p>
 <p>那些东西只能证明，她也曾努力过。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>当天晚些时候，艾莉娅译出了第一段相对完整的旧记录。</p>
 <p>它没有提到神的名字。</p>
 <p>也没有解释那场灾变究竟如何发生。</p>
@@ -4229,20 +4163,20 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>伊娜点点头，把抄件放下。</p>
 <p>她没有要求艾莉娅立刻告诉她女孩后来有没有活下来。</p>
 <p>只是隔了一会儿，又说：「等你读到，再告诉我。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米将对外请求查阅的信件分成两堆。</p>
 <p>一堆是已有明确研究问题、愿意遵守保管限制的学者。</p>
 <p>另一堆只有估价与购藏意向。</p>
 <p>两堆都没有被烧掉。前者需要逐一答复，后者则收到一封措辞简短的回函：相关物件权属与安全尚未核清，不出售。</p>
 <p>塞维里安看见桌上开始增加的信，问她要不要暂时不公开任何发现。</p>
 <p>露米想了一会儿。</p>
-<p>「消息既然传出去了，瞒也瞒不回去。先公开已经核实的保管情况；承载者的私人记录，一字也不要放出去。」</p>
+<p>「已经有人知道，藏着不会让他们忘记。先公布我们确认的保管情况，不公布承载者的私人记录。」</p>
 <p>「那会有人认为你据为己有。议会也会问为什么保管地点在城堡。」</p>
-<p>「寄存协议可以让他们查，也请学院和独立档案员一起登记。将来若有更合适、更安全的地方，就按程序移过去；这里不必永远是终点。」</p>
+<p>「让他们查寄存协议。可以请学院与独立档案员共同登记。若找到更合适、安全的地方，也可以转移，不必永远留在这里。」</p>
 <p>她说完，把萨芙女儿的回信放进另一只干净的档案袋。</p>
 <p>外面写着名字，不写「附属材料」。</p>
 <p>这封信仍然属于一个母亲留下的事，和一个女儿迟来的回话。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>晚餐送到东翼时，诺艾拉已经换了衣服。</p>
 <p>她今晚不值夜，准备回城里取一件订好的冬外衣，再去看工艺课要求的图样。接班的女仆把茶杯摆在露米右手边，问她夜里是否还要加餐。</p>
 <p>「留一点面包就好。」露米说。</p>
@@ -4271,7 +4205,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米想了想。</p>
 <p>「十一点。」</p>
 <p>塞维里安在自己的小本上写好，没有试着把时间挪得更早。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>饭后，露米给伊娜写了一张简短的便条。</p>
 <p>不是新的问题，只告诉她，今天已经寄出她同意转交的修书工具清单，工作台仍在妥善保存，若想看看，可以由调查处另约时间。</p>
 <p>她本来还想写那段古老记录，笔到纸上，才想起伊娜已经读过了。</p>
@@ -4279,7 +4213,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>便条送到南翼时，伊娜正在试着给一册普通账本缝封皮。</p>
 <p>她读到最后，抬头看了看自己盘边那只小碟，竟然笑出了声。</p>
 <p>送信的人走后，她把碟子推远一点，继续缝线。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>西翼那间小阅览室里，旧书已经合好。</p>
 <p>旁边多了一只新纸盒，里面分开装着翻译、照片与寄存协议。每张副本都有出处，尚未确认的地方仍留着空白。它们还不能回答伊娜为什么会站在一扇陌生的窗前，也不能让奥伦立即停止害怕明天。</p>
 <p>但那本没有名字的书，终于不再只是一件等待别人猜测来历的旧物。</p>
@@ -4294,12 +4228,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「然后，看看那些人为什么需要它。」</p>
 <p>她们一起熄了灯。</p>
 <p>回到东翼，露米在自己的笔记里写下当天的日期，下面没有抄古文。她只记了几件普通的事：哥哥没有催她早起，诺艾拉今晚去上课，伊娜在修一本普通账册。写到晚餐，她停了一会儿，又添上“酸果酱少放”。</p>
-<p>她把写着「雨声很近」的书签抽出来看了一眼，又原样夹回去。</p>
+<p>她没有把这些字抄进研究档案。留在书签背面的「雨声很近」，也不过是给将来的自己看的。两种记录各有用处，不必混在一起。</p>
+<p>这几行字没有写古代的事。</p>
+<p>她知道是谁写的，也知道应该放在哪里。</p>
 <p>窗外，银镜湖上最后一艘近岸小船缓缓靠了埠。有人收绳，有人把灯从船头取下，沿着石阶往城里走。</p>
-<p>露米合上笔记，将它放到明天伸手就能拿到的地方。</p>
-<p><a id="sect-014"></a></p>
-<span id="ch-13"></span><h2 id="sect-014">第十三章　修书匠的最后一页</h2>
-<p>工作台送回旧街那天，伊娜亲自去开了门。</p>
+<p>露米合上笔记，将它放到明天伸手就能拿到的地方。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-11">← 上一章</a><a href="#contents">目录</a><a href="#ch-13">下一章 →</a></nav></section><section class="chapter" data-title="第十三章｜修书匠的最后一页" id="ch-13"><header class="chapter-head"><div class="chapter-no">第十三章</div><h2>修书匠的最后一页</h2></header><div class="prose"><p>工作台送回旧街那天，伊娜亲自去开了门。</p>
 <p>屋子已经通风过，窗框新刨掉一层木边，开合不再那么费力。房东站在楼梯下面，手里拿着一张补写的收据，想上前说话，又被她平静地请到外面等。</p>
 <p>她不是不愿意听。</p>
 <p>她只是先要把桌子放回去。</p>
@@ -4316,13 +4249,13 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她把抽屉完全取出来，倒转轻拍。灰尘与纸屑落在布上，一只折扁的灰绿色信封终于露了出来。</p>
 <p>伊娜的手停住。</p>
 <p>「是这个。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>信封没有完好的信。</p>
 <p>里面剩着两页被裁过的纸，还有一张材料清单。那封关于「并未承诺复生」的信，下半截已经被米洛裁去，用作修补，正是她们先前在账本散纸里找到的部分。</p>
 <p>留下的上半页，语气远比残片温和。</p>
 <p>赫曼询问书籍保存状况，称自己已经找到一位熟悉类似器具的同行，可以提供资金，条件是先核对书脊中是否仍保留蓝色薄片。他没有写同行的名字，只说对方能够理解米洛的处境。</p>
 <p>伊娜读到这里，没有露出意外。</p>
-<p>她将纸递给诺艾拉，让人带一份抄本回城堡。</p>
+<p>她将纸递给诺艾拉，请她把抄本封好，交给下一班北上的渡船转运回城堡。</p>
 <p>另一张材料清单背面，是父亲自己的笔记。</p>
 <p>字很杂，有时记胶的浓度，有时记某一页容易断裂。中间突然插入一行与修书无关的话：</p>
 <p><strong>她不回答，不是没听见我。她只是已经说完了。</strong></p>
@@ -4337,22 +4270,22 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>现在，她不知道父亲说那句话时，是否已经决定不再等母亲回来。</p>
 <p>她仍然不能问了。</p>
 <p>但那张纸至少让她知道，有一段时间，他努力想过怎样继续与活着的女儿过日子。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>蕾奥妮来时，搬运工还没有拿走垫在楼梯上的麻布。</p>
 <p>她侧身让开一个扛木架的人，先在门口蹭净鞋底，再把硬皮记录簿放到空椅子上。塔维提着调查处的封袋跟在后面，肩上沾了一小片墙灰。</p>
 <p>「可以看抽屉吗？」</p>
 <p>伊娜点头。</p>
 <p>诺艾拉已经把原来的位置画在废纸上，没有为了方便读信而先替信封补胶。蕾奥妮看过图，让塔维对着窗光检查底板背面。</p>
 <p>「它以前塞在这里？」伊娜问。</p>
-<p>「别急着认定是藏的。」蕾奥妮伸手比了比裂隙，「搬东西的时候，也可能自己滑进去。你父亲为什么留下，我们还不知道。」</p>
+<p>「卡在这里，和故意藏在这里，是两回事。」蕾奥妮伸手比了比裂隙，「搬动时也可能滑进去。你父亲为什么留下它，我们现在不能替他说。」</p>
 <p>伊娜把手从桌沿移开。</p>
 <p>「我刚才还在想，他是不是一直等我找到。」</p>
-<p>「也不能排除。」调查员说，「先把两种可能都记上。」</p>
+<p>「也有可能。」调查员说，「所以两种都留着。」</p>
 <p>塔维放下抽屉，拿起那张有修书胶渍的残纸。信封里的半页与旧街先前发现的纸条，边沿有一处剪刀停顿后重新起剪的短口。两边并不严丝合缝，中间少了一窄条。</p>
 <p>「能确定原来是一封吗？」诺艾拉问。</p>
-<p>「看着像一张纸上裁下来的，但还不能就这么定。」</p>
+<p>「可以先确定这两张纸很像来自同一张。」</p>
 <p>塔维把它们各自放进透明护片，隔着缝隙比字行。</p>
-<p>「字和字距都接得上。纸纹还得验；不能因为想看下一句，就先把它们粘起来。」</p>
+<p>「内容能接，字距也能接。不过还要看纸纹，不能因为我们希望读到下一句，就把它们粘上。」</p>
 <p>伊娜忽然走到柜前，取出父亲裁纸时用的小木盘。盘里有短得不能再用的线头、两枚生锈的钉子，还有几片卷起的纸边。</p>
 <p>「这些要一起带吗？」</p>
 <p>蕾奥妮看了一眼。</p>
@@ -4363,9 +4296,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>楼下的房东又敲了敲门。</p>
 <p>这次，伊娜让他进来。</p>
 <p>他拿着那张补写的房租收据，手心将边角攥得有点潮。蕾奥妮没有接过去，只让他把收据交给应当收的人。</p>
-<p>伊娜看完日期，问：「您今天才补的收据，怎么写的是三个月前的日子？」</p>
+<p>伊娜看完日期，问：「这是今天开的，为什么写三个月前？」</p>
 <p>「钱是那时收的。」</p>
-<p>「那就写明白呀：钱是三个月前收的，收据是今天补的。」</p>
+<p>「那就写钱是那时收的，收据是今天补的。」</p>
 <p>房东张了张嘴，最后坐到门边，借笔重新写了一张。</p>
 <p>诺艾拉把第一张作废的收据留下，在上面画了两条斜线。伊娜这次看得比刚才更慢，读到「租期」时，指尖停在一个数字上。</p>
 <p>「这里少了七天。」</p>
@@ -4374,11 +4307,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我有交钱那天的账。」</p>
 <p>「那就加上。」</p>
 <p>她没有立即把笔递还，先抬眼望着他。</p>
-<p>「上回您要是肯听，我那天就能把账拿给您看。」</p>
+<p>「您上次也可以让我把账拿出来。」</p>
 <p>房间里只剩楼下手推车经过的声音。</p>
 <p>房东把帽子放在膝上，低声说：「是。」</p>
 <p>伊娜等了一会儿，才将笔交给他。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>午后，诺艾拉在楼下买了两份炖牛肉。</p>
 <p>店家原本只卖面包，入秋后借了一口大锅，拿便宜的肋条、胡萝卜和洋葱慢慢煨。肉不是城堡里那种切面均匀的好部位，一块肥，一块带筋，热时却软得能用勺背压开。酱汁里有一点深啤酒的苦味，浸进面包以后，又被麦香盖住。</p>
 <p>伊娜坐在刚垫稳的桌边，吃到一半，忽然停下。</p>
@@ -4400,7 +4333,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>伊娜拿尺子比过每一栏，担心以后遇上太长的书名，名字写不下。诺艾拉说，真不够就另订一本厚点的簿子。她才肯把尺子放下。</p>
 <p>画到最后，伊娜在空白处又添了一栏。</p>
 <p>寄还地址。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米是在第二天看到完整笔记的。</p>
 <p>伊娜同意提供与器具有关的部分，关于家人的两行只让她看，不准抄进研究记录。</p>
 <p>露米依言将那两行遮住。</p>
@@ -4416,7 +4349,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>艾莉娅看了很久，将早期记录里的评价补上一条修正。</p>
 <p>露米没有让她删掉原来的话。</p>
 <p>后来的人应当能看见，她们是怎样改变判断的。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>赫曼承认，那位没有写出名字的同行就是奥伦。</p>
 <p>「我给他看过米洛寄来的拓样。」</p>
 <p>「您没有告诉我们。」露米说。</p>
@@ -4437,24 +4370,22 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>赫曼嘴唇动了一下。</p>
 <p>「没有人正式答应。」</p>
 <p>蕾奥妮收好账目副本。</p>
-<p>「这笔路费，也请您如实写进证词。」</p>
+<p>「这部分也要写进证词。」</p>
 <p>「我知道。」</p>
 <p>他没有求她把事情留在研究者之间。</p>
 <p>走出门时，他在台阶上停了很久。院里有个年轻侍从正给花盆浇水，水漫出来，流过他的鞋边。他低头看了一眼，才像刚发现自己仍站在那里，缓缓走开。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜回到南翼以后，将父亲的两行字收进了一个小纸套。</p>
 <p>她没有放到枕头下面，也没有贴在随时能看见的墙上。纸套被夹进自己的工具袋，和修书针、顶针放在一起。</p>
 <p>诺艾拉送来露米退还的原件，顺便问她工作台还缺什么。</p>
 <p>「一个新胶罐。」伊娜说。</p>
 <p>「旧的不能用？」</p>
-<p>「能用，可我还是想要两只。薄胶厚胶分开装。父亲以前老说我太讲究。」</p>
+<p>「能，但我要两个。一个装薄胶，一个装厚胶。父亲总嫌我分得太细。」</p>
 <p>诺艾拉笑了。</p>
 <p>「那就买两个。」</p>
 <p>伊娜点头。</p>
-<p>晚风从窗里吹进来。伊娜把蓝裙子折好，收进柜子，又找了一张碎纸，记下两只胶罐的尺寸。</p>
-<p><a id="sect-015"></a></p>
-<span id="ch-14"></span><h2 id="sect-015">第十四章　灯亮以前的检查</h2>
-<p>两面录具第一次被放进同一座建筑，是在旧引水站完成清理以后。</p>
+<p>窗外的晚风吹进来，蓝裙子的袖口不再碰墙。它已经折好，收进柜子里。她没有等哪一道声音告诉她今天可以这样做。</p>
+<p>她自己决定了。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-12">← 上一章</a><a href="#contents">目录</a><a href="#ch-14">下一章 →</a></nav></section><section class="chapter" data-title="第十四章｜灯亮以前的检查" id="ch-14"><header class="chapter-head"><div class="chapter-no">第十四章</div><h2>灯亮以前的检查</h2></header><div class="prose"><p>两面录具第一次被放进同一座建筑，是在旧引水站完成清理以后。</p>
 <p>不是并排摆在桌上。</p>
 <p>西仓与东仓之间隔着一道厚石墙，原有的门洞被封住，只留下便于传递普通器具的窄孔。两块铜面朝向不同，各自用萨芙留下的方式覆住刻线。参与者沿着两条独立通道进出，谁都不必为了递一把尺子而走到另一面前。</p>
 <p>搬运过程没有让持有者到场。</p>
@@ -4469,7 +4400,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>两人坐在门槛上分了一块饼。薇蕾娜带着守卫检查水渠，塞维里安在外墙描设用于隔离普通魔力与示警的术式。那些结界不会消除遗存本身，但能让他们分清一部分外来的干扰，也能在器具过热、支架损坏时尽快发出警告。</p>
 <p>这里没有被称作绝对安全。</p>
 <p>正因为不可能这样保证，每个人的任务才写得很具体。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>学院送来的木架到得比预定晚了一个上午。</p>
 <p>尤恩扶着车尾下地时，杜林已经站在仓房门口，看着他手里那张被雨水洇了一角的运输单。</p>
 <p>「绳子谁打的结？」</p>
@@ -4477,17 +4408,17 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「左后角。」</p>
 <p>尤恩绕到后面，看见绳扣贴在一截尖锐的铁边上。一路磨下来，外层麻丝已经散开。他脸上的笑消失了。</p>
 <p>杜林没有让他立即解绳。</p>
-<p>「先垫木头，把架子撑稳！这会儿解绳，东西砸下来，你认错也没用。」</p>
+<p>「先垫木，架稳。你现在解，东西滑下来，认错也拦不住。」</p>
 <p>几个工人一起把支脚撑好，卸去重量，尤恩才换掉磨损的绳。他把旧绳收进工具袋，准备回学院交作业时一并拿出来。</p>
 <p>诺艾拉在门边看完，悄悄将自己原本搭在铜框尖角上的测线挪开。</p>
 <p>杜林看见了，没有说话。</p>
 <p>她递过外接把柄的图纸。矮人工匠用指甲沿着受力方向推了一遍，最后点在木把与铁杆连接的地方。</p>
 <p>「这里别用胶。」</p>
 <p>「我准备打销。」</p>
-<p>「销子打穿，留点头出来。别光顾着做漂亮。」</p>
+<p>「穿过去，留头。别做得太漂亮。」</p>
 <p>诺艾拉拿起铅笔，在图上画出一截露出来的销尾。</p>
 <p>「会勾袖子。」</p>
-<p>「那就加护片。袖子勾不勾得住，好防；里面的销子断没断，你可看不见。」</p>
+<p>「做护片。勾袖子容易防，里面断没断，你看不见。」</p>
 <p>她画完，拿给尤恩看。尤恩刚因绳结挨了训，不敢再急着点头，蹲下来量过现有铁杆，才说工具车上有合适的钻头。</p>
 <p>三个人在外间做了整个下午。</p>
 <p>锉屑落在铺好的粗布上，门外有工人推车经过，车里装着拆掉的老泵管。那段管子内壁结垢，几乎堵去一半。尤恩看见后，很想问旧站以前怎样供得上这么多人用水，抬头却发现诺艾拉正盯着图纸发愣。</p>
@@ -4501,14 +4432,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>诺艾拉把这个位置画进图里。</p>
 <p>尤恩看着被压出凹痕的木头，伸手揉了揉自己的指节。</p>
 <p>他来时觉得只是送一座架子。直到这时，才知道架子上那些没有名字的小块，可能各自替一只手留着地方。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>当晚，蕾奥妮带来另一张图。</p>
-<p>上面没有铜面和刻线，只有引水站、南桥、城堡与医师住处。塔维拿着怀表，刚把骑马路线跑完。去程被一辆运煤车挡过，回程要在桥前避开晚间卸货的人。</p>
+<p>上面没有铜面和刻线，只有引水站、南桥、南岸医师住处与渡口；北岸城堡和接应道路另画在一张纸上。塔维拿着怀表，刚把南岸从引水站到渡口的骑马接应路线跑完。去程被一辆运煤车挡过，回程要在渡口前避开晚间卸货的人。跨湖的船程单独列明，夜间停航时只能先靠电报通知北岸，不能把骑手的用时当成送达城堡的时间。</p>
 <p>「别按最快的那次算。」她说。</p>
 <p>埃德蒙点头，将纸上的数字改到较长的那一栏。</p>
 <p>城堡已经有接入市区的有线电报，旧站却没有。塔维去附近的泵站问过，可以临时接一段明线，但须穿过运货道路；遇到车辆刮断，照样不能保证送达。</p>
 <p>临时明线会占用两家货栈卸货的位置。埃德蒙安排人挪开空箱，把搬运费另列，并通知店主线路预计何时撤去。</p>
-<p>「电报能用就用。」薇蕾娜说，「骑手别撤。」</p>
+<p>「能接就接。」薇蕾娜说，「骑手也留着。」</p>
 <p>第二天，两名线路工爬上木杆，把绝缘子固定在旧支架上。尤恩在下面扶梯，手冷得发僵，仍不敢松开。接通以后，南翼收到的第一句话只有六个字。</p>
 <p><strong>请回报收信时间。</strong></p>
 <p>没有任何人的姓名或病况。</p>
@@ -4516,11 +4447,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「不是电报到了，人就听见了。」他告诉年轻侍从。</p>
 <p>传令骑手站在门外，帽檐上全是水，忍不住问：「有这个，我还骑吗？」</p>
 <p>薇蕾娜把一条红绳递给他。</p>
-<p>「骑。你送完整记录；线断了，还得有人把消息带到。」</p>
+<p>「骑。带他们不能省成几句话的原始记录。线路断了，也由你报告。」</p>
 <p>骑手把红绳系到鞍边，结打得很紧。</p>
 <p>诺艾拉从旁边经过，低头看了一眼。</p>
 <p>这次，绳子没有贴着铁边。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>开始以前，艾莉娅先把米洛的接触记录单独列了出来。</p>
 <p>「他碰过薄片，听见声音，却没有像露米和伊娜一样让它消失。」</p>
 <p>这件事若被省略，后来的人很容易把接触、触发回放与成为承载者当成同一回事。</p>
@@ -4555,30 +4486,31 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「那普通隔音没有意义。」</p>
 <p>「能隔掉现实里的噪声，但不能挡住它。」</p>
 <p>他点头，将原本准备加厚的一道隔音帘划去，只保留外界能听见呼救的开口。</p>
-<hr/>
+<p>这一天最有用的发现，不是他们终于能做什么，而是几种看上去令人安心的措施，其实不能替代真正的停止方式。</p>
+<hr aria-label="分场" class="scene"/>
 <p>停止方式被单独测试了十一次。</p>
 <p>记录纸旁还放着失败表。能够正常停下的次数要记，卡顿和误碰也要记；没有人提议把不顺利的那些结果划掉。</p>
 <p>每一面录具都有两处可以中断普通能量供应的断口，以及一处使索引脱离主路的机械位置。前两处需要施法者配合，最后一处可以手动操作。</p>
 <p>诺艾拉不喜欢把手动位置设在底部。</p>
-<p>「开关藏在底下，真出事还得蹲着往里摸。乱成那样，谁知道手碰的是哪一格？」</p>
+<p>「人要蹲下来，手还要伸进框里。出事的时候，谁看得见自己拨到哪里？」</p>
 <p>她画了一只外接长柄，用现成的铁条与木把做出来。长柄顶端有两个不同形状的凹口，即使看不见，也能摸出哪边是断开。</p>
 <p>奥伦被允许在指定位置看结构图时，对这项改动提出反对。</p>
 <p>「杠杆太长，容易误碰。」</p>
 <p>「可以加护圈。」诺艾拉说。</p>
 <p>「原结构不是这样。」</p>
-<p>「可您加的反齿，也不是原来就有的。」</p>
+<p>「原结构也没有您加的反齿。」</p>
 <p>奥伦没有立刻接话。</p>
 <p>露米隔着会面用的长桌，看见女仆放在图纸上的指尖很稳。她以前总在衣领、窗扣和茶盘之间见到这双手，此刻才发现，诺艾拉说起自己熟悉的东西时，并不比任何一位学者怯场。</p>
 <p>「加护圈。」露米说，「同时保留原结构图。不要让后来的人以为古物本来如此。」</p>
 <p>奥伦看向她。</p>
 <p>「您让一个没有法师资格的人改录具？」</p>
-<p>「她改的是操作把柄，不是铜面的刻线。」</p>
+<p>「她改的是我们伸手去拨的把柄。」</p>
 <p>露米的语气没有变化。</p>
-<p>「您若担心碰到刻线，请指出是哪一处。我们可以一起核对。」</p>
+<p>「如果您认为这会影响刻线，请指出具体位置。」</p>
 <p>他最终指出一处容易压到细管的地方。</p>
 <p>诺艾拉看过，承认有道理，把长柄的弯折角度改了。</p>
 <p>争执没有以谁完全正确告终。图纸上的把柄多弯了一个角，护圈也留了下来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>晚上，艾莉娅把薄纸残条与新收到的副本逐项核对。</p>
 <p>「校验」这个词越来越明确，但它指的并非强迫每个人说出同样的答案。</p>
 <p>原来的规程允许不同。</p>
@@ -4593,7 +4525,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>直到深夜，她们才完成一份新的操作草案。</p>
 <p>接通索引的目的，是区分来源。</p>
 <p>不是补全一段已经残损的生命。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>草案送到奥伦那里时，他正用左手写字。</p>
 <p>莉迪亚注意到了，轻声提醒。</p>
 <p>他低头看自己的手，眼神一下空了。</p>
@@ -4621,17 +4553,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>有些地方讲了两遍，有些地方忘了结尾。</p>
 <p>莉迪亚都没有替他补。</p>
 <p>只有那份草案，始终放在桌子一角。</p>
-<p>他讲完以后，将它翻了过去。</p>
-<p><a id="sect-016"></a></p>
-<span id="ch-15"></span><h2 id="sect-016">第十五章　试读</h2>
-<p>第一次有承载者参与的试读，选在午后。</p>
+<p>他讲完以后，将它翻了过去。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-13">← 上一章</a><a href="#contents">目录</a><a href="#ch-15">下一章 →</a></nav></section><section class="chapter" data-title="第十五章｜试读" id="ch-15"><header class="chapter-head"><div class="chapter-no">第十五章</div><h2>试读</h2></header><div class="prose"><p>第一次有承载者参与的试读，选在午后。</p>
 <p>露米吃过饭，睡了一个短觉，再由洛瑟确认状态。她没有因为想尽快结束，就把这几件事省掉。出门时，诺艾拉替她系好短披肩，将一张写有日期、地点与同伴姓名的卡片放进她手里。</p>
-<p>「小姐，这不是考试。」女仆说。</p>
+<p>「不是考试。」女仆说。</p>
 <p>「我知道。」</p>
-<p>「记不住就看卡片，没关系的。」</p>
+<p>「忘了可以看。」</p>
 <p>「我知道。」</p>
 <p>诺艾拉看了她一会儿。</p>
-<p>「那您就别把卡片塞到最里头呀。」</p>
+<p>「那您不要把它藏到最里面。」</p>
 <p>露米只好把卡片从袖袋里取出来，放进最容易拿到的外袋。</p>
 <p>今天伊娜不参加。</p>
 <p>奥伦也不在录具附近。他留在城外住处，由莉迪亚陪同记录状态，要求任何牵引出现时立即报告，不主动回应。记录一旦出现异常，试读立即停止。</p>
@@ -4647,7 +4576,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米点头。</p>
 <p>她把手放在桌面上，离铜板还有一段距离。</p>
 <p>「开始吧。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>接通最外侧的刻线时，屋里的灯没有变。</p>
 <p>没有风，也没有谁听见陌生人说话。</p>
 <p>露米感觉到自己的注意力被轻轻拉向某一处，像读书读到熟悉的句子，眼睛会自然停下来。她没有顺着它去找别的内容，只想起那只鸟落在诺艾拉掌心的样子。</p>
@@ -4674,7 +4603,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「很普通。」</p>
 <p>他看了一眼她手里被捏皱的卡片，没有拆穿。</p>
 <p>「那很好。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>休息期间，诺艾拉提出了一处差异。</p>
 <p>「不是右手。」</p>
 <p>露米抬头。</p>
@@ -4692,13 +4621,13 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>若器具再把这种挪动放大，想要寻找唯一完整的版本，就可能越走越远。</p>
 <p>艾莉娅在总结里写下这件小事。</p>
 <p>那只撞过窗户的鸟，成了第一份真正有用的对照。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>第二次试读安排在两天以后。</p>
 <p>中间那一天，没有新的读取。</p>
 <p>露米处理了普通公务，给母亲回信，与哥哥在湖边走了一段很短的路。塞维里安原本准备让马车在路口等，她看见以后，慢慢转头望着他。</p>
 <p>「只是走一会儿。」他说。</p>
 <p>「所以为什么要车？」</p>
-<p>「怕你走累了，回头还要走回来。」</p>
+<p>「以防你走累。」</p>
 <p>她看了看离城堡还不到几百步的距离。</p>
 <p>「我不是茶杯。」</p>
 <p>塞维里安忍着笑，让车夫先回去。</p>
@@ -4716,14 +4645,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「有一点。」</p>
 <p>他立刻要脱披风。</p>
 <p>露米伸手拦住。</p>
-<p>「我只说有一点儿冷，哥哥。」</p>
+<p>「我只是说有一点。」</p>
 <p>他们继续往前走了一小段，最后仍在回程时买了热栗子。露米嫌烫，塞维里安剥好了放进纸袋，她又嫌他剥得太慢。</p>
 <p>「你可以自己来。」</p>
 <p>「我在观察。」</p>
 <p>「观察什么？」</p>
 <p>「哥哥有没有记住不要把最后一颗给父亲。」</p>
 <p>他终于笑得停下来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>回程经过的那段湖岸路旁，就是学院的试验温室。</p>
 <p>露米本来没打算进去。她看见门外摆着两筐长得歪歪扭扭的番茄，才停下来多望了一眼。木牌上写着试种收获，请勿自行取食，下面另用小字注明：已经尝过，酸。</p>
 <p>「是谁写的？」她问。</p>
@@ -4760,7 +4689,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>莉瑟把软管收起来，脸红得比番茄更明显。</p>
 <p>「这也是我的作业。」</p>
 <p>「先把这一项做完。」露米说。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>她们坐在棚外避风的长椅上吃栗子。</p>
 <p>纸袋的热意从手套传进来，露米把手指蜷在袋边，没有立即剥。远处工坊响起一阵锤声，两个学徒抬着窗架从院里经过，后面的人嫌前面走得太快，一边走一边小声抱怨。</p>
 <p>塞维里安看着那两个人，忽然说：「你小时候也想过要温室。」</p>
@@ -4787,24 +4716,24 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她抬头看哥哥。</p>
 <p>塞维里安的表情十分平静。</p>
 <p>「那一次，我付了一半。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜的试读不在同一间房，也不照搬露米的内容。</p>
 <p>她选择了修好的菜谱。</p>
 <p>她想起书脊穿线的顺序，说自己不确定某一针从上面还是下面走，便停下来，拿实物核对。没有人要求她证明想起母亲时也能做到同样的事。</p>
 <p>过程结束以后，她没有听见灰烬里的声音。</p>
 <p>那并非治愈，却让她第一次知道，自己不必每次都只能被动等待。</p>
-<p>「我能学会停下来的。」她说。</p>
+<p>「我能学会停。」她说。</p>
 <p>莉迪亚点头。</p>
-<p>「至少今天这一次，你自己停住了。」</p>
+<p>「今天这一次，你做到了。」</p>
 <p>她把「今天」说得很清楚，既不抹去已经发生的进步，也不把明天的困难提前变成失败。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>奥伦看完两份记录，久久没有说话。</p>
 <p>他的情况比她们复杂，仍不能直接进入同样的操作。莉迪亚建议先做更长时间的生活记录，建立几项稳定的外在参照，然后只尝试极小的局部核对。</p>
 <p>奥伦将纸翻到最后。</p>
 <p>「这样要多久？」</p>
 <p>「因人而异。」</p>
-<p>「老师已经等了三年。」</p>
-<p>「那三年里用的不是这套办法，不能直接拿来算。」</p>
+<p>「老师等了三年。」</p>
+<p>「那三年不是同一种方法。」</p>
 <p>他把纸放回桌上。</p>
 <p>窗外，几个孩子在巷口踢一只破皮球。球撞到墙上，发出很轻的一声响。奥伦转头望去，眼神忽然变得遥远。</p>
 <p>莉迪亚没有催他回来。</p>
@@ -4814,10 +4743,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「不记得。」</p>
 <p>「那就先只记得有过。」</p>
 <p>奥伦看着窗外，缓缓点头。</p>
-<p>可当医师离开后，他又把那张画着三个承载点的图取出来，在纸背上添了一道线。</p>
-<p><a id="sect-017"></a></p>
-<span id="ch-16"></span><h2 id="sect-017">第十六章　一封不谈研究的信</h2>
-<p>马提亚斯的回信被装在两层信封里。</p>
+<p>可当医师离开后，他又把那张画着三个承载点的图取出来，在纸背上添了一道线。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-14">← 上一章</a><a href="#contents">目录</a><a href="#ch-16">下一章 →</a></nav></section><section class="chapter" data-title="第十六章｜一封不谈研究的信" id="ch-16"><header class="chapter-head"><div class="chapter-no">第十六章</div><h2>一封不谈研究的信</h2></header><div class="prose"><p>马提亚斯的回信被装在两层信封里。</p>
 <p>外面一层是疗养所写的说明，记录老人写信当天的状态与陪同人员；里面一层则没有盖任何学庭印章，只写着奥伦的名字。</p>
 <p>莉迪亚没有先拆给露米看。</p>
 <p>她把信交给奥伦，告诉他可以独自读，也可以请人在旁边陪着。</p>
@@ -4839,22 +4765,22 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他没有撕信，也没有大声指责是谁诱导老师写了这些话。只是把它折起来，折到一半又展开，重新读一遍。</p>
 <p>午餐送进来时，侍从看见他仍坐在原处。</p>
 <p>那碗汤后来又被端了出去。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>当天的会面因此改了时间。</p>
 <p>露米到外院时，奥伦已经把老师的信重新装回信封。他同意让莉迪亚转述末尾的意愿，但不愿交出前面的私人部分。</p>
 <p>没有人要求他交。</p>
-<p>「马提亚斯先生不会再被安排参与这件事。」露米说。</p>
+<p>「我们不会安排马提亚斯参与。」露米说。</p>
 <p>「我知道。」</p>
 <p>奥伦的声音很平静。</p>
 <p>平静得让艾莉娅抬头看了他一眼。</p>
-<p>「至于那份三点接续方案，我们也不会照做。」</p>
+<p>「那份三点接续方案也不采用。」</p>
 <p>「他以前同意过。」</p>
 <p>露米没有立即反驳。</p>
 <p>「是。在那时候。」</p>
 <p>奥伦看向她。</p>
 <p>「如果一个人已经不记得自己想做什么，他今天的拒绝，比过去清醒时的愿望更可靠吗？」</p>
 <p>这是一个没有办法用一句话轻松回答的问题。</p>
-<p>莉迪亚先开口：「现在能确认的是，他听得懂要他接触什么，也明确说了不愿意。以前点过头，不代表以后都不能反悔。」</p>
+<p>莉迪亚先开口：「我们确认的是，他现在能够理解自己会被要求接触什么，也能够表达不愿意。过去的同意不是永远有效。」</p>
 <p>奥伦的手指按住信封。</p>
 <p>「他曾经说，不管出了什么，都要把它弄清楚。」</p>
 <p>「现在他写了另一句话。」露米说。</p>
@@ -4865,17 +4791,17 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米垂眼看了一下自己的手。</p>
 <p>她不能否认这其中的差别。</p>
 <p>她比奥伦年轻得多，来日却很可能比他长。可她也正在学习，能够活很久，并不会使一个正在恶化的下午变得宽裕。</p>
-<p>「我们会同医师商量，尽量缩短不必要的等待。」她说，「但马提亚斯先生已经拒绝的事，我们不能替他改口。」</p>
+<p>「所以我们会为您调整治疗速度。」她说，「但不能替另一个人撤回拒绝。」</p>
 <p>奥伦沉默了很久。</p>
 <p>「如果只用我自己？」</p>
 <p>莉迪亚问：「您要做什么？」</p>
 <p>「先校验我的记忆。按照你们的方式。你们不是已经成功了？」</p>
-<p>「我们才有两次记录呀。它们对您是不是也有效，我不敢保证。」艾莉娅说。</p>
+<p>「我们的两次记录不能证明对您同样有效。」艾莉娅说。</p>
 <p>「那永远不会有第一回。」</p>
 <p>露米看向医师。</p>
 <p>这一次，她没有替莉迪亚答应，也没有替奥伦拒绝所有可能。几个人重新把条件摊开：只处理近期可验证的记忆，不调用旧记录，不接入老师的任何资料；每一步由奥伦清醒确认，任一参与者都可以中止。</p>
 <p>他最终点了头。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>准备花了两天。</p>
 <p>不是因为有人刻意让他等，而是他自己的记录存在许多断口。莉迪亚陪着他核对近一周的住处、用餐、行程。薇蕾娜让守卫证明能证明的部分，不要求他们替没看见的事情背书。</p>
 <p>奥伦最初很不耐烦。</p>
@@ -4894,7 +4820,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「会不会显得我们不信任他？」</p>
 <p>露米抬头。</p>
 <p>「信任也不等于不检查。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>检查发现的并不是一条藏在暗处的邪恶术式。</p>
 <p>奥伦所有改动都画在图上，只是有一条被他归为「旧路线修复」。它能在一侧索引中断时，自动沿另一侧的同类记录寻找接续。</p>
 <p>从保存资料的角度看，这不是毫无道理。</p>
@@ -4918,7 +4844,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>过了一会儿，才说：「我会照步骤做。」</p>
 <p>这不是让她完全安心的答案。</p>
 <p>露米要求莉迪亚在每一步重新确认，并将最终是否继续的决定留到当天早晨。她没有因为已经花了两天准备，就认为不能再取消。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>试读前一晚，奥伦写了给老师的回信。</p>
 <p>第一张纸上，他解释自己的方案，解释为什么需要恢复索引，解释若老师再给他一点时间，他就能证明那些牺牲并非没有意义。</p>
 <p>写到最后，他停住了。</p>
@@ -4946,11 +4872,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她请人送来粥和一片烤面包。等汤匙放进碗里，才让他把信收好。</p>
 <p>奥伦没有立即喝。</p>
 <p>过了一会儿，他问：「如果再等三天，还是这样呢？」</p>
-<p>「那时我们再一起商量。不会因为日子到了，就逼你接受哪种治疗。」</p>
+<p>「我们再决定治疗，不拿今天的日期逼你。」</p>
 <p>她把炉边的水壶挪开，免得蒸汽一直扑在他脸上。</p>
 <p>那一天，他午后睡着，醒来时忘记自己是否已经写过信。桌上的信封仍在，封口被他昨夜压得很平。</p>
 <p>他看了很久，最终没有拆。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>取消后的次日，露米与莉迪亚在外院见面。</p>
 <p>洛瑟也在。他把几天的观察记录摊开，让露米先看没有器具时发生的事：奥伦两次错认自己的住处，一次在无人引导的情况下陷入旧记忆，持续的时间越来越长；普通休息和药物能缓解疲倦，却没有使这些发作停止。</p>
 <p>「我们能一直不做吗？」露米问。</p>
@@ -4970,17 +4896,17 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这一回，谁也没有马上回答。</p>
 <p>洛瑟指向准备好的应急方案：先移开普通能量，解除主动术式；仍有牵引，就分步退出校验端。守在旁边的人要以现实反应判断，不能因为一幅图上写着预计有效，就一直等。</p>
 <p>露米看过，把纸放回去。</p>
-<p>「我愿意考虑，但今天不作最后的答复。也请把不使用录具的治疗安排交给奥伦先生，让他自己看。」</p>
+<p>「我愿意考虑，不是今天答应到底。请把他用其他方式治疗的安排也给他。」</p>
 <p>莉迪亚将两份一起收起。</p>
 <p>两天以后，奥伦在独自吃早餐时，又把汤匙换到左手，盯着陌生的用法看了很久。那一次，他没有靠近任何铜面。医师记录完，重新召集几个人，把尚未证明的地方逐一说了一遍。</p>
 <p>最后定下的试读只用几项近期事件，每项结束即断开，不连接古书，不使用马提亚斯的记录，也不寻找旧日亲人的面孔。露米同意参与，伊娜在听明白远处仍可能受影响以后，要求自己这边始终有医师，并且有权叫停。</p>
 <p>她没有被算成第三位参与者。</p>
 <p>这条影响仍然存在，正是露米迟迟没有在最后一栏签字的原因。</p>
-<p>伊娜看着她，说：「我也盼你们找到办法，让那些声音安静下来。可我只要摇铃，就是要停。别叫人来劝我再忍一会儿。」</p>
-<p>「好。你一摇铃，我们就停。」露米说。</p>
+<p>伊娜看着她，说：「我希望你们找到让它安静的办法。但如果我摇铃，我就是要停，不是请人来劝我。」</p>
+<p>「会停。」露米说。</p>
 <p>她在纸上写下这句话，将副本留在南翼。</p>
 <p>诺艾拉转送副本时，又替伊娜试了一次床边的铃。铃声传到走廊，值班的侍从从门外应了一声。伊娜这才将铃放回伸手够得着的地方。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>正式试读安排在重新观察后的第三天下午。</p>
 <p>那天的天气很好。</p>
 <p>旧引水站的石墙被晒暖，靠路的草丛里有虫鸣。看门人按事先约定带着狗去了远处的亲戚家，仓房附近没有闲人，运货的路也暂时绕开。</p>
@@ -5001,7 +4927,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「父亲现在不在。」</p>
 <p>她点点头，把卡片转正。</p>
 <p>隔壁传来艾莉娅确认开始的声音。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>前两步很顺利。</p>
 <p>奥伦想起记录中那天在旅舍补交房钱的事，能够说出老板姓氏，也能接受自己不记得付了几枚硬币。他没有把记不清的地方填满，而是按约定留下空缺。</p>
 <p>莉迪亚让他停。</p>
@@ -5028,7 +4954,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他的拇指仿佛又按住那张尚未封好的信。</p>
 <p>他想起自己添在称呼后面的两个字，随即想起老师从前说，蜡别滴得太多，邮差会嫌重。那句话不在今日约定的核对之内，却借着一个很小的动作越了过来。</p>
 <p>他看见了老师的书桌。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>并非一段完全陌生的幻象。</p>
 <p>那是他确实见过的地方。旧研究室里有半杯茶，桌角有老师切坏的纸板。马提亚斯坐在灯下，头发比现在黑一些，正在将一枚蓝色薄片放进铜板旁的凹槽。</p>
 <p>「再试一次。」</p>
@@ -5043,7 +4969,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>机械长柄已经被诺艾拉拨到停止的位置。正常的供能断了，光却没有熄。</p>
 <p>奥伦的左手按住自己的胸口。</p>
 <p>他主动接续了那条被切断的路线。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米听见一声很轻的纸裂。</p>
 <p>她面前的卡片没有破。</p>
 <p>破的是记忆里的一张纸。一个看不见脸的人将册子从中间按住，正用另一只手把湿布塞进门缝。灰色的风从他肩后吹进来，带着烧过的东西的气味。</p>
@@ -5054,7 +4980,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「线路已经断了。」</p>
 <p>他没有说结束了。</p>
 <p>因为两人都看见，铜面最深处的旧刻线正在一段段亮起，像灰烬里被风重新吹红的细火。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>城堡南翼，伊娜的针停在半空。</p>
 <p>她正替一册普通账本换线，忽然听见有人在下面喊。</p>
 <p>不是叫她。</p>
@@ -5069,7 +4995,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>第一遍说完整了。</p>
 <p>第二遍，她听见另一个名字从嘴里出来。</p>
 <p>埃缇。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>西仓的桌子被奥伦推倒。</p>
 <p>不是为了攻击谁。他在记忆中看到门正在关闭，想伸手去拦，现实里的动作撞翻了桌角。装水的杯子碎在地上，笔记散开，灯罩滚到墙边。</p>
 <p>薇蕾娜进门，先用脚将灯罩拨离纸张，再抓住他的肩，把人从铜面前拉开。</p>
@@ -5079,23 +5005,23 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「谁？」</p>
 <p>话刚出口，骑士长就停住。</p>
 <p>她记得医师交代过，不要与梦里的内容继续交谈。</p>
-<p>「奥伦·韦斯！」她改口，「这里是旧引水站。看着我，站稳！」</p>
+<p>「奥伦·韦斯。」她改口，「你在旧引水站。站稳。」</p>
 <p>他忽然回头，望着她的眼神像看见一个披甲的陌生人站在燃烧的门外。</p>
-<p>一阵未经整理的精神冲击从他身上迸开。</p>
+<p>薇蕾娜不是没有准备过这种场面。早些年，她教露米握木剑时，第一件事便是让学生听见「退」字以后还能稳住脚。此刻她自己也没有朝奥伦正面冲去，而是先把两人之间那张翻倒的桌子踢开半尺，留出能侧身退让的空地。</p><p>奥伦的眼睛仍盯着并不存在的门。他猛地伸手，抓住薇蕾娜的护腕，另一只手抄起地上断裂的木尺。那不是训练过的刺击，尺尖却正对着她的颈侧。薇蕾娜没有拔剑。她转动前臂，让护腕的硬边承住木尺，身体斜移半步，另一只手压住他的手腕。木尺擦过皮甲，裂成两截。</p><p>「奥伦，松手。」</p><p>他没有听见。第二次冲撞比第一次更重。她退到石柱侧面，借柱身挡住他向仓门扑去的路线，靴跟在湿砖上滑了一寸。精神冲击就在这时撞进意识。她看见一片不属于自己的火，耳边有人喊着关门；那景象强烈得足以让人把眼前的奥伦错认成敌人。</p><p>薇蕾娜咬住舌尖，让疼痛把注意力钉回仓房。木尺、石柱、左侧出口。不是战场。她将剑鞘横过身前，挡下奥伦挥来的手臂，再以肩膀顶住他的重心，控制着把人压到靠墙的软垫上。整个动作只用了几个呼吸，额角的汗却顺着旧疤流下。</p><p>「软带！」她喊，「别碰他的头，也别让他撞铜面！」</p><p>守卫递来备用束带。薇蕾娜没有把它勒在他的颈部或胸口，只让两人协助控制不断乱抓的手，等莉迪亚确认呼吸与意识状态。她知道自己可以更快地制服一个清醒的持械敌人；可面前的人并不是敌人。她真正要守住的，是奥伦活着醒来以后仍有机会回答自己的名字。</p><p>一阵未经整理的精神冲击从他身上迸开。</p>
 <p>薇蕾娜眼前黑了半瞬。</p>
 <p>她没有松手。</p>
 <p>额角的旧疤像被针刺了一下，眼前却浮起完全不属于这里的战场。她咬住牙，握紧剑柄上的皮绳，直到疼痛把注意力拉回来。</p>
-<p>「退后！谁也别靠近！」她向门外的守卫喝道。</p>
+<p>「不要靠近！」她向门外的守卫喝道。</p>
 <p>与此同时，诺艾拉发现第二处断口也失去了作用。</p>
 <p>不是机关没有断。</p>
 <p>两边的铜片已经分开，普通供能也确实停止。维持连接的力量来自两个已经接通的承载点，沿着旧刻线自行回流。</p>
 <p>她抬头看艾莉娅。</p>
 <p>学者脸色发白，却仍在对照那张结构图。</p>
-<p>「别砸中间！」艾莉娅说，「校验那条路得留着，不然怎么把人带回来？」</p>
+<p>「别砸中间。」艾莉娅说，「先保留校验路。我们还得知道怎么让人回来。」</p>
 <p>诺艾拉收住了握着锤子的手。</p>
 <p>她不是舍不得古物。</p>
 <p>她需要知道，哪一下会切开门，哪一下会把门后的人一起留在那里。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>东仓里，露米缓缓站了起来。</p>
 <p>她能感觉到伊娜。</p>
 <p>那股原本遥远的牵引，正顺着录具建立的联系变得异常清晰。三处记忆没有真正变成同一处，却被强行拖向一个共同的答案。</p>
@@ -5110,15 +5036,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他怔了一下。</p>
 <p>她抬头，灰蓝色眼睛里映着铜面微弱的光。</p>
 <p>「叫我的名字就好。」</p>
-<p>门外的电报员敲出约定的急报码。传令骑手随后翻身上马，带着无法省略的症状记录，沿着湖岸朝城堡疾驰。</p>
-<p><a id="sect-018"></a></p>
-<span id="ch-17"></span><h2 id="sect-018">第十七章　两处窗户</h2>
-<p>第一份电报抵达时，洛瑟已经在伊娜身边。</p>
-<p>传令骑手稍后抵达南桥，马的胸口已经湿了。</p>
-<p>桥头守卫看见约定的红绳，立即让开道路。详细记录没有经过几层转交，直接送到南翼医师手里，与先前电报核对。洛瑟正在伊娜床边，读完便把纸交给埃德蒙。</p>
-<p>「不是她一个人的症状。暂时不要用强制唤醒。」</p>
+<p>门外的电报员敲出约定的急报码。传令骑手随后翻身上马，带着无法省略的症状记录，沿南岸道路赶往渡口的电报站。城堡远在湖的另一岸，完整记录还须等待船班；眼下能先抵达的，只有急报码。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-15">← 上一章</a><a href="#contents">目录</a><a href="#ch-17">下一章 →</a></nav></section><section class="chapter" data-title="第十七章｜两处窗户" id="ch-17"><header class="chapter-head"><div class="chapter-no">第十七章</div><h2>两处窗户</h2></header><div class="prose"><p>第一份电报抵达时，洛瑟已经在伊娜身边。</p>
+<p>传令骑手稍后抵达南岸的南桥，马的胸口已经湿了。</p>
+<p>桥头守卫看见约定的红绳，立即让开道路。骑手将详细记录送到南岸电报站，站员先把关键症状补发给北岸；原件交给下一班渡船转运。城堡南翼的洛瑟已经收到先前电报，正在伊娜床边核对新来的急报码，再将抄件交给埃德蒙。</p>
+<p>「不是她独自发作。不要用强制唤醒。」</p>
 <p>老管家点头，先问了需要多少人。</p>
-<p>「留两个人就够。一个传信，一个在这儿帮我。其余的人请退开，门外也别围着。」</p>
+<p>「两个就够。一个送信，一个在这里帮忙。其他人退开，不要在门外围着。」</p>
 <p>伊娜坐在地上。</p>
 <p>她没有受伤，只是不肯躺回床上。床单让她想起挂在门框上的湿布，枕头又像什么需要从下面递上来的东西。洛瑟让人把地毯挪到她身下，自己坐在对面，没有强行改变她的位置。</p>
 <p>「伊娜。」他说。</p>
@@ -5136,7 +5059,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「什么颜色？」</p>
 <p>她没有答出。</p>
 <p>他也没有催她。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>旧引水站里，灯光暗了一次。</p>
 <p>塞维里安立即停止了加固结界的动作。</p>
 <p>他本想把东仓与外面的普通魔力隔得更彻底，却发现露米的呼吸随结界收紧而骤然变急。那些刻线并不是简单穿过墙壁传递力量，至少还有一部分已经在她身上维持。</p>
@@ -5156,13 +5079,13 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她把手放到自己的胸口，能感觉到熟悉的衣料。没有角，没有湿布，也没有陌生人的外衣。她试着用一点魔力把桌边的杯子移近，杯子却在半途轻轻一颤。</p>
 <p>露米立刻停下。</p>
 <p>此刻控制再多的东西，都需要她先知道哪一双手是自己的。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>薇蕾娜让奥伦坐在西仓靠门的地上。</p>
 <p>她没有再抓着他的肩，改用一条软皮带固定住他容易撞到铜框的那只手。皮带不是惩罚，也没有被系到脖颈或胸口，只为防止他在辨不清方向时把自己推入器具。</p>
 <p>奥伦挣扎了一次，随后忽然安静。</p>
 <p>「老师。」他说。</p>
 <p>莉迪亚蹲到能与他平视的位置。</p>
-<p>「奥伦，看着我。我是赛尔。我们还在引水站。」</p>
+<p>「我是赛尔。你在引水站。」</p>
 <p>「他刚才在这里。」</p>
 <p>「你看见的是记忆。」</p>
 <p>「我知道。」</p>
@@ -5171,21 +5094,21 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这比完全不知情更令人难受。他看见老师坐在灯下，知道那是过去，却仍然主动将注意力投了过去。一个清醒的部分始终在旁边提醒他停止，另一个部分却不断说，再等一下，刚才差一点就能看清。</p>
 <p>「请不要再维持。」莉迪亚说。</p>
 <p>奥伦的手指抽动。</p>
-<p>「现在停……刚才那点线索就全散了。」</p>
+<p>「现在停了，会散掉。」</p>
 <p>「散掉的是什么？」</p>
 <p>这一次，她问的不是梦中情节，而是他的判断。</p>
 <p>他看向铜板。</p>
-<p>「索引。我刚摸到的……那条索引。」</p>
+<p>「索引。刚找到的索引。」</p>
 <p>艾莉娅从门边走近一小步，声音因为紧张而绷着。</p>
-<p>「那还算不上索引，奥伦。你把几处不同来源的片段接在了一块儿，根本没法核对。」</p>
+<p>「你没有找到一个可以核对的索引。你把不同来源的东西接在了一起。」</p>
 <p>「我看见了。」</p>
-<p>「你看见了，我知道。可不能因为这个，就让别人陪你冒险。」</p>
+<p>「你看见，不代表别人就该替你继续。」</p>
 <p>他的目光晃动了一下。</p>
 <p>她把伊娜的名字说出来。</p>
 <p>「她在城堡。她没有参与。现在她也在受影响。」</p>
 <p>奥伦慢慢抬头。</p>
 <p>那似乎是他第一次真正看见屋里除了自己还有人。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>诺艾拉趴在铜框底下，手里捏着一根细铁钩。</p>
 <p>外接长柄已经断开主索引，但一小段旧路仍被亮起的刻纹托着，没有完全脱离。不是她做的机关坏了，而是承载者主动维持的连接让一枚原本应当落下的铜舌悬在半途。</p>
 <p>她可以用钩子把铜舌拉开。</p>
@@ -5196,7 +5119,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>细铁钩碰到铜舌，发出一点刮擦声。她手指很稳，额角的汗却顺着鼻梁滑下来，差点滴进眼睛。</p>
 <p>艾莉娅伸手替她擦掉，没有挪开灯。</p>
 <p>「能拉吗？」</p>
-<p>「能勾住，可它一直往回顶。」</p>
+<p>「能。但它在往回顶。」</p>
 <p>「先别硬拉。」</p>
 <p>「我知道。」</p>
 <p>她试着把临时木楔塞进空隙，铜框立刻发出一声很轻的鸣响。</p>
@@ -5204,10 +5127,10 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>隔壁，露米的呼吸忽然加快。</p>
 <p>这说明机械位置与承载者的状态确实相互牵连。不能把每一处力量都当成一根可以直接剪断的绳子。</p>
 <p>诺艾拉把木楔退出半寸，让那声鸣响平息。</p>
-<p>「里面得先松上一点，我这边才能拨开。」她说。</p>
+<p>「需要里面松一点。」她说。</p>
 <p>艾莉娅望向石墙。</p>
 <p>她们都知道「里面」指的不是铜框。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米第一次看清那扇窗的时候，外面没有太阳。</p>
 <p>不是维斯佩拉的傍晚。</p>
 <p>天空呈一种不均匀的深灰，远处有裂缝般的光，照亮几段没有树木的山脊。地面仿佛被什么巨大的力量推过，楼房横斜，半截桥倒插在干裂的沟里。</p>
@@ -5231,16 +5154,16 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>风从窗缝吹进来。</p>
 <p>那人低头看了一眼抱杯子的女孩。</p>
 <p>「连她叫什么，都没人知道。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米没有立即去看册子。</p>
 <p>她记得自己不该替那些空白作答。</p>
 <p>可记忆不会因为她懂得这个道理，就停在方便观看的地方。视线随着原来的记录者移动，越过门口的湿布，落到一条通往下层的狭窄楼梯上。</p>
 <p>有人在楼下递水。</p>
 <p>水桶很小，边缘裂开，用绳索勒住。接桶的人手背覆盖着灰色鳞片，鳞片之间有一道长伤，血早已凝固。</p>
-<p>「下面还有多少人？」窗边的人问。</p>
+<p>「下层还有几个人？」窗边的人问。</p>
 <p>「没点完。」</p>
 <p>「先点。」</p>
-<p>「得先把烟放出去，不然怎么点人？」</p>
+<p>「得先把烟放出去。」</p>
 <p>他们说话没有传说里的庄严。一个人咳得厉害，另一人因为对方没有听清而不耐烦地重复。炉火被压得很低，烟却不肯顺着损坏的烟道出去，堆在天花板下面。</p>
 <p>露米知道自己正在看一段过去。</p>
 <p>她却仍然下意识想抬手，将烟从窗里推走。</p>
@@ -5249,7 +5172,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这个失败让她反而清醒了一瞬。</p>
 <p>她不在这里。</p>
 <p>她只是看见。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>册子的主人叫伊珥。</p>
 <p>这个名字不是别人告诉露米的，而是在视线落到页脚时，被那个人熟悉的认知带了出来。它可能还有她无法发出的长音，也可能只是一个惯用的短称。</p>
 <p>伊珥负责登记，也负责在别人离开时把名字划到另一栏。</p>
@@ -5259,15 +5182,15 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>不知去处的，留空。</p>
 <p>露米看见一只手试图在失踪者旁边画上代表死亡的符号，伊珥用笔杆挡住了。</p>
 <p>「你见到了？」</p>
-<p>「都这么些天了，谁还可能——」</p>
-<p>「我问你，你亲眼见到了吗？」</p>
+<p>「这么久，谁还能——」</p>
+<p>「你见到了吗？」</p>
 <p>那个人不再说话。</p>
 <p>空白留下来了。</p>
 <p>他们没有足够的食物，也没有足够的药，甚至没有足够干燥的纸，却仍然在这件事上耗费了争执的力气。</p>
 <p>露米突然明白，自己此前读见的许多短句为什么那么急。</p>
 <p>不是记录者想写得神秘。</p>
 <p>他们有太多事情要在下一次烟升起来以前做完。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>埃缇是在半夜来到这里的。</p>
 <p>至少，伊珥认为那算半夜。没有太阳可供判断，人们用守炉轮值与水漏计时。每当岩壁冷却到可以重新靠近，就记下一次；时间太久，后来的人也把这些记号当作季节。</p>
 <p>女孩被一个背翼残缺的女人带进来。</p>
@@ -5282,7 +5205,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他们不全都温柔。</p>
 <p>他们只是很累，仍然一遍遍把事情做下去。</p>
 <p>每次有人换班，炉边那张写着水和食物数量的纸也跟着移到下一双手里。谁负责过什么，纸面上不一定写得完整，却尽量没有让数字凭空增加。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>铜面录具被放在屋里最干燥的角落。</p>
 <p>它不是为了保存传奇而建立的。</p>
 <p>最初，他们想把已经死去的医者记得的药方留下，把通往避所的路线留下，把那些没有来得及教会别人的手艺留下。承载着蓝色薄片的人能够接触这些印象，却也逐渐分不清哪一道疼痛属于自己。</p>
@@ -5301,7 +5224,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>旁边有一个名字已被移到死者那一栏。</p>
 <p>这条规矩不是凭空想到的。</p>
 <p>它来得迟了一点。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊珥尝到的是自己的血。</p>
 <p>露米过了好一会儿才分清。起初她以为灰尘割伤了喉咙，后来舌尖碰到一处破口，才知道这具身体的牙齿比她的更宽，口腔里有一块已经肿起的软肉。</p>
 <p>她的右肩始终垂着。</p>
@@ -5317,7 +5240,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>两句话碰在一起，像两张重叠却没有对齐的纸。</p>
 <p>她感到一阵恐慌，随后听见远处很轻的一声金属响。现实里有人放下工具，伊珥这里却没有同样的声音。</p>
 <p>她抓住这一点差异，没有继续往名字后面追。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>晚一点，水送来了。</p>
 <p>说是晚一点，只因轮值的人换过一次。外面仍然是没有方向的暗。一个细瘦的青年跪在桶边，把倾斜的木板往底下塞，免得最后一点水往裂口流。</p>
 <p>他叫纳赫。</p>
@@ -5325,9 +5248,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「多记一人。」纳赫说。</p>
 <p>伊珥提笔。</p>
 <p>青年伸出沾湿的手，按住页角。</p>
-<p>「我姐姐还没到。」</p>
+<p>「我姐姐。还没到。」</p>
 <p>笔停下来。</p>
-<p>纳赫赶忙补充：「她认得路！外头的绳结是我留的，她会顺着找到这儿的。」</p>
+<p>纳赫赶忙补充：「她知道路。我把绳结留在外面了，她能找到。」</p>
 <p>伊珥没有问为什么昨夜没来，也没有把名字写进领水的人数。他翻到另一个位置，给纳赫指那一栏。</p>
 <p>等候。</p>
 <p>青年看了看，点头，过一会儿又问可不可以把路标也写上。</p>
@@ -5338,7 +5261,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>有人拿走水桶继续分水。伊珥把断铅捡起来，放到图旁，等他能够重新抬头。</p>
 <p>露米看见纸上留下的一小块水痕。</p>
 <p>后来它可能干了，可能随着传抄被丢掉。她在城堡的书里从没见过这幅绳结图。此刻它却占据着伊珥眼前很大的一片地方，使他迟迟没有翻页。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>着火以前，埃缇曾坐在门边补杯子。</p>
 <p>杯耳已经断了，不影响盛水，但她不肯丢掉。有人找来细绳，将那小块陶片绑回原来的地方，她接过以后，试着握了一次，整只杯子便歪过去。</p>
 <p>纳赫抢先托住底。</p>
@@ -5353,7 +5276,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>伊珥重新站起来。</p>
 <p>露米忽然非常想回到有日光的地方。</p>
 <p>这个愿望既来自她，也来自那个人。两者太像，她几乎又忘了自己不能替他开一扇通往银镜湖的窗。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>记忆忽然跳到着火的那一天。</p>
 <p>不是整个世界毁灭的那一刻。</p>
 <p>避所已经存在了很久，外面的岩壁偶尔仍会落下带着异常光泽的碎物。有一块落进旧烟道，引燃了封缝的布与干草。普通水泼上去只能压住周围燃烧的东西，不能让那块碎物失去作用。</p>
@@ -5373,12 +5296,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>不是一位要侵占伊娜身体的恶灵。</p>
 <p>是一个当时没有多余时间想别的事的人。</p>
 <p>他想让孩子们活着走上来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊珥身侧那扇上层通风窗仍打不开。先前他站着的外窗只开出窄缝，烟灌得太急，需要把另一处也打开。</p>
 <p>木框受热变形，铁扣卡在里面。有人拿刀去撬，刀尖折断，手指被划出血。</p>
 <p>露米几乎本能地想起诺艾拉。</p>
 <p>同一瞬，她听见很远的地方传来熟悉的声音。</p>
-<p>「小姐，您别动。扣舌卡住了，我正拨着呢。」</p>
+<p>「小姐，别动。我在拨扣舌。」</p>
 <p>古代的窗框与现实里的铜框，在她的感知中重叠了一下。</p>
 <p>露米的视线颤动。</p>
 <p>她看见诺艾拉趴在地上，随即又看见伊珥沾灰的手。那两个场景在她的感知里如此接近，仿佛只要随便选择一个相信，就能不再受这种拉扯。</p>
@@ -5405,10 +5328,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>那份害怕是真的，沉重得几乎压住呼吸。</p>
 <p>但它属于伊珥。</p>
 <p>露米睁开眼，低声说出这一句。</p>
-<p>「这是他的。」</p>
-<p><a id="sect-019"></a></p>
-<span id="ch-18"></span><h2 id="sect-019">第十八章　自己的那一侧</h2>
-<p>「这是他的。」</p>
+<p>「这是他的。」</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-16">← 上一章</a><a href="#contents">目录</a><a href="#ch-18">下一章 →</a></nav></section><section class="chapter" data-title="第十八章｜自己的那一侧" id="ch-18"><header class="chapter-head"><div class="chapter-no">第十八章</div><h2>自己的那一侧</h2></header><div class="prose"><p>「这是他的。」</p>
 <p>露米说得很慢，像要把每一个字放回正确的位置。</p>
 <p>铜面上的光没有因此熄灭。</p>
 <p>但她终于能看见现实里的桌子了。</p>
@@ -5430,15 +5350,15 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>然后再来一次。</p>
 <p>第三次时，木片没有颤。</p>
 <p>露米抬起头。</p>
-<p>「这一边……我还能撑住。」</p>
-<hr/>
+<p>「我可以维持这一边。」</p>
+<hr aria-label="分场" class="scene"/>
 <p>艾莉娅听见消息以后，将自己的记录翻到最前面。</p>
 <p>三种位置。</p>
 <p>入录，承记，校验。</p>
 <p>奥伦将它们连成了一个寻找完整答案的回路，而原来的规程要求保留每一个来源。露米现在能够明确区分伊珥的记忆与自己，意味着其中一个承载点已经不再自动迎合其他内容。</p>
 <p>那道压力出现了缺口。</p>
 <p>艾莉娅把这个判断说给诺艾拉听。</p>
-<p>「现在能再试一点。只拨校验舌，别碰主面。」</p>
+<p>「现在再试一点点。只拨校验舌，不动主面。」</p>
 <p>诺艾拉换了一根更细的钩子。</p>
 <p>这一次，铜舌往外动了。</p>
 <p>很小的一段。</p>
@@ -5451,10 +5371,10 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>莉迪亚握住他没有固定的那只手，要求他看向自己。</p>
 <p>「你正在回来。」</p>
 <p>「他会不见。」</p>
-<p>「那是从前的马提亚斯。奥伦，他现在不在这儿。」</p>
+<p>「你看到的是过去的马提亚斯。现在的他不在这里。」</p>
 <p>奥伦的眼睛慢慢红了。</p>
-<p>奥伦张了张嘴，最后只把莉迪亚的手握得更紧。</p>
-<hr/>
+<p>不是因为一句话突然使他明白全部道理，而是因为他早就知道，却一直不肯让那个知道的部分占据上风。</p>
+<hr aria-label="分场" class="scene"/>
 <p>城堡里，伊娜第一次完整说出了自己的姓。</p>
 <p>她说得不快，中间停了一次。</p>
 <p>洛瑟没有接上。</p>
@@ -5469,7 +5389,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她很想告诉对方不要害怕。</p>
 <p>但她知道那个女孩听不见。</p>
 <p>这不是她可以回去抱住的人。</p>
-<p>伊娜低头看自己的手，忽然问：「那孩子……后来上来了没有？」</p>
+<p>伊娜低头看自己的手，忽然问：「她后来有没有上来？」</p>
 <p>洛瑟没有猜。</p>
 <p>「现在还不知道。」</p>
 <p>这句不知道几乎让她再度被拉回去。</p>
@@ -5478,14 +5398,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她已经在母亲那句一模一样的话里等过很久，知道这个等待可以没有尽头。</p>
 <p>伊娜抱紧围巾。</p>
 <p>「那先不知道。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>简短的状态先经电报送到引水站，详细观察另由骑手带来。</p>
 <p>埃德蒙没有让信里写满推测，只写伊娜目前能够确认姓名，仍受影响，但已停止主动追问梦中内容。露米隔着门听艾莉娅读完，肩背明显松了一点。</p>
 <p>第三处并没有突然痊愈。</p>
 <p>却也不再不断替回路增加新的追寻。</p>
 <p>剩下的压力渐渐集中到奥伦身上。</p>
 <p>塞维里安看着铜面亮起的细纹，低声问妹妹：「你能退出吗？」</p>
-<p>「只能退出来一点。」</p>
+<p>「能一部分。」</p>
 <p>「全部呢？」</p>
 <p>露米没有立即回答。</p>
 <p>如果她强行切断自己这一端，奥伦仍在维持的内容就会失去已经建立的校验。那些互相混淆的记忆可能重新压向他，也可能沿着尚未完全断开的联系涌向伊娜。</p>
@@ -5499,11 +5419,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我知道。」</p>
 <p>两人对视。</p>
 <p>这一次，露米没有用族长的身份让哥哥闭嘴。</p>
-<p>「哥哥，如果我连续两次都答不出自己在哪里，就按我们说好的，让医师带我退出。别再等我点头。」</p>
+<p>「如果我连续两次不能回答现在在哪里，就请你和医师按准备好的方式让我退出。不要等我再同意。」</p>
 <p>塞维里安听完，很久才点头。</p>
 <p>她将这项约定说给门外的艾莉娅，要求记下。</p>
 <p>随后，她重新看向那面铜板。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>诺艾拉终于把校验舌移到了第二个位置。</p>
 <p>旧木框忽然裂了一道缝。</p>
 <p>承受普通应力的旧木头终于撑不住了。固定在上面的铜板向前倾，细钩从她手里弹开，擦破了手背。</p>
@@ -5518,23 +5438,23 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这一声让所有人清醒了一点。</p>
 <p>他们在救人，不是在让每一件物品保持完美。</p>
 <p>诺艾拉把沾血的手在衣摆上按了按，重新拿起工具。</p>
-<p>「下面那截旧框得拆掉一块。」</p>
-<p>「会伤到多少旧件？」艾莉娅问。</p>
-<p>「木框得舍掉，刻文我能保住。」</p>
+<p>「我需要把下面的旧框拆掉一块。」</p>
+<p>「会损坏多少？」艾莉娅问。</p>
+<p>「木框保不住。刻文可以留下。」</p>
 <p>「拆。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米听见木头断裂的声音。</p>
 <p>记忆里的窗口也在同一瞬传来响动。</p>
 <p>她没有再把两个声音混为一体。</p>
-<p>「眼前拆的是木框。」她对自己说。</p>
-<p>「那一边……已经过去了。」</p>
+<p>「这里是在拆木框。」她对自己说。</p>
+<p>「那里已经发生过。」</p>
 <p>那张古老的桌子慢慢退远了一点。</p>
 <p>伊珥仍站在窗边，没有回头看她。</p>
 <p>他不需要知道许多年后有人正在努力读懂他的工作，才能在那一天继续接住下一个孩子。</p>
 <p>露米看着他，第一次没有试图追问结局。</p>
 <p>她只是记住了他的名字。</p>
 <p>她暂时没有能力替伊珥讲完一生，也不敢把自己刚看见的部分叫作完整真相。能够做到的，是至少不把这个名字写到另一个人的经历下面。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>南翼的电报员第三次敲回同一组确认码时，指尖已经汗湿。</p>
 <p>线路仍通。</p>
 <p>送去引水站的字很少：患者清醒片刻，可说姓氏，仍有重影。埃德蒙站在旁边，看他将每个字抄到纸上，核对无误，再请侍从送回房间。</p>
@@ -5552,17 +5472,17 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「还要多久？」</p>
 <p>「他们不能保证。」</p>
 <p>伊娜闭上眼，声音一下尖起来。</p>
-<p>「那你们为什么说能停？」</p>
+<p>「那为什么答应我？」</p>
 <p>老管家没有替露米解释。</p>
-<p>「我会把你的话一字不改地传过去。」</p>
+<p>「这句话会原样送去。」</p>
 <p>她眼里的怒意没有立即消退，但目光终于在他脸上停住。那是认识的人，不是烟里一个催她递水的影子。她低下头，又将左脚往自己这边挪了一点。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米听见那句话时，眼前那扇古老的窗刚刚打开。</p>
 <p>她很想说对不起，想先说明自己也已经停止，却又知道这不能使伊娜手里的铃立刻生效。</p>
 <p>艾莉娅站在门外，读完短讯，等她的回答。</p>
 <p>「让他们告诉她，我听见了。」露米说。</p>
 <p>她喘了一口气。</p>
-<p>「别再跟她说『再撑一会儿』。」</p>
+<p>「不是再请她忍一下。」</p>
 <p>塞维里安看见妹妹的下唇被咬出一道浅痕，伸手把她握得太紧的手指松开。她的魔力并没有耗空，肩颈却抖得厉害；每次试图重新控制现实，身体都会迟半拍才跟上。</p>
 <p>「两个问题。」他低声说。</p>
 <p>「这里是引水站。」</p>
@@ -5571,7 +5491,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>那一刻，他几乎已经准备转头叫医师。</p>
 <p>「你。」她终于说，「塞维里安。」</p>
 <p>他没有因她答出来就放下手边的备用方案，只在纸上记下她迟疑的时间。比上一轮长。无论她愿不愿意承认，能够留在这里的余地都在缩小。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>西仓外，尤恩正将备用撑杆往门里递。</p>
 <p>没有人让他靠近亮着的铜板。他一只脚踏在门外划好的线后，听见薇蕾娜要长的，便把手边那根短木放回去，另抽一根。</p>
 <p>紧张的时候，他差一点又伸错手。</p>
@@ -5584,7 +5504,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>尤恩在门外看见那枚销尾，突然明白杜林为什么不让把它藏起来。</p>
 <p>露在外面的地方不好看。</p>
 <p>可现在，她们知道该拆哪里。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>莉迪亚用过一次解除主动施法的术式。</p>
 <p>奥伦周围浮起的普通魔力很快散去，铜面深处的蓝光却仍在。她立即停止追加，没有把同一种无效的处理层层压上去。</p>
 <p>「现在不是靠法力供着。」她告诉门外的人。</p>
@@ -5595,7 +5515,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他低头，发现自己指间夹着一小片破纸。</p>
 <p>不是古代的名册。</p>
 <p>是今天的记录，纸角写着半个他的姓。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>奥伦看见的老师始终没有回答他。</p>
 <p>最初，他还不肯承认这一点。</p>
 <p>马提亚斯会翻纸，会推眼镜，会抬头说「再试一次」。每一个动作都熟悉得让人心疼。可是当奥伦问「您现在还想回去吗」，那个人只是重复了同一句话。</p>
@@ -5605,7 +5525,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>现在，他跪在同样的一句重复面前，迟迟不肯离开。</p>
 <p>他没有比修书匠更清醒。</p>
 <p>他只是有更多术语，可以把不肯离开解释成研究。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>「奥伦。」</p>
 <p>莉迪亚的声音从很远处传来。</p>
 <p>他觉得自己坐在老师书桌的另一边，桌面上那杯茶还热着。那是某个一切尚未变坏的下午，他曾把工具按长度排好，等待老师夸一句今天终于没有丢螺丝。</p>
@@ -5629,7 +5549,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他闭上眼睛。</p>
 <p>一滴眼泪从脸侧滑下来，很快落进衣领。</p>
 <p>「没有。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>艾莉娅听见这个回答，将最后一张核对纸递到东仓。</p>
 <p>露米已经很累。</p>
 <p>她没有流血，也没有耗尽全部魔力，却像同时读着几本翻页速度不同的书，每一次试图合上其中一本，另外两本就会把句子挤到眼前。</p>
@@ -5647,7 +5567,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>却不再允许它借用「我曾经在场」来要求她继续。</p>
 <p>铜面上的光忽然暗了一角。</p>
 <p>「现在。」她说。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>诺艾拉伸手握住新长柄。</p>
 <p>护圈挡住她流血的手背，疼得她皱了皱眉。她换了一个握法，让掌根抵住木把，用肩膀而不是手指发力。</p>
 <p>第一下，没有动。</p>
@@ -5663,7 +5583,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>塞维里安叫她的名字。</p>
 <p>露米看向哥哥。</p>
 <p>然后，她松手了。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜也在同一刻看见一扇门。</p>
 <p>那扇门在火与烟的另一边，后面可能还有人。她知道只要继续听，就也许能听见母亲。不是因为母亲曾在那里，而是因为她想听的声音总会在最疲惫的时候找到一个能够靠近的形状。</p>
 <p>她已经学会辨认一点。</p>
@@ -5671,14 +5591,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>洛瑟仍在对面，埃德蒙的手按着铃绳，屋外有人等着随时送信。</p>
 <p>这些人没有要求她为了证明勇敢而走进那扇门。</p>
 <p>她把头慢慢抬起来。</p>
-<p>「今天……我不想再听了。」</p>
+<p>「今天不听了。」</p>
 <p>她说完，哭了。</p>
 <p>哭得没有准备，连呼吸都乱起来。</p>
 <p>洛瑟没有以为她又被夺走了神志。他把水杯放到她手边，等她哭完一句话，再问要不要坐到椅子上。</p>
 <p>伊娜摇头。</p>
 <p>「再坐一会儿。」</p>
 <p>「好。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>奥伦听见自己的名字被念到最后一次时，终于放开了那张不存在的书桌。</p>
 <p>他没有获得所有答案。</p>
 <p>老师没有恢复成记忆里年轻的样子。</p>
@@ -5688,7 +5608,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>您总说我加太多蜂蜜。</p>
 <p>那是他自己写的。</p>
 <p>不是任何古老的人借他的手留下。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>铜舌终于落到了断开的位置。</p>
 <p>这次没有回弹。</p>
 <p>诺艾拉顺势把木楔推到底，艾莉娅将覆布盖上已经暗下来的刻线。塞维里安从外侧切断余下普通术式，薇蕾娜缓缓放开撑着木框的肩。</p>
@@ -5711,13 +5631,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我知道。」</p>
 <p>「太长了。」</p>
 <p>她的声音越来越低。</p>
-<p>「念不完就先不念。等你歇过来再说。」</p>
-<hr/>
+<p>「等会儿再念。」</p>
+<hr aria-label="分场" class="scene"/>
 <p>奥伦被抬出西仓时，仍有呼吸。</p>
 <p>薇蕾娜让人取下固定手腕的皮带，换上运送病人的软带。莉迪亚随车同行，向守卫说明不得擅自用精神束缚术，防止加重现有损伤。</p>
 <p>他需要治疗。</p>
 <p>也需要接受调查。</p>
-<p>赫曼赶到引水站外时，只来得及看见马车离开。他原本被安排在城堡待命，接到消息后一路过来，鞋上都是泥。</p>
+<p>两件事都没有被另一件取消。</p>
+<p>赫曼赶到引水站外时，只来得及看见马车离开。他原本被安排在南岸临时驻点待命，接到消息后沿旧街一路赶来，鞋上都是泥。</p>
 <p>他想追过去，被薇蕾娜拦住。</p>
 <p>「先不要。」</p>
 <p>「他怎么样？」</p>
@@ -5726,20 +5647,17 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>骑士长看着他。</p>
 <p>赫曼忽然停住。</p>
 <p>过了一会儿，他低下头。</p>
-<p>「有什么我能帮忙的？」</p>
+<p>「需要我做什么？」</p>
 <p>薇蕾娜把一叠散落后重新收好的纸交给他。</p>
-<p>「帮我把缺的那几项核对出来。原样列着，别替他删掉。」</p>
+<p>「核对这里缺了哪些。照原样列，不要替他删。」</p>
 <p>他接过纸，手有些发抖。</p>
-<p>这一次，他没有再先问研究能不能继续。</p>
-<p><a id="sect-020"></a></p>
-<span id="ch-19"></span><h2 id="sect-020">第十九章　留下来的回声</h2>
-<p>露米在回城堡的马车上睡着，又很快醒来。</p>
+<p>这一次，他没有再先问研究能不能继续。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-17">← 上一章</a><a href="#contents">目录</a><a href="#ch-19">下一章 →</a></nav></section><section class="chapter" data-title="第十九章｜留下来的回声" id="ch-19"><header class="chapter-head"><div class="chapter-no">第十九章</div><h2>留下来的回声</h2></header><div class="prose"><p>事后众人在南岸暂歇，等到次日船班才过湖。露米从北岸渡口坐上回城堡的马车后睡着，又很快醒来。</p>
 <p>她以为自己仍听见木头裂开的声音，猛地睁眼，看见的却是哥哥的袖口。塞维里安坐在她身边，让她靠着自己的肩，另一只手一直扶着车窗，防止路面的震动传进来太多。</p>
 <p>「不是那里。」他说。</p>
 <p>露米没有问他怎么知道自己在想什么。</p>
 <p>她低头看见膝上的披风，手指一点点松开。</p>
 <p>「诺艾拉呢？」</p>
-<p>「她在后面那辆车上，正在包扎。伤口不深。」</p>
+<p>「另一辆车，正在包扎。伤不深。」</p>
 <p>「艾莉娅？」</p>
 <p>「撞了一下额头。医师看过了。」</p>
 <p>「薇蕾娜？」</p>
@@ -5752,11 +5670,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>正在休息。</p>
 <p>她看了很久，终于把纸还给哥哥。</p>
 <p>「奥伦？」</p>
-<p>「还活着。」</p>
+<p>「活着。」</p>
 <p>这次，她没有再问。</p>
 <p>马车经过桥上最平稳的一段路时，露米重新闭上眼睛。塞维里安低头看她，等她呼吸渐渐均匀，才把自己的额头轻轻抵在她发顶上。</p>
 <p>他什么也没有说。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>城堡里没有庆祝。</p>
 <p>厨房只比平时多烧了两锅热水，备用客房重新铺床，医师们分开处理伤口与精神状态。埃德蒙将来访名单暂时收起，告诉每一个送急件来的人，先说明究竟急在哪里。</p>
 <p>有三封信因此被留到了第二天。</p>
@@ -5765,8 +5683,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她醒来时，窗帘已经放下。</p>
 <p>诺艾拉坐在床边，手背包着白布，正在用另一只手笨拙地整理针线。</p>
 <p>「你可以不做。」露米说。</p>
-<p>「我没缝，就是把线收起来。」</p>
-<p>「线也可以明天再收。」</p>
+<p>「我没有缝，只是在收。」</p>
+<p>「也可以不收。」</p>
 <p>女仆将盒盖合上。</p>
 <p>两人安静地坐了一会儿。</p>
 <p>露米看着那块白布。</p>
@@ -5779,7 +5697,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「少爷。」</p>
 <p>露米把手放下。</p>
 <p>她没有立即要求拆开。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>夜里，洛瑟再次检查她能否分辨现实。</p>
 <p>这次不问古书，也不要求她回忆在录具里看见什么，只问她是否口渴、有没有头痛、能不能自己决定房间里哪一盏灯留下。</p>
 <p>露米选了床边的小灯。</p>
@@ -5789,21 +5707,21 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他调整灯芯，将另外两盏灭掉。</p>
 <p>「半夜若醒了，先看床头那只杯子。今天换过，右边缺了一点釉。」</p>
 <p>「为什么用缺了釉的？」</p>
-<p>「新杯子个个差不多，这个缺口容易认。」</p>
+<p>「新杯子太像。这个容易认。」</p>
 <p>露米看了一眼，慢慢点头。</p>
 <p>医师离开后，她拿起杯子，摸到那处小小的缺口。</p>
 <p>现实有时不需要特别完美，才能让人认出来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜在南翼睡得断断续续。</p>
 <p>她梦见了父亲，却不是那道一模一样的声音。梦里的父亲在找胶棒，一边找一边怪她收得太整齐。她说东西就在抽屉，他不信，最后还是在抽屉里找到了。</p>
 <p>醒来时，她哭了一会儿。</p>
 <p>洛瑟听她说完，只问这是否与平常做梦不同。</p>
 <p>伊娜想了想，摇头。</p>
 <p>「我不记得父亲最后说什么了。」</p>
-<p>「不记得就先不记得，没关系。」</p>
+<p>「那可以不记得。」</p>
 <p>她把脸埋进枕头，没有因为忘记一个梦而再次去摸掌心的伤疤。</p>
 <p>天快亮时，她终于睡得沉了一些。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>艾莉娅没有立刻写研究总结。</p>
 <p>她坐在小阅览室里，把当天所有人的位置重新画出来。先前制定的停止步骤、实际生效的步骤、没有奏效的部分，分开记在不同纸上。</p>
 <p>写到奥伦主动维持那一刻，她停了很久。</p>
@@ -5823,7 +5741,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>他低头拿起笔。</p>
 <p>窗外有人吹灭走廊上的一盏灯。阅览室仍亮着，但这一次，两人约好再过半个钟头就停。</p>
 <p>半个钟头以后，他们真的停了。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>塞维里安在妹妹房门外待到后半夜。</p>
 <p>他没有一直握着剑，也没有守在床边让她醒来就看见一张没睡过的脸。只是坐在走廊尽头，处理从北方转来的几份公文，遇到难以决定的便写信回去说明自己暂时不能赶到。</p>
 <p>露米半夜醒来，隔着半掩的门看见灯光。</p>
@@ -5845,22 +5763,22 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「以后也会告诉你。」他说。</p>
 <p>门慢慢合拢。</p>
 <p>她没有立即睡着，却也没有再把耳朵贴向那些已经远去的声音。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>第三天，露米又闻到了焦木的气味。</p>
 <p>那时她正在喝茶。</p>
 <p>杯子没有烧焦，炉里也只放着正常的干柴。她放下杯子，先叫来医师，再把窗打开一点。气味停留了很短的时间，没有变成画面，也没有使她忘记自己正在做什么。</p>
 <p>洛瑟仍然把它记了下来。</p>
-<p>「人已经回来了，身体却未必马上肯信。」他说。</p>
+<p>「事情结束，不代表身体立即知道结束了。」他说。</p>
 <p>露米看着纸上新增的一行，轻轻叹气。</p>
 <p>「我以为至少可以好好睡了。」</p>
 <p>「可以睡。只是醒来以后不必急着判定自己退回了原处。」</p>
 <p>她点头，把茶重新端起来。</p>
 <p>这一次，茶里只有莓叶的味道。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>医师们也重新说明了「停止」究竟意味着什么。</p>
 <p>蓝色薄片没有被从任何人身上取出来，更没有因为铜舌落下就被摧毁。露米仍能察觉伊娜，伊娜也仍能感觉到她。被切断的是器具放大的接续，以及当时不断把不同经历合成同一个来源的过程。</p>
 <p>她们以后仍需学习承受与辨认。</p>
-<p>「这还不能算掌握了它。」莉迪亚说，「今天能停下某一段回想，不代表明天就能随意翻阅别人的记忆。」</p>
+<p>「这不等于掌握了它。」莉迪亚说，「今天能停下某一段回想，不代表明天就能随意翻阅别人的记忆。」</p>
 <p>露米点头。</p>
 <p>她已经尝过那种仿佛能够理解陌生语言、看见遥远过去的诱惑。力量带来的并不只有恐惧，也有令人想再靠近一步的好奇。若不肯承认后者，就很难知道自己什么时候又开始替继续找理由。</p>
 <p>她把自己的观察单独放好，与其他人的隐私记录分开。</p>
@@ -5880,13 +5798,13 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「那也可以问。」</p>
 <p>他犹豫了一会儿，在信末添了一句。</p>
 <p>字写得很慢，却没有再用「反正她很久没回来」替自己作决定。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜与露米第一次在事后见面，仍隔着一段距离。</p>
 <p>地点选在南翼庭院。两张椅子摆在树下，之间放了一张很长的桌，桌上有茶和刚烤好的小饼。两位医师分别待在廊下，没有坐到她们中间。</p>
 <p>伊娜带来了修好的围巾。</p>
 <p>露米带了一份关于书籍归属的说明。</p>
 <p>她们看见对方手里的东西，先都沉默了一下。</p>
-<p>「今天先不谈文件，好吗？」露米说。</p>
+<p>「今天可以不谈文件。」露米说。</p>
 <p>伊娜慢慢点头，把围巾放在膝上。</p>
 <p>风吹过树枝，一片叶子落到两张椅子之间。露米习惯性地想让它飘远，手抬到一半，又放下来。</p>
 <p>伊娜看见了。</p>
@@ -5908,12 +5826,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「你答应了。」</p>
 <p>这一次，她没有使用敬称。</p>
 <p>廊下的医师抬起头，没有走过来。风吹动桌面纸张，露米用茶碟压住一角，仍然坐在自己的那一边。</p>
-<p>「是……那话我说得太满了。」</p>
-<p>「我知道你那时也在里头。」伊娜的声音发颤，「所以我不知道能不能怪你。」</p>
+<p>「是。我答应得太满。」</p>
+<p>「我知道你也在里面。」伊娜的声音发颤，「所以我不知道能不能怪你。」</p>
 <p>「能。」</p>
 <p>那一个字让她眼圈忽然红了。</p>
 <p>露米没有继续说自己有多内疚。她把带来的文件推远一点，不让它们占在两人中间。</p>
-<p>「我们试过停下来的办法。可奥伦自己接上那条线以后，能不能立刻切断，谁也没把握。我知道这个风险，却还是跟你说了『会停』。」</p>
+<p>「我们准备了停止的办法，也试过。但那不是保证他主动接续以后，还能立即切断。我知道有这一项风险，还是用了‘会停’来回答你。」</p>
 <p>伊娜望向庭院。</p>
 <p>她已经听医师解释过那些刻线、断口与回流，可当天她坐在地上，看见鞋子变成另一双脚时，并不需要更多图纸。她需要有人真的把铃听成铃。</p>
 <p>「有人来了。」她过了一会儿说，「我不是说没人来。」</p>
@@ -5924,17 +5842,17 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>两个人坐了很久。</p>
 <p>小饼凉了，表面的糖霜有一小角被风吹落，白白地留在桌板上。伊娜伸手碰了一下，没有吃。</p>
 <p>「我以后不想参加了。」</p>
-<p>「那就不参加。」</p>
+<p>「不参加。」</p>
 <p>「也不是过几天就要再问的那种。」</p>
-<p>「我会写清楚：这次以后，不再请你参加。哪天你自己改主意了，再跟医师说。」</p>
+<p>「我会把这个选择写进现在的安排。以后若你自己想改，再告诉医师。」</p>
 <p>露米停了停。</p>
-<p>「医师照样给你看，赔偿也照规定另算。你不来帮忙，照样可以留在这里。」</p>
+<p>「治疗继续，赔偿也另算。你不必继续帮忙才可以留在这里。」</p>
 <p>伊娜终于抬头看她。</p>
-<p>「我想回自己家住。」</p>
+<p>「我想回家住。」</p>
 <p>这句话说完，她像在等一场劝说。</p>
 <p>露米先问的是：「愿不愿意让医师看看那边的安排？楼梯、门铃、有人能不能听见。」</p>
 <p>伊娜思考一会儿，点头。</p>
-<p>「可以。可别闹得整条街都知道。」</p>
+<p>「可以。别把整条街都惊动。」</p>
 <p>「好。」</p>
 <p>她拿起已经凉掉的小饼，掰下很小的一角。</p>
 <p>露米这次没有急着露出笑容。她知道对方吃了东西，不等于原先那句话已经被原谅。</p>
@@ -5945,7 +5863,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「下次还来吗？」伊娜问。</p>
 <p>「来。」</p>
 <p>伊娜轻轻点头，没有说别的。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>会面结束后，蕾奥妮在廊外等露米。</p>
 <p>她不是来问奥伦。</p>
 <p>那份新记录最前面，写的是研究安排的提出者、批准者与在场者。露米看完，没有把自己的签名挪到最后一栏。</p>
@@ -5955,23 +5873,23 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「知道。」</p>
 <p>「为什么认为可以开始？」</p>
 <p>露米重新讲了一遍当时的选择：奥伦在恶化、普通手段有限、前两次局部试读的结果、移除过的接续零件。说到最后，她没有再只提别人做过的准备。</p>
-<p>「我们成功停下过几次。我就以为，那一次没法保证的风险也能压住。」</p>
+<p>「我们把能停止的几次，算得比不能保证的那一次重。」</p>
 <p>蕾奥妮记下这句，问她是否承认自己知道之后仍同意。</p>
 <p>「是。」</p>
 <p>「这不等于您与奥伦承担相同的责任。」</p>
-<p>「我明白。可我签过字，这一部分也请照查。」</p>
+<p>「我知道。也请不要因为不同，就不查这一部分。」</p>
 <p>调查员将纸转过来给她看。</p>
 <p>露米读到自己说过的「会停」，指尖停了一下，最终签在下面。</p>
 <p>那天晚上，她没有再去西翼看研究记录。</p>
 <p>她洗过手，换上一件袖口没有扣子的软裙，在床边坐了好一会儿。诺艾拉替她把发带解下来，银白长发顺着肩背散开，露米没有像平日那样顺势往枕头里缩。</p>
-<p>「伊娜今天生我的气了。」</p>
+<p>「我今天让伊娜生气了。」</p>
 <p>诺艾拉把发带卷好。</p>
 <p>「她以前也生气，只是没有这样说。」</p>
 <p>露米望着镜子里自己低下的眼睛。</p>
 <p>「嗯。」</p>
 <p>女仆没有说两人会从此更亲近。她将梳子交给露米，让她先梳顺前面那一缕，自己换手处理发尾。</p>
 <p>那晚，露米慢慢梳了很久。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>奥伦醒来后的情况并不好。</p>
 <p>他能说出名字，知道自己在治疗，却有几段近期经历无法回忆。莉迪亚把空白如实告诉他，不以「都过去了」遮掩，也不强迫他立即把所有过程拼回来。</p>
 <p>他被安排在有守卫的疗养房间，窗户能打开，日常生活有人照料。对其擅自维持接续、造成他人受害的调查，则与医疗记录分开进行。</p>
@@ -5983,7 +5901,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她不能把后来的崩溃倒过来，替最初那次选择抹去责任。</p>
 <p>最终，她写：开始前能理解并复述限制；接续初期是否始终清醒，由在场记录与医师另行评估。她本人不能替所有时刻作证。</p>
 <p>那份答案没有给任何一方一个过于容易的结论。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>一星期以后，诺艾拉换下了手背上的纱布。</p>
 <p>伤口留下一道细红的线，不影响手指活动。她把新的工具袋终于挂上腰间，第一件放进去的是那根已经磨弯的细铁钩。</p>
 <p>艾莉娅看见，问她为什么不换新的。</p>
@@ -5994,21 +5912,18 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我下次会站远一点。」</p>
 <p>诺艾拉看向她。</p>
 <p>「也别用头护纸。」</p>
-<p>「我真的不是故意的。」</p>
-<p>「这话我可记下了。」</p>
+<p>「那是意外。」</p>
+<p>「我记下了。」</p>
 <p>两人一起把西翼阅览室恢复成平常的样子。隔板没有扔，工具也没有收得看不见，只是桌面终于能放下一壶茶，不必每次先搬开六张结构图。</p>
 <p>露米坐在软椅里看她们忙。</p>
 <p>她想帮忙，被诺艾拉指了一下旁边的空书架。</p>
 <p>「可以把那些书放回去。一次三本。」</p>
 <p>「我能多拿。」</p>
-<p>「知道。可架子受不了。」</p>
+<p>「我知道。架子受不了。」</p>
 <p>露米看了看那块已经有些弯的层板，最终照做。</p>
 <p>三本书平稳地落到架上。</p>
 <p>又三本。</p>
-<p>她没有再闻到焦木。</p>
-<p><a id="sect-021"></a></p>
-<span id="ch-20"></span><h2 id="sect-021">第二十章　第零页的余下部分</h2>
-<p>完整的译读并不是在某个电光闪过的瞬间完成的。</p>
+<p>她没有再闻到焦木。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-18">← 上一章</a><a href="#contents">目录</a><a href="#ch-20">下一章 →</a></nav></section><section class="chapter" data-title="第二十章｜第零页的余下部分" id="ch-20"><header class="chapter-head"><div class="chapter-no">第二十章</div><h2>第零页的余下部分</h2></header><div class="prose"><p>完整的译读并不是在某个电光闪过的瞬间完成的。</p>
 <p>艾莉娅、布伦与一位受邀的魔族旧语学者，花了六天，将现存材料能够相互支持的部分排在一起。古书的残条、录具刻文、萨芙给女儿的注释，以及原册内重复出现的用语，分别用不同标记注明来源。</p>
 <p>缺失的地方仍然缺失。</p>
 <p>那些不能确认的句子没有为了读起来顺畅而被填满。</p>
@@ -6017,13 +5932,25 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>旁边保留了她们已经用习惯的名字：第零页。</p>
 <p>那不是神留下的预言，也不是藏着最终答案的一页法典。它更像一群走过很多错误的人，为下一批将要承担同样工作的人留下的交代。</p>
 <p>艾莉娅坐在窗边，慢慢读给她听。</p>
+<blockquote><p>录入以前，须有他人在场。
+
+问名。问归处。问其愿留之事。
+
+所见各有所属。亲见者记亲见，转述者记转述。未至之处，不补其路。
+
+不知者留空。未归者留名。
+
+若答不一，停。不可令一人替众人作答。</p></blockquote>
 <p>读到这里，她停了一下。</p>
 <p>后面有几处无法恢复的字，只能保留间断。</p>
 <p>再往下，一段较完整的句子来自萨芙保存的旧文抄本，与铜面末端的刻文能够对上。</p>
+<blockquote><p>留下这些，不为使后来者成为我们。
+
+读到此处的人，愿你仍能说出自己的名字。</p></blockquote>
 <p>露米坐了很久。</p>
 <p>然后，她伸手将誊清稿拉近，自己又读了一遍。</p>
-<hr/>
-<p>「那几处黑色涂记，有些字终于能认出来了。」艾莉娅说。</p>
+<hr aria-label="分场" class="scene"/>
+<p>「黑色的涂记也有一部分能认了。」艾莉娅说。</p>
 <p>她拿来页边姓名的索引。</p>
 <p>一小点表示需要再次询问。</p>
 <p>两道斜线表示已与在场者核对。</p>
@@ -6043,7 +5970,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>但至少有两个人，不必被她们想象中的悲剧提前带走。</p>
 <p>露米将这两条记录抄在另一张纸上，托人送给伊娜。</p>
 <p>没有添一句「所以不用难过」。</p>
-<hr/>
+<p>书里的痛苦不是因为有人活下来就从未发生，活下来的人也不需要通过后来幸福一生，才能使当时那一杯水值得被递出去。</p>
+<hr aria-label="分场" class="scene"/>
 <p>「灰渠第七避所」的地名，直到这一轮核对才得到较稳妥的读法。</p>
 <p>它出现在两张物资交接单上，能够与另一册萨芙留下的旧名索引对照。这个名字只说明记录者怎样称呼自己的住处，不能把它直接指向现今维斯佩拉的任何一条渠。</p>
 <p>艾莉娅特地把这一点写进注释。</p>
@@ -6052,7 +5980,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>更后面的页码并不连续。</p>
 <p>一部分记述搬迁，一部分记录道路与水源。埃缇的名字有几次出现在领取工具的名单里，后来又在另一册残页上出现相似的写法。</p>
 <p>旧语学者不肯立刻认定是同一个人。</p>
-<p>「也不排除同名。或者后来有孩子沿用了她的名字。」</p>
+<p>「也可能是同名，或者后来的孩子沿用她的名字。」</p>
 <p>艾莉娅将两种可能都写下。</p>
 <p>露米没有要求一个从出生到死亡完整展开的结局。</p>
 <p>她们已经知道女孩活过那一天。</p>
@@ -6060,17 +5988,17 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>这份克制在真正想知道的时候并不容易。露米几次盯着那个相似名字，几乎要在心里替她写出一座平静的村庄、一张能放下杯子的桌子。</p>
 <p>她最终没有把那些画面写进正文。</p>
 <p>只在自己的私人纸页上留了一句：希望她后来有过。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>译读稿送到伊娜手上时，她正在替一本账册裁新封皮。</p>
 <p>她看完埃缇与伊珥的记述，手指在纸上停了很久，随后把它放到窗边，继续量尺寸。</p>
-<p>诺艾拉以为她没有听明白，正要解释，伊娜却忽然说：「今天……我能多拿一块饼吗？」</p>
+<p>诺艾拉以为她没有听明白，正要解释，伊娜却忽然说：「今天可以多吃一块饼吗？」</p>
 <p>「当然。」</p>
-<p>「替他们也吃一块。」</p>
+<p>「替他们吃一块。」</p>
 <p>这句话让女仆的眼睛微微热了一下。</p>
 <p>她没有说古代的人不会知道，只去厨房拿来两块。</p>
 <p>伊娜自己吃了一块，另一块分给诺艾拉。她们坐在窗边，看着一只小鸟在树枝上跳来跳去，谁也没有再追问那个故事里下一个人怎样了。</p>
 <p>这一小段高兴，不需要用全部历史的答案才能换来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>有一张纸没有得到这样的好消息。</p>
 <p>它夹在移交名单后面，背面沾着大片无法除去的褐色痕迹。修复师只展平能够自行舒开的部分，其余仍留在支撑纸上，像一片没有完全展开的叶子。</p>
 <p>艾莉娅最先认出的是「下层」。</p>
@@ -6091,14 +6019,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>学者慢慢把椅子拉近了一点，仍没有超过医师建议的位置。</p>
 <p>她们坐了许久。</p>
 <p>万卷馆外有人推着书车经过，轮子压到地板接缝，规律地响了三声。露米以前会嫌这个声音吵，现在却一直听到它转过走廊才低下头。</p>
-<p>「别光写我记得他。」她说，「把这张纸也放进去。」</p>
+<p>「不要只写我记得他。」她说，「把这张纸也放进去。」</p>
 <p>艾莉娅点头。</p>
 <p>当晚，她没有将那段死亡记述送给所有人。伊娜先前要知道的是埃缇，是否再读其他人的经历，应当另问。</p>
 <p>露米把纳赫的名字写在自己的观察纸上，下方注明见于哪段回想、由哪张文本提供后续。她想替那一幅没有留下来的绳结图补画一遍，笔到了纸边，却发现自己记不清两条绳究竟在哪里交叉。</p>
 <p>她最终只写：记得他曾画过等候者的路标。</p>
 <p>空下来的地方没有变得好看。</p>
 <p>她合上纸夹，手仍在封面上停了很久。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>原书被重新装订时，伊娜提出要参与。</p>
 <p>不是由她独自修复，也不让她再碰曾放置薄片的部分。艾莉娅负责文字与页序，城堡请来的修复师处理脆弱纸张，伊娜则整理米洛已经完成的衬页，辨认他留下的装订方法。</p>
 <p>她们没有把它修成一本崭新的书。</p>
@@ -6108,14 +6036,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>修书那天下午，伊娜负责给新衬纸裁边。</p>
 <p>她每次落刀以前都先用指腹摸一下纸纹，再把尺压稳。修复师看过两次，问是谁教她这样做。</p>
 <p>「父亲。」</p>
-<p>「有用。不过这批纸太脆，得少翻、少折。」</p>
+<p>「有用。不过这一批纸更脆，别来回折。」</p>
 <p>伊娜点头，换了更轻的力道。</p>
 <p>有人递来米洛的旧线轴。她接过，拇指自然摸到轴侧被磨平的一块，忽然想起小时候总拿它当车轮。父亲让她还，她藏在裙袋里，最后线头拖了一路，根本瞒不住。</p>
 <p>记忆很短。</p>
 <p>她没有闻到不属于房间的气味，也没有让手停在半空。</p>
-<p>「要不要歇一歇？」艾莉娅问。</p>
+<p>「要休息吗？」艾莉娅问。</p>
 <p>伊娜摇头，随后想了一下，又点头。</p>
-<p>「我先喝口水。」</p>
+<p>「喝口水。」</p>
 <p>她放下工具，起身去窗边。窗外是一片刚被修剪过的树篱，叶子上有细雨，远处工坊烟囱冒着很浅的白气。她看了一会儿，知道自己等的不是母亲从厨房里叫她。</p>
 <p>水杯放在左手边，能随时拿到。</p>
 <p>她喝完，回去继续穿线。</p>
@@ -6133,19 +6061,16 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>下方另有一行小字。</p>
 <p><strong>旧称：第零页。</strong></p>
 <p>艾莉娅看着那个「旧称」，笑着摇头。</p>
-<p>「才在这儿待了几天，怎么就成『旧称』了。」</p>
+<p>「它才到这里多久。」</p>
 <p>露米想了想，将那两个字划掉，换成「查阅别名」。</p>
-<p>这一次，大家都同意了。</p>
-<p><a id="sect-022"></a></p>
-<span id="ch-21"></span><h2 id="sect-022">第二十一章　重新结案</h2>
-<p>市政厅的听证室没有准备族长的高座。</p>
+<p>这一次，大家都同意了。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-19">← 上一章</a><a href="#contents">目录</a><a href="#ch-21">下一章 →</a></nav></section><section class="chapter" data-title="第二十一章｜重新结案" id="ch-21"><header class="chapter-head"><div class="chapter-no">第二十一章</div><h2>重新结案</h2></header><div class="prose"><p>市政厅的听证室没有准备族长的高座。</p>
 <p>这是露米自己要求的。</p>
 <p>她坐在侧面，与其他提供证词的人一样，面前放一张桌子、一杯水和需要核对的文件。关于伊娜财产的部分，由重新受理此案的官员主持；涉及奥伦造成的伤害，她本人也是受影响者，不主持裁断。</p>
 <p>听证室只是借用了市政厅的地方，负责复核的官员仍须依照权限办事。证据是否成立、可追回的财物如何返还、尚有争议的赔偿怎样进入后续程序，不会因为市长或领主坐在场内就变成他们的私人裁决。</p>
 <p>这让一些准备看她发怒的人失望了。</p>
 <p>他们看见的只是一个银发少女，带着很厚的一叠纸，坐下以后先问窗户能不能稍微关小。</p>
 <p>那天风很冷。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>达伦的账目在几个星期里被查得越来越清楚。</p>
 <p>他并非只在维恩家的货物上做过手脚。另有两起旧货处置中，债务与拍卖佣金混算，通知也没有真正送达。经办员收取好处以后，沿用一套看似完整的手续，将几个活人的申诉塞进了「已经调解」的同一栏。</p>
 <p>这些案件没有因为露米亲自注意到其中一件，就自动解决。</p>
@@ -6155,11 +6080,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>得到答案以后，她请市长确认能否增派人手。奥斯温安排两名文书换班过来，并让每位申请人拿到可以查询进度的回执。</p>
 <p>不是每个人都能见到族长。</p>
 <p>事情若只能靠见到她才继续，就仍然会有人被留在门外。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜的部分先核对物品，再核对钱。</p>
 <p>已经追回的东西逐件归还，无法追回但能够确认出售所得的，列明金额与去向。原本属于客户的寄修书籍另行通知原主，不计入维恩家的可偿债财产。米洛真实留下的债务也没有消失，伊娜有权看完整凭据，并按遗产程序处理，不必因为一张伪造委托承担额外佣金。</p>
 <p>她坐在桌前，听到这一项时，抬头问了一句。</p>
-<p>「如果我还是想替父亲还那笔钱……能不能单独还？」</p>
+<p>「如果我觉得父亲欠的应该还，能另外还吗？」</p>
 <p>主持官回答可以，但要分清是依法应付，还是她自愿承担，不许债权人把后者说成她没有拒绝的权利。</p>
 <p>伊娜点头，将这句话记在自己的纸上。</p>
 <p>她的字不漂亮，却很稳。</p>
@@ -6173,11 +6098,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>轮到房东时，老人承认扣留了赫曼的信，也承认没有及时告知伊娜。他没有参与伪造，因此没有被写进同一项罪名；但该赔偿的延误损失、该返还的多收费用，都另行核算。</p>
 <p>伊娜没有要求把他描写成比事实更坏的人。</p>
 <p>也没有因为他年纪大，就说这封信其实没有那么重要。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>达伦最后一次解释时，仍然提到米洛欠钱。</p>
-<p>「我那时只想把债一次结清。」</p>
+<p>「我原本是想把债结清。」</p>
 <p>主持官将佣金与私留款列到他面前。</p>
-<p>「既然这样，为什么有一笔没进债权人的账？」</p>
+<p>「那么这部分为何没有入债权人的账？」</p>
 <p>达伦没有回答。</p>
 <p>露米没有插话。</p>
 <p>他的动机已经不必由她替众人宣讲。原始信件、搬运指令、经办员证词、抄写人的付款记录与被查回的款项，足以让那些曾经被一行字遮住的事重新显形。</p>
@@ -6186,7 +6111,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>奥伦在录具事件中的行为则有另一组记录，将继续审理，不因这部分未获证实便一并免除。</p>
 <p>露米在证词末尾签了名。</p>
 <p>这次，她知道签名上方每一个结论来自哪里。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>蕾吉娜问得最久的，却不是那份最初的结案书。</p>
 <p>她把另一页费用清单放在桌上。</p>
 <p>医师往返、临时线路、仓房加固、受伤人员照料。最后一栏写着研究事故以后发生的支出，与查明仓储署失职的费用分开。</p>
@@ -6195,40 +6120,41 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>蕾吉娜翻到伊娜那一页。</p>
 <p>「她拒绝继续提供研究材料，会不会影响这里的金额？」</p>
 <p>「不会。」</p>
-<p>「这个能写进正式凭据吗？」</p>
+<p>「有字吗？」</p>
 <p>老管家指给她看。</p>
 <p>她读完，将纸翻回第一面。</p>
-<p>「那就写在正式副本上。别光放在族长给人的私信里。」</p>
+<p>「那留在正式副本里。别只写在族长给当事人的私人承诺上。」</p>
 <p>露米点头。</p>
 <p>蕾吉娜没有因此变得亲切。</p>
-<p>「还有，家族付了钱，可不能自己说研究做得对不对。具体由谁来复核？」</p>
+<p>「另外，家族出钱，不等于家族可以自己确认操作适当。谁复核研究决定？」</p>
 <p>蕾奥妮将已经送达的委托文件推到桌中央：外地医师核对医疗判断，学院选派未参与器具试读的教师检查操作安排，遗物公证会接收结构记录，是否登记以及登记到哪一类，仍待查核。三者都不能凭露米的签名免去自己的意见。</p>
 <p>「意见什么时候到？」</p>
-<p>「第一轮审材料要三周；中途缺什么会另行通知。三周是第一轮的时间，不是结案期限。」</p>
+<p>「第一轮资料审查三周。需要补件会另告知，不保证三周结束全部。」</p>
 <p>蕾吉娜记下日期。</p>
-<p>露米等她记完，才请文书将下一份材料摆上来。</p>
-<hr/>
+<p>露米看着那支笔，没有觉得被冒犯。她开始明白，对方今天愿意把问题问完，并不需要先喜欢她。</p>
+<hr aria-label="分场" class="scene"/>
 <p>奥斯温直到散会前才谈旧仓以后的用途。</p>
 <p>有人提议改成月影资助的藏书修复处。名义很好听，掌声也来得容易，市长却把那张建议先留在桌边。</p>
-<p>「屋顶先修，承重也得查。」</p>
+<p>「先修屋顶，查承重。」</p>
 <p>提议者有些不悦。</p>
 <p>「这些当然会做。」</p>
-<p>「那就先算修缮的账。仓房边还有几户靠装卸过活，真要改用途，总得先问清他们往哪儿搬。」</p>
+<p>「那先把预算做出来。仓房旁边仍有装卸户，要改用途，也要知道他们会去哪里。」</p>
 <p>露米没有接过话头替市长拍板。</p>
 <p>直到有人直接问她是否愿意出资，她才回答，家族可以考虑修复培训所需的部分，但市政用途由市长与议会按实际需要讨论，不以她个人想多一间书库为准。</p>
 <p>那张建议于是没有当场通过。</p>
 <p>散会后，奥斯温带她从侧门出去。门边的等候长凳坐着两个人，其中一名老妇抱着一个铁盒，见到官员便站起来，膝盖发软，又扶着椅背慢慢坐下。</p>
 <p>她不是来道谢。</p>
-<p>「回执上写的就是今天。」</p>
+<p>「我的回执说今天。」</p>
 <p>奥斯温接过看了一眼，叫来当值文书。</p>
 <p>文书说原件尚未从档案室调出，已经让人去催。老妇听见，又把盒子抱紧，露出一种露米这几周渐渐能认出的疲惫。</p>
 <p>不是第一次等。</p>
 <p>市长没有说案子很多，只让文书记下今日未能完成，给她新的时间，并说明下一次是否需要本人到场。</p>
 <p>老妇说，如果不必来，最好。她帮人洗衣，已经少做半天。</p>
-<p>露米站在门边，看着老妇人抱紧铁盒，等文书慢慢翻出下一张纸。</p>
+<p>露米站在一旁，第一次没有因为事情刚有了正式裁定，就以为整条走廊都已经变好。</p>
 <p>她出门时，回头看见文书搬来一张矮桌，让老妇不用再把纸按在膝上写。</p>
-<p>老妇把铁盒搁在脚边，两只手压住纸页，才拿起笔。</p>
-<hr/>
+<p>那张桌子代替不了一处新的办事窗口，却能让当天下午的几个人不必站着签完全部页码。露米看见以后，没有命人把它写进自己的政绩报告。</p>
+<p>那是今天刚刚做到的一点。</p>
+<hr aria-label="分场" class="scene"/>
 <p>几周后，关于伪造委托的裁定正式送达。</p>
 <p>达伦须返还非法取得的款项、承担查实的损失，并接受相应刑罚。他原先经营的代办业务被停止，未结的委托逐一移交，不准借此再次扣住客户的原件。收受好处的经办员被免职，按已经查明的行为另行承担责任。</p>
 <p>赔偿没有全等到他们各自凑够钱才开始。仓储署对错误处置中应负的部分先行执行，再按裁定追偿。埃德蒙核对了支付日期，确认伊娜收到的是已经能够使用的钱，而不是另一张需要她不断上门询问的承诺。</p>
@@ -6237,7 +6163,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>埃德蒙把文件带回城堡时，露米读了很久。</p>
 <p>她没有从此变成喜欢看文书的人。</p>
 <p>读到第三页，她还是打了一个呵欠，伸手去拿茶，拿到一半发现茶已经凉了。老管家换了一杯，什么也没有说。</p>
-<p>「以前我总觉得，签个字不过是最后一下。」露米说。</p>
+<p>「以前我以为，签不签只是最后一下。」露米说。</p>
 <p>「有时确实只是最后一下。」</p>
 <p>「如果前面都做对了。」</p>
 <p>埃德蒙点头。</p>
@@ -6248,16 +6174,16 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米拿起笔，签完，将墨晾干。</p>
 <p>「旧的也留着。」</p>
 <p>「会归入同一卷宗。」</p>
-<p>「好看的那份要留，不好看的也要留。」</p>
+<p>「不要只留下好看的那一份。」</p>
 <p>老管家把两份纸一并收好。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>听证后的第二天，伊娜去付了木料铺的一笔旧账。</p>
 <p>数额不大，是父亲生前确实欠下的。她先看凭据，再看已偿还的记录，确认无误以后才把钱拿出来。</p>
 <p>店主有些局促。</p>
 <p>「我没叫那个人去骗你。」</p>
 <p>「我知道。」</p>
 <p>「你现在不用急着……」</p>
-<p>「这笔钱我自己拿主意了。」</p>
+<p>「这笔我已经决定了。」</p>
 <p>她没有把所有赔偿都交出去，也没有为每一项不属于自己的责任找一个理由。钱袋里留下的部分，是她准备买胶罐、线和新纸的本钱。</p>
 <p>离开时，店主送了她一小捆裁剩的薄木板。</p>
 <p>「做夹板用。」</p>
@@ -6267,30 +6193,28 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>旧油布已经撤掉，屋顶仍在修。门口的木牌换了内容，不再写着两日后拆除。</p>
 <p>有工人在里面叫人递钉子，另一个人抱怨午饭太晚。</p>
 <p>她站了一会儿，转身往家走。</p>
-<p>她把薄木板抱稳，沿着街道往修书铺走。板子一角抵住手腕，她走了半条街才换到另一只手里。</p>
-<p><a id="sect-023"></a></p>
-<span id="ch-22"></span><h2 id="sect-023">第二十二章　维恩修书铺</h2>
-<p>伊娜的新店只比原来的房间多半扇窗。</p>
+<p>那座仓库可以以后做别的用途。</p>
+<p>她不必一辈子守在门外，证明自己的东西曾经在那里。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-20">← 上一章</a><a href="#contents">目录</a><a href="#ch-22">下一章 →</a></nav></section><section class="chapter" data-title="第二十二章｜维恩修书铺" id="ch-22"><header class="chapter-head"><div class="chapter-no">第二十二章</div><h2>维恩修书铺</h2></header><div class="prose"><p>伊娜的新店只比原来的房间多半扇窗。</p>
 <p>严格说来，也不能算新店。她租下了楼下靠街的一小间空屋，白天工作，晚上仍住楼上。门口那块旧招牌重新刷过，父亲的名字留在背面，正面写着「维恩修书铺」。</p>
 <p>没有人替她加上「月影家御用」。</p>
 <p>她没有这样的资格，也不想靠一个与手艺无关的称号让别人付更多钱。</p>
 <p>露米问过她，要不要在万卷馆留下固定位置。那里有稳定的工钱、足够的工具与能够教她的人。</p>
 <p>伊娜认真考虑了几天。</p>
 <p>最后，她选择在城里开店，同时接受万卷馆按件委托的普通修补工作。复杂古籍仍由修复师处理，她可以定期过去学习，时间与报酬另外写清楚。</p>
-<p>「我想回到家，起码能说得出今天有哪些活是我亲手做的。」她说。</p>
+<p>「我想回家以后，还能知道今天哪一部分是我自己做的。」她说。</p>
 <p>露米听完，点了头。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>开门那天，诺艾拉来得最早。</p>
 <p>她带来两只胶罐、一把新锉，以及一个底部不会再晃的凳子。胶罐是伊娜托她代买的，锉是她送的，凳子则来自城堡撤下的旧家具，已经正式登记转让，不会过几个月又有人来问为什么拿走公物。</p>
 <p>伊娜看着那张转让单，笑得低下头。</p>
-<p>「连凳子上都贴纸了。」</p>
-<p>「省得以后又有人说，凳子是自己长腿跑来的。」</p>
+<p>「现在连凳子也有纸。」</p>
+<p>「总比以后有人说凳子自己走来的好。」</p>
 <p>诺艾拉把它放到桌前，坐下试了试。</p>
 <p>稳的。</p>
 <p>随后，她帮伊娜把门口的价目牌挂好。上面列了几种简单修补的价格，另写着：需更换原件时，先问书主；未确认归属的书，不代为出售。</p>
 <p>这两句话并不显得宏大。</p>
 <p>只是伊娜知道，自己以后真的会遇到需要这样问的时候。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>第一位客人是苔莎。</p>
 <p>伊娜先问书要不要在当天取回，又把预计花费写在小纸条上。苔莎确认后才把书留下。对于新开张的修书铺，这些字比漂亮的招牌更有用。</p>
 <p>她带来四册孩子用的识字书，书角被翻得卷起来，其中一本夹着压扁的花，还有一本内页被人画了六条腿的猫。</p>
@@ -6312,8 +6236,8 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「要。」</p>
 <p>「写在哪里？」</p>
 <p>他想了想，指着内侧。</p>
-<p>「这儿。我来写。」</p>
-<hr/>
+<p>「这里。我自己写。」</p>
+<hr aria-label="分场" class="scene"/>
 <p>露米下午才来。</p>
 <p>马车停在巷口，她和艾莉娅走过来，仍然没有仪仗。薇蕾娜跟在稍远处，肩膀已经能正常活动，只是诺艾拉坚持她暂时不要替人搬最重的箱子。</p>
 <p>店里空间很小。</p>
@@ -6323,13 +6247,13 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>艾莉娅带来一册被自己翻松的笔记，放到桌上。</p>
 <p>「这个能救吗？」</p>
 <p>伊娜翻了两页。</p>
-<p>「你这本夹得太满了。」</p>
+<p>「你夹了太多纸。」</p>
 <p>「因为还有很多要补。」</p>
-<p>「那就换条厚些的封脊。再这么塞，书脊先裂给你看。」</p>
+<p>「那要换厚一点的封脊，不能一直往里塞。」</p>
 <p>露米看向她的朋友。</p>
-<p>「可算有人肯管这事了。」</p>
+<p>「终于有人管这件事了。」</p>
 <p>艾莉娅没有争辩，痛快地付了定金。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米送来的礼物是一盏灯。</p>
 <p>不昂贵，不需要法师每天补充魔力，灯罩能够调整方向，底座很稳。她让人把容易损坏的灯芯与替换零件一并准备好，免得伊娜以后想修却不知道去哪里找同样的东西。</p>
 <p>伊娜把灯放到工作台左边。</p>
@@ -6348,7 +6272,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「留着吧。」她说。</p>
 <p>伊娜笑了。</p>
 <p>「等明天。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>傍晚，客人们陆续离开。</p>
 <p>露米走到巷口时，回头看了一次。伊娜正把识字书移到灯下，低头穿针。她已经剪短的头发垂在颊边，偶尔用手背拨开，动作与父亲并不完全相同。</p>
 <p>店里的工作台是旧的。</p>
@@ -6370,24 +6294,24 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「你父亲不会算得这么细。」</p>
 <p>伊娜的手停了一下。</p>
 <p>门外下着细雨，煤气灯还没有点，店里的可调灯罩把光留在她的手背上。她看见自己拿着父亲的针，却没有因此把原定的数目划掉。</p>
-<p>「您若只想修封面，也行。可内页不动，将来还会掉；我得先把这点写清楚。」</p>
+<p>「您可以只修封面。内页不修，我会写明以后还可能脱落。」</p>
 <p>「那不就是修不好？」</p>
-<p>「价钱不同，能修到哪一步也不同。您先考虑，不放心就再问问别家。」</p>
+<p>「是费用和做多少的问题。您可以先想想，也可以问别家。」</p>
 <p>男人盯着她看了一会儿，最终把账本翻到自己常用的那几页。</p>
-<p>「这几页我一定要留。」</p>
+<p>「这几张必须留下。」</p>
 <p>伊娜重新估算。</p>
 <p>两人商量了许久，最后决定先修最容易散掉的内页，其余暂缓。她写好收据，让他确认选择，定金放进右侧的小木匣，没有与午饭钱混在一起。</p>
 <p>客人走后，她才发现自己肩膀一直绷着。</p>
 <p>诺艾拉恰好送来学院的取书单，在门口看见她长长地呼了一口气。</p>
 <p>「怎么了？」</p>
-<p>「刚有人说，我父亲那时候收费比我低。」</p>
+<p>「有人说父亲比我便宜。」</p>
 <p>「是吗？」</p>
 <p>伊娜想了想。</p>
-<p>「兴许真是。」</p>
+<p>「可能是。」</p>
 <p>她把旧账册翻出来，在几笔收款旁看见父亲没有列入的材料钱。那些账不全都错，有几次明显是给熟客省了，也有几次只是随手漏记。</p>
 <p>她没有把父亲的名字划掉。</p>
 <p>只在自己的账本里，把今日用掉的两片纸写上。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>那晚，露米收到了一张普通的退件说明。</p>
 <p>万卷馆送去的几册书里，有一册内页霉蚀，需要专门处理，伊娜没有接。她注明理由，退回预付的对应费用，还附上能继续处理的几位修复师名单。</p>
 <p>埃德蒙问是否转交。</p>
@@ -6397,24 +6321,21 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>埃德蒙平静地把退还的费用记好，嘴角却有一点藏不住的笑意。</p>
 <p>露米拿起旁边的点心。</p>
 <p>「你明明知道我会说什么。」</p>
-<p>「现在更知道了。」</p>
-<p><a id="sect-024"></a></p>
-<span id="ch-23"></span><h2 id="sect-024">第二十三章　写在署名前面</h2>
-<p>艾莉娅的第一份报告被退回来两次。</p>
+<p>「现在更知道了。」</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-21">← 上一章</a><a href="#contents">目录</a><a href="#ch-23">下一章 →</a></nav></section><section class="chapter" data-title="第二十三章｜写在署名前面" id="ch-23"><header class="chapter-head"><div class="chapter-no">第二十三章</div><h2>写在署名前面</h2></header><div class="prose"><p>艾莉娅的第一份报告被退回来两次。</p>
 <p>第一次是布伦。</p>
 <p>他在「失录百年原典」下面画了一条粗线，旁边写：你证明的是部分内容可能源于那一时期，手中册子经历多次传抄。不要让标题比证据跑得快。</p>
 <p>第二次是莉迪亚。</p>
 <p>她圈出一段关于伊娜症状的描述，提醒这部分尚未取得用于公开发表的许可。研究者已经知道，并不意味着所有读者都需要知道。</p>
 <p>艾莉娅拿着两份批注，在万卷馆坐了一整个下午。</p>
 <p>露米从旁边经过时，看见她把题目改成了很长的一行。</p>
-<p>「这标题是不是太长了？」</p>
-<p>「长些也好，省得读者看岔。」</p>
-<p>「读者大概看到标题就睡着了。」</p>
+<p>「会不会太长？」</p>
+<p>「长一点不容易误会。」</p>
+<p>「读者可能在标题那里睡着。」</p>
 <p>艾莉娅抬头看她。</p>
 <p>露米神色很平静。</p>
-<p>「这个我有经验。」</p>
+<p>「我是有经验的。」</p>
 <p>朋友终于笑了，将标题缩短一点，把必要限制移到开头。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>报告最前面没有先列她自己的名字。</p>
 <p>那里写着资料的来处。</p>
 <p>原册保管者萨芙·艾伦，现存遗物权利人瑟芙琳，修复记录提供者米洛·维恩，以及协助辨认修补方式的伊娜·维恩。之后才是参与译读、结构记录、医护与调查的人员。</p>
@@ -6424,7 +6345,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>艾莉娅曾担心，这样会使报告看起来不够像协会里那些正式论文。写完以后，她反而觉得，没有比这三个字更准确的位置。</p>
 <p>赫曼看过草稿，对自己的那一部分提出补充。</p>
 <p>他要求注明，自己曾在未经完整告知风险的情况下，以可能重现亲人记忆为由，试图促成维恩父女接受检查；相关资金往来与研究建议已交由调查人员核对。</p>
-<p>「你得想清楚。往后愿不愿意雇你的，可不止眼下这些人。」艾莉娅说。</p>
+<p>「你知道这会影响以后有人愿不愿意雇你。」艾莉娅说。</p>
 <p>「知道。」</p>
 <p>「可能不是暂时。」</p>
 <p>赫曼点头。</p>
@@ -6434,7 +6355,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>旧语学者还提出，应将原字图样与暂定读音并列。</p>
 <p>于是埃缇与伊珥的名字都保留了原来的笔画。</p>
 <p>他们不会因为一种语言不好发音，就只剩下后来的人替他们选的称呼。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>报告完成的那一天，莉迪亚准备返回疗养所。</p>
 <p>她没有把奥伦带走。</p>
 <p>关于擅自接续的审理已经确认了足以采取约束措施的行为，他需要在维斯佩拉接受后续治疗与监督，不能接触相关器具。具体裁定当时尚待复核，调查并未因医师离开而停止。</p>
@@ -6453,21 +6374,21 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「我会问他愿不愿意听一封旧学生的信。」</p>
 <p>奥伦慢慢点头。</p>
 <p>那不是他最想得到的保证，却是这一次能够被诚实给出的承诺。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>露米见奥伦，是在医师确认会面不会明显加重双方状态以后。</p>
 <p>他们没有在旧水钟庭院见，也没有摆出研究图。地点是一处开阔的院子，距离仍然留得足够。薇蕾娜负责会面的防护。蕾奥妮坐在侧面，带着一份已经核对过的证词，准备让他补充自己的部分。</p>
 <p>奥伦看见露米，先低下头。</p>
 <p>「我听见你们叫停。」</p>
 <p>露米没有说话。</p>
-<p>「起先听见过。后来……就分不清了。」</p>
+<p>「第一回，我听见了。后来才听不清。」</p>
 <p>她看向蕾奥妮。</p>
 <p>调查员将这一句记下，读回给他确认。</p>
 <p>奥伦点头。</p>
-<p>「我知道我还想往下看。我那时以为，顶多就是我自己受着。」</p>
-<p>「我们提醒过您，这可能连累别人。」露米说。</p>
+<p>「我知道自己还想继续。我以为只有我会付出代价。」</p>
+<p>「我们已经告诉过您，可能影响其他人。」露米说。</p>
 <p>他的肩膀僵了一下。</p>
 <p>过了很久，他终于改口。</p>
-<p>「我听进去了，但我没把那件事放在最前头。」</p>
+<p>「我当时没有把那件事放在最前面。」</p>
 <p>露米点头。</p>
 <p>这比「我不知道」更接近她见过的事实。</p>
 <p>奥伦没有再为自己补一个更容易被接受的版本。他问伊娜是否还会听见那些声音，露米只告诉他目前正在恢复，不提供她没有同意公开的细节。</p>
@@ -6479,7 +6400,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>离开以后，薇蕾娜问她是否还需要再见。</p>
 <p>「暂时不用。」</p>
 <p>这一次，露米没有觉得拒绝会让自己显得不够温柔。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>后续裁定送达时，奥伦没有出现在听证室。</p>
 <p>医师认为长途转移与连续问讯会明显加重他的状态，蕾奥妮便带着书记员到疗养房间，逐项读给他听。关于伪造维恩家委托的部分，没有证据证明他直接授意；关于明知叫停仍主动接续、使其他人受伤的部分，则由现场记录、他的补充证词与医师对当时状态的判断共同确认。</p>
 <p>他不得私自接触或持有相关录具，接受三年的监督治疗与限制研究处分，赔付已经查明的损失。病情改善可以改变照护方式，不能自行取消限制；不能工作时，赔偿按查实财产与以后可支付的部分执行，不向没有参与的人追讨。</p>
@@ -6488,9 +6409,9 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>书记员指给他看。</p>
 <p>他看了很久，才点头。</p>
 <p>「我能写信吗？」</p>
-<p>「普通书信可以寄；若附带研究资料，得先经过核查。」</p>
+<p>「普通书信可以。需要寄研究资料，先经过核查。」</p>
 <p>他将老师的地址放到桌边，请人重新抄清。那张纸已经被折过太多次，中间几个字快看不见了。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>月影家收到的复核意见，也没有只写奥伦的错误。</p>
 <p>独立医师认可他当时确有逐渐恶化的症状，也认可试读曾有明确治疗目的；但针对主动维持的风险，团队没有得到足够可靠的退出证据。露米对伊娜作出的保证超过了现有把握，不能因她同时也是受害者，就从决策经过中略去。</p>
 <p>学院暂停以这套器具开展有人参与的试读。今后的任何重新申请，都须有新的材料证明停止方式，并由未参与原方案的人复核。月影家承担此次照护与独立审查费用，伊娜的补偿协议单独生效，不附加保密或原谅条件。</p>
@@ -6499,12 +6420,12 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>赫曼所在学庭的处理另由学庭送达。他需要返还未经充分说明用途而支取的费用，暂停相关研究资格，接受经费与告知记录审查。那张纸没有将他这些日子协助译读的贡献抹去，也没有用贡献抵掉先前已经做过的事。</p>
 <p>艾莉娅在归档时，把调查结论与学术署名放进不同的夹子。</p>
 <p>两只夹子都留下来了。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>赫曼离开城堡时，把灰绿色信封全部留了下来。</p>
 <p>其中一只装着归还的资金凭证，一只装着完整的补充证词，最后一只没有封口，里面是写给伊娜的道歉。</p>
 <p>他没有要求一定转交。</p>
 <p>埃德蒙按照伊娜先前留下的选择，询问她是否愿意接收。她想了一天，决定收下，却没有立即打开。</p>
-<p>「我不用非得回他这封信吧？」她问。</p>
+<p>「我不欠他一封回信吧？」她问。</p>
 <p>「当然不欠。」</p>
 <p>她把信放进抽屉，继续做当天的工作。</p>
 <p>赫曼则带着得到许可的普通抄文离开，没有带走原书，也没有把自己写成揭开神秘遗存的英雄。他在出城前去了一趟南坡墓园，找到米洛的名字，站了一会儿。</p>
@@ -6513,7 +6434,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>墓园守门人只记得，那位棕发学者出来时，问附近哪里可以买到不容易被雨泡坏的记号牌。</p>
 <p>守门人指了路。</p>
 <p>那天晚些时候，一块新的小牌被放到米洛墓前。上面没有漂亮的解释，只把已经被雨水磨淡的姓名与日期重新写清楚。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>艾莉娅给报告署名以前，去找露米确认最后一项。</p>
 <p>「研究中止的那一页，你要不要看？」</p>
 <p>露米接过。</p>
@@ -6521,21 +6442,21 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她读完，把纸还回去。</p>
 <p>「留着。」</p>
 <p>「会让报告没那么漂亮。」</p>
-<p>「可下一位读者看见它，就能少走些弯路。」</p>
+<p>「可它会让下一位读者少猜一点。」</p>
 <p>艾莉娅点头，在最后写下自己的名字。</p>
 <p>窗外有风吹过，纸角轻轻掀起。她伸手按住，没有再追着那个已经结束的下午，把每一个人的动作都改成更正确的样子。</p>
 <p>那一页记录了他们实际上做过什么。</p>
 <p>也记录了他们以后不该假装没有学会的事。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>阿德里安回来时，没有先通知厨房。</p>
 <p>他通知了埃德蒙，通知了门卫，甚至让人提前检查自己带回来的药材是否需要隔离，却偏偏忘了告诉厨房要多准备一份晚餐。</p>
 <p>于是月影家族的始祖坐在女儿的起居室里，面前只有一盘原本留给露米的点心。</p>
 <p>他看了看盘子，又看了看女儿。</p>
-<p>「那块……我能拿吗？」</p>
+<p>「我可以拿一块吗？」</p>
 <p>露米把盘子往他那边推了一点。</p>
 <p>「你已经拿了。」</p>
 <p>阿德里安低头看自己手里的饼干，神情十分坦然。</p>
-<p>「我问的是下一块。」</p>
+<p>「我是问下一块。」</p>
 <p>塞维里安坐在另一边，将几份文件叠好，显然已经对父亲这种说话方式习以为常。</p>
 <p>只有艾莉娅稍微坐直了一些。</p>
 <p>她以前见过阿德里安几次，每一次都很难把传闻里的血族始祖，与眼前这位专心挑选哪一块饼干不会掉屑的父亲完全重叠起来。</p>
@@ -6545,7 +6466,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「那真好。我正想问露米有没有看完。」</p>
 <p>露米低头喝茶。</p>
 <p>谁都没有替她回答。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>关于旧书的事，阿德里安已经读过沿途收到的信。</p>
 <p>他没有在进门以后立刻检查女儿的脑子，也没有要求把所有相关人员叫来站成一排。先让露米把自己愿意说的部分讲完，再请医师说明她目前的状态。</p>
 <p>听到焦木气味仍会偶尔出现时，他手中的杯子停了一瞬。</p>
@@ -6560,16 +6481,16 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「血脉中的东西，我熟悉。」他说，「这不意味着所有进入身体的东西都按同一套方式运转。」</p>
 <p>露米抬头看他。</p>
 <p>父亲迎着她的目光，声音缓下来。</p>
-<p>「我不会因为一个猜法听着像回事，就拿你去试。」</p>
+<p>「我不会拿你试一个听起来很像办法的猜测。」</p>
 <p>她的肩膀慢慢松了。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>阿德里安带回来的盒子一共三个。</p>
 <p>第一个是药材，送往西边庄园，给艾莉诺的医师确认。药不是已经找到了治愈的方法，只是多了一种值得按既有计划评估的可能。父亲在说明里写得很谨慎，连沿途储存温度的变化都没有略去。</p>
 <p>第二个是一套很细的银制书签。</p>
 <p>他原本打算送给露米，后来听说她最近对藏在书里的薄片格外敏感，便让工匠把边缘改得更厚、更圆，每一枚都刻上了清楚可见的小月纹。</p>
 <p>露米看着盒子，忍不住笑了一下。</p>
 <p>她用指尖摸过那枚圆钝的边，想到自己过去夹在厚书里的纸条。金属书签倒很牢固，只是不适合拿来写「今天下雨」这种小事。</p>
-<p>「一个书签，做这么大做什么？」</p>
+<p>「书签不用做得像门牌。」</p>
 <p>「我觉得很好认。」</p>
 <p>「确实。」</p>
 <p>第三个盒子里没有珠宝。</p>
@@ -6578,11 +6499,11 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>她摸了一下，表情立刻变得认真。</p>
 <p>塞维里安看见，微微叹气。</p>
 <p>「我前几天买的茶，你没有这样看。」</p>
-<p>「那茶我也很喜欢。」</p>
+<p>「茶也很好。」</p>
 <p>「但没有枕头好。」</p>
 <p>露米抱起软枕，没有否认。</p>
 <p>阿德里安十分满意。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>晚餐终于送来以后，艾莉娅与医师先离开了。</p>
 <p>起居室里只剩一家人。埃德蒙替他们关好门，留了一盏暖色的小灯。阿德里安坐在女儿身边，没有再谈研究，问她最近有没有去湖边。</p>
 <p>「去过。」</p>
@@ -6611,24 +6532,24 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>父亲没有插话。</p>
 <p>「我觉得，如果是我听见母亲在后面叫，也不一定能比他们更快转过身。」</p>
 <p>阿德里安望着她。</p>
-<p>「想念你母亲，不会让你比别人笨。也不必逼自己少想一点。」</p>
+<p>「你不必靠比别人更少想念，证明自己足够聪明。」</p>
 <p>露米的手指慢慢收紧。</p>
 <p>「可我后来还是让他参与了。」</p>
-<p>「那就写下来：当时为什么点头，哪里判断错了，下回又该怎么做。别让这回白白过去。」</p>
+<p>「那就把为什么同意、哪里判断错了、以后需要怎样改，都留下。」</p>
 <p>他看了一眼桌上的卷宗。</p>
 <p>「你已经在做。」</p>
 <p>这句话没有抹掉她的责任，却让责任不必继续扩大成一个吞掉所有休息时间的东西。</p>
 <p>她靠着父亲，慢慢呼出一口气。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>塞维里安在窗边站了一会儿，最后也坐了过来。</p>
 <p>他并不习惯在父亲面前承认自己害怕过。尤其当妹妹已经能够说出「我可以维持这一边」，而他只能站在旁边，照约定一次次叫她的名字。</p>
 <p>阿德里安看了他一眼。</p>
 <p>「你做得很好。」</p>
 <p>塞维里安低头。</p>
 <p>「我没有把她提前带走。」</p>
-<p>「她还能自己决定的时候，你听了她的。她答不上来时，你也没走开。」</p>
+<p>「你尊重了她能作出的决定，也准备在她不能决定时接住她。」</p>
 <p>「如果我判断错了——」</p>
-<p>「那就一起担着。做哥哥也好，做父亲也好，谁都没有回回判断正确的本事。」</p>
+<p>「那会是我们需要面对的错。不是因为你做父亲或哥哥，就能够保证每一次都正确。」</p>
 <p>屋里安静下来。</p>
 <p>露米从软枕后面伸出一只手，轻轻拉住哥哥的袖口。</p>
 <p>塞维里安看向她。</p>
@@ -6638,7 +6559,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米继续道：「下次要学。」</p>
 <p>塞维里安望了她很久，终于笑了。</p>
 <p>「好。」</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>阿德里安到城堡的第二晚，厨房做了炖牛颊肉。</p>
 <p>锅盖掀开时，洋葱与月桂的热气一下扑上来。肉在浓汁里炖到边缘松开，用叉子轻轻一推就能分成纤维，旁边的土豆泥却细得几乎没有颗粒，吸了汁以后微微发亮。</p>
 <p>露米穿了一件烟蓝色软裙，领口只留一圈细窄的白边。她刚把头发挽起来，仍有几缕滑在耳侧，父亲看见便想伸手替她理，却被她用眼神制止。</p>
@@ -6652,7 +6573,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>露米听着，嘴角一点点弯起来。她用叉尖拨开一小块牛肉，先尝不蘸酱的部分，再把下一口轻轻浸进汁里。炖到里面的甜味很缓，到了最后才尝出少许胡椒，不像宴会那晚烤肉外层的焦脆，却更适合慢慢吃。</p>
 <p>她原本只想吃半份，最后盘里几乎没有留下。</p>
 <p>阿德里安看着空盘，终于没忍住叫人再来一点。</p>
-<p>「不是替她拿的。」他赶在女儿开口以前说，「我还饿。」</p>
+<p>「不是给她。」他赶在女儿开口以前说，「我还饿。」</p>
 <p>侍从离开后，他把另外一封信取出来，放在桌角，没有展开。</p>
 <p>那是艾莉诺单独写给露米的，父亲随身带来，却直到这顿饭才想起自己一直把它放在内袋。</p>
 <p>「她说不用急着回。」</p>
@@ -6660,10 +6581,10 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「你看过吗？」</p>
 <p>「没有。」</p>
 <p>「那你怎么知道？」</p>
-<p>「她托我给你带句话。」</p>
+<p>「她让我告诉你。」</p>
 <p>父亲说完，低头吃自己的第二份牛肉。露米看了一会儿，把信放进袖袋，决定等吃完再读。</p>
 <p>她不再担心迟半个钟头，里面的话便会消失。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>翌日，塞维里安真的带着梳子来了。</p>
 <p>诺艾拉先让他在一束废旧发带上练分股。哥哥照着做了两次，第三次又把右边那一股带到中间两遍，编出来的结斜向一边。</p>
 <p>露米坐在镜前，看得十分认真。</p>
@@ -6686,7 +6607,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「你下次。」</p>
 <p>始祖看向桌上那团被拆过三回的练习发带。</p>
 <p>他没有收回自己的话。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>那天下午，艾莉诺另一封较早寄出的信随邮袋送到。</p>
 <p>母亲说先行寄去的药材清单已经收到，医师会在药材运到后按计划评估，让他们不要每天写信追问有没有立刻好转。她还问，谁把她送给露米的那只瓷杯底座换了。</p>
 <p>塞维里安读到这里，动作停住。</p>
@@ -6699,10 +6620,10 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>过了一会儿，阿德里安决定亲自回一封解释信。</p>
 <p>塞维里安决定替妹妹重新学一次梳头。</p>
 <p>露米则抱着新枕头，重新坐进自己最熟悉的软椅。</p>
-<p>门外，哥哥又向诺艾拉请教该怎么把发带系得对称。露米抱着枕头，闭着眼睛笑了一声。</p>
-<p><a id="sect-025"></a></p>
-<span id="ch-24"></span><h2 id="sect-025">第二十四章　明日仍有来客</h2>
-<p>余烬历二九九九年，秋末。</p>
+<p>她发现，家人并没有因为终于回来，就能解决所有问题。</p>
+<p>他们会弄坏杯子，会瞒着彼此一些不值得瞒的小事，会在过分担心的时候试图多安排一点。</p>
+<p>但她现在可以把其中一部分说出来。</p>
+<p>也可以在说完以后，安心地睡一会儿。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-22">← 上一章</a><a href="#contents">目录</a><a href="#ch-24">下一章 →</a></nav></section><section class="chapter" data-title="第二十四章｜明日仍有来客" id="ch-24"><header class="chapter-head"><div class="chapter-no">第二十四章</div><h2>明日仍有来客</h2></header><div class="prose"><p>余烬历二九九九年，秋末。</p>
 <p>维斯佩拉落下第一场薄霜的那天，露米又睡过了早餐。</p>
 <p>厨房换过一轮炉火，湖港送来的煤经过了验收，南翼修过铰链的窗扣得严实。埃德蒙处理了两份普通申请，又将一份缺少原卷编号的结案书退回文书处补齐。</p>
 <p>这一次，没有人把它直接放到族长桌上。</p>
@@ -6711,15 +6632,15 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「小姐，茶好了。」</p>
 <p>毛毯下面轻轻动了一下。</p>
 <p>「……放着吧。」</p>
-<p>「今天只剩两份要您签字的文书。」</p>
+<p>「今天只有两份需要您签字。」</p>
 <p>她睁开一只眼睛。</p>
 <p>「真的？」</p>
-<p>「都核对过了。」</p>
+<p>「已经核对过。」</p>
 <p>埃德蒙把茶放在她够得到的地方，文件则放在另一侧，没有压住她正在读的书。</p>
 <p>露米慢慢坐起来，将长发从枕头下面拨出来。窗帘留着一道缝，霜后的光落在地毯上，明亮，却不刺眼。</p>
 <p>湖面有船经过。</p>
 <p>她看了一会儿，才拿起第一份文件。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>万卷馆为那册旧书留出的不是最显眼的位置。</p>
 <p>它被安置在适宜保存古纸的房间里，保护盒外标明来源、修复情况与查阅条件。原件不随意翻阅，普通读者可以看不含器具操作内容的抄本与译稿。涉及个人经历的部分，则按照当事人留下的选择处理。</p>
 <p>有些学者因此抱怨手续太多。</p>
@@ -6741,7 +6662,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「今天是哪一件？」</p>
 <p>「书车。」</p>
 <p>露米点头，绕过去看已经放稳的那只轮子。</p>
-<p>「它会不会也说自己是苗架？」</p>
+<p>「它会说自己是苗架吗？」</p>
 <p>尤恩的脸一下红了。</p>
 <p>埃德蒙低头查看收货单，仿佛没有听见。</p>
 <p>「不会。」尤恩说。</p>
@@ -6750,7 +6671,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>可他已经不需要两者必须一样。</p>
 <p>他拧好最后一枚螺母，把车推过门槛，确认满载时也不会晃，才将工具收回袋里。</p>
 <p>这一次，收货单上没有「暂存待查」。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>那天，她们在万卷馆开了一场很小的读书会。</p>
 <p>门边只摆了两排椅子。来的人有学庭的几位研究者，教养院的负责人，参与修复的工匠，以及愿意听一段旧故事的普通住客。</p>
 <p>伊娜坐在靠窗的位置，与露米隔着足够的距离。诺艾拉在她旁边，手背的伤已经只剩一条淡线。罗安带来自己的练字册，瑟芙琳没有到场，但同意由他代读母亲留下的一段注。</p>
@@ -6761,15 +6682,15 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>几块能够分开的硬饼。</p>
 <p>有人听得疑惑，后来渐渐安静。</p>
 <p>他们开始明白，那些数字背后不是一个需要被立刻解释清楚的传说，而是一群在当时需要吃饭、取暖、记住彼此的人。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>读到埃缇重新能够帮忙分水的地方，米娅轻声问，她的杯子后来有没有补好。</p>
 <p>苔莎原本想让她先不要插话，艾莉娅却低头翻了翻手边的记录。</p>
-<p>「我们还没找到写着这件事的记录。」</p>
+<p>「我们没有找到写这件事的那一行。」</p>
 <p>女孩有些失望。</p>
 <p>「那以后会找到吗？」</p>
-<p>「说不准。有一天或许能找到，也可能一直找不到。」</p>
+<p>「也许会。也许不会。」</p>
 <p>米娅想了一会儿，点点头。</p>
-<p>「要是找到了，能告诉我吗？」</p>
+<p>「如果找到，告诉我。」</p>
 <p>艾莉娅答应了。</p>
 <p>她把女孩的问题记在公开读书会的会后纸上，标了「暂缺」。如果以后有新的证据，下一版便能添上出处；若始终没有，也不该让一段好听的猜测代替答案。</p>
 <p>露米坐在靠近书架的地方，看着那张小小的脸，忽然想到，自己以前总觉得一个故事必须知道结尾，才能放心地把书合上。</p>
@@ -6779,7 +6700,7 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>读书会结束时，罗安将萨芙的字一行行念完。他念得不流利，在一个词上停了很久。屋里没有人替他抢先说出答案。</p>
 <p>他最终自己念了出来。</p>
 <p>那是「归处」。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>读书会结束以后，苔莎带孩子们在门廊等车。</p>
 <p>天快冷了，米娅仍不肯把围巾戴好，嫌下巴痒。罗安替她松开一点，她又嫌风钻进去，最后只好自己重新绕。</p>
 <p>尤恩抱着空工具箱从旁边经过，听见她问楼下的炉火今晚是否已经点好。</p>
@@ -6787,29 +6708,29 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>女孩这才放心，踮脚去看湖。</p>
 <p>对岸的工厂刚换班，汽笛隔着水传来很长的一声，惊起芦苇里的鸟。湖港有人把最后一车煤推进棚里，城堡门前的马车夫正往手心哈气，调整缰绳。</p>
 <p>尤恩没有再回头找那位银发族长。</p>
-<p>他把工具箱换到另一只手，赶在门卫合上侧门以前走了出去。学院的晚课还来得及，今晚要讲轴承磨损，他知道自己有一个做得不太好的例子，可以带去问老师。</p>
-<p>南桥上风很大。</p>
-<p>他把领口扣紧，往城里的灯光走。</p>
-<hr/>
+<p>他把工具箱换到另一只手，赶在门卫合上侧门以前走了出去。今晚他会在北岸留宿，等次日船班南下；学院下一次讲轴承磨损时，他知道自己有一个做得不太好的例子，可以带去问老师。</p>
+<p>通往北岸渡口的路上风很大。</p>
+<p>他把领口扣紧，往港边的灯光走。</p>
+<hr aria-label="分场" class="scene"/>
 <p>伊娜离开前，给露米送来一本很薄的新册子。</p>
 <p>不是古书。</p>
 <p>封皮是普通的深色布，纸张结实，书脊能够平展开，不会刚翻几次就自动合上。第一页完全空白，后面也没有预先替主人列好应该记录的内容。</p>
-<p>「我自己做出来的。」她说。</p>
+<p>「我自己做的。」她说。</p>
 <p>露米将它托在手里，翻了两页。</p>
 <p>「很好。」</p>
-<p>「摆在椅子边刚好。以后不用总抓一张纸来记东西了。」</p>
+<p>「可以放在椅子旁边，不用拿那些散纸记东西。」</p>
 <p>露米看了一眼自己桌上仍有几张没收好的便笺。</p>
 <p>「你们都看见了。」</p>
 <p>伊娜笑起来。</p>
 <p>那笑容里仍有疲惫留下的痕迹，却不再像第一次站到城堡门口时，仿佛任何一句话都可能使她失去最后一件东西。</p>
 <p>「店里下个月会忙一点。」她说，「学庭有一批课本要修。我可能不能每周来。」</p>
-<p>「那就挑你方便的日子来。」</p>
+<p>「按你方便的时候。」</p>
 <p>「不过医师的复诊我会记得。」</p>
 <p>露米点头。</p>
 <p>她们没有拥抱。</p>
 <p>至少今天还没有。</p>
 <p>但伊娜离开时，回头向她挥了挥手，动作自然得像已经知道，下次还可以从同一扇门进来。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>傍晚以前，诺艾拉拿到了工匠行会的第一阶段考核结果。</p>
 <p>通过。</p>
 <p>后面还要做实操，不能因此直接得到完整资格。她把那张纸看了三遍，才交给露米。</p>
@@ -6822,76 +6743,75 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>薇蕾娜在门外听见，停了一下，没有立刻进来打断。她手里是巡逻调整后的名单，已经核对过，今天没有需要马上报告的异常。</p>
 <p>她将名单交给埃德蒙，自己去厨房拿一杯热水。</p>
 <p>只是城堡终于有一个傍晚，可以不由急促的脚步开始。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>塞维里安的离程定在三天后。</p>
 <p>他需要回去完成被推迟的事务，不能永远坐在妹妹房门外。露米替他收好一份要带去北方的回函，里面附着萨芙女儿的遗物收件清单。</p>
 <p>「记得到了写信。」她说。</p>
-<p>「到了我就写。」</p>
-<p>「别每封信都只写『一切顺利』。」</p>
+<p>「我会。」</p>
+<p>「不要只写一切顺利。」</p>
 <p>哥哥看着她，慢慢笑了。</p>
 <p>「要写多少页？」</p>
-<p>「起码告诉我，路上都吃了些什么。」</p>
+<p>「至少告诉我吃了什么。」</p>
 <p>他点头，将信放进内袋。</p>
 <p>阿德里安则准备先去西边庄园看艾莉诺。临走前，他又问了一遍女儿是否需要别的东西。</p>
 <p>露米想了很久。</p>
-<p>「回去替我跟母亲说一声，那只杯子还好好用着。」</p>
+<p>「替我告诉母亲，杯子还能用。」</p>
 <p>父亲露出一个极难判断的表情。</p>
-<p>「你们怎么老提那只杯子啊？」</p>
+<p>「你们一定要一直提那只杯子吗？」</p>
 <p>「她记得。」</p>
 <p>阿德里安叹气，答应会亲口解释。</p>
-<hr/>
+<hr aria-label="分场" class="scene"/>
 <p>夜深以后，露米在新册子的第一页写下日期。</p>
 <p>她没有把从古代记忆里看见的一切全部抄进去。</p>
-<p>她把几张研究抄页推到桌角，只留下自己的新册子摊在灯下。</p>
+<p>那些内容已经在各自该在的地方，有原字，有旁证，也有无法确认的空白。这本册子不需要替所有人再活一遍。</p>
 <p>她先写自己的名字。</p>
 <p>露米艾尔·德·月影。</p>
 <p>然后想了想，写今天读书会来的几个人，写诺艾拉通过了考核，写伊娜的新册子很好用，写哥哥答应以后会在信里讲晚饭。</p>
 <p>写到父亲那只枕头时，她停下来，往椅背上靠了靠。</p>
 <p>确实很好睡。</p>
 <p>她很认真地把这一句也写了进去。</p>
-<p>翻到页边，她又记下一行：院子里第一层薄霜已经化了。写完以后，指尖仿佛还记得早晨窗台的凉意。</p>
+<p>翻到页边，她又记下一行：院子里第一层薄霜已经化了。没有人要求她提供证据，也没有人会拿这句话去替旧书定年；她只是想在以后翻到这一页时，记起今天的天气。</p>
 <p>窗外，维斯佩拉的灯火渐渐稀疏。银镜湖上还有一艘归港的船，船头挂着小灯，缓慢越过水面的暗处。</p>
 <p>露米合上笔帽，将册子放到矮桌上。</p>
 <p>埃德蒙在门外轻敲两声。</p>
 <p>「小姐，明天下午艾莉娅小姐会来。」</p>
 <p>「带什么？」</p>
-<p>「她说，带的是一本普通的新书。」</p>
+<p>「她说带一册普通的新书。」</p>
 <p>露米抬起头。</p>
-<p>老管家又补充：「书已经验过，里面没有夹别的东西。」</p>
+<p>老管家又补充：「已经检查过，没有夹带别的物件。」</p>
 <p>她想了一会儿。</p>
-<p>「那就……请厨房再多备一份点心。」</p>
+<p>「那就……让厨房多准备一份点心。」</p>
 <p>「是。」</p>
 <p>门轻轻合上。</p>
 <p>露米没有立刻熄灯。她把明日的书签放到桌边，确认茶杯的位置，再将毛毯拉到肩上。</p>
+<p>城堡外有许多她仍不知道的事。</p>
 <p>很远的海上，迷雾仍然没有散。那些失落的年份也不会因为一册书被读懂了一部分，就突然向所有人敞开。</p>
 <p>可今晚，南翼的窗扣已经修好，旧街的修书铺有人锁门，教养院的炉火够暖。万卷馆里，一本终于被妥善装订的书安静地放在保护盒中，等着以后还愿意认真读它的人。</p>
 <p>露米闭上眼睛。</p>
+<p>她不需要在睡着以前，把所有空白都填满。</p>
 <p>明天还有茶。</p>
 <p>也还有来客。</p>
-<p><strong>第一卷完</strong></p>
-<p><a id="sect-026"></a></p>
-<span id="ch-25"></span><h2 id="sect-026">卷后番外 · 月影小姐的蛋糕品食记录（一）　请在蛋糕盒上写名字</h2>
-<p>翌日下午，艾莉娅果然来了。</p>
-<p>她带来一本普通的新书，封面没有符文，书页里也没有不肯说话的薄片。埃德蒙检查完收件单，把书递给露米时，特意说明：「书纸和胶都寻常。只有艾莉娅小姐夹进去的四张批注，恐怕不算寻常。」</p>
-<p>「只有三张呀。」艾莉娅纠正。</p>
+<p><strong>第一卷完</strong></p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-23">← 上一章</a><a href="#contents">目录</a><a href="#ch-cake">卷后番外 →</a></nav></section><section class="chapter" data-title="卷后番外｜请在蛋糕盒上写名字" id="ch-cake"><header class="chapter-head"><div class="chapter-no">卷后番外 · 月影小姐的蛋糕品食记录（一）</div><h2>请在蛋糕盒上写名字</h2></header><div class="prose"><p>翌日下午，艾莉娅果然来了。</p>
+<p>她带来一本普通的新书，封面没有符文，书页里也没有不肯说话的薄片。埃德蒙检查完收件单，把书递给露米时，特意说明：「纸是普通纸，胶是普通胶。唯一不普通的，是艾莉娅小姐在书里夹了四张自己的批注。」</p>
+<p>「只有三张。」艾莉娅纠正。</p>
 <p>她摸了摸外套口袋，停顿片刻。</p>
 <p>「第四张在这里。」</p>
 <p>露米坐在软椅里，看着朋友从口袋里摸出折过两次的纸，没有立刻接过书。</p>
-<p>「你不会想让我今天就读完吧？」</p>
-<p>「才不是。今天不谈研究。」</p>
+<p>「你要我今天读完？」</p>
+<p>「不。今天不谈研究。」</p>
 <p>「上回你也这么说。」</p>
 <p>艾莉娅将另一只纸盒放到桌上。</p>
-<p>「这回我带了证物。」</p>
+<p>「这回有证物。」</p>
 <p>纸盒散出一股很淡的奶油香气。</p>
 <p>诺艾拉正在旁边替书架调整一片松动的托板，听见「证物」二字，手里的螺丝刀停了一下。她走近，看见糕点铺的封条完好，便将工具留在柜边，先去洗了手。</p>
-<p>「证物……应该不能随便吃吧？」她说。</p>
-<p>「所以才要先请族长大人亲自验收。」艾莉娅回答。</p>
+<p>「证物不能随便吃吧。」她说。</p>
+<p>「所以先请族长验收。」艾莉娅回答。</p>
 <p>露米把盒盖掀开。</p>
 <p>里面并排放着三小块蛋糕。最左边覆着淡粉色的莓果酱，中间夹着薄薄的奶油；右边是烤过的梨片，表面刷了一层蜂蜜；最后一块颜色很深，糕体里散着细碎的坚果。</p>
 <p>「秋末的新菜单。」艾莉娅说，「草莓用的是春天熬好的果酱，不是这个季节刚摘下来的鲜果。老板娘特意让我说清楚，免得你以为她会从空气里变草莓。」</p>
 <p>「我没有那样想。」露米说。</p>
 <p>「去年你问过。」</p>
-<p>「我那时只是问价钱嘛。」</p>
+<p>「我只是问贵不贵。」</p>
 <p>「结果你又问了三次。」</p>
 <p>诺艾拉默默把第三只碟子拿来，放在两人中间。</p>
 <p>露米对着那三块蛋糕看了许久，终于从矮桌抽屉里拿出伊娜前一天送的新册子。</p>
@@ -6902,27 +6822,27 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「你真要写？」</p>
 <p>「要。」</p>
 <p>「这也是研究？」</p>
-<p>「不是呀。」露米抬头，「只是想记得哪一块好吃。」</p>
+<p>「不是。」露米抬头，「只是想记得哪一块好吃。」</p>
 <p>诺艾拉轻轻笑了一声，把切蛋糕的小刀递过去。</p>
-<hr/>
+<hr aria-label="分场" class="scene original-scene"/>
 <p>第一号：秋霜莓果奶油蛋糕。</p>
 <p>外观：奶油很平整，莓果酱沿着边缘落下一点，没有流到纸托上。</p>
 <p>口感：蛋糕松软。果酱偏酸，刚好压住奶油的甜。最下面那层稍微有些湿；艾莉娅认为是马车经过石桥时颠的，没有证据。</p>
 <p>评分：八点五分（十分制）。</p>
 <p>备注：可以再吃一块。最好先问清楚价钱。</p>
-<hr/>
+<hr aria-label="分场" class="scene original-scene"/>
 <p>第二号：蜂蜜烤梨蛋糕。</p>
 <p>外观：不如第一块漂亮。</p>
 <p>口感：梨片带着一点焦香，蜂蜜用得克制。靠近边缘的部分略干，配红茶正好。</p>
 <p>评分：八分。</p>
 <p>备注：适合坐在窗边慢慢吃。父亲可能会喜欢，但不能以此断言他一定会喜欢。</p>
-<hr/>
+<hr aria-label="分场" class="scene original-scene"/>
 <p>第三号：深焙坚果蛋糕。</p>
 <p>外观：看起来比实际硬。</p>
 <p>口感：坚果很多，咀嚼起来有一点费力。诺艾拉认为它适合带去工坊，艾莉娅认为它不适合边翻书边吃，因为会掉屑。</p>
 <p>评分：七分。</p>
 <p>备注：不应在古籍阅览室食用。</p>
-<hr/>
+<hr aria-label="分场" class="scene original-scene"/>
 <p>艾莉娅读完，指着第三条笑了起来。</p>
 <p>「为什么只有最后一项写得像禁令？」</p>
 <p>「因为你真的会带进去。」</p>
@@ -6933,14 +6853,14 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>三人终于认真吃起蛋糕。窗外有风，吹得树枝在玻璃上晃了两下；隔着湖能听见一声很远的汽笛。城堡没有因此停下日常工作，走廊里偶尔仍有人经过，报着厨房的采购数目或明早的送货时辰。</p>
 <p>埃德蒙进来换茶时，看到桌上的册子，问是否需要为这份新记录编号。</p>
 <p>「不用。」露米说。</p>
-<p>「是否需要另备一本糕点账册？」</p>
+<p>「要不要另备一本专用账册？」</p>
 <p>「也不用。」</p>
-<p>「明白。那我只记今日的糕点开销。」</p>
+<p>「那么我只记今日糕点开销。」</p>
 <p>露米点了头。</p>
 <p>老管家将茶壶放稳，准备退出去，却被艾莉娅叫住。</p>
 <p>「对了，今天这盒糕点，是我亲自去旧街买的。」</p>
 <p>「我知道。」埃德蒙说，「送货凭证写的是您。」</p>
-<p>「钱也是我付的哦。」艾莉娅补充。埃德蒙把账上原先准备列作家族采购的一栏改成「客赠糕点」，只记招待经过，不再让同一盒蛋糕从家族账上支出第二次。</p>
+<p>「而且是我付的钱。」艾莉娅补充。埃德蒙把账上原先准备列作家族采购的一栏改成「客赠糕点」，只记招待经过，不再让同一盒蛋糕从家族账上支出第二次。</p>
 <p>「那你们有没有看盒盖里面？」</p>
 <p>露米一怔。</p>
 <p>她把空下来的纸盒转过来。盖子内侧，用很细的墨线写着一个名字。</p>
@@ -6955,15 +6875,17 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>「老板娘说，有人每年都在同一天订同一块蛋糕。盒子上的名字一直没变。她没问为什么。」</p>
 <p>房间里安静了片刻。</p>
 <p>露米没有问那个人是谁。</p>
-<p>露米伸出手指，轻轻碰了碰那个歪斜的末笔，又怕蹭花，连忙把手缩回来。</p>
+<p>一张纸盒里的名字不能证明被写下的人仍然活着，也不能替已经离开的人补全一生。它甚至可能写错一个笔画，若没有旁人提醒，就这样被丢进炉火。</p>
+<p>可今天有人来买蛋糕，记得要把一个名字写上去。</p>
+<p>这已经足够成为一件值得高兴的小事。</p>
 <p>「盒子要留下吗？」诺艾拉问。</p>
 <p>露米思考了一会儿。</p>
-<p>「把写字的盒盖剪下来就好。沾奶油的那边别收，会坏的。」</p>
+<p>「把盖子剪下来吧。别把有奶油的那边也留着，会坏。」</p>
 <p>艾莉娅笑了。</p>
 <p>「我还以为你会连整个盒子都收起来。」</p>
-<p>「上回你留下的那个盒子，边上已经长霉了。」</p>
+<p>「上次你给的糕点盒，已经有一点发霉。」</p>
 <p>「你怎么不告诉我？」</p>
-<p>「我也是昨天才瞧见。」</p>
+<p>「因为我也是昨天才发现。」</p>
 <p>诺艾拉叹了口气，去拿干净的剪刀。她把写有名字的那一块沿边剪下，又找来一张硬纸，简单托住，递回露米手里。</p>
 <p>露米把它夹进新册子的第二页后面。</p>
 <p>纸片轻得几乎没有重量。</p>
@@ -6973,23 +6895,18 @@ main{width:100%;max-width:780px;margin:0 auto}
 <p>今天最好吃的，不一定是分数最高的那一块。</p>
 <p>写完这句，她放下笔，把新书挪到身边。</p>
 <p>「现在可以读了。」她说。</p>
-<p>「说好了，今天不谈研究。」艾莉娅回答。</p>
+<p>「我说了今天不谈研究。」艾莉娅回答。</p>
 <p>「我知道。」</p>
 <p>露米将书翻开，找了一页有趣的地方，念了两段。</p>
 <p>艾莉娅没有立刻纠正她的读法。</p>
 <p>诺艾拉则坐到离窗更近的地方，端起尚温的茶，听完以后说，那块坚果蛋糕其实没有想象中难吃。</p>
 <p>露米看了看自己刚写下的七分。</p>
-<p>「那下回我再去买。」</p>
-<p>「倒也不用买得这么勤。」诺艾拉说。</p>
+<p>「那下次再买。」</p>
+<p>「也不必这么快。」诺艾拉说。</p>
 <p>她们都笑了。</p>
 <p>窗外天色慢慢暗下来。书还没有读完，晚餐的钟也还没有响。</p>
 <p>露米把写着名字的小纸片又往书页里推了半寸，免得它被风吹走。</p>
 <p>明天也许会有新的故事。</p>
-<p>今天先记住这块蛋糕。</p>
-</main></div><script>
-(()=>{const toc=document.getElementById('chapter-toc'),toggle=document.getElementById('toc-toggle'),close=document.getElementById('toc-close'),backdrop=document.getElementById('toc-backdrop');function setMenu(open){toc.classList.toggle('mobile-open',open);backdrop.classList.toggle('mobile-open',open);document.body.classList.toggle('menu-open',open);toggle.setAttribute('aria-expanded',String(open));if(open)close.focus();else toggle.focus()}toggle.addEventListener('click',()=>setMenu(!toc.classList.contains('mobile-open')));close.addEventListener('click',()=>setMenu(false));backdrop.addEventListener('click',()=>setMenu(false));toc.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{if(toc.classList.contains('mobile-open'))setMenu(false)}));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&toc.classList.contains('mobile-open'))setMenu(false)});window.addEventListener('resize',()=>{if(window.innerWidth>840&&toc.classList.contains('mobile-open'))setMenu(false)});const b=document.body,key='moonlib-pace-'+b.dataset.volume;let s={};try{s=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}
-const size=Number(s.font||19);document.documentElement.style.setProperty('--font',Math.max(16,Math.min(26,size))+'px');if(s.dark)b.classList.add('dark');
-const buttons=document.querySelectorAll('[data-act]');const save=()=>{s.dark=b.classList.contains('dark');s.font=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--font'))||19;localStorage.setItem(key,JSON.stringify(s))};
-buttons.forEach(e=>e.addEventListener('click',()=>{const a=e.dataset.act;if(a==='theme')b.classList.toggle('dark');if(a==='up')document.documentElement.style.setProperty('--font',Math.min(26,(parseInt(getComputedStyle(document.documentElement).getPropertyValue('--font'))||19)+1)+'px');if(a==='down')document.documentElement.style.setProperty('--font',Math.max(16,(parseInt(getComputedStyle(document.documentElement).getPropertyValue('--font'))||19)-1)+'px');save()}));
-let anchor=s.anchor||'#top';const resume=document.querySelector('#continue');resume.href=anchor;const sect=[...document.querySelectorAll('main h2[id],main h3[id],main h4[id]')];const observer=new IntersectionObserver(entries=>{for(const e of entries){if(e.isIntersecting){s.anchor='#'+e.target.id;resume.href=s.anchor;localStorage.setItem(key,JSON.stringify(s))}}},{rootMargin:'-75px 0px -70% 0px',threshold:0});sect.forEach(e=>observer.observe(e));function progress(){const d=document.documentElement;const max=Math.max(1,d.scrollHeight-d.clientHeight);document.querySelector('#progress').style.width=Math.round(d.scrollTop/max*100)+'%'}window.addEventListener('scroll',progress,{passive:true});progress();
-})();</script></body></html>
+<p>今天先记住这块蛋糕。</p></div><nav aria-label="章节导航" class="chapter-nav"><a href="#ch-24">← 第二十四章</a><a href="#contents">目录</a><a href="#cover">回到封面 ↑</a></nav></section></main><footer class="colophon"><div class="fin">第一卷 · 全卷完</div><a href="#contents">返回目录 ↑</a></footer><script>
+(()=>{const key='lumielle-volume1-revised-final-20261101';let state={};try{state=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}let size=Math.max(17,Math.min(25,Number(state.size)||20));const apply=()=>{document.documentElement.style.setProperty('--font',size+'px');document.body.classList.toggle('night',!!state.night);document.querySelector('#theme').textContent=state.night?'日间':'夜间';};const save=()=>{state.size=size;try{localStorage.setItem(key,JSON.stringify(state))}catch(e){}};apply();document.querySelector('#smaller').onclick=()=>{size=Math.max(17,size-1);apply();save()};document.querySelector('#larger').onclick=()=>{size=Math.min(25,size+1);apply();save()};document.querySelector('#theme').onclick=()=>{state.night=!state.night;apply();save()};if(state.chapter&&document.getElementById(state.chapter)){let r=document.querySelector('#resume');r.href='#'+state.chapter;r.style.display='inline-block';r.textContent='回到上次阅读的章节'}const sections=[...document.querySelectorAll('.chapter')];let pending=false;function update(){pending=false;let current=null;for(const s of sections){if(s.getBoundingClientRect().top<150)current=s;else break}document.querySelector('#current-title').textContent=current?current.dataset.title:'月影书库的第零页';if(current&&state.chapter!==current.id){state.chapter=current.id;save()}const h=document.documentElement;document.querySelector('.progress').style.width=(100*h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight))+'%'}window.addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(update)}},{passive:true});update()})();
+</script></body></html>
