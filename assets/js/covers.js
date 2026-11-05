@@ -195,8 +195,13 @@
     .then(data => {
       if (!Array.isArray(data.volumes)) return;
       const byNumber = new Map(data.volumes.map(v => [Number(v.number), v]));
-      document.querySelectorAll('.volume-card').forEach((card, index) => {
-        const item = byNumber.get(index + 1);
+      // Resolve the volume from its actual link, not its position on the shelf.
+      // Volume 00 precedes Volume 01, so index + 1 would shift every cover.
+      document.querySelectorAll('.volume-card').forEach(card => {
+        const href = card.getAttribute('href') || '';
+        const cardMatch = href.match(/^volume-(\\d{2})\\.html$/);
+        if (!cardMatch) return;
+        const item = byNumber.get(Number(cardMatch[1]));
         if (!item) return;
         if (item.status !== 'published' && item.cover_revealed !== true) return;
         applyCover(card, permittedPath(item.cover_image));
