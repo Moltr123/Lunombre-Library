@@ -108,7 +108,7 @@
     if (!items.length) return;
     const reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const coverFor = v => permittedPath(v.hero_image) || permittedPath(v.cover_image);
-    let index = items.length - 1;
+    let index = 0; // Start with Volume 00; forward order is 00 → 01 → 02 → 03.
     let busy = false;
     let image = book.querySelector('.official-cover-image');
     if (!image) {
