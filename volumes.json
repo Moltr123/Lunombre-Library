@@ -1,7 +1,17 @@
 {
   "book": "月影书库的第零页",
-  "last_site_update": "2026-11-03",
+  "last_site_update": "2026-11-06",
   "volumes": [
+    {
+      "number": 0,
+      "status": "published",
+      "title": "第零卷《初》",
+      "path": "volume-00.html",
+      "cover_image": "assets/covers/vol-00.webp",
+      "hero_image": null,
+      "cover_revealed": true,
+      "special_covers": []
+    },
     {
       "number": 1,
       "status": "published",
