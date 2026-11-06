@@ -1,0 +1,22 @@
+{
+  "status": "art_direction_assumptions_not_novel_canon",
+  "version": "20261107-scale2",
+  "city_population_target": 30000,
+  "city_built_up_area_km2": [
+    4,
+    6
+  ],
+  "castle_buildings_km2": [
+    0.02,
+    0.05
+  ],
+  "castle_walled_estate_km2": [
+    0.2,
+    0.5
+  ],
+  "lake_area_km2": [
+    150,
+    300
+  ],
+  "note": "Illustration uses symbolic buildings and boats; numeric assumptions are design targets, not measured image areas or canonical geography."
+}
