@@ -1,11 +1,8 @@
 {
   "status": "art_direction_assumptions_not_novel_canon",
-  "version": "20261107-scale2",
+  "version": "20261107-scale3",
   "city_population_target": 30000,
-  "city_built_up_area_km2": [
-    4,
-    6
-  ],
+  "city_built_up_area_km2": null,
   "castle_buildings_km2": [
     0.02,
     0.05
@@ -18,5 +15,5 @@
     150,
     300
   ],
-  "note": "Illustration uses symbolic buildings and boats; numeric assumptions are design targets, not measured image areas or canonical geography."
+  "note": "Illustrative revision expands city and academy and adds castle east road. Earlier footprint targets are uncalibrated; population remains a provisional design assumption. No numeric canonical geography is established."
 }
