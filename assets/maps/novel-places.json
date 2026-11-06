@@ -1,0 +1,3060 @@
+{
+  "coverage": {
+    "volumes": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "chapters": {
+      "0": 280,
+      "1": 24,
+      "2": 30,
+      "3": 45,
+      "4": 38
+    },
+    "note": "据所读正文登记具名地点与可辨认主要场景；第四卷覆盖当前可得1—38章。区域圆点不代表建筑实测坐标。"
+  },
+  "zones": {
+    "castle": "北岸古堡",
+    "northport": "北岸港区",
+    "city": "维斯佩拉城区",
+    "station": "南岸铁路",
+    "academy": "湖东南学院",
+    "lake": "银镜湖岸",
+    "mountains": "区域山地",
+    "west": "湖西与西坡",
+    "unknown": "位置或名称待核",
+    "field": "野外实习路线",
+    "clockriver": "钟河与槐渡",
+    "north-towns": "钟河北方四镇",
+    "grey-estuary": "西线与灰垣河口",
+    "dichao": "荻潮港",
+    "sea": "海港与远航",
+    "world": "大陆与远方"
+  },
+  "entries": [
+    {
+      "id": "castle",
+      "name": "月影古堡",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "银镜湖北岸的家族古堡；地图中的露涅维尔城堡为同一主地标的展示称呼。",
+      "aliases": [
+        "月影城堡",
+        "露涅维尔城堡",
+        "北岸城堡"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一章　她出生的那一夜",
+          "number": 1
+        },
+        {
+          "volume": 1,
+          "chapter": "一箱送错地方的东西",
+          "number": 0
+        }
+      ]
+    },
+    {
+      "id": "library",
+      "name": "万卷馆",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "城堡内的藏书与阅览场所，不与学院图书馆或联合保管所合并。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "他没有买下那本书",
+          "number": 4
+        },
+        {
+          "volume": 2,
+          "chapter": "第八章　药师的第二张表",
+          "number": 8
+        }
+      ]
+    },
+    {
+      "id": "north-gallery",
+      "name": "古堡北廊",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "第零卷童年场景中的北廊；主图只定位到古堡，不推定房间坐标。",
+      "aliases": [
+        "北廊"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第四章　北廊的铃",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "training-hall",
+      "name": "古堡南侧训练馆",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "露米幼年训练所用的南侧训练馆。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二十八章　镜室里的第四步",
+          "number": 28
+        }
+      ]
+    },
+    {
+      "id": "mirror-room",
+      "name": "训练馆镜室",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "南侧训练馆内用于观察站位的镜室。",
+      "aliases": [
+        "镜室"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二十八章　镜室里的第四步",
+          "number": 28
+        }
+      ]
+    },
+    {
+      "id": "north-hall",
+      "name": "古堡北厅",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "成年宴会等场景涉及的北厅；与厨房之间有送餐通路。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百四十九章　钟响以前",
+          "number": 140
+        }
+      ]
+    },
+    {
+      "id": "east-hall",
+      "name": "古堡东厅",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "家族宴会与支族会议使用的东厅，不与夜栖馆东厅混同。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百四十七章　会客厅里没有主角",
+          "number": 138
+        },
+        {
+          "volume": 0,
+          "chapter": "第二百一十五章　月厅的公开一刻",
+          "number": 197
+        }
+      ]
+    },
+    {
+      "id": "castle-west",
+      "name": "古堡西翼阅览室",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "检查新送来藏书的小阅览室，属于古堡西翼。",
+      "aliases": [
+        "西翼小阅览室"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "族长醒来以前",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "south-study",
+      "name": "古堡南翼书房",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "第三卷出现的城堡南翼书房。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第一章　七号抽屉",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "outer-rooms",
+      "name": "古堡南侧外院客房",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "城堡提供的外院客房；与市政调查处是不同场所。",
+      "aliases": [
+        "外院客房"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "他没有买下那本书",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "castle-kitchen",
+      "name": "古堡厨房",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "古堡日常后勤与餐食场景。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百四十七章　会客厅里没有主角",
+          "number": 138
+        },
+        {
+          "volume": 2,
+          "chapter": "第一章　没有写在急件上的人",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "castle-archives",
+      "name": "家族档案馆",
+      "zone": "castle",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "月影家的家族档案设施；只标古堡范围，内部位置未测。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第十一章　留给下一位的钥匙",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "northport",
+      "name": "北岸湖港",
+      "zone": "northport",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "北岸港区与湖渡出发岸口；南桥只通港内道路。",
+      "aliases": [
+        "北岸港区",
+        "湖渡北岸站"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第七章　寄错的图",
+          "number": 7
+        },
+        {
+          "volume": 4,
+          "chapter": "第四章　湖的另一岸",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "north-bridge",
+      "name": "北岸港区南桥",
+      "zone": "northport",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "第零卷童年出行涉及的港区内河短桥，不能横跨银镜湖。",
+      "aliases": [
+        "北岸南桥"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第十二章　两个人的地图",
+          "number": 12
+        }
+      ]
+    },
+    {
+      "id": "north-market",
+      "name": "北岸湖港小市场",
+      "zone": "northport",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "南桥与北坡道路通往的湖港小市场。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第九章　纸上的北坡",
+          "number": 9
+        }
+      ]
+    },
+    {
+      "id": "north-slope",
+      "name": "港区北坡",
+      "zone": "northport",
+      "scope": "local",
+      "kind": "nature",
+      "desc": "北岸港区的坡道与台阶；与学院北坡不是同一地点。",
+      "aliases": [
+        "北坡（北岸港区）"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第九章　纸上的北坡",
+          "number": 9
+        }
+      ]
+    },
+    {
+      "id": "assembly-hall",
+      "name": "北岸旧集会馆",
+      "zone": "northport",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第零卷北岸港区日常路线中的集会馆。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第十六章　有两条路的房间",
+          "number": 16
+        }
+      ]
+    },
+    {
+      "id": "lita-workshop",
+      "name": "莉塔父亲的绘图工坊",
+      "zone": "northport",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "童年地图与路牌场景中的绘图工坊；街址未核，按港区范围收录。",
+      "aliases": [
+        "赫洛绘图工坊"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第六章　湖的两岸",
+          "number": 6
+        }
+      ]
+    },
+    {
+      "id": "city",
+      "name": "维斯佩拉",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "银镜湖南岸的城市；城区内地点采用范围定位，不把图中某栋屋顶当作已核门牌。",
+      "aliases": [
+        "维斯佩拉城"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第三十二章　湖岸学院的第一张校历",
+          "number": 32
+        },
+        {
+          "volume": 1,
+          "chapter": "一箱送错地方的东西",
+          "number": 0
+        },
+        {
+          "volume": 4,
+          "chapter": "第一章　窗外有一条航线",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "southport",
+      "name": "维斯佩拉南岸湖港",
+      "zone": "city",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "南岸港区与跨湖客货渡抵达岸口，独立于北岸湖港。",
+      "aliases": [
+        "南岸湖港",
+        "湖渡南岸站"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百二十四章　渡运口的第二个时间",
+          "number": 115
+        },
+        {
+          "volume": 4,
+          "chapter": "第一章　窗外有一条航线",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "south-bridge",
+      "name": "南岸港区短桥",
+      "zone": "city",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "南岸港区内的短桥，与北岸同名南桥分开登记。",
+      "aliases": [
+        "南岸南桥（同名关系待核）"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百七十六章　五张不能叠在一起的地图",
+          "number": 258
+        },
+        {
+          "volume": 1,
+          "chapter": "灯亮以前的检查",
+          "number": 14
+        }
+      ]
+    },
+    {
+      "id": "station",
+      "name": "维斯佩拉车站",
+      "zone": "station",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "第四卷跨湖后接续铁路的城市车站；不据此认定与第一卷西站完全等同。",
+      "aliases": [
+        "维斯佩拉南岸站",
+        "维斯佩拉总站（底图称呼）"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第五章　不会写在同一张路牌上的话",
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "west-station",
+      "name": "西站",
+      "zone": "city",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "第一卷出现的货运车站；与维斯佩拉车站的名称关系尚未核定。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "一箱送错地方的东西",
+          "number": 0
+        }
+      ]
+    },
+    {
+      "id": "old-port-street",
+      "name": "湖港旧街",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "港口附近的旧街与市民生活区域。",
+      "aliases": [
+        "旧街（湖港）"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "族长醒来以前",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "warehouse-street",
+      "name": "仓街",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第零卷学生乘公共车前往南岸湖港换班现场时经过的城区道路。",
+      "aliases": [
+        "维斯佩拉仓街"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百二十四章　渡运口的第二个时间",
+          "number": 115
+        }
+      ]
+    },
+    {
+      "id": "glass-street",
+      "name": "玻璃街",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "可从学院南门乘有轨车抵达的作坊街区。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百六十一章　蓝玻璃不肯说话",
+          "number": 152
+        }
+      ]
+    },
+    {
+      "id": "glass-workshop",
+      "name": "塔贝尔玻璃工坊",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "玻璃街上挂旧铜牌的工坊，与安缇的家庭和材料研究有关。",
+      "aliases": [
+        "安缇家工坊"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百六十一章　蓝玻璃不肯说话",
+          "number": 152
+        }
+      ]
+    },
+    {
+      "id": "bread-shop",
+      "name": "玻璃街街口面包店",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "安缇带朋友用餐的街口面包店，正文未给独立店名。",
+      "aliases": [],
+      "precision": "城区范围／未命名",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百六十二章　没有人站在炉口前拍手",
+          "number": 153
+        }
+      ]
+    },
+    {
+      "id": "sealed-lamp-lane",
+      "name": "缄灯巷",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第一卷与第二卷出现的旧城巷道。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "他没有买下那本书",
+          "number": 4
+        },
+        {
+          "volume": 2,
+          "chapter": "第八章　药师的第二张表",
+          "number": 8
+        }
+      ]
+    },
+    {
+      "id": "bookbindery",
+      "name": "维恩修书铺",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "缄灯巷相关的修书店；以正文中的店名登记。",
+      "aliases": [
+        "伊娜的修书铺"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "维恩修书铺",
+          "number": 22
+        },
+        {
+          "volume": 2,
+          "chapter": "第八章　药师的第二张表",
+          "number": 8
+        }
+      ]
+    },
+    {
+      "id": "waterclock",
+      "name": "旧水钟庭院",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第一卷信中约见的庭院；只有城区关系已知，具体街址未核。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "第零页",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "id": "auction-house",
+      "name": "湖港旧物拍卖行",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第一卷处理旧物的拍卖场所，正文没有独立店名。",
+      "aliases": [
+        "旧物拍卖行"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "族长醒来以前",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "warehouse-office",
+      "name": "湖港仓储署",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "办理仓储、原卷核录等事务的机关。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "族长醒来以前",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "town-hall",
+      "name": "维斯佩拉市政厅",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "港税、市政档案与申请等事务所涉及的城市机关。",
+      "aliases": [
+        "市政厅"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "一箱送错地方的东西",
+          "number": 0
+        }
+      ]
+    },
+    {
+      "id": "investigation-office",
+      "name": "市政调查处",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "市政案件调查机关，不属于古堡内部。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "族长醒来以前",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "post-office",
+      "name": "湖港邮局",
+      "zone": "city",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "第一卷查址、电报与信件场景中的邮局。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "第零页",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "id": "local-office",
+      "name": "月影领办事厅",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第二卷明确位于维斯佩拉的领地事务办事厅。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第一章　没有写在急件上的人",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "children-home",
+      "name": "旧城教养院",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "旧城的教养与居住设施；历史用途有变化，不能只按一个年代理解。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "他没有买下那本书",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "children-west-house",
+      "name": "教养院西楼",
+      "zone": "city",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "旧城教养院的西侧楼房；按教养院所在城区范围登记。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "缄灯巷的晚饭",
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "south-cemetery",
+      "name": "南坡墓园",
+      "zone": "city",
+      "scope": "local",
+      "kind": "nature",
+      "desc": "第一卷称位于城外的墓园；精确地块未核。",
+      "aliases": [],
+      "precision": "城外南坡范围",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "缄灯巷的晚饭",
+          "number": 5
+        }
+      ]
+    },
+    {
+      "id": "old-waterworks",
+      "name": "旧引水站",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第一卷称位于城外，带有可租用仓房的旧设施；具体方向未锁定。",
+      "aliases": [],
+      "precision": "城外范围待测",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "第三盏灯",
+          "number": 10
+        },
+        {
+          "volume": 2,
+          "chapter": "第一章　没有写在急件上的人",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "waterworks-warehouse",
+      "name": "旧引水站仓房",
+      "zone": "city",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "旧引水站内的仓房，与普通湖港货栈分开收录。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "第三盏灯",
+          "number": 10
+        }
+      ]
+    },
+    {
+      "id": "darren-depot",
+      "name": "达伦经租货栈",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第一卷核查租约与运货单涉及的货栈，尚无可核正式库名。",
+      "aliases": [],
+      "precision": "港区范围／未命名",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "送信的人",
+          "number": 6
+        }
+      ]
+    },
+    {
+      "id": "academy",
+      "name": "月影学院",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "正文明确位于银镜湖东南岸、与维斯佩拉相连。第零卷另有正式校名，名称关系单列待核。",
+      "aliases": [
+        "湖岸学院（通称）"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "旧字表上的煤灰",
+          "number": 8
+        }
+      ]
+    },
+    {
+      "id": "formal-academy",
+      "name": "维斯佩拉湖岸综合学院",
+      "zone": "academy",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "第零卷写出的正式校名；与月影学院的名称关系待作者明确，不另造第二座校园。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第三十二章　湖岸学院的第一张校历",
+          "number": 32
+        }
+      ]
+    },
+    {
+      "id": "dormitory",
+      "name": "学院宿舍",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "学生寄宿与日常生活场景；不将不同学年的寝室固定成一间。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第三十一章　没有家徽的名牌",
+          "number": 31
+        }
+      ]
+    },
+    {
+      "id": "academy-library",
+      "name": "学院图书馆",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "学习、查阅与借书场所，与古堡万卷馆不同。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第七十一章　不替你改好那封信",
+          "number": 71
+        }
+      ]
+    },
+    {
+      "id": "clocktower",
+      "name": "学院旧钟楼",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "文献活动与旧航务研究涉及的旧钟楼。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百三十七章　渡船的两个名字",
+          "number": 128
+        }
+      ]
+    },
+    {
+      "id": "reading-club",
+      "name": "旧钟楼后读书会活动室",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "读书会活动室在旧钟楼后面，房间很小。",
+      "aliases": [
+        "读书会活动室"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第四十四章　不属于任何人的下午",
+          "number": 44
+        }
+      ]
+    },
+    {
+      "id": "old-greenhouse",
+      "name": "学院西侧旧温室",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第零卷竞演资格测验所在的旧温室，曾用于种植药草。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第四十六章　抽签箱里没有家徽",
+          "number": 46
+        }
+      ]
+    },
+    {
+      "id": "seed-greenhouse",
+      "name": "学院银镜花试验温室",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第一卷出现的人工育苗与试种场所，不能替代天然湖岸花田。",
+      "aliases": [
+        "银镜花育苗温室"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "试读",
+          "number": 15
+        },
+        {
+          "volume": 1,
+          "chapter": "一箱送错地方的东西",
+          "number": 0
+        }
+      ]
+    },
+    {
+      "id": "observatory",
+      "name": "学院旧观测台",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "星象观测、微光测量与公开展示使用的观测设施。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百五十二章　今晚先别施法",
+          "number": 143
+        }
+      ]
+    },
+    {
+      "id": "engineering-building",
+      "name": "学院工造楼",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "设备维护与实训相关的工造楼。",
+      "aliases": [
+        "学院工造室"
+      ],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第三十四章　床边的第二张课表",
+          "number": 34
+        }
+      ]
+    },
+    {
+      "id": "river-workshop",
+      "name": "学院河务工坊",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "靠旧货道的河务工坊，进行折叠桥等工程实务。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百二十二章　不能在纸上通过的桥",
+          "number": 113
+        }
+      ]
+    },
+    {
+      "id": "math-physics-lab",
+      "name": "数学物理实验室",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "第零卷出现的数学、物理与仪器研究场景。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百二十章　温度会改变答案",
+          "number": 111
+        }
+      ]
+    },
+    {
+      "id": "materials-lab",
+      "name": "材料实验室",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "涉及材料测试的学院实验空间。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百三十五章　第四年的第一次家长信",
+          "number": 126
+        }
+      ]
+    },
+    {
+      "id": "practice-room",
+      "name": "学院防护练习室",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "学生练习与防护训练使用的练习室，具体房间不定位。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第四十二章　苹果派与报名纸",
+          "number": 42
+        }
+      ]
+    },
+    {
+      "id": "academy-stage",
+      "name": "学院礼堂与舞台",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "学生戏剧、排练和演出的学院场景。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百八十三章　谁来坐那把椅子",
+          "number": 174
+        }
+      ]
+    },
+    {
+      "id": "west-teaching",
+      "name": "学院西教学楼",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "导师制研究最终审查举行的教学楼。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百五十五章　正式毕业审查日",
+          "number": 237
+        }
+      ]
+    },
+    {
+      "id": "academy-north-slope",
+      "name": "学院北坡",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "nature",
+      "desc": "学院周边训练或实务路线出现的北坡；不与北岸港区北坡混同。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百二十一章　平滑曲线以外的分数",
+          "number": 112
+        }
+      ]
+    },
+    {
+      "id": "academy-south-slope",
+      "name": "学院南坡石阶",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "nature",
+      "desc": "学生休息与眺望南岸湖港的石阶场景。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百章　三十七厘米的误差",
+          "number": 100
+        }
+      ]
+    },
+    {
+      "id": "academy-south-gate",
+      "name": "学院南门",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "有轨车前往玻璃街等城区地点的出入口。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百六十一章　蓝玻璃不肯说话",
+          "number": 152
+        }
+      ]
+    },
+    {
+      "id": "academy-telegraph",
+      "name": "学院传信站",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "transport",
+      "desc": "第二卷用于传递短讯的学院通信节点。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第六章　那只没有响的铃",
+          "number": 6
+        }
+      ]
+    },
+    {
+      "id": "frost-court",
+      "name": "霜庭",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "旧学院北侧的圆形石场，是实际场地；霜庭论剑则是赛事名称。",
+      "aliases": [],
+      "precision": "旧学院北侧／校区范围",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百章　第二十个秋天",
+          "number": 191
+        }
+      ]
+    },
+    {
+      "id": "library-tower",
+      "name": "图书塔",
+      "zone": "academy",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "霜庭赛事规则说明会曾在图书塔底层举行。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百章　第二十个秋天",
+          "number": 191
+        }
+      ]
+    },
+    {
+      "id": "lake",
+      "name": "银镜湖",
+      "zone": "lake",
+      "scope": "local",
+      "kind": "nature",
+      "desc": "具有真实客货渡运的大湖；本图不把艺术面积或船时当作测绘事实。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一章　她出生的那一夜",
+          "number": 1
+        },
+        {
+          "volume": 1,
+          "chapter": "一箱送错地方的东西",
+          "number": 0
+        },
+        {
+          "volume": 4,
+          "chapter": "第一章　窗外有一条航线",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "mountains",
+      "name": "暮霭山脉",
+      "zone": "mountains",
+      "scope": "local",
+      "kind": "nature",
+      "desc": "湖另一侧可见的区域山地轮廓；主图仅表示北侧山地范围。",
+      "aliases": [],
+      "precision": "区域地貌示意",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第四章　湖的另一岸",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "flowers",
+      "name": "天然银镜花湖岸花田",
+      "zone": "lake",
+      "scope": "local",
+      "kind": "nature",
+      "desc": "沿湖天然来源，与学院人工温室分开；未指定唯一繁殖地。",
+      "aliases": [
+        "湖岸银镜花田"
+      ],
+      "precision": "沿湖生境示意",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "试读",
+          "number": 15
+        }
+      ]
+    },
+    {
+      "id": "night-lodge",
+      "name": "夜栖馆",
+      "zone": "west",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第三卷明确位于银镜湖西南旧坡的旧馆，不与旧修院或暮舍合并。",
+      "aliases": [
+        "夜栖馆旧址"
+      ],
+      "precision": "湖西南旧坡范围",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第二章　没有到期的约定",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "night-west-wing",
+      "name": "夜栖馆西翼",
+      "zone": "west",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "旧馆内部的独立区域；开放与维护状态须按年代理解。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第十四章　圆桌与第七张椅子",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "night-classroom",
+      "name": "夜栖馆东厅旧课堂",
+      "zone": "west",
+      "scope": "local",
+      "kind": "interior",
+      "desc": "旧馆东厅一侧的旧课堂，不是古堡东厅。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第六章　西侧没有灯的房间",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "land-registry",
+      "name": "湖西旧坡地籍联络窗口",
+      "zone": "west",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "第三卷转送地籍与保管申请的地方窗口。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第二十三章　不在第七柜里的簿子",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "west-mill",
+      "name": "西岸旧磨坊",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "水轮邻河，曾停工、后有修缮；“西岸”所指水道尚未确定，不能直接认作银镜湖西岸。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百三十九章　哥哥留下的那把钥匙",
+          "number": 130
+        }
+      ]
+    },
+    {
+      "id": "manor",
+      "name": "月影庄园",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "第零卷另用的家族庄园称呼，与古堡地块的范围关系尚待核定。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百八十一章　独立复核的第一封申请",
+          "number": 172
+        }
+      ]
+    },
+    {
+      "id": "west-manor",
+      "name": "西边庄园",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "第一卷家书提及有葡萄架的西边庄园，不强并为北岸古堡。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "两面之间",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": "west-slope-home",
+      "name": "西坡暮舍",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "第零卷单列行政项目的暮舍，不能与旧修院、榆桥或夜栖馆混同。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百七十六章　五张不能叠在一起的地图",
+          "number": 258
+        }
+      ]
+    },
+    {
+      "id": "west-monastery",
+      "name": "西坡旧修院",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "后期旧设施调查中的修院，和夜栖馆是不同地点。",
+      "aliases": [
+        "西坡修院"
+      ],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百三十章　长枪只有一发",
+          "number": 212
+        }
+      ]
+    },
+    {
+      "id": "monastery-wells",
+      "name": "旧修院五口石井",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "interior",
+      "desc": "正文明确只有五口石井；“第六口井”不能当作真实新地点。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百三十一章　她的名字不在货箱上",
+          "number": 213
+        }
+      ]
+    },
+    {
+      "id": "elm-bridge",
+      "name": "榆桥",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "西坡短途邮递与道路事务所涉及的桥，精确河道与坐标待核。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百六十章　印章还没有干",
+          "number": 242
+        }
+      ]
+    },
+    {
+      "id": "west-works",
+      "name": "西坡工务站",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "接收货运行程与处理工务事务的站点。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百六十一章　阿箬不等第二次铃",
+          "number": 243
+        }
+      ]
+    },
+    {
+      "id": "wash-slope",
+      "name": "浣衣坡",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "nature",
+      "desc": "居民量水、晾布及施工通行争议涉及的坡地。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百九十一章　河堤上的白旗",
+          "number": 182
+        }
+      ]
+    },
+    {
+      "id": "east-detour",
+      "name": "东坡绕行道",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "西坡工程期间马车绕行的东坡道路，不与松岭雨雪路段的东坡合并。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百九十一章　河堤上的白旗",
+          "number": 182
+        }
+      ]
+    },
+    {
+      "id": "relief-station",
+      "name": "旧救济站",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "石阶下有承重墙的旧设施；与旧修院的详细产权及空间关系仍待核。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百五十一章　褐塔借来的一枚钉",
+          "number": 233
+        }
+      ]
+    },
+    {
+      "id": "old-stone-steps",
+      "name": "旧救济站山阶",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "旧设施勘查与封路所涉及的山阶，不画成可全年通行的捷径。",
+      "aliases": [
+        "旧石阶"
+      ],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百五十一章　褐塔借来的一枚钉",
+          "number": 233
+        }
+      ]
+    },
+    {
+      "id": "old-stone-bridge",
+      "name": "西坡旧石桥",
+      "zone": "west",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "后期移送、签收与公共道路事件涉及的石桥，不与雾岭停用旧桥合并。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百五十二章　山里没有第六道门",
+          "number": 234
+        }
+      ]
+    },
+    {
+      "id": "warehouse-seven",
+      "name": "湖港第七库",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "第二卷的库房；归属哪一岸尚未核实，不能强塞进北岸或南岸港区。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第三章　湖港第七库",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "id": "joint-medicine-store",
+      "name": "药材联合库",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "第二卷药品借调与流转中的库区；与第七库的机构层级关系待核。",
+      "aliases": [
+        "联合库（药材）"
+      ],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第一章　没有写在急件上的人",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "joint-custody",
+      "name": "银镜湖联合保管所",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "在河口旧仓区北岸；这里的“北岸”不能直接理解成银镜湖北岸，也不能与灰垣中立会址合并。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第二十三章　不在第七柜里的簿子",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "old-river-warehouses",
+      "name": "河口旧仓区",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "联合保管所所在的旧仓区域，具体岸线仍待核定。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第二十三章　不在第七柜里的簿子",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "safety-exhibition",
+      "name": "市政安全展场地",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "童年安全模型与市政展览相关场景，未锁定街址。",
+      "aliases": [
+        "市政安全展筹备室"
+      ],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第十九章　纸做的门",
+          "number": 19
+        }
+      ]
+    },
+    {
+      "id": "mist-ridge",
+      "name": "雾岭山麓",
+      "zone": "field",
+      "scope": "unplaced",
+      "kind": "nature",
+      "desc": "由学院北方林道前往的野外实习区域，不能直接等同银镜湖北岸山地。",
+      "aliases": [
+        "雾岭"
+      ],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第八十四章　野外没有走廊",
+          "number": 84
+        }
+      ]
+    },
+    {
+      "id": "academy-forest-trail",
+      "name": "学院北方林道",
+      "zone": "field",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "野外课程出发路线，连向雾岭山麓。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第八十四章　野外没有走廊",
+          "number": 84
+        }
+      ]
+    },
+    {
+      "id": "quarry-slope",
+      "name": "北段旧采石坡",
+      "zone": "field",
+      "scope": "unplaced",
+      "kind": "nature",
+      "desc": "野外旧图中的路名，与回声坳的关系仍须据地形核对。",
+      "aliases": [
+        "旧采石坡",
+        "回声坳（旧图名，关系待核）"
+      ],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第八十四章　野外没有走廊",
+          "number": 84
+        }
+      ]
+    },
+    {
+      "id": "mist-old-bridge",
+      "name": "雾岭停用旧石桥",
+      "zone": "field",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "野外课地图保留的旧桥，正文明确已停用，不表示允许通行。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第八十八章　雨把地图改写",
+          "number": 88
+        }
+      ]
+    },
+    {
+      "id": "mist-supply",
+      "name": "雾岭值守补给点",
+      "zone": "field",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "野外课程路线经过两处固定值守补给点；以一个区域记录收录，不虚构两个地名。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第八十四章　野外没有走廊",
+          "number": 84
+        }
+      ]
+    },
+    {
+      "id": "clock-river",
+      "name": "钟河辖区",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "region",
+      "desc": "槐渡与北部四镇所属的外部辖区，不是月影领直属范围。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第一章　没有写在急件上的人",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "huai-town",
+      "name": "槐渡镇",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "钟河辖区下游城镇，拥有独立医馆、桥梁与渡运设施。",
+      "aliases": [
+        "槐渡"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第一章　没有写在急件上的人",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "huai-clinic",
+      "name": "槐渡医馆",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "镇内医疗场所，与医务人员宿舍分开登记。",
+      "aliases": [
+        "槐渡镇医馆"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第二章　第三栏的签字",
+          "number": 2
+        }
+      ]
+    },
+    {
+      "id": "huai-bridge",
+      "name": "槐渡新桥",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "第二卷有载重与维护问题的当地河桥，不是银镜湖大桥。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第十一章　旧渡口的第三把钥匙",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": "huai-ferry",
+      "name": "槐渡旧渡口",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "当地河道的旧渡运设施，与跨银镜湖客货渡分开。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第十一章　旧渡口的第三把钥匙",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": "huai-dock",
+      "name": "槐渡现役码头",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "第二卷实际承担部分转运的在役码头，不与旧渡口合并。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第十一章　旧渡口的第三把钥匙",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": "huai-clocktower",
+      "name": "槐渡旧钟楼后街",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "钟楼与旁边三层租屋所在的镇内区域。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第十六章　一封未写寄件人的信",
+          "number": 16
+        },
+        {
+          "volume": 2,
+          "chapter": "第十三章　住在楼梯上的人",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": "huai-rental",
+      "name": "槐渡旧钟楼旁租屋",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "靠旧钟楼的三层租屋，和医馆并不是同一幢楼。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第十三章　住在楼梯上的人",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": "huai-dorm",
+      "name": "槐渡医务人员宿舍",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第二卷医疗人员休息与排班涉及的宿舍，行政分类不等同医馆。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第七章　只够三天的炭",
+          "number": 7
+        }
+      ]
+    },
+    {
+      "id": "liaoshi",
+      "name": "蓼石",
+      "zone": "north-towns",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "钟河北方四镇中靠近平原的一镇。",
+      "aliases": [
+        "蓼石镇"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第二十一章　地图上没有的路",
+          "number": 21
+        }
+      ]
+    },
+    {
+      "id": "songling",
+      "name": "松岭",
+      "zone": "north-towns",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "北方四镇中沿石坡而建的一镇，路况受冻雨影响。",
+      "aliases": [
+        "松岭镇"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第二十一章　地图上没有的路",
+          "number": 21
+        }
+      ]
+    },
+    {
+      "id": "beiyu",
+      "name": "北榆",
+      "zone": "north-towns",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "在松岭更北的北方四镇之一。",
+      "aliases": [
+        "北榆镇"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第二十一章　地图上没有的路",
+          "number": 21
+        }
+      ]
+    },
+    {
+      "id": "yunao",
+      "name": "云坳",
+      "zone": "north-towns",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "北方四镇最末端、邮路常受季节限制的一镇。",
+      "aliases": [
+        "云坳镇"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第二十一章　地图上没有的路",
+          "number": 21
+        }
+      ]
+    },
+    {
+      "id": "qingli",
+      "name": "青砾医站",
+      "zone": "north-towns",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "四镇共用的山间医站，不等于四镇中的一镇。",
+      "aliases": [
+        "青砾"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第二十一章　地图上没有的路",
+          "number": 21
+        }
+      ]
+    },
+    {
+      "id": "north-pass",
+      "name": "北柘口／短风坡",
+      "zone": "north-towns",
+      "scope": "remote",
+      "kind": "nature",
+      "desc": "同处山口在旧税册、邮驿名簿中的异名；不把它们画成两个新山口。",
+      "aliases": [
+        "北柘口",
+        "短风坡",
+        "不得走的那条（运粮单称呼）"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第二十一章　地图上没有的路",
+          "number": 21
+        }
+      ]
+    },
+    {
+      "id": "songling-east-slope",
+      "name": "松岭东坡路段",
+      "zone": "north-towns",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "第二卷上山医运路线中受冻雨影响的东坡，不能与第零卷西坡施工绕行道合并。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 2,
+          "chapter": "第二十四章　山口的两盏灯",
+          "number": 24
+        }
+      ]
+    },
+    {
+      "id": "baisankou",
+      "name": "白杉口",
+      "zone": "grey-estuary",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "银镜湖西线通往灰垣河口途中需改乘的节点，行程以日计。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第十二章　行李箱里的空白",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "baisan-post",
+      "name": "白杉口驿站",
+      "zone": "grey-estuary",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "第三卷坡道清障与交通调整场景中的驿站。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第十三章　灰垣河口的夜饭",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "grey-estuary",
+      "name": "灰垣河口",
+      "zone": "grey-estuary",
+      "scope": "remote",
+      "kind": "region",
+      "desc": "第三卷多日西行旅程所达的河口地区，不放在银镜湖西北角。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第十二章　行李箱里的空白",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "neutral-hall",
+      "name": "灰垣河口旧议事会所",
+      "zone": "grey-estuary",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "有签署许可的中立会址，与银镜湖联合保管所分开登记。",
+      "aliases": [
+        "中立会址",
+        "旧议事会所"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第十二章　行李箱里的空白",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "instrument-street",
+      "name": "灰垣旧乐器街",
+      "zone": "grey-estuary",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "调律师名片所列的工作街区。",
+      "aliases": [
+        "旧乐器街"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 3,
+          "chapter": "第十三章　灰垣河口的夜饭",
+          "number": null
+        }
+      ]
+    },
+    {
+      "id": "dichao",
+      "name": "荻潮港",
+      "zone": "dichao",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第零卷河口观测实务所在的外郡港，不是银镜湖港，也不是鹭岬港。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百七十一章　十九岁不许逃课",
+          "number": 162
+        }
+      ]
+    },
+    {
+      "id": "dichao-light",
+      "name": "荻潮港信号石塔",
+      "zone": "dichao",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "用于人工信号与辅助镜架观测的灰白石塔。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百七十二章　水退之后的路",
+          "number": 163
+        }
+      ]
+    },
+    {
+      "id": "dichao-records",
+      "name": "荻潮港公共资料室",
+      "zone": "dichao",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "河道观测原始记录留存与公开查阅场所。",
+      "aliases": [
+        "港务资料室"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百七十六章　被借走的六分钟",
+          "number": 167
+        }
+      ]
+    },
+    {
+      "id": "lugang",
+      "name": "鹭岬港",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第四卷经跨湖和多段铁路后抵达的外海港口，不是银镜湖直接出口。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第九章　纸上没有画出来的海",
+          "number": 9
+        }
+      ]
+    },
+    {
+      "id": "lugang-lighthouse",
+      "name": "鹭岬港灯塔",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "海港观察、航标与离岸场景中的灯塔。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第十三章　船离岸时",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": "lugang-inn",
+      "name": "鹭岬港旅店",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第四卷登船前使用的港区旅店，正文没有给出正式店名。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第十一章　灯塔不会替船回答",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": "lugang-interpreter",
+      "name": "鹭岬港口译窗口",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "港口行号提供口译与书面协助的服务窗口。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第十章　四种早安",
+          "number": 10
+        }
+      ]
+    },
+    {
+      "id": "grey-islands",
+      "name": "灰帆群岛",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "region",
+      "desc": "第四卷航程涉及的群岛区域，内部港埠和服务制度并不完全相同。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第十章　四种早安",
+          "number": 10
+        }
+      ]
+    },
+    {
+      "id": "salt-station",
+      "name": "盐砾站",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "灰帆群岛外缘具备补水、燃料和简易维修能力的航务辖区。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第三十三章　陆地只有一条线",
+          "number": 33
+        }
+      ]
+    },
+    {
+      "id": "salt-lookout",
+      "name": "盐砾站开放观景坡",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "nature",
+      "desc": "站方按许可开放给旅客短暂访问的观景区域。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第三十四章　脚下不再摇晃",
+          "number": 34
+        }
+      ]
+    },
+    {
+      "id": "salt-street",
+      "name": "盐砾站开放小街",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "受许可与时段限制的上岸区域，不等于旅客可自由前往全岛。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第三十四章　脚下不再摇晃",
+          "number": 34
+        }
+      ]
+    },
+    {
+      "id": "salt-old-light",
+      "name": "盐砾站旧灯塔",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第四卷旧灯塔与明信片场景；精确所在小岛未锁定。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第三十五章　灰帆不是一面旗",
+          "number": 35
+        }
+      ]
+    },
+    {
+      "id": "sea-ship",
+      "name": "沧鸥号",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "mobile",
+      "desc": "第四卷邮客船上的移动场景，不是固定陆地点；甲板、餐厅、医务和船舱归入船内场景。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第十一章　灯塔不会替船回答",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": "sea-ship-deck",
+      "name": "沧鸥号开放甲板",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "mobile",
+      "desc": "船上对旅客开放的甲板区域，位置随航行改变。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第二十六章　看不见岸的早晨",
+          "number": 26
+        }
+      ]
+    },
+    {
+      "id": "sea-ship-clinic",
+      "name": "沧鸥号船医工作区",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "mobile",
+      "desc": "船医量杯、医务与休息场景，属于移动船舶。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第六章　车窗里的第二个早晨",
+          "number": 6
+        }
+      ]
+    },
+    {
+      "id": "sea-ship-dining",
+      "name": "沧鸥号餐厅",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "mobile",
+      "desc": "第四卷船上餐食与跨语言交流的主要场景。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第十二章　名字写在乘客名簿上",
+          "number": 12
+        }
+      ]
+    },
+    {
+      "id": "sea-ship-cabin",
+      "name": "沧鸥号客舱",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "mobile",
+      "desc": "海上住宿与书信场景，不作为固定岛屿坐标标注。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第一章　窗外有一条航线",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "mist-sea",
+      "name": "迷雾海",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "region",
+      "desc": "第四卷谈及的特殊海域，不把它作为普通安全直达航线。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第十一章　灯塔不会替船回答",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": "aetheran",
+      "name": "艾瑟兰",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "region",
+      "desc": "小说写出的大陆名，月影领与北部边境均不等于整片大陆。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "两面之间",
+          "number": 11
+        },
+        {
+          "volume": 4,
+          "chapter": "第十章　四种早安",
+          "number": 10
+        }
+      ]
+    },
+    {
+      "id": "seratia",
+      "name": "赛拉提亚",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "region",
+      "desc": "第四卷远航文件写出的方向，尚不据本湖盆地图确定海岸坐标。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第一章　窗外有一条航线",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "border-north",
+      "name": "艾瑟兰北部边境",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "region",
+      "desc": "第一卷收信人最后登记地址所在的远方边境；不是钟河北部四镇。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "两面之间",
+          "number": 11
+        }
+      ]
+    },
+    {
+      "id": "border-inspection",
+      "name": "北境巡查署",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第零卷塞维里安赴任的机构，不能放进钟河北方四镇。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百九十九章　夏末的第二封任命书",
+          "number": 190
+        }
+      ]
+    },
+    {
+      "id": "north-academic",
+      "name": "北方学术馆",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "诺恩等人的公开收藏与长期编目研究相关场所，具体地址未核。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百三十五章　谁付银弹的钱",
+          "number": 217
+        }
+      ]
+    },
+    {
+      "id": "royal-academy",
+      "name": "王立高等术法学院",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "跨校交流与研究通信中的学院；不能因为参赛便画在月影学院隔壁。",
+      "aliases": [
+        "王立学院"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百章　三十七厘米的误差",
+          "number": 100
+        }
+      ]
+    },
+    {
+      "id": "engineering-academy",
+      "name": "联合魔导工科学院",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "诸院竞演中的另一所学院；地址未在正文锁定。",
+      "aliases": [
+        "工科学院"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百一十三章　四面旗帜下的城",
+          "number": 104
+        }
+      ]
+    },
+    {
+      "id": "border-academy",
+      "name": "北境战术学院",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "诸院竞演参赛学校，独立于月影学院与王立学院。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百一十三章　四面旗帜下的城",
+          "number": 104
+        }
+      ]
+    },
+    {
+      "id": "joint-event-city",
+      "name": "诸院联合竞演举办城",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第零卷四校交流所到的会场城市，正文未给出城名。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百一十三章　四面旗帜下的城",
+          "number": 104
+        }
+      ]
+    },
+    {
+      "id": "hot-spring-valley",
+      "name": "西边温泉谷",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "nature",
+      "desc": "第零卷家人疗养相关的西边谷地，不据名称直接放到银镜湖岸。",
+      "aliases": [
+        "温泉谷"
+      ],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百七十一章　山中的一场雨",
+          "number": 253
+        }
+      ]
+    },
+    {
+      "id": "west-glass-region",
+      "name": "西部玻璃产区",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "region",
+      "desc": "安缇参加材料安全测试的工作地区，具体辖区未核。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百四十章　南行的车票不是告别",
+          "number": 222
+        }
+      ]
+    },
+    {
+      "id": "south-river-workshop",
+      "name": "南方河道工坊",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "伊萨克长期合同所去的工坊，与校内河务工坊不同。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百四十章　南行的车票不是告别",
+          "number": 222
+        }
+      ]
+    },
+    {
+      "id": "coast-rescue",
+      "name": "沿海应急通信署及轮岗救援站",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "赛琳的沿海见习工作网络，不将轮岗小站合并成固定一处。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百四十章　南行的车票不是告别",
+          "number": 222
+        }
+      ]
+    },
+    {
+      "id": "white-tower-school",
+      "name": "白塔外围学庭",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第一卷通信与学者活动涉及的塔外学庭，收件处不在白塔内部。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "第零页",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "id": "white-tower-inn",
+      "name": "白塔外围代收驿馆",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "替学者接收邮件的驿馆，与白塔本体及学庭办公室分开。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "第零页",
+          "number": 3
+        }
+      ]
+    },
+    {
+      "id": "purple-observatory",
+      "name": "紫塔所属观测院",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第零卷邀请函来自的观测机构，具体院址未给出。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百章　第二十个秋天",
+          "number": 191
+        }
+      ]
+    },
+    {
+      "id": "brown-conservation",
+      "name": "褐塔岩土保全所",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第零卷提供岩土勘查援助的机构，不因工作人员到西坡就将机构设在西坡。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百五十一章　褐塔借来的一枚钉",
+          "number": 233
+        }
+      ]
+    },
+    {
+      "id": "north-artifact-bureau",
+      "name": "北道器物监督局",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "委托调查假冒古物凭证的机构，办公地址未核。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百三十章　长枪只有一发",
+          "number": 212
+        }
+      ]
+    },
+    {
+      "id": "historic-ferry",
+      "name": "雾湾渡／灰河横船",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "transport",
+      "desc": "旧航务抄本中同一渡口并行使用的异名；只登记历史名称，不画成两处现役渡口。",
+      "aliases": [
+        "雾湾渡",
+        "灰河横船"
+      ],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百三十七章　渡船的两个名字",
+          "number": 128
+        }
+      ]
+    },
+    {
+      "id": "territory",
+      "name": "月影领",
+      "zone": "lake",
+      "scope": "local",
+      "kind": "region",
+      "desc": "银镜湖、两岸古堡与城市所属的领地区域；不据本图划出法定边界。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百四十六章　北边还有一条路",
+          "number": 228
+        },
+        {
+          "volume": 2,
+          "chapter": "第一章　没有写在急件上的人",
+          "number": 1
+        }
+      ]
+    },
+    {
+      "id": "clock-water",
+      "name": "钟河水系",
+      "zone": "clockriver",
+      "scope": "remote",
+      "kind": "nature",
+      "desc": "与槐渡、北部镇区和医务转运有关的水系；水路接驳与流向不按插画擅自锁定。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百七十六章　五张不能叠在一起的地图",
+          "number": 258
+        }
+      ]
+    },
+    {
+      "id": "black-tower",
+      "name": "黑塔（名称提及）",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "文本提及的名称；现有正文未提供可定位地址，不设坐标。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第二百章　第二十个秋天",
+          "number": 191
+        }
+      ]
+    },
+    {
+      "id": "north-trade-post",
+      "name": "北部商路驿站",
+      "zone": "world",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "第一卷领地北部商路的一处驿站，正文未给专名。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 1,
+          "chapter": "一箱送错地方的东西",
+          "number": 0
+        }
+      ]
+    },
+    {
+      "id": "transfer-city",
+      "name": "铁路换乘城（未命名）",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "第四卷离开维斯佩拉后的换乘与过夜城市，尚无正式城名。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第七章　没有人认识月影小姐的夜晚",
+          "number": 7
+        }
+      ]
+    },
+    {
+      "id": "rail-bridge",
+      "name": "换乘城外铁路钢架桥",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "第四卷列车停运与路基检查涉及的跨河钢架桥，不是槐渡新桥或湖港南桥。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第八章　桥上停着的时刻",
+          "number": 8
+        }
+      ]
+    },
+    {
+      "id": "rail-siding",
+      "name": "铁路安全侧线与临时接待点",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "列车退回后可供旅客活动的安全站线和临时服务场景。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第八章　桥上停着的时刻",
+          "number": 8
+        }
+      ]
+    },
+    {
+      "id": "coastal-junction",
+      "name": "通往鹭岬港的铁路枢纽",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "transport",
+      "desc": "第四卷绕行后接续外海港口末段铁路的枢纽，未给站名。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第九章　纸上没有画出来的海",
+          "number": 9
+        }
+      ]
+    },
+    {
+      "id": "station-inn",
+      "name": "维斯佩拉车站旁旅店",
+      "zone": "city",
+      "scope": "local",
+      "kind": "landmark",
+      "desc": "跨湖抵达南岸后过夜的已预订普通旅店，未给店名。",
+      "aliases": [],
+      "precision": "范围定位",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第四章　湖的另一岸",
+          "number": 4
+        }
+      ]
+    },
+    {
+      "id": "lugang-library",
+      "name": "鹭岬港图书室",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "向邮客船出借方言词典和海鸟观察书的港口图书室。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第十三章　船离岸时",
+          "number": 13
+        }
+      ]
+    },
+    {
+      "id": "salt-active-light",
+      "name": "盐砾站现役灯塔",
+      "zone": "sea",
+      "scope": "remote",
+      "kind": "landmark",
+      "desc": "旅客所见的后来修建的新塔，与木刻画中的旧塔分开登记。",
+      "aliases": [],
+      "precision": "本图以外",
+      "refs": [
+        {
+          "volume": 4,
+          "chapter": "第三十四章　脚下不再摇晃",
+          "number": 34
+        }
+      ]
+    },
+    {
+      "id": "manor-west-wing",
+      "name": "旧庄园西翼",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "interior",
+      "desc": "第零卷旧庄园西翼修缮场景；庄园与北岸古堡的地块关系待核。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百八十九章　春天的旧钥匙",
+          "number": 180
+        }
+      ]
+    },
+    {
+      "id": "riverside-greenhouse",
+      "name": "河畔旧温室（家族事务）",
+      "zone": "unknown",
+      "scope": "unplaced",
+      "kind": "landmark",
+      "desc": "第零卷镇民公共小道所通往的旧温室，不与学院西侧旧温室强行合并。",
+      "aliases": [],
+      "precision": "位置待核",
+      "refs": [
+        {
+          "volume": 0,
+          "chapter": "第一百三十二章　橘树下的两份账",
+          "number": 123
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "0": "月影书库_第零卷《初》_第二十四轮_280章独立整合候选稿.md",
+    "1": "月影书库的第零页_第一卷《名》_零卷旧友回归整合版.html",
+    "4": "月影书库的第零页_第四卷《渡》_第01至38章_完整正文.md",
+    "2": "月影书库的第零页_第二卷《济》_零卷旧友回归整合版.md",
+    "3": "月影书库的第零页_第三卷《承》_零卷旧友回归整合版.html"
+  }
+}
