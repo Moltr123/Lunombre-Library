@@ -2,9 +2,49 @@
 const $=s=>document.querySelector(s),vp=$('#viewport'),world=$('#world');
 const regions=[['NW','西北河口',.167,.25],['NC','北岸城堡',.5,.25],['NE','东北河谷',.833,.25],['SW','西南森林',.167,.75],['SC','维斯佩拉',.5,.75],['SE','月影学院',.833,.75]];
 const anchors={castle:{name:'北岸古堡',x:.518,y:.12,zoom:7,icon:'♜',root:'castle'},northport:{name:'北岸港区',x:.48,y:.204,zoom:5,icon:'⚓',root:'northport'},city:{name:'维斯佩拉城区',x:.44,y:.81,zoom:3,icon:'⌂',root:'city'},station:{name:'维斯佩拉车站',x:.48,y:.872,zoom:6,icon:'▤',root:'station'},academy:{name:'月影学院',x:.744,y:.804,zoom:5.5,icon:'✧',root:'academy'},lake:{name:'银镜湖',x:.48,y:.47,zoom:1,icon:'≈',root:'lake'},flowers:{name:'天然湖岸花田',x:.72,y:.73,zoom:4,icon:'❀',root:'flowers'},mountains:{name:'暮霭山脉范围',x:.3,y:.045,zoom:2,icon:'△',root:'mountains'},west:{name:'湖西南旧坡',x:.16,y:.75,zoom:3,icon:'⌂',root:'night-lodge'}};
+// Individual city locations follow the map's streets; exact plots are proposed cartography.
+const cityLocations = {
+  'southport': [.451, .747], 'south-bridge': [.522, .785],
+  'old-port-street': [.420, .784], 'warehouse-street': [.493, .798],
+  'warehouse-office': [.466, .777], 'darren-depot': [.505, .822],
+  'auction-house': [.392, .804], 'post-office': [.447, .809],
+  'town-hall': [.471, .837], 'investigation-office': [.501, .852],
+  'local-office': [.438, .850], 'waterclock': [.399, .840],
+  'sealed-lamp-lane': [.364, .823], 'bookbindery': [.345, .844],
+  'children-home': [.332, .864], 'children-west-house': [.311, .870],
+  'glass-street': [.570, .836], 'glass-workshop': [.595, .856],
+  'bread-shop': [.620, .834], 'station': [.480, .875],
+  'station-inn': [.518, .874], 'west-station': [.279, .884],
+  'south-cemetery': [.382, .947], 'old-waterworks': [.250, .911],
+  'waterworks-warehouse': [.270, .929]
+};
+function locationPoint(entry) {
+  const point = cityLocations[entry.id];
+  return point ? {x: point[0], y: point[1], zoom: 6} : anchors[anchorKey(entry)];
+}
+function renderCityPins(visible) {
+  visible.forEach(entry => {
+    const point = cityLocations[entry.id];
+    if (!point) return;
+    const button = document.createElement('button');
+    button.className = 'pin city-pin';
+    button.dataset.place = entry.id;
+    button.style.left = point[0] * 100 + '%';
+    button.style.top = point[1] * 100 + '%';
+    button.setAttribute('aria-label', entry.name);
+    button.setAttribute('aria-pressed', String(selected?.id === entry.id));
+    const dot = document.createElement('b');
+    dot.textContent = entry.kind === 'transport' ? '▪' : '•';
+    const label = document.createElement('span');
+    label.textContent = entry.name;
+    button.append(dot, label);
+    button.onclick = () => showDetail(entry, false);
+    $('#pins').append(button);
+  });
+}
 const scopeNames={local:'图内范围',remote:'本图以外',unplaced:'位置待核'},kindNames={landmark:'建筑与聚落',interior:'内部场景',nature:'自然地貌',transport:'交通与库区',region:'地区与大陆',mobile:'移动场景'},volNames=['第零卷《初》','第一卷《名》','第二卷《济》','第三卷《承》','第四卷《渡》'];
 let scale=1,base=1,x=0,y=0,W=1500,H=1000,catalog=null,selected=null,scope='all';
-function draw(){world.style.setProperty('--pin-scale',String(1/scale));world.style.width=W+'px';world.style.height=H+'px';world.style.transform=`translate(${x}px,${y}px) scale(${scale})`;$('#status').textContent=Math.round(scale/base*100)+'%';updateMapLabels();}
+function draw(){world.classList.toggle('city-detail',scale/base>=2.8);world.style.setProperty('--pin-scale',String(1/scale));world.style.width=W+'px';world.style.height=H+'px';world.style.transform=`translate(${x}px,${y}px) scale(${scale})`;$('#status').textContent=Math.round(scale/base*100)+'%';updateMapLabels();}
 function updateMapLabels() {
   const panel = $('#mapLabels');
   if (!panel || !catalog) return;
@@ -14,7 +54,7 @@ function updateMapLabels() {
   })).filter(item => item.px >= 0 && item.px <= vp.clientWidth && item.py >= 0 && item.py <= vp.clientHeight);
   candidates.sort((a, b) => Math.hypot(a.px-vp.clientWidth/2,a.py-vp.clientHeight/2)-Math.hypot(b.px-vp.clientWidth/2,b.py-vp.clientHeight/2));
   const nearest = candidates[0];
-  panel.hidden = !enabled || !nearest;
+  panel.hidden = !enabled || !nearest || ['city','station'].includes(nearest.key);
   if (panel.hidden) return;
   const entries = catalog.entries.filter(entry => anchorKey(entry) === nearest.key && matches(entry));
   const signature = entries.map(entry => entry.id).join(',') + ':' + selected?.id;
@@ -58,8 +98,8 @@ $('#photoOpen').onclick=()=>openPhoto();$('#photoClose').onclick=closePhoto;$('#
 document.addEventListener('keydown',e=>{if(photoDialog.open){if(e.key==='ArrowLeft'){e.preventDefault();selectPhoto(galleryIndex-1);}if(e.key==='ArrowRight'){e.preventDefault();selectPhoto(galleryIndex+1);}return;}if(e.key==='Escape'&&selected){e.preventDefault();returnToOverview();}});
 window.addEventListener('popstate',()=>{if(!catalog)return;const id=location.hash.slice(1),entry=catalog.entries.find(e=>e.id===id);dismissPhoto();if(!entry){returnToOverview(false);return;}if(selected?.id!==entry.id){resetFilterValues();showDetail(entry,true,false);}if(history.state?.gallery)openPhoto(false);});
 
-function showDetail(e,move=true,navigate=true){dismissPhoto();selected=e;$('#detailActions').hidden=false;$('#backToMap').hidden=false;renderGallery(e);$('#title').textContent=e.name;$('#tag').textContent=scopeNames[e.scope]+' · '+catalog.zones[e.zone];$('#description').textContent=e.desc;$('#precision').textContent=e.precision+(e.scope==='local'?' · 圆点表示所在范围，不是该建筑坐标':' · 不在湖盆内安放虚构坐标');const refs=$('#references');refs.replaceChildren();const seen=new Set();e.refs.forEach(r=>{const key=r.volume+':'+r.chapter;if(seen.has(key))return;seen.add(key);const a=document.createElement(r.volume<4?'a':'span');a.textContent=volNames[r.volume]+' · '+(r.volume===1?(r.number===0?'序章 ':r.number===25?'番外 ':'第'+r.number+'章 '):'')+r.chapter;if(r.volume<4)a.href='volume-0'+r.volume+'.html';refs.append(a);});const key=anchorKey(e),notice=$('#locationNotice');notice.hidden=Boolean(key);if(!key)notice.textContent=(e.scope==='remote'?'本图外：':'位置待核：')+e.name+'｜'+catalog.zones[e.zone]+'。请查看右侧正文出处与说明。';if(move&&key){const p=anchors[key];focusPoint(p.x,p.y,p.zoom);}if(navigate&&location.hash!=='#'+e.id)writePlaceState(e.id,'push');render();const panel=document.querySelector('aside');if(window.matchMedia('(min-width:851px)').matches)panel.scrollTo({top:Math.max(0,$('.detail').offsetTop-panel.offsetTop-12),behavior:'smooth'});else $('.detail').scrollIntoView({block:'start',behavior:'smooth'});}
-function renderPins(visible){$('#pins').replaceChildren();Object.entries(anchors).forEach(([key,p])=>{const members=visible.filter(e=>anchorKey(e)===key);if(!members.length)return;const isSelected=selected&&members.some(e=>e.id===selected.id),b=document.createElement('button');b.className='pin';b.dataset.anchor=key;b.style.left=p.x*100+'%';b.style.top=p.y*100+'%';b.setAttribute('aria-pressed',String(Boolean(isSelected)));b.setAttribute('aria-label',p.name+'，'+members.length+'处地点，范围定位');const icon=document.createElement('b');icon.textContent=p.icon;icon.setAttribute('aria-hidden','true');const count=document.createElement('i');count.className='count';count.textContent=members.length;const label=document.createElement('span');label.textContent=isSelected?selected.name+' · 范围':p.name; b.append(icon,count,label);b.onclick=()=>{scope='local';$('#zoneFilter').value=p.root==='flowers'?'lake':key;document.querySelectorAll('[data-scope]').forEach(a=>a.setAttribute('aria-pressed',String(a.dataset.scope===scope)));const root=members.find(e=>e.id===p.root)||members[0];showDetail(root);};$('#pins').append(b);});}
+function showDetail(e,move=true,navigate=true){dismissPhoto();selected=e;$('#detailActions').hidden=false;$('#backToMap').hidden=false;renderGallery(e);$('#title').textContent=e.name;$('#tag').textContent=scopeNames[e.scope]+' · '+catalog.zones[e.zone];$('#description').textContent=e.id==='city'?'银镜湖南岸城市。北部为湖港与旧街，中部为市政及生活街区，东部为玻璃工坊街区，南缘连接铁路与车站。':e.desc;$('#precision').textContent=cityLocations[e.id]?'地图规划位置 · 已按故事关系安排，具体地块为补充设计':e.precision+(e.scope==='local'?' · 圆点表示所在范围，不是该建筑坐标':' · 不在湖盆内安放虚构坐标');const refs=$('#references');refs.replaceChildren();const seen=new Set();e.refs.forEach(r=>{const key=r.volume+':'+r.chapter;if(seen.has(key))return;seen.add(key);const a=document.createElement(r.volume<4?'a':'span');a.textContent=volNames[r.volume]+' · '+(r.volume===1?(r.number===0?'序章 ':r.number===25?'番外 ':'第'+r.number+'章 '):'')+r.chapter;if(r.volume<4)a.href='volume-0'+r.volume+'.html';refs.append(a);});const key=anchorKey(e),notice=$('#locationNotice');notice.hidden=Boolean(key);if(!key)notice.textContent=(e.scope==='remote'?'本图外：':'位置待核：')+e.name+'｜'+catalog.zones[e.zone]+'。请查看右侧正文出处与说明。';if(move&&key){const p=locationPoint(e);focusPoint(p.x,p.y,p.zoom);}if(navigate&&location.hash!=='#'+e.id)writePlaceState(e.id,'push');render();const panel=document.querySelector('aside');if(window.matchMedia('(min-width:851px)').matches)panel.scrollTo({top:Math.max(0,$('.detail').offsetTop-panel.offsetTop-12),behavior:'smooth'});else $('.detail').scrollIntoView({block:'start',behavior:'smooth'});}
+function renderPins(visible){$('#pins').replaceChildren();Object.entries(anchors).forEach(([key,p])=>{const members=visible.filter(e=>anchorKey(e)===key);if(!members.length)return;const isSelected=selected&&members.some(e=>e.id===selected.id),b=document.createElement('button');b.className='pin';b.dataset.anchor=key;b.style.left=p.x*100+'%';b.style.top=p.y*100+'%';b.setAttribute('aria-pressed',String(Boolean(isSelected)));b.setAttribute('aria-label',p.name+'，'+members.length+'处地点，范围定位');const icon=document.createElement('b');icon.textContent=p.icon;icon.setAttribute('aria-hidden','true');const count=document.createElement('i');count.className='count';count.textContent=members.length;const label=document.createElement('span');label.textContent=isSelected?selected.name+' · 范围':p.name; b.append(icon,count,label);b.onclick=()=>{scope='local';$('#zoneFilter').value=p.root==='flowers'?'lake':key;document.querySelectorAll('[data-scope]').forEach(a=>a.setAttribute('aria-pressed',String(a.dataset.scope===scope)));const root=members.find(e=>e.id===p.root)||members[0];showDetail(root);};$('#pins').append(b);});renderCityPins(visible);}
 function resetDetail(updateHistory=true){selected=null;galleryItems=[];$('#placeGallery').hidden=true;$('#photoUnavailable').hidden=true;$('#detailActions').hidden=true;$('#backToMap').hidden=true;$('#title').textContent='银镜湖';$('#tag').textContent='SILVER MIRROR LAKE';$('#description').textContent='选择地点查看正文出处。图上圆点按已知范围聚合；城区街址与建筑内部的位置尚未逐一测绘。';$('#precision').textContent='范围定位 · 不表示建筑实测坐标';$('#references').replaceChildren();$('#locationNotice').hidden=true;if(updateHistory)writePlaceState(null);}
 function render(){if(!catalog)return;if(selected&&!matches(selected))resetDetail();const visible=catalog.entries.filter(matches);$('#resultCount').textContent='显示 '+visible.length+' / '+catalog.entries.length+' 条记录';$('#places').replaceChildren();Object.entries(catalog.zones).forEach(([zone,name])=>{const es=visible.filter(e=>e.zone===zone);if(!es.length)return;const group=document.createElement('details');group.className='place-group';group.open=true;const summary=document.createElement('summary');summary.textContent=name+' · '+es.length;const items=document.createElement('div');items.className='group-items';es.forEach(e=>{const b=document.createElement('button');b.dataset.place=e.id;b.setAttribute('aria-pressed',String(selected?.id===e.id));const name=document.createElement('span');name.textContent=e.name;const label=document.createElement('small');label.textContent=scopeNames[e.scope];b.append(name,label);b.onclick=()=>showDetail(e);items.append(b);});group.append(summary,items);$('#places').append(group);});if(!visible.length){const p=document.createElement('p');p.className='empty';p.textContent='没有匹配地点，试试别名或清除筛选。';$('#places').append(p);}renderPins(visible);updateMapLabels();}
 function clearFilters(){dismissPhoto();resetDetail();resetFilterValues();render();}
