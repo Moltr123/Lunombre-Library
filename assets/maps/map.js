@@ -135,9 +135,37 @@ function matches(e){const q=$('#search').value.trim().toLocaleLowerCase(),vol=$(
 let galleryItems=[],galleryIndex=0,photoReturnFocus=null;
 const photoDialog=$('#photoViewer');
 function writePlaceState(id,mode='replace'){history[mode+'State']({atlas:true,place:id||null},'',location.pathname+location.search+(id?'#'+id:''));}
-function galleryFor(e){const out=[],direct={castle:'castle',city:'city',academy:'academy',bookbindery:'bookbindery'},scene=direct[e.id]||(['castle','city','academy'].includes(e.zone)&&e.scope==='local'?e.zone:null);if(scene)out.push({src:'assets/maps/photos/'+scene+'-real-v2.webp',label:direct[e.id]?'写实场景':'所在区域场景',caption:(direct[e.id]?e.name:catalog.zones[e.zone])+' · 场景设想，建筑外观尚非小说定稿',position:'center'});if(e.scope==='local'){const key=anchorKey(e),files={castle:['nc','center top'],northport:['nc','center center'],city:['sc','center bottom'],station:['sc','center bottom'],academy:['se','center bottom'],west:['sw','center bottom'],flowers:['se','center center'],mountains:['nc','center top']},region=files[key];out.push({src:region?'assets/maps/'+region[0]+'-scale3.webp':'assets/maps/photos/atlas-overview.webp',label:'所属区域图',caption:catalog.zones[e.zone]+' · 地图区域预览，圆点为范围定位',position:region?region[1]:'center'});}return out;}
+// Individual scene files are uploaded separately. Until each image exists, keep showing the original region photo.
+const landmarkIDs=new Set(["southport","south-bridge","old-port-street","warehouse-street","warehouse-office","darren-depot","auction-house","post-office","town-hall","investigation-office","local-office","waterclock","sealed-lamp-lane","bookbindery","children-home","children-west-house","glass-street","glass-workshop","bread-shop","station","station-inn","west-station","south-cemetery","old-waterworks","waterworks-warehouse","library","north-gallery","training-hall","mirror-room","north-hall","east-hall","castle-west","south-study","outer-rooms","castle-kitchen","castle-archives","dormitory","academy-library","clocktower","reading-club","old-greenhouse","seed-greenhouse","observatory","engineering-building","river-workshop","math-physics-lab","materials-lab","practice-room","academy-stage","west-teaching","academy-north-slope","academy-south-slope","academy-south-gate","academy-telegraph","frost-court","library-tower"]);
+const landmarkPhotoStatus=new Map();
+function landmarkPhoto(e){
+  if(!landmarkIDs.has(e.id))return null;
+  return {src:'assets/maps/photos/landmarks/'+e.id+'.webp',label:'地标专属图',caption:e.name+' · 地标场景设想（建筑细部非正典定稿）',position:'center'};
+}
+function galleryFor(e){
+  const out=[],individual=landmarkPhoto(e);
+  if(individual&&landmarkPhotoStatus.get(e.id)===true)out.push(individual);
+  const direct={castle:'castle',city:'city',academy:'academy',bookbindery:'bookbindery'};
+  const scene=direct[e.id]||(['castle','city','academy'].includes(e.zone)&&e.scope==='local'?e.zone:null);
+  if(scene)out.push({src:'assets/maps/photos/'+scene+'-real-v2.webp',label:direct[e.id]?'写实场景':'所在区域场景',caption:(direct[e.id]?e.name:catalog.zones[e.zone])+' · 场景设想，建筑外观尚非小说定稿',position:'center'});
+  if(e.scope==='local'){
+    const key=anchorKey(e),files={castle:['nc','center top'],northport:['nc','center center'],city:['sc','center bottom'],station:['sc','center bottom'],academy:['se','center bottom'],west:['sw','center bottom'],flowers:['se','center center'],mountains:['nc','center top']},region=files[key];
+    out.push({src:region?'assets/maps/'+region[0]+'-scale3.webp':'assets/maps/photos/atlas-overview.webp',label:'所属区域图',caption:catalog.zones[e.zone]+' · 地图区域预览，圆点为范围定位',position:region?region[1]:'center'});
+  }
+  return out;
+}
+function probeLandmarkPhoto(e){
+  const photo=landmarkPhoto(e);
+  if(!photo||landmarkPhotoStatus.has(e.id))return;
+  const id=e.id;
+  landmarkPhotoStatus.set(id,false);
+  const img=new Image();
+  img.onload=()=>{landmarkPhotoStatus.set(id,true);if(selected?.id===id)renderGallery(e);};
+  img.onerror=()=>{landmarkPhotoStatus.set(id,false);};
+  img.src=photo.src;
+}
 function selectPhoto(index){if(!galleryItems.length)return;galleryIndex=(index+galleryItems.length)%galleryItems.length;const item=galleryItems[galleryIndex];$('#placePhoto').src=item.src;$('#placePhoto').alt=item.caption;$('#placePhoto').style.objectPosition=item.position;$('#photoLabel').textContent=item.caption;$('#photoFull').src=item.src;$('#photoFull').alt=item.caption;$('#photoCaption').textContent=item.caption;$('#photoCounter').textContent=(galleryIndex+1)+' / '+galleryItems.length;$('#photoViewerTitle').textContent=selected?.name||'地点图片';document.querySelectorAll('#photoChoices button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===galleryIndex)));$('#photoPrev').disabled=$('#photoNext').disabled=galleryItems.length<2;}
-function renderGallery(e){galleryItems=galleryFor(e);galleryIndex=0;$('#placeGallery').hidden=!galleryItems.length;$('#photoUnavailable').hidden=Boolean(galleryItems.length);$('#photoUnavailable').textContent=e.scope==='remote'?'此地点位于本图以外，尚无专属场景图；可查看地点说明与正文出处。':'此地点位置或名称关系待核，尚无可对应的专属图片。';$('#photoChoices').replaceChildren();galleryItems.forEach((item,i)=>{const b=document.createElement('button');b.textContent=item.label;b.setAttribute('aria-pressed',String(i===0));b.onclick=()=>selectPhoto(i);$('#photoChoices').append(b);});if(galleryItems.length)selectPhoto(0);}
+function renderGallery(e){galleryItems=galleryFor(e);galleryIndex=0;probeLandmarkPhoto(e);$('#placeGallery').hidden=!galleryItems.length;$('#photoUnavailable').hidden=Boolean(galleryItems.length);$('#photoUnavailable').textContent=e.scope==='remote'?'此地点位于本图以外，尚无专属场景图；可查看地点说明与正文出处。':'此地点位置或名称关系待核，尚无可对应的专属图片。';$('#photoChoices').replaceChildren();galleryItems.forEach((item,i)=>{const b=document.createElement('button');b.textContent=item.label;b.setAttribute('aria-pressed',String(i===0));b.onclick=()=>selectPhoto(i);$('#photoChoices').append(b);});if(galleryItems.length)selectPhoto(0);}
 function dismissPhoto(){if(photoDialog.open)photoDialog.close();document.body.classList.remove('gallery-open');}
 function openPhoto(push=true){if(!selected||!galleryItems.length)return;photoReturnFocus=document.activeElement;selectPhoto(galleryIndex);if(!photoDialog.open)photoDialog.showModal();document.body.classList.add('gallery-open');if(push&&!history.state?.gallery)history.pushState({atlas:true,place:selected.id,gallery:true},'',location.href);}
 function closePhoto(){const isGalleryState=Boolean(history.state?.gallery);dismissPhoto();if(isGalleryState)history.back();else photoReturnFocus?.focus?.();}
