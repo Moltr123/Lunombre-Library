@@ -45,6 +45,8 @@ function layoutAcademyLabels() {
     for(const d of [15,40,65,90,115,140,170,200]) {
       for(const [dx,dy] of [[d,-h/2],[-w-d,-h/2],[-w/2,d],[-w/2,-h-d],[d,-h-d],[-w-d,d]]) {
         const r={l:px+dx,t:py+dy,r:px+dx+w,b:py+dy+h};
+        const onScreen=px>=0&&px<=vp.clientWidth&&py>=0&&py<=vp.clientHeight;
+        if(onScreen&&(r.l<8||r.r>vp.clientWidth-8||r.t<8||r.b>vp.clientHeight-8))continue;
         const overlap=used.some(u=>r.l<u.r+5&&r.r>u.l-5&&r.t<u.b+5&&r.b>u.t-5);
         if(!overlap) {best={dx,dy,r};break;}
       }
